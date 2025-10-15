@@ -69,28 +69,19 @@
             }
 
             /* Top Bar */
-            .topbar{
+            .topbar {
                 display: flex;
                 align-items: center;
-                justify-content: space-between;
-                padding:14px 16px;
-                border-radius:14px;
-                background:var(--bg-glass);
-                border:1px solid var(--stroke);
                 gap: 12px;
-                overflow: hidden;
-            }
-            .topbar-right{
-                display: flex;
-                align-items: center;
-                gap: 10px;
-                flex: 1 1 auto;
-                min-width: 0;
+                padding: 12px 16px;
+                border-radius: 14px;
+                background: var(--bg-glass);
+                border: 1px solid var(--stroke);
             }
             .brand{
                 font-weight:700;
-                font-size:22px;
-                flex-shrink: 0 0 auto;
+                font-size: clamp(18px, 4vw, 22px);
+                flex-shrink: auto;
             }
 
             .actions{
@@ -99,45 +90,57 @@
                 gap: 12px;                /* spacing between search and + button */
             }
 
-            .search{
-                display:flex;
-                align-items:center;
-                gap:10px;
-                height:44px;
-                padding:0 14px;
-                border-radius:12px;
-                background:var(--bg-glass-strong);
-                border:1px solid var(--stroke);
-                
-                flex: 0 1 clamp(220px, 65vw, 480px);
-                min-width: 0; /* allows it to shrink properly in flexbox */
+            .search {
+                flex: 1;  /* fills available space */
+                height: clamp(38px, 6vw, 44px);
+                border-radius: 12px;
+                border: 1px solid var(--stroke);
+                background: var(--bg-glass-strong);
+                padding: 0 12px 0 36px;
+                color: var(--text);
+                font-size: 15px;
+                background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="%23A0C8DC" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="16.65" y1="16.65" x2="21" y2="21"/></svg>');
+                background-repeat: no-repeat;
+                background-position: 10px center;
+                background-size: 18px;
+                outline: none;
             }
             .search svg{opacity:.9}
             .search input{
-                flex:1 1 auto;
-                min-width:0; /* allows it to shrink properly in flexbox */
-                background:transparent;
-                border:0;
-                outline:none;
-                color:var(--text);
-                font-size:15px;
+                flex: 1;
+                min-width: 0;
+                border: none;
+                background: transparent;
+                color: var(--text);
+                font-size: 15px;
+                outline: none;
+            }
+            .search-icon {
+                color: var(--icon);
+                flex: 0 0 auto;
+                opacity: 0.9;
             }
 
-            /* Floating + button (top-right inside topbar) */
-            .add-btn{
-                flex: 0 0 auto;
-                width: 36px;
-                height: 36px;
+            /* Right: Log Catch button */
+            .add-btn {
+                flex-shrink: 0;
+                width: clamp(38px, 6vw, 44px);
+                height: clamp(38px, 6vw, 44px);
                 border-radius: 50%;
                 border: 1px solid var(--stroke);
-                background: rgba(255, 255, 255, 0.04);
-                display: grid;
-                place-items: center;
+                background: rgba(255, 255, 255, 0.05);
+                color: var(--icon);
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 cursor: pointer;
-                transition: transform .15s ease, background .15s ease;
+                transition: transform 0.15s ease, background 0.15s ease;
             }
-            .add-btn:hover{ transform: scale(1.05); background: rgba(255,255,255,0.06); }
 
+            .add-btn:hover {
+                transform: scale(1.05);
+                background: rgba(255, 255, 255, 0.08);
+            }
             /* Content area */
             .content{
                 margin-top:22px;
@@ -235,11 +238,10 @@
                 font-size:13px;
             }
 
-            /* Responsive */
-            @media (max-width: 360px){
-                .grid{ grid-template-columns: 1fr; } /* comment out if you truly want 2 cols always */
-                .search{ flex-basis: clamp(180px, 56vw, 480px);}
-                
+            /* Slightly tighten layout on small phones */
+            @media (max-width: 400px) {
+                .search { max-width: 100%; }
+                .brand { font-size: 18px; }
             }
         </style>
     </head>
@@ -248,25 +250,15 @@
         <main class="frame">
             <!-- Top Bar -->
             <header class="topbar">
-                <div class="brand">FishDex</div>
-                
-                <div class="actions">
-                    <div class="search" aria-label="Search">
-                        <!-- search icon -->
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-                            <path d="M21 21l-4.3-4.3m2.05-5.25a7.25 7.25 0 1 1-14.5 0 7.25 7.25 0 0 1 14.5 0Z"
-                                stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                        <input type="text" placeholder="Search species…" aria-label="Search species" />
-                    </div>
+            <div class="brand">FishDex</div>
 
-                    <!-- Floating + Log Catch button -->
-                    <button class="add-btn" title="Log a Catch" aria-label="Log a Catch">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-                            <path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-                        </svg>
-                    </button>
-                </div>
+            <input class="search" type="text" placeholder="Search species..." aria-label="Search species">
+
+                <button class="add-btn" aria-label="Log a Catch">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                    </svg>
+                </button>
             </header>
 
             <section class="grid" style="margin-top: 1%;">
