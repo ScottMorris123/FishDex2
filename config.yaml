@@ -1,0 +1,15 @@
+# config.yaml
+families_to_groups:
+  Centrarchidae: ["bass", "panfish"]
+  Ictaluridae: ["catfish"]
+  Cichlidae: ["cichlids"]
+  Salmonidae: ["salmonids"]
+  Moronidae: ["temperate-basses"]
+  Serranidae: ["sea-basses-groupers"]
+  Sciaenidae: ["drums"]
+  Coryphaenidae: ["pelagics"]
+  Scombridae: ["pelagics"]
+
+# Optional: limit by continent/country initially (empty = global)
+limit_continents: []
+limit_countries: []
