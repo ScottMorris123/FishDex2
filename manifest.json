@@ -1,15 +1,15 @@
 {
-  "name": "FishDex",
-  "short_name": "FishDex",
-  "description": "Log catches and browse the FishDex encyclopedia.",
-  "display": "standalone",
-  "start_url": "/repo/?source=pwa",
-  "scope": "/repo/",
-  "background_color": "#0b1620",
-  "theme_color": "#0b1620",
-  "icons": [
-    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
-    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
-    { "src": "icons/icon-180.png", "sizes": "180x180", "type": "image/png", "purpose": "any" }
-  ]
+    "name": "FishDex",
+    "short_name": "FishDex",
+    "description": "Log catches and browse the FishDex encyclopedia.",
+    "display": "standalone",
+    "start_url": "/FishDex2/?source=pwa",
+    "scope": "/FishDex2/",
+    "background_color": "#0b1620",
+    "theme_color": "#0b1620",
+    "icons": [
+        { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+        { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+        { "src": "icons/icon-180.png", "sizes": "180x180", "type": "image/png", "purpose": "any" }
+    ]
 }
