@@ -10,7 +10,7 @@
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
         <meta name="apple-mobile-web-app-title" content="FishDex">
-        <link rel="apple-touch-icon" href="icons/icon-180.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="icons/icon-180.png">
         <!-- Optional iOS mask icon for Safari tabs -->
         <link rel="mask-icon" href="icons/safari-pinned.svg" color="#0b1620">
 
@@ -25,25 +25,23 @@
         </script>
 
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
         <title>FishDex</title>
         <style>
             :root{
                 --bg-deep:#0a121a;
-                --bg-mid:#0f1b26;
                 --bg-glass:rgba(255,255,255,0.04);
                 --bg-glass-strong:rgba(255,255,255,0.06);
                 --stroke:rgba(255,255,255,0.1);
                 --text:rgba(255,255,255,0.92);
                 --muted:rgba(255,255,255,0.65);
                 --icon:rgba(160,200,220,0.9);
-                --accent:rgba(102,200,255,0.9);
                 --shadow:0 10px 30px rgba(0,0,0,0.45);
-                --radius:16px;
             }
 
             *{box-sizing:border-box}
             html,body{height:100%}
+
             body{
                 margin:0;
                 color:var(--text);
@@ -51,20 +49,16 @@
                 background:
                     radial-gradient(1200px 800px at 80% -10%, #143046 0%, rgba(20,48,70,0) 60%) no-repeat,
                     radial-gradient(1000px 700px at -10% 10%, #0f2738 0%, rgba(15,39,56,0) 60%) no-repeat,
-                    linear-gradient(180deg, #0b1620 0%, #0a1118 100%) no-repeat;
-                
+                    linear-gradient(180deg, #0b1620 0%, #0a1118 100%) no-repeat;    
                 background-color:var(--bg-deep);
                 min-height: 100svh;
-                /*padding-bottom: env(safe-area-inset-bottom);*/
                 overflow-x:hidden;
             }
 
             /* Subtle “glass” container to frame the UI like the mockup */
             .frame{
                 max-width:980px;
-                margin:48px auto;
-                margin-top: 0%;
-                margin-bottom: 0%;
+                margin: 0 auto;
                 padding:2.5vw;
                 border-radius:22px;
                 background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));
@@ -87,15 +81,10 @@
             .brand{
                 font-weight:700;
                 font-size: clamp(18px, 4vw, 22px);
-                flex-shrink: auto;
+                flex-shrink: 0;
             }
 
-            .actions{
-                display: flex;
-                align-items: center;
-                gap: 12px;                /* spacing between search and + button */
-            }
-
+            
             .search {
                 flex: 1 1 auto;  /* fills available space */
                 height: clamp(38px, 6vw, 44px);
@@ -115,7 +104,7 @@
             }
 
             /* Right: Log Catch button */
-            .add-btn {
+            .log-btn {
                 flex-shrink: 0;
                 width: clamp(38px, 6vw, 44px);
                 height: clamp(38px, 6vw, 44px);
@@ -130,36 +119,17 @@
                 transition: transform 0.15s ease, background 0.15s ease;
             }
 
-            .add-btn:hover {
+            .log-btn:hover {
                 transform: scale(1.05);
                 background: rgba(255, 255, 255, 0.08);
             }
-            /* Content area */
-            .content{
-                margin-top:22px;
-                padding:22px;
-                border-radius:18px;
-                background:var(--bg-glass);
-                border:1px solid var(--stroke);
-            }
+            
 
             /* Grid: 2 stat cards + 2 action cards (like the mockup) */
             .grid{
                 display: grid;
                 grid-template-columns: repeat(2, minmax(0, 1fr));
                 gap: 20px;
-            }
-
-            .card{
-                border-radius: 18px;
-                background: linear-gradient(180deg, rgba(255,255,255,0.045), rgba(255,255,255,0.03));
-                border: 1px solid var(--stroke);
-                padding: 18px;                 /* keep it consistent */
-                display: flex;
-                align-items: center;
-                gap: 18px;
-                min-height: 140px;
-                box-shadow: var(--shadow);
             }
 
             .icon {
@@ -211,19 +181,6 @@
                 background:rgba(255,255,255,0.055); 
                 border-color:rgba(255,255,255,0.14); 
             }
-            .action .label{
-                font-size:18px;
-                font-weight:600;
-                letter-spacing:.2px;
-            }
-
-            /* Subtle helper text (achievements placeholder) */
-            .helper{
-                text-align:center;
-                color:var(--muted);
-                margin-top:18px;
-                font-size:14px;
-            }
 
             /* Footer */
             footer{
@@ -239,11 +196,6 @@
                 justify-content: space-around;
                 margin-top: clamp(5px, 1vw, 28px);
                 margin-bottom: clamp(5px, 1vw, 28px);
-                /* gap: clamp(10px, 4vw, 28px); */
-                /* padding: clamp(14px, 3vw, 22px); */
-                /* border-radius: 14px; */
-                /* background: var(--bg-glass); */
-                /* border: 1px solid var(--stroke); */
             }
 
             .statsbar .divider {
@@ -255,7 +207,6 @@
             .statsbar .label{
                 font-size:16px;
                 color:var(--muted);
-                padding-bottom: 0px;;
             }
             .statsbar .value{
                 font-size: 200%;
@@ -271,22 +222,15 @@
                 border-radius: 18px;
                 background: linear-gradient(180deg, rgba(255,255,255,0.045), rgba(255,255,255,0.03));
                 border: 1px solid var(--stroke);
-                padding: 18px;                 /* keep it consistent */
-                padding-top: 0;
-                padding-bottom:0;
+                padding: 0 18px;
                 display: flex;
                 align-items: center;
                 gap: 18px;
                 box-shadow: var(--shadow);
-                
             }
-
+            
             .browsecard .icon {
-                margin-right:-10px; 
-                margin-left: -10px;
-
-                margin-top: 5px;
-                margin-bottom: 5px;
+                margin: 5px -10px;
 
                 width: 56px;
                 height: 56px;
@@ -302,7 +246,7 @@
                 margin-right: -10px;
             }
 
-            .browsecard .icon img, svg {
+            .browsecard .icon img,.browsecard .icon svg {
                 width: 100%;
                 height: 100%;
                 object-fit: contain;
@@ -316,8 +260,6 @@
                 font-weight:600; 
                 opacity:.85; 
                 font-style: italic;
-                
-                
             }
 
             .browsecard-label{
@@ -328,8 +270,6 @@
                 letter-spacing:.2px;
 
                 margin-bottom: -10px;
-
-                
                 
             }
 
@@ -350,7 +290,7 @@
 
                 <input class="search" type="text" placeholder="Search species..." aria-label="Search species">
 
-                <button class="add-btn" aria-label="Log a Catch">
+                <button class="log-btn" aria-label="Log a Catch">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
                     <path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
                     </svg>
@@ -382,7 +322,7 @@
 
             <!-- Content: cards grid -->
             <section class="grid" style="column-gap:5px;">
-                <article class="browsecard" role="button" aria-label="Browse FishDex">
+                <article class="browsecard action" role="button" aria-label="Browse FishDex">
                     <div class="browsecard icon">
                             <img src="icons/book.svg" alt="Book icon">
                         </div>
@@ -392,7 +332,7 @@
                     </div>
                 </article>
 
-                <article class="browsecard" role="button" aria-label="Browse FishDex">
+                <article class="browsecard action" role="button" aria-label="Browse FishDex">
                     <div class="browsecard icon">
                         <!-- location pin icon -->
                         <svg viewBox="0 0 24 24" fill="none">
@@ -406,43 +346,6 @@
                     </div>
                 </article>
             </section>
-
-            <!--
-            <section class="content">
-                <div class="grid">
-
-                   
-                    <article class="card action" role="button" aria-label="Browse FishDex">
-                        <div class="icon" style="margin-right:-10px; margin-left: -10px;">
-                            
-                            <svg viewBox="0 0 24 24" fill="none">
-                            <path d="M12 21s7-7.163 7-11a7 7 0 1 0-14 0c0 3.837 7 11 7 11Z" stroke="currentColor" stroke-width="1.6"/>
-                            <circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="1.6"/>
-                            </svg>
-                        </div>
-                        <div class="stat">
-                            <div class="label">Browse FishDex</div>
-                            <div class="value" style="font-size:14px; font-weight:600; opacity:.85; font-style: italic;">Open Encyclopedia</div>
-                        </div>
-                    </article>
-
-                    
-                    <article class="card action">
-                        <div class="icon">
-                            <img src="icons/book.svg" alt="Book icon">
-                        </div>
-                        <div class="stat">
-                            <div class="label">Your FishDex</div>
-                            <div class="value" style="font-size:18px; font-weight:600; opacity:.85;">View Your Collection</div>
-                        </div>
-                    </article>
-
-                </div>
-
-            
-            <p class="helper">Catch more species to unlock achievements.</p>
-            </section>
-        -->
 
         <!--
             <footer>
