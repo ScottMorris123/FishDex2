@@ -284,6 +284,9 @@
                 margin-right:-10px; 
                 margin-left: -10px;
 
+                margin-top: 5px;
+                margin-bottom: 5px;
+
                 width: 56px;
                 height: 56px;
                 border-radius: 14px;
@@ -294,6 +297,8 @@
                 flex: 0 0 auto;
                 padding: 6px;           /* ✅ adds internal spacing */
                 box-sizing: border-box; /* ensures padding doesn’t enlarge the box */
+
+                margin-right: -10px;
             }
 
             .browsecard .icon img, svg {
@@ -304,7 +309,7 @@
             }
             
             .browsecard-text{
-                font-size:14px; 
+                font-size:10px; 
                 font-weight:600; 
                 opacity:.85; 
                 font-style: italic;
@@ -312,7 +317,9 @@
             }
 
             .browsecard-label{
-                font-size:18px;
+                white-space: nowrap;
+
+                font-size:14px;
                 font-weight:600;
                 letter-spacing:.2px;
 
@@ -368,7 +375,7 @@
             
 
             <!-- Content: cards grid -->
-            <section class="grid">
+            <section class="grid" style="column-gap:5px;">
                 <article class="browsecard" role="button" aria-label="Browse FishDex">
                     <div class="browsecard icon">
                             <img src="icons/book.svg" alt="Book icon">
