@@ -267,6 +267,59 @@
                 padding-top: 0;
             }
 
+            .browsecard {
+                border-radius: 18px;
+                background: linear-gradient(180deg, rgba(255,255,255,0.045), rgba(255,255,255,0.03));
+                border: 1px solid var(--stroke);
+                padding: 18px;                 /* keep it consistent */
+                padding-top: 0;
+                padding-bottom:0;
+                display: flex;
+                align-items: center;
+                gap: 18px;
+                box-shadow: var(--shadow);
+            }
+
+            .browsecard .icon {
+                margin-right:-10px; 
+                margin-left: -10px;
+
+                width: 56px;
+                height: 56px;
+                border-radius: 14px;
+                display: grid;
+                place-items: center;
+                background: rgba(140,190,220,0.06);
+                border: 1px solid var(--stroke);
+                flex: 0 0 auto;
+                padding: 6px;           /* ✅ adds internal spacing */
+                box-sizing: border-box; /* ensures padding doesn’t enlarge the box */
+            }
+
+            .browsecard .icon img, svg {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                color: var(--icon);
+            }
+            
+            .browsecard-text{
+                font-size:14px; 
+                font-weight:600; 
+                opacity:.85; 
+                font-style: italic;
+                
+            }
+
+            .browsecard-label{
+                font-size:18px;
+                font-weight:600;
+                letter-spacing:.2px;
+
+                margin-bottom: -10px;
+                
+            }
+
             /* Slightly tighten layout on small phones */
             @media (max-width: 400px) {
                 .search { max-width: 100%; }
@@ -316,22 +369,18 @@
 
             <!-- Content: cards grid -->
             <section class="grid">
-                <article class="card action" role="button" aria-label="Browse FishDex">
-                    <div class="icon" style="margin-right:-10px; margin-left: -10px;">
-                        <!-- location pin icon -->
-                        <svg viewBox="0 0 24 24" fill="none">
-                        <path d="M12 21s7-7.163 7-11a7 7 0 1 0-14 0c0 3.837 7 11 7 11Z" stroke="currentColor" stroke-width="1.6"/>
-                        <circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="1.6"/>
-                        </svg>
-                    </div>
+                <article class="browsecard" role="button" aria-label="Browse FishDex">
+                    <div class="browsecard icon">
+                            <img src="icons/book.svg" alt="Book icon">
+                        </div>
                     <div class="stat">
-                        <div class="label">Browse FishDex</div>
-                        <div class="value" style="font-size:14px; font-weight:600; opacity:.85; font-style: italic;">Open Encyclopedia</div>
+                        <div class="browsecard-label">Your FishDex</div>
+                        <div class="browsecard-text">View Your Collection</div>
                     </div>
                 </article>
 
-                <article class="card action" role="button" aria-label="Browse FishDex">
-                    <div class="icon" style="margin-right:-10px; margin-left: -10px;">
+                <article class="browsecard" role="button" aria-label="Browse FishDex">
+                    <div class="browsecard icon">
                         <!-- location pin icon -->
                         <svg viewBox="0 0 24 24" fill="none">
                         <path d="M12 21s7-7.163 7-11a7 7 0 1 0-14 0c0 3.837 7 11 7 11Z" stroke="currentColor" stroke-width="1.6"/>
@@ -339,19 +388,20 @@
                         </svg>
                     </div>
                     <div class="stat">
-                        <div class="label">Browse FishDex</div>
-                        <div class="value" style="font-size:14px; font-weight:600; opacity:.85; font-style: italic;">Open Encyclopedia</div>
+                        <div class="browsecard-label">Browse FishDex</div>
+                        <div class="browsecard-text">Open Encyclopedia</div>
                     </div>
                 </article>
             </section>
 
+            <!--
             <section class="content">
                 <div class="grid">
 
-                    <!-- Browse FishDex (action) -->
+                   
                     <article class="card action" role="button" aria-label="Browse FishDex">
                         <div class="icon" style="margin-right:-10px; margin-left: -10px;">
-                            <!-- location pin icon -->
+                            
                             <svg viewBox="0 0 24 24" fill="none">
                             <path d="M12 21s7-7.163 7-11a7 7 0 1 0-14 0c0 3.837 7 11 7 11Z" stroke="currentColor" stroke-width="1.6"/>
                             <circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="1.6"/>
@@ -363,7 +413,7 @@
                         </div>
                     </article>
 
-                    <!-- Your FishDex (action) -->
+                    
                     <article class="card action">
                         <div class="icon">
                             <img src="icons/book.svg" alt="Book icon">
@@ -376,13 +426,16 @@
 
                 </div>
 
-            <!-- Achievements placeholder line (not functional yet) -->
+            
             <p class="helper">Catch more species to unlock achievements.</p>
             </section>
+        -->
 
+        <!--
             <footer>
             Data sourced from FishBase (v24.07) • © 2025 FishDex
             </footer>
+        -->
         </main>
     </body>
 </html>
