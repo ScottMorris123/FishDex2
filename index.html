@@ -255,11 +255,16 @@
             .statsbar .label{
                 font-size:16px;
                 color:var(--muted);
+                padding-bottom: 0px;;
             }
             .statsbar .value{
                 font-size: 200%;
                 font-weight:700;
                 letter-spacing:.5px;
+
+                border-top: 2px solid var(--muted);
+                margin-top: 2px;
+                padding-top: 0;
             }
 
             /* Slightly tighten layout on small phones */
@@ -310,46 +315,9 @@
             
 
             <!-- Content: cards grid -->
-            <section class="content">
-                <div class="grid">
-
-                    <!-- Test Card -->
-                    <article class="card">
-                        <div class="icon">
-                            <img src="icons/fish.svg" alt="Fish icon">
-                        </div>
-                        <div class="stat">
-                            <div class="label">Test Logged</div>
-                            <div class="value">12</div>
-                        </div>
-                    </article>
-
-
-                    <!-- Species Logged -->
-                    <article class="card">
-                        <div class="icon">
-                            <img src="icons/fish.svg" alt="Fish icon">
-                        </div>
-                        <div class="stat">
-                            <div class="label">Species Logged</div>
-                            <div class="value">12</div>
-                        </div>
-                    </article>
-
-                    <!-- Total Catches -->
-                    <article class="card">
-                        <div class="icon">
-                            <img src="icons/pole.svg" alt="Fishing rod icon">
-                        </div>
-                        <div class="stat">
-                            <div class="label">Total Catches</div>
-                            <div class="value">48</div>
-                        </div>
-                    </article>
-
-                    <!-- Browse FishDex (action) -->
-                    <article class="card action" role="button" aria-label="Browse FishDex">
-                    <div class="icon">
+            <section class="grid">
+                <article class="card action" role="button" aria-label="Browse FishDex">
+                    <div class="icon" style="margin-right:-10px; margin-left: -10px;">
                         <!-- location pin icon -->
                         <svg viewBox="0 0 24 24" fill="none">
                         <path d="M12 21s7-7.163 7-11a7 7 0 1 0-14 0c0 3.837 7 11 7 11Z" stroke="currentColor" stroke-width="1.6"/>
@@ -358,8 +326,41 @@
                     </div>
                     <div class="stat">
                         <div class="label">Browse FishDex</div>
-                        <div class="value" style="font-size:18px; font-weight:600; opacity:.85;">Open Encyclopedia</div>
+                        <div class="value" style="font-size:14px; font-weight:600; opacity:.85; font-style: italic;">Open Encyclopedia</div>
                     </div>
+                </article>
+
+                <article class="card action" role="button" aria-label="Browse FishDex">
+                    <div class="icon" style="margin-right:-10px; margin-left: -10px;">
+                        <!-- location pin icon -->
+                        <svg viewBox="0 0 24 24" fill="none">
+                        <path d="M12 21s7-7.163 7-11a7 7 0 1 0-14 0c0 3.837 7 11 7 11Z" stroke="currentColor" stroke-width="1.6"/>
+                        <circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="1.6"/>
+                        </svg>
+                    </div>
+                    <div class="stat">
+                        <div class="label">Browse FishDex</div>
+                        <div class="value" style="font-size:14px; font-weight:600; opacity:.85; font-style: italic;">Open Encyclopedia</div>
+                    </div>
+                </article>
+            </section>
+
+            <section class="content">
+                <div class="grid">
+
+                    <!-- Browse FishDex (action) -->
+                    <article class="card action" role="button" aria-label="Browse FishDex">
+                        <div class="icon" style="margin-right:-10px; margin-left: -10px;">
+                            <!-- location pin icon -->
+                            <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M12 21s7-7.163 7-11a7 7 0 1 0-14 0c0 3.837 7 11 7 11Z" stroke="currentColor" stroke-width="1.6"/>
+                            <circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="1.6"/>
+                            </svg>
+                        </div>
+                        <div class="stat">
+                            <div class="label">Browse FishDex</div>
+                            <div class="value" style="font-size:14px; font-weight:600; opacity:.85; font-style: italic;">Open Encyclopedia</div>
+                        </div>
                     </article>
 
                     <!-- Your FishDex (action) -->
