@@ -3,6 +3,7 @@ const CACHE = 'fishdex-v1';
 const ASSETS = [
   './',                // index.html
   './index.html',
+  './encyclopedia.html',
   './manifest.json',
   './icons/icon-192.png',
   './icons/icon-512.png',
