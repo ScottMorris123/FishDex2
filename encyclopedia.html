@@ -342,49 +342,233 @@
 
       </section>
 
+            <!-- Results -->
+      <section id="results" class="group-selections" style="margin-top:16px"></section>
+      <div id="pager" style="display:flex;justify-content:center;margin:14px 0;">
+        <button id="loadMore" class="chip" style="display:none;">Load more</button>
+      </div>
+
+
       <script>
+        // ==== UI toggles (unchanged) ====
         const toggle = document.getElementById('filterToggle');
         const panel = document.getElementById('filtersPanel');
         const form = document.getElementById('filterForm');
         const apply = document.getElementById('applyFilters');
         const clear = document.getElementById('clearFilters');
+        const qInput = document.getElementById('q');
 
         function openPanel() {
           panel.hidden = false;
           requestAnimationFrame(() => panel.classList.add('open'));
           toggle.setAttribute('aria-expanded', 'true');
         }
-
         function closePanel() {
           panel.classList.remove('open');
           toggle.setAttribute('aria-expanded', 'false');
           setTimeout(() => (panel.hidden = true), 280);
         }
-
         function togglePanel() {
           toggle.getAttribute('aria-expanded') === 'true' ? closePanel() : openPanel();
         }
-
         toggle.addEventListener('click', togglePanel);
-
         document.addEventListener('keydown', (e) => {
           if (e.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') closePanel();
         });
 
+        // ==== Data + rendering ====
+        const INDEX_URL = './data/index.json';            // built by your script
+        const IMAGE_FALLBACK = 'icons/fish.svg';
+
+        const resultsEl = document.getElementById('results');
+        const loadMoreBtn = document.getElementById('loadMore');
+
+        const PAGE_SIZE = 48; // how many cards per “page”
+        const state = {
+          all: [],
+          filtered: [],
+          page: 0,
+          q: '',
+          water: new Set(),      // 'fresh' | 'salt' | 'brackish'
+          usage: new Set(),      // 'game' | 'commercial' | 'bait' | etc.
+        };
+
+        // Map UI → data values
+        const WATER_MAP = {
+          freshwater: 'fresh',
+          saltwater: 'salt',
+          brackish: 'brackish',
+        };
+
+        // Build a simple token string for quick search (no lib needed)
+        function tokenString(item) {
+          return [
+            item.scientific_name || '',
+            item.common_name || '',
+            item.water_type || '',
+            item.importance || ''
+          ].join(' ').toLowerCase();
+        }
+
+        function cardTemplate(item) {
+          const code = item.spec_code;
+          const href = `species.html?code=${encodeURIComponent(code)}`; // your detail page can consume this
+          const img = item.image_url || IMAGE_FALLBACK;
+          const w = (item.water_type || '').toLowerCase();
+          const imp = (item.importance || '').toLowerCase();
+
+          const waterBadge = w ? `<span class="chip" style="font-size:11px">${w}</span>` : '';
+          const impBadge = imp ? `<span class="chip" style="font-size:11px">${imp}</span>` : '';
+
+          return `
+            <article class="card" style="cursor:pointer" data-code="${code}" tabindex="0" role="link" aria-label="${item.common_name || item.scientific_name}">
+              <div class="icon">
+                <img src="${img}" alt="" loading="lazy" onerror="this.src='${IMAGE_FALLBACK}'" />
+              </div>
+              <div style="min-width:0;">
+                <div class="group-label" style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">
+                  ${item.common_name || '—'}
+                </div>
+                <div class="group-description" title="${item.scientific_name}">
+                  <em>${item.scientific_name}</em>
+                </div>
+                <div style="display:flex;gap:6px;margin-top:6px;flex-wrap:wrap">
+                  ${waterBadge}${impBadge}
+                </div>
+              </div>
+              <a href="${href}" style="position:absolute;inset:0" aria-hidden="true"></a>
+            </article>
+          `;
+        }
+
+        function renderPage(reset=false) {
+          if (reset) {
+            resultsEl.innerHTML = '';
+            state.page = 0;
+          }
+          const start = state.page * PAGE_SIZE;
+          const slice = state.filtered.slice(start, start + PAGE_SIZE);
+          const html = slice.map(cardTemplate).join('');
+          resultsEl.insertAdjacentHTML('beforeend', html);
+
+          state.page++;
+          const hasMore = state.page * PAGE_SIZE < state.filtered.length;
+          loadMoreBtn.style.display = hasMore ? 'inline-block' : 'none';
+        }
+
+        function applyFiltersAndSearch() {
+          const q = state.q.trim().toLowerCase();
+          const filterWater = state.water;
+          const filterUsage = state.usage;
+
+          state.filtered = state.all.filter(item => {
+            // text search
+            const matchesQ = !q || item._t.includes(q);
+
+            // water filter
+            const matchesWater = filterWater.size === 0 || filterWater.has((item.water_type || '').toLowerCase());
+
+            // usage filter (importance)
+            const imp = (item.importance || '').toLowerCase();
+            const matchesUsage = filterUsage.size === 0 || filterUsage.has(imp);
+
+            return matchesQ && matchesWater && matchesUsage;
+          });
+
+          renderPage(true);
+        }
+
+        async function fetchFirst(paths) {
+          for (const href of paths) {
+            try {
+              const res = await fetch(href, { cache: 'force-cache' });
+              if (res.ok) {
+                console.log('[FishDex] Loaded index from', href);
+                return await res.json();
+              } else {
+                console.warn('[FishDex] Fetch failed', href, res.status);
+              }
+            } catch (e) {
+              console.warn('[FishDex] Fetch error', href, e.message);
+            }
+          }
+          throw new Error('All index.json paths failed.');
+        }
+
+        async function loadIndex() {
+          // skeleton
+          resultsEl.innerHTML = Array.from({length: 12}).map(() => `
+            <article class="card" aria-busy="true">
+              <div class="icon" style="background:rgba(255,255,255,0.08)"></div>
+              <div style="flex:1">
+                <div class="group-label" style="height:14px;width:60%;background:rgba(255,255,255,0.08);border-radius:4px"></div>
+                <div class="group-description" style="height:10px;width:40%;background:rgba(255,255,255,0.06);border-radius:4px;margin-top:6px"></div>
+              </div>
+            </article>
+          `).join('');
+
+          // Try common locations relative to this page
+          const baseDir = location.pathname.replace(/[^/]+$/, ''); // current folder ending in /
+          const candidates = [
+            baseDir + 'data/index.json',     // ./data/index.json
+            baseDir + '../data/index.json',  // ../data/index.json (if page is in /pages/)
+            '/data/index.json'               // from site root
+          ];
+
+          try {
+            const data = await fetchFirst(candidates);
+            state.all = (data.items || []).map(it => ({ ...it, _t: tokenString(it) }));
+            state.filtered = state.all;
+            renderPage(true);
+          } catch (err) {
+            console.error(err);
+            resultsEl.innerHTML = `<div style="opacity:.8">Could not load encyclopedia data (check /data/index.json path).</div>`;
+          }
+        }
+
+        // Debounce for search
+        let searchTimer = null;
+        function onSearchInput(e) {
+          const v = e.target.value || '';
+          state.q = v;
+          clearTimeout(searchTimer);
+          searchTimer = setTimeout(applyFiltersAndSearch, 140);
+        }
+        qInput.addEventListener('input', onSearchInput);
+
+        // Filters → state
         apply?.addEventListener('click', () => {
           const data = new FormData(form);
-          const selected = {};
-          for (const [k, v] of data.entries()) (selected[k] ||= []).push(v);
-          console.log('Filters applied:', selected);
-          // TODO: applyFiltersToCards(selected);
+          const w = new Set();
+          const u = new Set();
+
+          for (const [k, v] of data.entries()) {
+            if (k === 'water') {
+              const mapped = WATER_MAP[v] || v;
+              w.add(mapped);
+            }
+            if (k === 'usage') {
+              u.add(v.toLowerCase());
+            }
+          }
+          state.water = w;
+          state.usage = u;
+          applyFiltersAndSearch();
         });
 
         clear?.addEventListener('click', () => {
-          form.querySelectorAll('input[type="checkbox"]').forEach((cb) => (cb.checked = false));
-          console.log('Filters cleared');
-          // TODO: applyFiltersToCards({});
+          form.querySelectorAll('input[type="checkbox"]').forEach(cb => (cb.checked = false));
+          state.water.clear();
+          state.usage.clear();
+          applyFiltersAndSearch();
         });
+
+        loadMoreBtn.addEventListener('click', () => renderPage(false));
+
+        // Kickoff
+        loadIndex();
       </script>
+
     </main>
   </body>
 </html>
