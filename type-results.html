@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>FishDex • Type Browser</title>
+    <link rel="manifest" href="./manifest.json" />
+    <meta name="theme-color" content="#0b1620" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="FishDex" />
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/icon-180.png" />
+    <link rel="mask-icon" href="icons/safari-pinned.svg" color="#0b1620" />
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("./sw.js", { scope: "./" }).catch(console.error);
+        });
+      }
+    </script>
+    <style>
+      :root{ --bg-deep:#0a121a; --bg-glass:rgba(255,255,255,0.04); --bg-glass-strong:rgba(255,255,255,0.06); --stroke:rgba(255,255,255,0.1); --text:rgba(255,255,255,0.92); --muted:rgba(255,255,255,0.65); --icon:rgba(160,200,220,0.9); --shadow:0 10px 30px rgba(0,0,0,0.45);} 
+      *{ box-sizing:border-box }
+      html,body{ height:100% }
+      /* Put the large background on <html> so it always spans the full document height behind blurred elements */
+      html{
+        background: radial-gradient(1200px 800px at 80% -10%, #143046 0%, rgba(20,48,70,0) 60%) no-repeat,
+                    radial-gradient(1000px 700px at -10% 10%, #0f2738 0%, rgba(15,39,56,0) 60%) no-repeat,
+                    linear-gradient(180deg, #0b1620 0%, #0a1118 100%) no-repeat;
+        background-color:#0a1118;
+        min-height:100%;
+      }
+      body{ margin:0; color:var(--text); font-family: system-ui,-apple-system,Segoe UI,Roboto,Inter,Helvetica,Arial,sans-serif; 
+        background: transparent; min-height:100svh; overflow-x:hidden; }
+      .frame{ max-width:980px; margin:0 auto; padding: clamp(14px,2.5vw,24px); border-radius:22px; background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02)); border:1px solid var(--stroke); box-shadow:var(--shadow); backdrop-filter: blur(6px); padding-top: calc(2.5vw + env(safe-area-inset-top)); }
+      .topbar{ position:sticky; top:0; z-index:30; display:flex; align-items:center; gap:12px; padding:12px 16px; border-radius:14px; background:var(--bg-glass); border:1px solid var(--stroke); justify-content: space-between; backdrop-filter: blur(8px); }
+      .brand{ font-weight:700; font-size: clamp(18px,4vw,22px); }
+      .back{ display:inline-flex; gap:8px; align-items:center; border:1px solid var(--stroke); background: rgba(255,255,255,.05); border-radius:10px; padding:8px 12px; color:var(--icon); text-decoration:none; }
+      .chip{ border:1px solid rgba(255,255,255,0.12); background: rgba(255,255,255,0.06); border-radius:999px; padding:6px 10px; font-size:13px; line-height:1; color:var(--text); cursor:pointer; }
+      .summary-bar{ margin-top:10px; border:1px solid var(--stroke); border-radius:14px; background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03)); box-shadow:var(--shadow); backdrop-filter: blur(6px); padding:10px; display:grid; gap:8px; }
+      .summary-row{ display:flex; flex-wrap:wrap; align-items:center; gap:8px; }
+      .summary-spacer{ flex:1 1 auto }
+      .chip.small{ font-size:11px; padding:5px 8px }
+      .chip.toggle[aria-pressed="true"]{ outline:1px solid rgba(255,255,255,0.35); background: rgba(255,255,255,0.12); }
+      .pill{ border:1px solid rgba(255,255,255,0.2); border-radius:999px; padding:4px 8px; font-size:11px; opacity:.9 }
+      .pill button{ all:unset; cursor:pointer; margin-left:6px; opacity:.8 }
+      .group-selections{ display:grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap:6px; margin-top:12px; }
+      .card{ border:1px solid var(--stroke); background: linear-gradient(180deg, rgba(255,255,255,0.045), rgba(255,255,255,0.03)); border-radius:16px; padding:6px; display:flex; gap:10px; align-items:center; position:relative; }
+      .icon{ width:48px; height:48px; border-radius:12px; display:grid; place-items:center; background: rgba(140,190,220,0.06); border:1px solid var(--stroke); flex:0 0 auto; padding:6px; }
+      .group-label{ font-size:14px; font-weight:600; letter-spacing:.2px }
+      .group-description{ font-size:10px; color:var(--muted) }
+      .search{ flex:1 1 auto; height: clamp(38px, 6vw, 44px); border-radius:12px; border:1px solid var(--stroke); background: var(--bg-glass-strong); padding:0 6px; color:var(--text); font-size:15px; outline:none; min-width:0; max-width:100%; }
+    </style>
+  </head>
+  <body>
+    <main class="frame">
+      <header class="topbar">
+        <a class="back" id="backLink" href="./types.html" aria-label="Back to Types"><img src="icons/home.svg" alt="" width="24" height="24"/></a>
+        <div class="brand">Encyclopedia</div>
+        <input class="search" id="q" type="text" placeholder="Search species, genus…" aria-label="Search"/>
+        <button id="sortToggle" class="chip" aria-expanded="false" aria-controls="sortPanel">Sort</button>
+      </header>
+
+      <section id="summaryBar" class="summary-bar" style="display:none">
+        <div class="summary-row">
+          <div id="resultCount" class="pill">0 results</div>
+          <div id="activeChips" class="summary-row"></div>
+          <div class="summary-spacer"></div>
+          <button type="button" id="clearAll" class="chip small" style="display:none">Clear all</button>
+        </div>
+        
+      </section>
+
+      
+      <section id="results" class="group-selections" style="margin-top:16px; display:none"></section>
+      <div id="pager" style="display:flex;justify-content:center;margin:14px 0;">
+        <button id="loadMore" class="chip" style="display:none;">Load more</button>
+      </div>
+
+      <section id="sortPanel" class="summary-bar" hidden>
+        <form id="sortForm">
+          <fieldset style="border:1px solid var(--stroke);border-radius:10px;padding:6px 8px;">
+            <legend style="font-size:11px;color:var(--muted)">Sort by</legend>
+            <label><input type="radio" name="sortby" value="common" checked /> Common name (A–Z)</label>
+            <label><input type="radio" name="sortby" value="scientific" /> Scientific name (A–Z)</label>
+            <label><input type="radio" name="sortby" value="code" /> Species code</label>
+          </fieldset>
+          <div class="summary-row"><button type="button" id="applySort" class="chip">Apply</button></div>
+        </form>
+      </section>
+
+      <script>
+    const params = new URL(location.href).searchParams;
+  const category = (params.get('category')||'').toLowerCase();
+  const waterParam = (params.get('water')||'').toLowerCase();
+  const habitatParam = (params.get('habitat')||'').toLowerCase();
+  // Back link prioritizes new hierarchy (category -> water -> habitat)
+  const backLink = document.getElementById('backLink');
+  if (habitatParam) backLink.href = `types.html?category=${encodeURIComponent(category)}&water=${encodeURIComponent(waterParam)}`;
+  else if (waterParam) backLink.href = `types.html?category=${encodeURIComponent(category)}`;
+  else backLink.href = `types.html?category=${encodeURIComponent(category)}`;
+
+        const qInput = document.getElementById('q');
+        const resultsEl = document.getElementById('results');
+        const summaryBar = document.getElementById('summaryBar');
+        const resultCountEl = document.getElementById('resultCount');
+        const activeChipsEl = document.getElementById('activeChips');
+        const clearAllBtn = document.getElementById('clearAll');
+        const sortToggle = document.getElementById('sortToggle');
+        const sortPanel = document.getElementById('sortPanel');
+        const sortForm = document.getElementById('sortForm');
+        const applySortBtn = document.getElementById('applySort');
+        const loadMoreBtn = document.getElementById('loadMore');
+
+  const PAGE_SIZE = 48;
+  const state = { all: [], filtered: [], page: 0, q: '', water: new Set(), sort: 'common', category, flagsByCode:new Map(), waterParam, habitatParam };
+
+        function toArrayLower(val){ if(val==null) return []; if(Array.isArray(val)) return val.map(v=>String(v).toLowerCase().trim()).filter(Boolean); const s=String(val||'').toLowerCase().trim(); if(!s) return []; if(/[,|;]/.test(s)) return s.split(/[|;,]/g).map(x=>x.trim()).filter(Boolean); return [s]; }
+        const CANON = new Map([
+          ['game','game'],['gamefish','game'],['game fish','game'],['sport','game'],['sports','game'],['sportfish','game'],['sport fish','game'],['recreational','game'],['angler','game'],['angling','game'],
+          ['commercial','commercial'],['commercial fish','commercial'],['commercially important','commercial'],['commercially-important','commercial'],['food','commercial'],['market','commercial'],
+          ['bait','bait'],['baitfish','bait'],['bait fish','bait']
+        ]);
+        const WATER_SYNONYM = {fresh:'fresh',freshwater:'fresh',salt:'salt',saltwater:'salt',brackish:'brackish'};
+        // Helpers to safely access fields across varying shapes of index.json
+        const get = (o,p)=>p.split('.').reduce((a,k)=>a&&a[k],o);
+        const getFamilyName = (it)=>{
+          return (
+            it.family || it.Family || it.FAMILY || it.family_name || it.FamilyName || get(it,'taxonomy.family') || ''
+          );
+        };
+        const getGenusName = (it)=>{
+          const g = it.genus || it.Genus || it.GENUS || it.genus_name || it.GenusName || get(it,'taxonomy.genus');
+          if (g) return g;
+          const sci = (it.scientific_name||it.SciName||it.sciname||'').toString();
+          return sci.includes(' ')? sci.split(/\s+/)[0] : '';
+        };
+        const getSpecCode = (it)=> it.spec_code || it.SpecCode || it.code || it.id || '';
+        function getWaterList(item){ const raw = [item.water_types,item.water_type,item.water,item.habitats,item.habitat].find(v=>v!=null); const arr=toArrayLower(raw); const mapped=Array.from(new Set(arr.map(w=>WATER_SYNONYM[w]||w))); return mapped.filter(w=>w==='fresh'||w==='salt'||w==='brackish'); }
+        function getUsageList(item){ const c=[item.importances,item.importance,item.usages,item.usage,item.interests,item.interest]; const raw=c.find(v=>v!=null); const arr=toArrayLower(raw); return Array.from(new Set(arr.map(x=>CANON.get(x)||x))); }
+        function tokenString(item){ const waters=getWaterList(item).join(' '); return [item.scientific_name||'', item.common_name||'', getFamilyName(item)||'', getGenusName(item)||'', waters].join(' ').toLowerCase(); }
+
+        function cardTemplate(item){ const code=getSpecCode(item); const href=`species.html?code=${encodeURIComponent(code)}`; const img=item.image_url||'icons/fish.svg'; const waters=getWaterList(item); const badges=waters.map(w=>`<span class=\"chip\" style=\"font-size:11px\">${w}</span>`).join(''); return `
+          <article class="card" style="cursor:pointer" data-code="${code}" tabindex="0" role="link" aria-label="${item.common_name||item.scientific_name}">
+            <div class="icon"><img src="${img}" alt="" loading="lazy" onerror="this.src='icons/fish.svg'"/></div>
+            <div style="min-width:0;">
+              <div class="group-label" style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${item.common_name||'—'}</div>
+              <div class="group-description"><em>${item.scientific_name||''}</em></div>
+              <div style="display:flex;gap:6px;margin-top:6px;flex-wrap:wrap">${badges}</div>
+            </div>
+            <a href="${href}" style="position:absolute;inset:0" aria-hidden="true"></a>
+          </article>`; }
+
+        function renderPage(reset=false){ if(reset){ resultsEl.innerHTML=''; state.page=0; } const start=state.page*PAGE_SIZE; const slice=state.filtered.slice(start,start+PAGE_SIZE); resultsEl.insertAdjacentHTML('beforeend', slice.map(cardTemplate).join('')); state.page++; loadMoreBtn.style.display = (state.page*PAGE_SIZE < state.filtered.length) ? 'inline-block' : 'none'; }
+
+        function sortFiltered(){ const coll=new Intl.Collator(undefined,{sensitivity:'base'}); const nameKey=it=>(it.common_name||it.scientific_name||'').toString(); const sciKey=it=>(it.scientific_name||it.common_name||'').toString(); if(state.sort==='scientific'){ state.filtered.sort((a,b)=>{const an=sciKey(a),bn=sciKey(b); const c=coll.compare(an,bn); if(c!==0) return c; return String(getSpecCode(a)||'').localeCompare(String(getSpecCode(b)||''));}); } else if(state.sort==='code'){ state.filtered.sort((a,b)=>String(getSpecCode(a)||'').localeCompare(String(getSpecCode(b)||''))); } else { state.filtered.sort((a,b)=>{const an=nameKey(a),bn=nameKey(b); const c=coll.compare(an,bn); if(c!==0) return c; return String(getSpecCode(a)||'').localeCompare(String(getSpecCode(b)||''));}); } }
+
+        function renderSummary(){ resultCountEl.textContent = `${state.filtered.length} result${state.filtered.length===1?'':'s'}`; activeChipsEl.innerHTML=''; const makePill=(label,onRemove)=>{ const span=document.createElement('span'); span.className='pill'; span.textContent=label; const btn=document.createElement('button'); btn.textContent='×'; btn.addEventListener('click', onRemove); span.appendChild(btn); activeChipsEl.appendChild(span); };
+          if(state.q.trim()) makePill(`Search: ${state.q.trim()}`, ()=>{ qInput.value=''; state.q=''; applyFilters(); });
+          if(state.category) makePill(`Category: ${state.category}`, ()=>{ location.href=`types.html?category=${encodeURIComponent(state.category)}`; });
+          if(state.waterParam) makePill(`Water: ${state.waterParam==='fresh'?'Freshwater':state.waterParam==='salt'?'Saltwater':'Brackish'}`, ()=>{ location.href=`types.html?category=${encodeURIComponent(state.category)}`; });
+          if(state.habitatParam) makePill(`Habitat: ${state.habitatParam.replace(/_/g,' ')}`, ()=>{ location.href=`types.html?category=${encodeURIComponent(state.category)}&water=${encodeURIComponent(state.waterParam)}`; });
+          clearAllBtn.style.display = (state.q.trim()) ? '' : 'none';
+        }
+
+  function applyFilters(){ const q=state.q.trim().toLowerCase(); const filterWater=state.water; state.filtered = state.all.filter(item=>{ const matchesQ=!q || (item._t||'').includes(q); const waters=getWaterList(item); const matchesWater = filterWater.size===0 || waters.some(w=>filterWater.has(w));
+      // Apply flags-first filtering
+      const code = String(getSpecCode(item)||'');
+      const row = state.flagsByCode.get(code);
+      const truthy=(v)=> v===true || v===1 || v==='1' || v==='true' || v==='TRUE' || v==='Y' || v==='y';
+      let flagOk = true;
+      if(row){
+        const catFlag = {game:'gamefish', commercial:'commercial', bait:'bait'}[state.category||''];
+        if(catFlag && !truthy(row[catFlag])) flagOk=false;
+        if(state.waterParam && !truthy(row['water_'+state.waterParam])) flagOk=false;
+        if(state.habitatParam && !truthy(row[state.habitatParam])) flagOk=false;
+      }
+      const usages=getUsageList(item);
+      const catOk = !state.category || usages.length===0 || usages.includes(state.category);
+      const categoryPass = row ? flagOk : catOk;
+      return matchesQ && matchesWater && categoryPass; }); sortFiltered(); renderPage(true); renderSummary(); if(state.filtered.length===0){ resultsEl.innerHTML = `<article class=\"card\"><div class=\"icon\"><img src=\"icons/fish.svg\"/></div><div><div class=\"group-label\">No species found</div><div class=\"group-description\">This selection may not be present in your data yet.</div></div></article>`; loadMoreBtn.style.display='none'; } }
+
+  function writeURLState(){ const u=new URL(location.href); const set=(k,v)=>{ if(v!=null && String(v).length) u.searchParams.set(k,v); else u.searchParams.delete(k); }; set('q', state.q.trim()); set('water', Array.from(state.water).join(',')); set('sort', state.sort); set('category', state.category||''); history.replaceState(null,'',u); }
+
+  // sort panel
+        function openSortPanel(){ sortPanel.hidden=false; }
+        function closeSortPanel(){ sortPanel.hidden=true; }
+        sortToggle.addEventListener('click', ()=>{ (sortToggle.getAttribute('aria-expanded')==='true') ? (sortToggle.setAttribute('aria-expanded','false'), closeSortPanel()) : (sortToggle.setAttribute('aria-expanded','true'), openSortPanel()); });
+        applySortBtn.addEventListener('click', ()=>{ const data=new FormData(sortForm); state.sort=String(data.get('sortby')||'common'); sortFiltered(); renderPage(true); closeSortPanel(); });
+
+  // search
+        let searchTimer=null; qInput.addEventListener('input', (e)=>{ state.q = e.target.value||''; clearTimeout(searchTimer); searchTimer=setTimeout(()=>{ applyFilters(); writeURLState(); },140); });
+        loadMoreBtn.addEventListener('click', ()=>renderPage(false));
+        clearAllBtn.addEventListener('click', ()=>{ qInput.value=''; state.q=''; state.water.clear(); applyFilters(); writeURLState(); });
+
+  async function resolveIndexPath(){
+          const baseDir = location.pathname.replace(/[^/]+$/, '');
+          const candidates = ['data/index.json','./data/index.json',baseDir+'data/index.json',baseDir+'../data/index.json',baseDir+'../../data/index.json','/data/index.json'];
+          for (const c of candidates){ try{ const res=await fetch(c,{method:'GET',cache:'no-store'}); if(res.ok) return c; }catch{} }
+          throw new Error('Could not resolve /data/index.json');
+        }
+
+        async function resolveFlagsPath(){
+          const baseDir = location.pathname.replace(/[^/]+$/, '');
+          const candidates = ['data/species_habitat_flags.json','./data/species_habitat_flags.json',baseDir+'data/species_habitat_flags.json',baseDir+'../data/species_habitat_flags.json','/data/species_habitat_flags.json'];
+          for (const c of candidates){ try{ const res=await fetch(c,{method:'GET',cache:'no-store'}); if(res.ok) return c; }catch{} }
+          return null;
+        }
+
+        // Safe JSON loader that never throws; returns null on empty/malformed content
+        async function fetchJsonSafe(url){
+          if(!url) return null;
+          try{ const res=await fetch(url,{cache:'no-store'}); if(!res.ok) return null; const txt=await res.text(); if(!txt||!txt.trim()) return null; try{ return JSON.parse(txt); }catch{ return null; } }catch{ return null; }
+        }
+
+        async function loadAll(){
+          const [idxUrl, flagsUrl] = [await resolveIndexPath(), await resolveFlagsPath()];
+          const [data, flagsData] = await Promise.all([
+            fetchJsonSafe(idxUrl),
+            fetchJsonSafe(flagsUrl)
+          ]);
+          const rawItems = Array.isArray(data?.items) ? data.items : (Array.isArray(data) ? data : (Array.isArray(data?.species) ? data.species : []));
+          state.all = rawItems.map(it=>({ ...it, _t: tokenString(it) }));
+          const rows = Array.isArray(flagsData) ? flagsData : (Array.isArray(flagsData?.rows)? flagsData.rows : []);
+          const map = new Map();
+          for(const r of rows){ const k=String(r.SpecCode ?? r.spec_code ?? r.code ?? '').trim(); if(k) map.set(k, r); }
+          state.flagsByCode = map;
+          console.info('[TypeResults] loaded', { items: state.all.length, flags: state.flagsByCode.size });
+          showSpecies();
+        }
+
+
+
+        function showSpecies(){
+          resultsEl.style.display = '';
+          summaryBar.style.display = '';
+          applyFilters();
+        }
+
+        // init
+        loadAll().catch(err=>{
+          console.error(err);
+          resultsEl.style.display='';
+          resultsEl.innerHTML = `<article class=\"card\"><div class=\"icon\"><img src=\"icons/fish.svg\"/></div><div><div class=\"group-label\">Unable to load data</div><div class=\"group-description\">${String(err.message||err)}</div></div></article>`;
+        });
+      </script>
+    </main>
+  </body>
+</html>

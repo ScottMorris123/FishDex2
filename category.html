@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>FishDex • Category</title>
+    <link rel="manifest" href="./manifest.json" />
+    <meta name="theme-color" content="#0b1620" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="FishDex" />
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/icon-180.png" />
+    <link rel="mask-icon" href="icons/safari-pinned.svg" color="#0b1620" />
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("./sw.js", { scope: "./" }).catch(console.error);
+        });
+      }
+    </script>
+    <style>
+      :root { --bg-deep:#0a121a; --stroke:rgba(255,255,255,0.1); --text:rgba(255,255,255,0.92); --muted:rgba(255,255,255,0.7); --shadow:0 10px 30px rgba(0,0,0,.45); }
+      * { box-sizing: border-box; }
+      html, body { height: 100%; }
+      body { margin:0; color:var(--text); font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, Helvetica, Arial, sans-serif;
+        background: radial-gradient(1200px 800px at 80% -10%, #143046 0%, rgba(20,48,70,0) 60%) no-repeat,
+                   radial-gradient(1000px 700px at -10% 10%, #0f2738 0%, rgba(15,39,56,0) 60%) no-repeat,
+                   linear-gradient(180deg, #0b1620 0%, #0a1118 100%) no-repeat; min-height:100svh; overflow-x:hidden; }
+      .frame { max-width:980px; margin:0 auto; padding: clamp(14px,2.5vw,24px); border-radius:22px; border:1px solid var(--stroke);
+        background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.02)); box-shadow:var(--shadow); padding-top: calc(2.5vw + env(safe-area-inset-top)); }
+      .topbar { position:sticky; top:0; display:flex; gap:12px; align-items:center; padding:12px 16px; border-radius:14px; border:1px solid var(--stroke);
+        background: rgba(255,255,255,0.04); backdrop-filter: blur(8px); z-index:30; justify-content: space-between; }
+      .brand { font-weight:700; font-size: clamp(18px,4vw,22px); }
+      .chip { border:1px solid rgba(255,255,255,.12); background: rgba(255,255,255,.06); border-radius:999px; padding:6px 10px; cursor:pointer; }
+      .back { display:inline-flex; gap:8px; align-items:center; border:1px solid var(--stroke); background: rgba(255,255,255,.05); border-radius:10px; padding:8px 12px; color:rgba(160,200,220,.9); text-decoration:none; }
+      .group-selections { display:grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap:6px; margin-top:12px; }
+      .card { border:1px solid var(--stroke); background: linear-gradient(180deg, rgba(255,255,255,.045), rgba(255,255,255,.03)); border-radius:16px; padding:6px; display:flex; gap:10px; align-items:center; position:relative; }
+      .icon { width:48px; height:48px; border-radius:12px; display:grid; place-items:center; background: rgba(140,190,220,.06); border:1px solid var(--stroke); flex:0 0 auto; padding:6px; }
+      .group-label { font-size:14px; font-weight:600; letter-spacing:.2px; }
+      .group-description { font-size:10px; color:var(--muted); }
+    </style>
+  </head>
+  <body>
+    <main class="frame">
+      <header class="topbar">
+        <a class="back" href="./index.html" aria-label="Back to Home"><img src="icons/home.svg" alt="" width="24" height="24"/></a>
+        <div id="title" class="brand">Encyclopedia</div>
+        <div style="flex:1"></div>
+      </header>
+
+      <article id="intro" style="opacity:.9; font-size:13px; margin-top:8px"></article>
+
+      <section id="grid" class="group-selections"></section>
+
+      <script>
+        const params = new URL(location.href).searchParams;
+        const cat = (params.get('category') || '').toLowerCase();
+  const title = document.getElementById('title');
+        const grid = document.getElementById('grid');
+        const intro = document.getElementById('intro');
+  const label = cat ? cat.charAt(0).toUpperCase()+cat.slice(1) : 'Category';
+  // Keep brand identical; place context in intro instead of title
+        intro.textContent = `Choose how you want to browse ${label.toLowerCase()} species.`;
+
+        function card(href, icon, label, desc) {
+          const safeIcon = icon || 'icons/fish.svg';
+          return `
+          <article class="card" tabindex="0" role="link" aria-label="${label}">
+            <div class="icon"><img src="${safeIcon}" alt="" onerror="this.src='icons/fish.svg'"/></div>
+            <div>
+              <div class="group-label">${label}</div>
+              <div class="group-description">${desc}</div>
+            </div>
+            <a href="${href}" style="position:absolute;inset:0" aria-hidden="true"></a>
+          </article>`;
+        }
+
+        const items = [];
+        if (cat) {
+          // Water type selection now routes to habitat selection in types.html
+          items.push(card(`types.html?category=${encodeURIComponent(cat)}&water=fresh`, 'icons/freshwater.svg', 'Freshwater', 'Pick a habitat in freshwater'));
+          items.push(card(`types.html?category=${encodeURIComponent(cat)}&water=salt`, 'icons/saltwater.svg', 'Saltwater', 'Pick a habitat in saltwater'));
+          items.push(card(`types.html?category=${encodeURIComponent(cat)}&water=brackish`, 'icons/fish.svg', 'Brackish', 'Pick a habitat in brackish'));
+        }
+        grid.innerHTML = items.join('');
+      </script>
+    </main>
+  </body>
+</html>

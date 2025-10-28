@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>FishDex • Browse by Type</title>
+    <link rel="manifest" href="./manifest.json" />
+    <meta name="theme-color" content="#0b1620" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="FishDex" />
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/icon-180.png" />
+    <link rel="mask-icon" href="icons/safari-pinned.svg" color="#0b1620" />
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("./sw.js", { scope: "./" }).catch(console.error);
+        });
+      }
+    </script>
+    <style>
+      :root { --bg-deep:#0a121a; --stroke:rgba(255,255,255,0.1); --text:rgba(255,255,255,0.92); --muted:rgba(255,255,255,0.7); --shadow:0 10px 30px rgba(0,0,0,.45); }
+      * { box-sizing: border-box; }
+      html, body { height: 100%; }
+      /* Paint the large page background on <html> so it always exists behind blurred/glass elements and grows with content */
+      html { 
+        background: radial-gradient(1200px 800px at 80% -10%, #143046 0%, rgba(20,48,70,0) 60%) no-repeat,
+                    radial-gradient(1000px 700px at -10% 10%, #0f2738 0%, rgba(15,39,56,0) 60%) no-repeat,
+                    linear-gradient(180deg, #0b1620 0%, #0a1118 100%) no-repeat;
+        background-color:#0a1118; /* solid fallback so there is never white showing */
+        min-height:100%;
+      }
+      body { margin:0; color:var(--text); font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, Helvetica, Arial, sans-serif;
+        background: transparent; min-height:100svh; overflow-x:hidden; }
+      .frame { max-width:980px; margin:0 auto; padding: clamp(14px,2.5vw,24px); border-radius:22px; border:1px solid var(--stroke);
+        background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.02)); box-shadow:var(--shadow); padding-top: calc(2.5vw + env(safe-area-inset-top)); }
+      .topbar { position:sticky; top:0; display:flex; gap:12px; align-items:center; padding:12px 16px; border-radius:14px; border:1px solid var(--stroke);
+        background: rgba(255,255,255,0.04); backdrop-filter: blur(8px); z-index:30; justify-content: space-between; }
+      .brand { font-weight:700; font-size: clamp(18px,4vw,22px); }
+      .back { display:inline-flex; gap:8px; align-items:center; border:1px solid var(--stroke); background: rgba(255,255,255,.05); border-radius:10px; padding:8px 12px; color:rgba(160,200,220,.9); text-decoration:none; }
+      .group-selections { display:grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap:6px; margin-top:12px; }
+      .card { border:1px solid var(--stroke); background: linear-gradient(180deg, rgba(255,255,255,.045), rgba(255,255,255,.03)); border-radius:16px; padding:6px; display:flex; gap:10px; align-items:center; position:relative; }
+      .icon { width:48px; height:48px; border-radius:12px; display:grid; place-items:center; background: rgba(140,190,220,.06); border:1px solid var(--stroke); flex:0 0 auto; padding:6px; }
+      .group-label { font-size:14px; font-weight:600; letter-spacing:.2px; }
+      .group-description { font-size:10px; color:var(--muted); }
+    </style>
+  </head>
+  <body>
+    <main class="frame">
+      <header class="topbar">
+        <a class="back" id="backLink" href="./category.html" aria-label="Back to Category"><img src="icons/home.svg" alt="" width="24" height="24"/></a>
+  <div id="title" class="brand">Browse by Type</div>
+        <div style="flex:1"></div>
+      </header>
+
+      <article id="intro" style="opacity:.9; font-size:13px; margin-top:8px"></article>
+
+  <section id="grid" class="group-selections"></section>
+
+      <script>
+        const params = new URL(location.href).searchParams;
+        const cat = (params.get('category') || '').toLowerCase();
+        const label = cat ? cat.charAt(0).toUpperCase()+cat.slice(1) : 'Category';
+        document.getElementById('backLink').href = `category.html?category=${encodeURIComponent(cat)}`;
+        document.getElementById('intro').textContent = `Browse types by common groups for ${label.toLowerCase()}.`;
+  const grid = document.getElementById('grid');
+  // lightweight placeholder so the page never looks empty while we load
+  grid.innerHTML = '<div style="padding:10px;color:#9ec;opacity:.8;font-size:12px">Loading types…</div>';
+
+        // New hierarchy: Category (game/commercial/bait) -> Water (fresh/brackish/salt) -> Habitat
+        const WATER_HABITATS = {
+          fresh: ['streams','lakes','caves'],
+          brackish: ['estuaries_mangroves_marsh'],
+          salt: ['coastal_nearshore','reef_fish','open_ocean_offshore']
+        };
+        const CATEGORY_FLAG = { game: 'gamefish', commercial: 'commercial', bait: 'bait' };
+
+        function card(href, icon, label, desc) {
+          const safeIcon = icon || 'icons/fish.svg';
+          return `
+          <article class="card" tabindex="0" role="link" aria-label="${label}">
+            <div class="icon"><img src="${safeIcon}" alt="" onerror="this.src='icons/fish.svg'"/></div>
+            <div>
+              <div class="group-label">${label}</div>
+              <div class="group-description">${desc}</div>
+            </div>
+            <a href="${href}" style="position:absolute;inset:0" aria-hidden="true"></a>
+          </article>`;
+        }
+
+        // Resolve the first reachable URL from candidates (GET only; some dev servers mis-handle HEAD)
+        async function resolve(pathCandidates){
+          for(const p of pathCandidates){
+            try{
+              const res = await fetch(p,{method:'GET', cache:'no-store'});
+              if(res.ok) return p;
+            }catch{}
+          }
+          return null;
+        }
+
+        // Safe JSON loader that never throws; returns null on empty/malformed content
+        async function fetchJsonSafe(url){
+          if(!url) return null;
+          try{
+            const res = await fetch(url, { cache:'no-store' });
+            if(!res.ok) return null;
+            const text = await res.text();
+            if(!text || !text.trim()) return null;
+            try{ return JSON.parse(text); }catch{ return null; }
+          }catch{ return null; }
+        }
+
+        async function loadTypes(){
+          const baseDir = location.pathname.replace(/[^/]+$/, '');
+          const idxPath = await resolve(['data/index.json','./data/index.json',baseDir+'data/index.json',baseDir+'../data/index.json','/data/index.json']);
+          const flagsPath = await resolve(['data/species_habitat_flags.json','./data/species_habitat_flags.json',baseDir+'data/species_habitat_flags.json',baseDir+'../data/species_habitat_flags.json','/data/species_habitat_flags.json']);
+          if (!idxPath && !flagsPath) throw new Error('No data sources found');
+
+          const idata = await fetchJsonSafe(idxPath);
+          const fdata = await fetchJsonSafe(flagsPath);
+          const items = Array.isArray(idata?.items) ? idata.items : (Array.isArray(idata) ? idata : (Array.isArray(idata?.species) ? idata.species : []));
+          const getSpecCode = (it)=> String(it.spec_code || it.SpecCode || it.code || it.id || '');
+          const codesInIndex = new Set(items.map(getSpecCode).filter(Boolean));
+          const flagsRows = Array.isArray(fdata) ? fdata : (Array.isArray(fdata?.rows) ? fdata.rows : []);
+          const flagsByCode = new Map();
+          for(const r of flagsRows){ const k = String(r.SpecCode ?? r.spec_code ?? r.code ?? '').trim(); if(k) flagsByCode.set(k, r); }
+          const truthy = (v)=> v===true || v===1 || v==='1' || v==='true' || v==='TRUE' || v==='Y' || v==='y';
+          const countFor = ({category, water, habitat})=>{
+            const catFlag = CATEGORY_FLAG[(category||'').toLowerCase()];
+            let count=0; flagsByCode.forEach((row,code)=>{
+              if(!codesInIndex.has(String(code))) return;
+              if(catFlag && !truthy(row[catFlag])) return;
+              if(water && !truthy(row['water_'+water])) return;
+              if(habitat && !truthy(row[habitat])) return;
+              count++;
+            }); return count;
+          };
+
+          const url = new URL(location.href); const category = (url.searchParams.get('category')||'').toLowerCase(); const water=(url.searchParams.get('water')||'').toLowerCase(); const habitat=(url.searchParams.get('habitat')||'').toLowerCase();
+
+          // Level 1: categories
+          if(!category){
+            document.getElementById('title').textContent = 'Browse by Category';
+            document.getElementById('intro').textContent = 'Pick a top-level category to continue.';
+            const cats=['game','commercial','bait'];
+            grid.innerHTML = cats.map(c=>{
+              const cnt = countFor({category:c});
+              const label = c.charAt(0).toUpperCase()+c.slice(1);
+              return card(`types.html?category=${encodeURIComponent(c)}`, 'icons/fish.svg', label, `${cnt} species`);
+            }).join('');
+            return;
+          }
+
+          // Level 2: water types
+          if(category && !water){
+            document.getElementById('title').textContent = `Browse ${category} • Water type`;
+            document.getElementById('intro').textContent = 'Choose a water type';
+            const waters=['fresh','brackish','salt'];
+            grid.innerHTML = waters.map(w=>{
+              const label = (w==='fresh'?'Freshwater':w==='salt'?'Saltwater':'Brackish');
+              const cnt = countFor({category, water:w});
+              return card(`types.html?category=${encodeURIComponent(category)}&water=${encodeURIComponent(w)}`, 'icons/fish.svg', label, `${cnt} species`);
+            }).join('');
+            return;
+          }
+
+          // Level 3: habitats
+          if(category && water && !habitat){
+            document.getElementById('title').textContent = `Browse ${category} • ${water==='fresh'?'Freshwater':water==='salt'?'Saltwater':'Brackish'} habitats`;
+            document.getElementById('intro').textContent = 'Pick a habitat';
+            const habitats = WATER_HABITATS[water] || [];
+            grid.innerHTML = habitats.map(h=>{
+              const pretty = h.replace(/_/g,' ').replace(/\b\w/g, s=>s.toUpperCase());
+              const cnt = countFor({category, water, habitat:h});
+              return card(`type-results.html?category=${encodeURIComponent(category)}&water=${encodeURIComponent(water)}&habitat=${encodeURIComponent(h)}`, 'icons/fish.svg', pretty, `${cnt} species`);
+            }).join('');
+            return;
+          }
+
+          // Fallback
+          grid.innerHTML = `<article class=\"card\"><div class=\"icon\"><img src=\"icons/fish.svg\"/></div><div><div class=\"group-label\">Nothing to show</div><div class=\"group-description\">Select a category to begin.</div></div></article>`;
+        }
+
+        loadTypes().catch(err => {
+          console.error(err);
+          grid.innerHTML = `<article class=\"card\"><div class=\"icon\"><img src=\"icons/fish.svg\"/></div><div><div class=\"group-label\">Unable to load types</div><div class=\"group-description\">${String(err.message||err)}</div></div></article>`;
+        });
+      </script>
+    </main>
+  </body>
+</html>

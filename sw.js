@@ -1,5 +1,5 @@
 // sw.js
-const CACHE = 'fishdex-v1';
+const CACHE = 'fishdex-v2';
 const ASSETS = [
   './',                // index.html
   './index.html',
@@ -31,24 +31,26 @@ self.addEventListener('activate', (e) => {
 self.addEventListener('fetch', (e) => {
   const req = e.request;
 
-  // Handle navigation (HTML) requests
-  if (req.mode === 'navigate') {
+  // Always use network-first for HTML/document navigations and do not cache them
+  if (req.mode === 'navigate' || req.destination === 'document') {
     e.respondWith(
       fetch(req).catch(() => caches.match('./index.html'))
     );
     return;
   }
 
-  // Static assets
+  // Cache-first for static assets only (scripts, styles, images, fonts, JSON)
   if (req.method === 'GET') {
     e.respondWith(
       caches.match(req).then(cached =>
         cached ||
         fetch(req).then(res => {
-          const resClone = res.clone();
-          caches.open(CACHE).then(c => c.put(req, resClone));
+          try {
+            const resClone = res.clone();
+            caches.open(CACHE).then(c => c.put(req, resClone));
+          } catch {}
           return res;
-        }).catch(() => cached) // fall back to cache if available
+        }).catch(() => cached)
       )
     );
   }

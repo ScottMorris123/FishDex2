@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>FishDex • Species</title>
+
+    <!-- PWA basics (same as other pages) -->
+    <link rel="manifest" href="./manifest.json" />
+    <meta name="theme-color" content="#0b1620" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="FishDex" />
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/icon-180.png" />
+    <link rel="mask-icon" href="icons/safari-pinned.svg" color="#0b1620" />
+
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("./sw.js", { scope: "./" }).catch(console.error);
+        });
+      }
+    </script>
+
+    <style>
+      :root {
+        --bg-deep: #0a121a;
+        --bg-glass: rgba(255, 255, 255, 0.04);
+        --bg-glass-strong: rgba(255, 255, 255, 0.06);
+        --stroke: rgba(255, 255, 255, 0.1);
+        --text: rgba(255, 255, 255, 0.92);
+        --muted: rgba(255, 255, 255, 0.65);
+        --icon: rgba(160, 200, 220, 0.9);
+        --shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+      }
+
+      * { box-sizing: border-box; }
+      html, body { height: 100%; }
+      body {
+        margin: 0;
+        color: var(--text);
+        font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, Helvetica, Arial, sans-serif;
+        background:
+          radial-gradient(1200px 800px at 80% -10%, #143046 0%, rgba(20, 48, 70, 0) 60%) no-repeat,
+          radial-gradient(1000px 700px at -10% 10%, #0f2738 0%, rgba(15, 39, 56, 0) 60%) no-repeat,
+          linear-gradient(180deg, #0b1620 0%, #0a1118 100%) no-repeat;
+        background-color: var(--bg-deep);
+        min-height: 100svh;
+        overflow-x: hidden;
+      }
+
+      .frame {
+        max-width: 980px;
+        margin: 0 auto;
+        padding: clamp(14px, 2.5vw, 24px);
+        border-radius: 22px;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.02));
+        border: 1px solid var(--stroke);
+        box-shadow: var(--shadow);
+        backdrop-filter: blur(6px);
+        padding-top: calc(2.5vw + env(safe-area-inset-top));
+      }
+
+      .topbar {
+        position: sticky;
+        top: 0;
+        z-index: 30;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 12px 16px;
+        border-radius: 14px;
+        background: var(--bg-glass);
+        border: 1px solid var(--stroke);
+        justify-content: space-between;
+        backdrop-filter: blur(8px);
+      }
+
+      .brand { font-weight: 700; font-size: clamp(18px, 4vw, 22px); }
+
+      .back { display:inline-flex; gap:8px; align-items:center; border:1px solid var(--stroke); background:rgba(255,255,255,0.05); border-radius:10px; padding:8px 12px; color:var(--icon); text-decoration:none; }
+      .chip { border:1px solid rgba(255,255,255,0.12); background:rgba(255,255,255,0.06); border-radius:999px; padding:6px 10px; font-size:13px; line-height:1; color:var(--text); cursor:pointer; }
+      .chip:hover { background: rgba(255,255,255,0.09); }
+
+      .hero {
+        display: grid;
+        grid-template-columns: 120px 1fr auto;
+        gap: 14px;
+        align-items: center;
+        margin-top: 14px;
+      }
+
+      .icon {
+        width: 96px; height: 96px; border-radius: 16px; display:grid; place-items:center; background: rgba(140,190,220,0.06); border: 1px solid var(--stroke); padding: 10px;
+      }
+      .icon img { width:100%; height:100%; object-fit: contain; display:block; }
+
+      .title { font-size: clamp(18px, 3.8vw, 26px); font-weight: 700; }
+      .subtitle { font-size: 13px; color: var(--muted); }
+
+      .badge-row { display:flex; gap:6px; flex-wrap:wrap; margin-top:8px; }
+
+      .section {
+        margin-top: 18px;
+        border: 1px solid var(--stroke);
+        border-radius: 14px;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.03));
+        box-shadow: var(--shadow);
+        padding: 12px;
+      }
+
+      .grid-two { display:grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px 16px; }
+      .kv { display:grid; gap:4px; }
+      .kv .k { font-size: 11px; color: var(--muted); }
+      .kv .v { font-size: 14px; }
+      @media (max-width: 700px) { .grid-two { grid-template-columns: 1fr; } .hero { grid-template-columns: 80px 1fr; } }
+    </style>
+  </head>
+  <body>
+    <main class="frame">
+      <header class="topbar">
+        <a class="back" href="./encyclopedia.html" id="homeLink" aria-label="Back to Encyclopedia">
+          <img src="icons/home.svg" alt="" width="24" height="24" />
+        </a>
+        <div class="brand">Species</div>
+        <button id="goBack" class="chip">Back</button>
+      </header>
+
+      <section id="content">
+        <div class="hero">
+          <div class="icon"><img id="heroImg" src="icons/fish.svg" alt="" /></div>
+          <div>
+            <div class="title" id="title">Loading…</div>
+            <div class="subtitle" id="subtitle"></div>
+            <div class="badge-row" id="badges"></div>
+          </div>
+          <div class="chip" id="codeChip" aria-label="Species code" title="Species code"></div>
+        </div>
+
+        <div class="section grid-two" id="facts"></div>
+        <div class="section" id="desc" style="display:none"></div>
+      </section>
+
+      <script>
+        const IMAGE_FALLBACK = 'icons/fish.svg';
+
+        // Helpers copied to match encyclopedia behavior
+        const WATER_SYNONYM = { fresh: 'fresh', freshwater: 'fresh', salt: 'salt', saltwater: 'salt', brackish: 'brackish' };
+        function toArrayLower(val){
+          if (val == null) return [];
+          if (Array.isArray(val)) return val.map(v => String(v).toLowerCase().trim()).filter(Boolean);
+          const s = String(val).toLowerCase().trim();
+          if (!s) return [];
+          if (s.includes(',') || s.includes('|') || s.includes(';')) return s.split(/[|;,]/g).map(x => x.trim()).filter(Boolean);
+          return [s];
+        }
+        function getWaterList(item){
+          const raw = [item.water_types,item.water_type,item.water,item.habitats,item.habitat].find(v=>v!=null);
+          const arr = toArrayLower(raw);
+          const mapped = Array.from(new Set(arr.map(w => WATER_SYNONYM[w] || w)));
+          return mapped.filter(w => w==='fresh'||w==='salt'||w==='brackish');
+        }
+        function getUsageList(item){
+          const raw = [item.importances,item.importance,item.usages,item.usage,item.interests,item.interest].find(v=>v!=null);
+          const arr = toArrayLower(raw);
+          const mapped = arr.map(x=>{ if(x==='gamefish') return 'game'; if(x==='commercially important') return 'commercial'; return x; });
+          const allow = ['game','commercial','bait','aquarium'];
+          return Array.from(new Set(mapped.filter(x=>allow.includes(x))));
+        }
+
+        function padCode(code){
+          if (code == null) return null;
+          let s = String(code);
+          // Keep leading zeros if provided; if numeric-like and short, pad to 6
+          if (/^\d+$/.test(s) && s.length < 6) s = s.padStart(6,'0');
+          return s;
+        }
+
+        async function probe(path){
+          try{ const head = await fetch(path, {method:'HEAD', cache:'no-store'}); if (head.ok) return {ok:true,path}; }catch{}
+          try{ const res = await fetch(path, {method:'GET', cache:'no-store'}); if (res.ok) return {ok:true,path,res}; }catch{}
+          return {ok:false,path};
+        }
+
+        async function fetchJSON(path){
+          const r = await probe(path);
+          if (r.ok) return r.res ? r.res.json() : (await fetch(path, {cache:'no-store'})).json();
+          throw new Error('Not found: '+path);
+        }
+
+        function speciesCandidates(code){
+          const baseDir = location.pathname.replace(/[^/]+$/, '');
+          const folder = code.slice(0,3);
+          const rel = `data/species/${folder}/${code}.json`;
+          return [
+            rel,
+            './'+rel,
+            baseDir+rel,
+            baseDir+'../'+rel,
+            baseDir+'../../'+rel,
+            '/'+rel
+          ];
+        }
+
+        async function loadSpecies(code){
+          // Try candidate paths
+          const tried = [];
+          for (const c of speciesCandidates(code)){
+            try{
+              const data = await fetchJSON(c);
+              return data;
+            }catch(e){ tried.push(c); }
+          }
+          throw new Error('Could not locate species data for code '+code);
+        }
+
+        function setText(id, val){ const el = document.getElementById(id); if (el) el.textContent = val || ''; }
+        function showBadges(item){
+          const wrap = document.getElementById('badges');
+          wrap.innerHTML = '';
+          const waters = getWaterList(item);
+          const uses = getUsageList(item);
+          for (const w of waters){
+            const s = document.createElement('span'); s.className='chip'; s.style.fontSize='11px'; s.textContent = w; wrap.appendChild(s);
+          }
+          for (const u of uses){
+            const s = document.createElement('span'); s.className='chip'; s.style.fontSize='11px'; s.textContent = u; wrap.appendChild(s);
+          }
+        }
+
+        function addKV(parent, key, val){
+          if (!val) return;
+          const box = document.createElement('div'); box.className='kv';
+          const k = document.createElement('div'); k.className='k'; k.textContent = key;
+          const v = document.createElement('div'); v.className='v'; v.innerHTML = val;
+          box.appendChild(k); box.appendChild(v); parent.appendChild(box);
+        }
+
+        function render(item){
+          const common = item.common_name || item.CommonName || '';
+          const sci = item.scientific_name || item.ScientificName || '';
+          const code = item.spec_code || item.SpecCode || '';
+          const img = item.image_url || item.ImageURL || IMAGE_FALLBACK;
+
+          const heroImg = document.getElementById('heroImg');
+          heroImg.src = img; heroImg.onerror = () => { heroImg.src = IMAGE_FALLBACK; };
+          setText('title', common || sci || 'Unknown species');
+          setText('subtitle', sci);
+          const codeChip = document.getElementById('codeChip');
+          codeChip.textContent = code ? `#${code}` : '';
+
+          showBadges(item);
+
+          const facts = document.getElementById('facts');
+          facts.innerHTML = '';
+
+          // Commonly useful fields if present
+          addKV(facts, 'Genus', item.genus || item.Genus);
+          addKV(facts, 'Family', item.family || item.Family);
+          addKV(facts, 'Order', item.order || item.Order);
+          addKV(facts, 'IUCN', item.iucn_status || item.IUCN_Status);
+          addKV(facts, 'Water', getWaterList(item).join(', '));
+          addKV(facts, 'Usage', getUsageList(item).join(', '));
+          addKV(facts, 'Max length', item.max_length || item.MaxLength);
+          addKV(facts, 'Max weight', item.max_weight || item.MaxWeight);
+          addKV(facts, 'Diet', item.diet || item.Diet);
+          addKV(facts, 'Distribution', item.distribution || item.range || item.Distribution || item.Range);
+
+          const descEl = document.getElementById('desc');
+          const desc = item.description || item.remarks || item.notes || item.Description || '';
+          if (desc) { descEl.style.display='block'; descEl.innerHTML = `<div style=\"font-size:14px;line-height:1.5\">${desc}</div>`; }
+
+          // Save to recent
+          try {
+            const entry = { code: String(code), common: common, scientific: sci, img };
+            const raw = localStorage.getItem('recentSpecies');
+            let arr = raw ? JSON.parse(raw) : [];
+            if (!Array.isArray(arr)) arr = [];
+            // Remove duplicates by code
+            arr = arr.filter(x => String(x.code) !== entry.code);
+            arr.unshift(entry);
+            if (arr.length > 20) arr.length = 20;
+            localStorage.setItem('recentSpecies', JSON.stringify(arr));
+          } catch {}
+        }
+
+        async function init(){
+          // Back behavior
+          document.getElementById('goBack').addEventListener('click', () => {
+            if (document.referrer && document.referrer !== location.href) history.back();
+            else location.href = './encyclopedia.html';
+          });
+
+          const url = new URL(location.href);
+          let code = url.searchParams.get('code');
+          code = padCode(code);
+          if (!code){
+            document.getElementById('content').innerHTML = '<div class="section">No species code provided.</div>';
+            return;
+          }
+          try{
+            const data = await loadSpecies(code);
+            // Some species files might not include names; attempt to merge from index entry if needed
+            let item = data;
+            if (!item.common_name || !item.scientific_name){
+              try {
+                const idx = await fetch('./data/index.json').then(r=>r.json());
+                const found = (idx.items||[]).find(x => String(x.spec_code) === String(code));
+                if (found) item = { ...found, ...item };
+              } catch {}
+            }
+            render(item);
+          }catch(err){
+            console.error(err);
+            document.getElementById('content').innerHTML = `<div class="section">Species not found for code ${code}.</div>`;
+          }
+        }
+
+        init();
+      </script>
+    </main>
+  </body>
+</html>
