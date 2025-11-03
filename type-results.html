@@ -94,9 +94,13 @@
   const category = (params.get('category')||'').toLowerCase();
   const waterParam = (params.get('water')||'').toLowerCase();
   const habitatParam = (params.get('habitat')||'').toLowerCase();
+  const typeParam = (params.get('type')||'');
+  const generaParam = (params.get('genera')||'');
+  const generaSet = new Set(generaParam.split(',').map(s=>s.trim()).filter(Boolean));
   // Back link prioritizes new hierarchy (category -> water -> habitat)
   const backLink = document.getElementById('backLink');
-  if (habitatParam) backLink.href = `types.html?category=${encodeURIComponent(category)}&water=${encodeURIComponent(waterParam)}`;
+  if (typeParam) backLink.href = `types.html?category=${encodeURIComponent(category)}&water=${encodeURIComponent(waterParam)}&mode=type`;
+  else if (habitatParam) backLink.href = `types.html?category=${encodeURIComponent(category)}&water=${encodeURIComponent(waterParam)}`;
   else if (waterParam) backLink.href = `types.html?category=${encodeURIComponent(category)}`;
   else backLink.href = `types.html?category=${encodeURIComponent(category)}`;
 
@@ -107,13 +111,13 @@
         const activeChipsEl = document.getElementById('activeChips');
         const clearAllBtn = document.getElementById('clearAll');
         const sortToggle = document.getElementById('sortToggle');
-        const sortPanel = document.getElementById('sortPanel');
+  const sortPanel = document.getElementById('sortPanel');
         const sortForm = document.getElementById('sortForm');
         const applySortBtn = document.getElementById('applySort');
         const loadMoreBtn = document.getElementById('loadMore');
 
   const PAGE_SIZE = 48;
-  const state = { all: [], filtered: [], page: 0, q: '', water: new Set(), sort: 'common', category, flagsByCode:new Map(), waterParam, habitatParam };
+  const state = { all: [], filtered: [], page: 0, q: '', water: new Set(), sort: 'common', category, flagsByCode:new Map(), waterParam, habitatParam, typeParam, genusToCommon:new Map(), generaSet };
 
         function toArrayLower(val){ if(val==null) return []; if(Array.isArray(val)) return val.map(v=>String(v).toLowerCase().trim()).filter(Boolean); const s=String(val||'').toLowerCase().trim(); if(!s) return []; if(/[,|;]/.test(s)) return s.split(/[|;,]/g).map(x=>x.trim()).filter(Boolean); return [s]; }
         const CANON = new Map([
@@ -140,11 +144,11 @@
         function getUsageList(item){ const c=[item.importances,item.importance,item.usages,item.usage,item.interests,item.interest]; const raw=c.find(v=>v!=null); const arr=toArrayLower(raw); return Array.from(new Set(arr.map(x=>CANON.get(x)||x))); }
         function tokenString(item){ const waters=getWaterList(item).join(' '); return [item.scientific_name||'', item.common_name||'', getFamilyName(item)||'', getGenusName(item)||'', waters].join(' ').toLowerCase(); }
 
-        function cardTemplate(item){ const code=getSpecCode(item); const href=`species.html?code=${encodeURIComponent(code)}`; const img=item.image_url||'icons/fish.svg'; const waters=getWaterList(item); const badges=waters.map(w=>`<span class=\"chip\" style=\"font-size:11px\">${w}</span>`).join(''); return `
+        function cardTemplate(item){ const code=getSpecCode(item); const href=`species.html?code=${encodeURIComponent(code)}`; const img=item.image_url||'icons/fish.svg'; const waters=getWaterList(item); const badges=waters.map(w=>`<span class=\"chip\" style=\"font-size:11px\">${w}</span>`).join(''); const displayCommon = item._commonPreferred || item.common_name || '—'; return `
           <article class="card" style="cursor:pointer" data-code="${code}" tabindex="0" role="link" aria-label="${item.common_name||item.scientific_name}">
             <div class="icon"><img src="${img}" alt="" loading="lazy" onerror="this.src='icons/fish.svg'"/></div>
             <div style="min-width:0;">
-              <div class="group-label" style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${item.common_name||'—'}</div>
+              <div class="group-label" style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${displayCommon}</div>
               <div class="group-description"><em>${item.scientific_name||''}</em></div>
               <div style="display:flex;gap:6px;margin-top:6px;flex-wrap:wrap">${badges}</div>
             </div>
@@ -153,16 +157,18 @@
 
         function renderPage(reset=false){ if(reset){ resultsEl.innerHTML=''; state.page=0; } const start=state.page*PAGE_SIZE; const slice=state.filtered.slice(start,start+PAGE_SIZE); resultsEl.insertAdjacentHTML('beforeend', slice.map(cardTemplate).join('')); state.page++; loadMoreBtn.style.display = (state.page*PAGE_SIZE < state.filtered.length) ? 'inline-block' : 'none'; }
 
-        function sortFiltered(){ const coll=new Intl.Collator(undefined,{sensitivity:'base'}); const nameKey=it=>(it.common_name||it.scientific_name||'').toString(); const sciKey=it=>(it.scientific_name||it.common_name||'').toString(); if(state.sort==='scientific'){ state.filtered.sort((a,b)=>{const an=sciKey(a),bn=sciKey(b); const c=coll.compare(an,bn); if(c!==0) return c; return String(getSpecCode(a)||'').localeCompare(String(getSpecCode(b)||''));}); } else if(state.sort==='code'){ state.filtered.sort((a,b)=>String(getSpecCode(a)||'').localeCompare(String(getSpecCode(b)||''))); } else { state.filtered.sort((a,b)=>{const an=nameKey(a),bn=nameKey(b); const c=coll.compare(an,bn); if(c!==0) return c; return String(getSpecCode(a)||'').localeCompare(String(getSpecCode(b)||''));}); } }
+  function sortFiltered(){ const coll=new Intl.Collator(undefined,{sensitivity:'base'}); const nameKey=it=>(it._commonPreferred||it.common_name||it.scientific_name||'').toString(); const sciKey=it=>(it.scientific_name||it._commonPreferred||it.common_name||'').toString(); if(state.sort==='scientific'){ state.filtered.sort((a,b)=>{const an=sciKey(a),bn=sciKey(b); const c=coll.compare(an,bn); if(c!==0) return c; return String(getSpecCode(a)||'').localeCompare(String(getSpecCode(b)||''));}); } else if(state.sort==='code'){ state.filtered.sort((a,b)=>String(getSpecCode(a)||'').localeCompare(String(getSpecCode(b)||''))); } else { state.filtered.sort((a,b)=>{const an=nameKey(a),bn=nameKey(b); const c=coll.compare(an,bn); if(c!==0) return c; return String(getSpecCode(a)||'').localeCompare(String(getSpecCode(b)||''));}); } }
 
         function renderSummary(){ resultCountEl.textContent = `${state.filtered.length} result${state.filtered.length===1?'':'s'}`; activeChipsEl.innerHTML=''; const makePill=(label,onRemove)=>{ const span=document.createElement('span'); span.className='pill'; span.textContent=label; const btn=document.createElement('button'); btn.textContent='×'; btn.addEventListener('click', onRemove); span.appendChild(btn); activeChipsEl.appendChild(span); };
           if(state.q.trim()) makePill(`Search: ${state.q.trim()}`, ()=>{ qInput.value=''; state.q=''; applyFilters(); });
           if(state.category) makePill(`Category: ${state.category}`, ()=>{ location.href=`types.html?category=${encodeURIComponent(state.category)}`; });
           if(state.waterParam) makePill(`Water: ${state.waterParam==='fresh'?'Freshwater':state.waterParam==='salt'?'Saltwater':'Brackish'}`, ()=>{ location.href=`types.html?category=${encodeURIComponent(state.category)}`; });
           if(state.habitatParam) makePill(`Habitat: ${state.habitatParam.replace(/_/g,' ')}`, ()=>{ location.href=`types.html?category=${encodeURIComponent(state.category)}&water=${encodeURIComponent(state.waterParam)}`; });
+          if(state.typeParam) makePill(`Type: ${state.typeParam}`, ()=>{ location.href=`types.html?category=${encodeURIComponent(state.category)}&water=${encodeURIComponent(state.waterParam)}&mode=type`; });
           clearAllBtn.style.display = (state.q.trim()) ? '' : 'none';
         }
 
+  const typeOfItem=(item)=>{ const sci=(item.scientific_name||'').toString(); const genus = sci.includes(' ')? sci.split(/\s+/)[0]:''; if(state.generaSet && state.generaSet.size){ return state.generaSet.has(genus) ? (state.typeParam||'') : ''; } const common = state.genusToCommon.get(genus)||genus||'Other'; return common; };
   function applyFilters(){ const q=state.q.trim().toLowerCase(); const filterWater=state.water; state.filtered = state.all.filter(item=>{ const matchesQ=!q || (item._t||'').includes(q); const waters=getWaterList(item); const matchesWater = filterWater.size===0 || waters.some(w=>filterWater.has(w));
       // Apply flags-first filtering
       const code = String(getSpecCode(item)||'');
@@ -175,10 +181,13 @@
         if(state.waterParam && !truthy(row['water_'+state.waterParam])) flagOk=false;
         if(state.habitatParam && !truthy(row[state.habitatParam])) flagOk=false;
       }
-      const usages=getUsageList(item);
-      const catOk = !state.category || usages.length===0 || usages.includes(state.category);
-      const categoryPass = row ? flagOk : catOk;
-      return matchesQ && matchesWater && categoryPass; }); sortFiltered(); renderPage(true); renderSummary(); if(state.filtered.length===0){ resultsEl.innerHTML = `<article class=\"card\"><div class=\"icon\"><img src=\"icons/fish.svg\"/></div><div><div class=\"group-label\">No species found</div><div class=\"group-description\">This selection may not be present in your data yet.</div></div></article>`; loadMoreBtn.style.display='none'; } }
+  const usages=getUsageList(item);
+  const catOk = !state.category || usages.includes(state.category);
+  const waterOk = !state.waterParam || waters.includes(state.waterParam);
+  const categoryPass = row ? flagOk : (catOk && waterOk);
+      if(!(matchesQ && matchesWater && categoryPass)) return false;
+      if(state.typeParam){ return typeOfItem(item)===state.typeParam; }
+      return true; }); sortFiltered(); renderPage(true); renderSummary(); if(state.filtered.length===0){ resultsEl.innerHTML = `<article class=\"card\"><div class=\"icon\"><img src=\"icons/fish.svg\"/></div><div><div class=\"group-label\">No species found</div><div class=\"group-description\">This selection may not be present in your data yet.</div></div></article>`; loadMoreBtn.style.display='none'; } }
 
   function writeURLState(){ const u=new URL(location.href); const set=(k,v)=>{ if(v!=null && String(v).length) u.searchParams.set(k,v); else u.searchParams.delete(k); }; set('q', state.q.trim()); set('water', Array.from(state.water).join(',')); set('sort', state.sort); set('category', state.category||''); history.replaceState(null,'',u); }
 
@@ -212,6 +221,13 @@
           if(!url) return null;
           try{ const res=await fetch(url,{cache:'no-store'}); if(!res.ok) return null; const txt=await res.text(); if(!txt||!txt.trim()) return null; try{ return JSON.parse(txt); }catch{ return null; } }catch{ return null; }
         }
+        async function fetchJsonCached(url, keyPrefix='fdx'){
+          if(!url) return null; const key=`${keyPrefix}:${url}`;
+          try{ const raw=sessionStorage.getItem(key); if(raw){ try{ return JSON.parse(raw); }catch{} } }catch{}
+          const data = await fetchJsonSafe(url);
+          try{ sessionStorage.setItem(key, JSON.stringify(data)); }catch{}
+          return data;
+        }
 
         async function loadAll(){
           const [idxUrl, flagsUrl] = [await resolveIndexPath(), await resolveFlagsPath()];
@@ -220,11 +236,53 @@
             fetchJsonSafe(flagsUrl)
           ]);
           const rawItems = Array.isArray(data?.items) ? data.items : (Array.isArray(data) ? data : (Array.isArray(data?.species) ? data.species : []));
-          state.all = rawItems.map(it=>({ ...it, _t: tokenString(it) }));
+          // De-duplicate by SpecCode to cut rendering and filtering work
+          const seen = new Set();
+          const unique = [];
+          for(const it of rawItems){ const k=String(getSpecCode(it)||''); if(!k || seen.has(k)) continue; seen.add(k); unique.push(it); }
+          state.all = unique.map(it=>({ ...it, _t: tokenString(it) }));
           const rows = Array.isArray(flagsData) ? flagsData : (Array.isArray(flagsData?.rows)? flagsData.rows : []);
           const map = new Map();
           for(const r of rows){ const k=String(r.SpecCode ?? r.spec_code ?? r.code ?? '').trim(); if(k) map.set(k, r); }
           state.flagsByCode = map;
+          // Load genus -> common display map
+          // Skip taxonomy/family loads when we have an explicit genera set for the type (fast path)
+          if(state.generaSet && state.generaSet.size){
+            console.info('[TypeResults] fast path using genera param');
+            // Build curated species common names from relevant family JSONs to override index names
+            try{
+              const relevantFamilies = new Set();
+              for(const it of state.all){ const s=(it.scientific_name||'').toString(); const genus = s.includes(' ')? s.split(/\s+/)[0]:''; if(genus && state.generaSet.has(genus)){ const fam=getFamilyName(it); if(fam) relevantFamilies.add(fam); } }
+              const curatedSpeciesBySci = new Map();
+              for(const fam of relevantFamilies){
+                const famUrl = `data/game_family_json/${encodeURIComponent(fam)}.json`;
+                try{ const famJson = await fetchJsonCached(famUrl,'fdx-fam'); const gens=Array.isArray(famJson?.genera)? famJson.genera:[]; for(const ge of gens){ const sp=Array.isArray(ge?.species)? ge.species:[]; for(const spc of sp){ const spsci=String(spc?.scientific||'').trim(); const spcom=String(spc?.common||'').trim(); if(spsci && spcom) curatedSpeciesBySci.set(spsci, spcom); } } }catch{}
+              }
+              if(curatedSpeciesBySci.size){ state.all = state.all.map(it=>{ const sci=String(it.scientific_name||'').trim(); const preferred=curatedSpeciesBySci.get(sci); return preferred? { ...it, _commonPreferred: preferred } : it; }); }
+            }catch{}
+          } else try{
+            // Family-only source of truth: build genus and species common names from curated family JSONs
+            const famSet = new Set(state.all.map(getFamilyName).filter(Boolean));
+            const genusCommon = new Map();
+            const curatedSpeciesBySci = new Map();
+            for(const fam of famSet){
+              const famUrl = `data/game_family_json/${encodeURIComponent(fam)}.json`;
+              try{
+                const famJson = await fetchJsonCached(famUrl,'fdx-fam');
+                const gens = Array.isArray(famJson?.genera)? famJson.genera:[];
+                for(const ge of gens){
+                  const gsci = String(ge?.scientific||'').trim();
+                  const gcom = String(ge?.common||'').trim();
+                  if(gsci && gcom && !genusCommon.has(gsci)) genusCommon.set(gsci, gcom);
+                  const sp = Array.isArray(ge?.species)? ge.species:[];
+                  for(const spc of sp){ const spsci=String(spc?.scientific||'').trim(); const spcom=String(spc?.common||'').trim(); if(spsci && spcom) curatedSpeciesBySci.set(spsci, spcom); }
+                }
+              }catch{}
+            }
+            state.genusToCommon = genusCommon;
+            // Override species common names with curated values
+            state.all = state.all.map(it=>{ const sci=String(it.scientific_name||'').trim(); const preferred=curatedSpeciesBySci.get(sci); return preferred? { ...it, _commonPreferred: preferred } : it; });
+          }catch{}
           console.info('[TypeResults] loaded', { items: state.all.length, flags: state.flagsByCode.size });
           showSpecies();
         }

@@ -1,0 +1,26 @@
+{
+  "family": {
+    "scientific": "Cirrhitidae",
+    "common": "Hawkfish Family"
+  },
+  "genera": [
+    {
+      "scientific": "Cirrhitus",
+      "common": "Hawkfishes",
+      "species": [
+        {
+          "scientific": "Cirrhitus atlanticus",
+          "common": "West African Hawkfish"
+        },
+        {
+          "scientific": "Cirrhitus pinnulatus",
+          "common": "Stocky Hawkfish"
+        },
+        {
+          "scientific": "Cirrhitus rivulatus",
+          "common": "Giant Hawkfish"
+        }
+      ]
+    }
+  ]
+}

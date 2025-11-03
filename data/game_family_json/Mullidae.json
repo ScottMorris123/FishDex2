@@ -1,0 +1,74 @@
+{
+  "family": {
+    "scientific": "Mullidae",
+    "common": "Goatfish Family"
+  },
+  "genera": [
+    {
+      "scientific": "Mulloidichthys",
+      "common": "Goatfishes",
+      "species": [
+        {
+          "scientific": "Mulloidichthys flavolineatus",
+          "common": "Yellowstripe Goatfish"
+        },
+        {
+          "scientific": "Mulloidichthys pfluegeri",
+          "common": "Orange Goatfish"
+        },
+        {
+          "scientific": "Mulloidichthys vanicolensis",
+          "common": "Yellowfin Goatfish"
+        }
+      ]
+    },
+    {
+      "scientific": "Mullus",
+      "common": "Goatfishes",
+      "species": [
+        {
+          "scientific": "Mullus barbatus",
+          "common": "Red Mullet"
+        },
+        {
+          "scientific": "Mullus surmuletus",
+          "common": "Striped Red Mullet"
+        }
+      ]
+    },
+    {
+      "scientific": "Parupeneus",
+      "common": "Goatfishes",
+      "species": [
+        {
+          "scientific": "Parupeneus barberinus",
+          "common": "Dash & dot Goatfish"
+        },
+        {
+          "scientific": "Parupeneus ciliatus",
+          "common": "Blacksaddle Goatfish"
+        },
+        {
+          "scientific": "Parupeneus cyclostomus",
+          "common": "Goldsaddle Goatfish"
+        },
+        {
+          "scientific": "Parupeneus indicus",
+          "common": "Indian Goatfish"
+        },
+        {
+          "scientific": "Parupeneus insularis",
+          "common": "Twosaddle Goatfish"
+        },
+        {
+          "scientific": "Parupeneus multifasciatus",
+          "common": "Manybar Goatfish"
+        },
+        {
+          "scientific": "Parupeneus pleurostigma",
+          "common": "Sidespot Goatfish"
+        }
+      ]
+    }
+  ]
+}

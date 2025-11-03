@@ -1,0 +1,18 @@
+{
+  "family": {
+    "scientific": "Nothobranchiidae",
+    "common": "African Rivulines Family"
+  },
+  "genera": [
+    {
+      "scientific": "Scriptaphyosemion",
+      "common": "African Rivulines",
+      "species": [
+        {
+          "scientific": "Scriptaphyosemion bertholdi",
+          "common": "Berthold's Killi"
+        }
+      ]
+    }
+  ]
+}

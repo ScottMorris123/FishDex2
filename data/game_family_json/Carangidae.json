@@ -1,0 +1,600 @@
+{
+  "family": {
+    "scientific": "Carangidae",
+    "common": "Jack, Pompano, Trevally, and Scad Family"
+  },
+  "genera": [
+    {
+      "scientific": "Alectis",
+      "common": "Threadfish, Diamond Trevalies, Pompano",
+      "species": [
+        {
+          "scientific": "Alectis alexandrina",
+          "common": "Alexandria Pompano"
+        },
+        {
+          "scientific": "Alectis ciliaris",
+          "common": "African Pompano"
+        },
+        {
+          "scientific": "Alectis indica",
+          "common": "Indian Threadfish"
+        }
+      ]
+    },
+    {
+      "scientific": "Alepes",
+      "common": "Jacks",
+      "species": [
+        {
+          "scientific": "Alepes apercna",
+          "common": "Smallmouth Scad"
+        },
+        {
+          "scientific": "Alepes djedaba",
+          "common": "Shrimp Scad"
+        },
+        {
+          "scientific": "Alepes kleinii",
+          "common": "Razorbelly Scad"
+        },
+        {
+          "scientific": "Alepes melanoptera",
+          "common": "Blackfin Scad"
+        },
+        {
+          "scientific": "Alepes vari",
+          "common": "Herring Scad"
+        }
+      ]
+    },
+    {
+      "scientific": "Atropus",
+      "common": "Jacks",
+      "species": [
+        {
+          "scientific": "Atropus armatus",
+          "common": "Longfin Trevally"
+        },
+        {
+          "scientific": "Atropus hedlandensis",
+          "common": "Bumpnose Trevally"
+        },
+        {
+          "scientific": "Atropus mentalis",
+          "common": "Cale Cale Trevally"
+        }
+      ]
+    },
+    {
+      "scientific": "Atule",
+      "common": "Jacks",
+      "species": [
+        {
+          "scientific": "Atule mate",
+          "common": "Yellowtail Scad"
+        }
+      ]
+    },
+    {
+      "scientific": "Campogramma",
+      "common": "Jacks",
+      "species": [
+        {
+          "scientific": "Campogramma glaycos",
+          "common": "Vadigo"
+        }
+      ]
+    },
+    {
+      "scientific": "Carangichthys",
+      "common": "Jacks",
+      "species": [
+        {
+          "scientific": "Carangichthys dinema",
+          "common": "Shadow Trevally"
+        },
+        {
+          "scientific": "Carangichthys oblongus",
+          "common": "Coachwhip Trevally"
+        }
+      ]
+    },
+    {
+      "scientific": "Carangoides",
+      "common": "Jacks",
+      "species": [
+        {
+          "scientific": "Carangoides praeustus",
+          "common": "Brownback Trevally"
+        }
+      ]
+    },
+    {
+      "scientific": "Caranx",
+      "common": "Jacks",
+      "species": [
+        {
+          "scientific": "Caranx bartholomaei",
+          "common": "Yellow Jack"
+        },
+        {
+          "scientific": "Caranx bucculentus",
+          "common": "Bluespotted Trevally"
+        },
+        {
+          "scientific": "Caranx caninus",
+          "common": "Pacific Crevalle Jack"
+        },
+        {
+          "scientific": "Caranx crysos",
+          "common": "Blue Runner"
+        },
+        {
+          "scientific": "Caranx heberi",
+          "common": "Blacktip Trevally"
+        },
+        {
+          "scientific": "Caranx hippos",
+          "common": "Crevalle Jack"
+        },
+        {
+          "scientific": "Caranx ignobilis",
+          "common": "Giant Trevally"
+        },
+        {
+          "scientific": "Caranx latus",
+          "common": "Horse-eye Jack"
+        },
+        {
+          "scientific": "Caranx lugubris",
+          "common": "Black Jack"
+        },
+        {
+          "scientific": "Caranx melampygus",
+          "common": "Bluefin Trevally"
+        },
+        {
+          "scientific": "Caranx papuensis",
+          "common": "Brassy Trevally"
+        },
+        {
+          "scientific": "Caranx ruber",
+          "common": "Bar Jack"
+        },
+        {
+          "scientific": "Caranx sexfasciatus",
+          "common": "Bigeye Trevally"
+        },
+        {
+          "scientific": "Caranx tille",
+          "common": "Tille Trevally"
+        },
+        {
+          "scientific": "Caranx vinctus",
+          "common": "Cocinero"
+        }
+      ]
+    },
+    {
+      "scientific": "Craterognathus",
+      "common": "Jacks",
+      "species": [
+        {
+          "scientific": "Craterognathus plagiotaenia",
+          "common": "Barcheek kingfish"
+        }
+      ]
+    },
+    {
+      "scientific": "Decapterus",
+      "common": "Mackerel Scads",
+      "species": [
+        {
+          "scientific": "Decapterus koheru",
+          "common": "Koheru"
+        },
+        {
+          "scientific": "Decapterus macarellus",
+          "common": "Mackerel Scad"
+        },
+        {
+          "scientific": "Decapterus russelli",
+          "common": "Indian Scad"
+        }
+      ]
+    },
+    {
+      "scientific": "Elagatis",
+      "common": "Jacks",
+      "species": [
+        {
+          "scientific": "Elagatis bipinnulata",
+          "common": "Rainbow Runner"
+        }
+      ]
+    },
+    {
+      "scientific": "Euprepocaranx",
+      "common": "Jacks",
+      "species": [
+        {
+          "scientific": "Euprepocaranx dorsalis",
+          "common": "Threadfin Jack"
+        }
+      ]
+    },
+    {
+      "scientific": "Ferdauia",
+      "common": "Jacks",
+      "species": [
+        {
+          "scientific": "Ferdauia ferdau",
+          "common": "Blue Trevally"
+        },
+        {
+          "scientific": "Ferdauia orthogrammus",
+          "common": "Island Trevally"
+        }
+      ]
+    },
+    {
+      "scientific": "Flavocaranx",
+      "common": "Jacks",
+      "species": [
+        {
+          "scientific": "Flavocaranx bajad",
+          "common": "Orange-Spotted Trevally"
+        }
+      ]
+    },
+    {
+      "scientific": "Gnathanodon",
+      "common": "Jacks",
+      "species": [
+        {
+          "scientific": "Gnathanodon speciosus",
+          "common": "Golden Trevally"
+        }
+      ]
+    },
+    {
+      "scientific": "Hemicaranx",
+      "common": "Jacks",
+      "species": [
+        {
+          "scientific": "Hemicaranx leucurus",
+          "common": "Bluntnose Jack"
+        },
+        {
+          "scientific": "Hemicaranx zelotes",
+          "common": "Blackfin Jack"
+        }
+      ]
+    },
+    {
+      "scientific": "Kaiwarinus",
+      "common": "Jacks",
+      "species": [
+        {
+          "scientific": "Kaiwarinus equula",
+          "common": "Whitefin Trevally"
+        }
+      ]
+    },
+    {
+      "scientific": "Lichia",
+      "common": "Jacks",
+      "species": [
+        {
+          "scientific": "Lichia amia",
+          "common": "Leerfish"
+        }
+      ]
+    },
+    {
+      "scientific": "Naucrates",
+      "common": "Jacks",
+      "species": [
+        {
+          "scientific": "Naucrates ductor",
+          "common": "Pilot Fish"
+        }
+      ]
+    },
+    {
+      "scientific": "Oligoplites",
+      "common": "Jacks",
+      "species": [
+        {
+          "scientific": "Oligoplites saurus",
+          "common": "Leatherjacket Fish"
+        }
+      ]
+    },
+    {
+      "scientific": "Pantolabus",
+      "common": "Jacks",
+      "species": [
+        {
+          "scientific": "Pantolabus radiatus",
+          "common": "Fringefin Trevally"
+        }
+      ]
+    },
+    {
+      "scientific": "Paraselene",
+      "common": "Jacks",
+      "species": [
+        {
+          "scientific": "Paraselene orstedii",
+          "common": "Mexican Moonfish"
+        }
+      ]
+    },
+    {
+      "scientific": "Platycaranx",
+      "common": "Jacks",
+      "species": [
+        {
+          "scientific": "Platycaranx chrysophrys",
+          "common": "Longnose Trevally"
+        },
+        {
+          "scientific": "Platycaranx malabaricus",
+          "common": "Malabar Trevally"
+        }
+      ]
+    },
+    {
+      "scientific": "Pseudocaranx",
+      "common": "Jacks",
+      "species": [
+        {
+          "scientific": "Pseudocaranx chilensis",
+          "common": "Juan Fernandez Trevally"
+        },
+        {
+          "scientific": "Pseudocaranx dentex",
+          "common": "White Trevally"
+        }
+      ]
+    },
+    {
+      "scientific": "Scomberoides",
+      "common": "Queenfishes",
+      "species": [
+        {
+          "scientific": "Scomberoides commersonnianus",
+          "common": "Talang Queenfish"
+        },
+        {
+          "scientific": "Scomberoides lysan",
+          "common": "Doublespotted Queenfish"
+        },
+        {
+          "scientific": "Scomberoides tol",
+          "common": "Needle-Scaled Queenfish"
+        }
+      ]
+    },
+    {
+      "scientific": "Scyris",
+      "common": "Jacks",
+      "species": [
+        {
+          "scientific": "Scyris alexandrina",
+          "common": "African Threadfish"
+        },
+        {
+          "scientific": "Scyris indica",
+          "common": "Diamond Trevally"
+        }
+      ]
+    },
+    {
+      "scientific": "Selar",
+      "common": "Jacks",
+      "species": [
+        {
+          "scientific": "Selar crumenophthalmus",
+          "common": "Bigeye Scad"
+        }
+      ]
+    },
+    {
+      "scientific": "Selene",
+      "common": "Jacks",
+      "species": [
+        {
+          "scientific": "Selene brevoortii",
+          "common": "Hairfin Lookdown"
+        },
+        {
+          "scientific": "Selene vomer",
+          "common": "Lookdown"
+        }
+      ]
+    },
+    {
+      "scientific": "Seriola",
+      "common": "Amberjacks",
+      "species": [
+        {
+          "scientific": "Seriola carpenteri",
+          "common": "Guinean Amberjack"
+        },
+        {
+          "scientific": "Seriola dumerili",
+          "common": "Greater Amberjack"
+        },
+        {
+          "scientific": "Seriola fasciata",
+          "common": "Lesser Amberjack"
+        },
+        {
+          "scientific": "Seriola hippos",
+          "common": "Samson Fish"
+        },
+        {
+          "scientific": "Seriola lalandi",
+          "common": "Yellowtail Amberjack"
+        },
+        {
+          "scientific": "Seriola peruana",
+          "common": "Forturne Jack"
+        },
+        {
+          "scientific": "Seriola quinqueradiata",
+          "common": "Japanese Amberjack"
+        },
+        {
+          "scientific": "Seriola rivoliana",
+          "common": "Almaco Jack"
+        },
+        {
+          "scientific": "Seriola zonata",
+          "common": "Slender Amberjack"
+        }
+      ]
+    },
+    {
+      "scientific": "Seriolina",
+      "common": "Jacks",
+      "species": [
+        {
+          "scientific": "Seriolina nigrofasciata",
+          "common": "Black-banded Trevally"
+        }
+      ]
+    },
+    {
+      "scientific": "Trachinotus",
+      "common": "Pompano",
+      "species": [
+        {
+          "scientific": "Trachinotus africanus",
+          "common": "Southern Pompano"
+        },
+        {
+          "scientific": "Trachinotus anak",
+          "common": "Oyster Pompano"
+        },
+        {
+          "scientific": "Trachinotus baillonii",
+          "common": "Smallspotted Dart"
+        },
+        {
+          "scientific": "Trachinotus blochii",
+          "common": "Snubnose Pompano"
+        },
+        {
+          "scientific": "Trachinotus botla",
+          "common": "Largespotted Dart"
+        },
+        {
+          "scientific": "Trachinotus carolinus",
+          "common": "Florida Pompano"
+        },
+        {
+          "scientific": "Trachinotus falcatus",
+          "common": "Permit"
+        },
+        {
+          "scientific": "Trachinotus goodei",
+          "common": "Palometa"
+        },
+        {
+          "scientific": "Trachinotus kennedyi",
+          "common": "Blackblotch Pompano"
+        },
+        {
+          "scientific": "Trachinotus maxillosus",
+          "common": "Guinean Pompano"
+        },
+        {
+          "scientific": "Trachinotus mookalee",
+          "common": "Indian Pompano"
+        },
+        {
+          "scientific": "Trachinotus ovatus",
+          "common": "Derbio"
+        },
+        {
+          "scientific": "Trachinotus rhodopus",
+          "common": "Gafftopsail Pompano"
+        },
+        {
+          "scientific": "Trachinotus stilbe",
+          "common": "Steel Pompano"
+        },
+        {
+          "scientific": "Trachinotus teraia",
+          "common": "Shortfin Pompano"
+        }
+      ]
+    },
+    {
+      "scientific": "Trachurus",
+      "common": "Jack Mackerels",
+      "species": [
+        {
+          "scientific": "Trachurus declivis",
+          "common": "Greenback Horse Mackerel"
+        },
+        {
+          "scientific": "Trachurus delagoa",
+          "common": "African Scad"
+        },
+        {
+          "scientific": "Trachurus mediterraneus",
+          "common": "Mediterranean Horse Mackerel"
+        },
+        {
+          "scientific": "Trachurus novaezelandiae",
+          "common": "Yellowtail Horse Mackerel"
+        },
+        {
+          "scientific": "Trachurus symmetricus",
+          "common": "Pacific Jack Mackerel"
+        },
+        {
+          "scientific": "Trachurus trachurus",
+          "common": "Atlantic Horse Mackerel"
+        }
+      ]
+    },
+    {
+      "scientific": "Turrum",
+      "common": "Jacks",
+      "species": [
+        {
+          "scientific": "Turrum coeruleopinnatum",
+          "common": "Costal Trevally"
+        },
+        {
+          "scientific": "Turrum fulvoguttatum",
+          "common": "Yellowspotted Trevally"
+        },
+        {
+          "scientific": "Turrum gymnostethus",
+          "common": "Bludger"
+        }
+      ]
+    },
+    {
+      "scientific": "Uraspis",
+      "common": "Jacks",
+      "species": [
+        {
+          "scientific": "Uraspis helvola",
+          "common": "Whitetongue Jack"
+        },
+        {
+          "scientific": "Uraspis secunda",
+          "common": "Cottonmouth Jack"
+        }
+      ]
+    }
+  ]
+}

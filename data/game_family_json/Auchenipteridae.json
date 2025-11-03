@@ -1,0 +1,18 @@
+{
+  "family": {
+    "scientific": "Auchenipteridae",
+    "common": "Driftwood Catfish Family"
+  },
+  "genera": [
+    {
+      "scientific": "Ageneiosus",
+      "common": "driftwood catfishes",
+      "species": [
+        {
+          "scientific": "Ageneiosus inermis",
+          "common": "Fidalgo"
+        }
+      ]
+    }
+  ]
+}

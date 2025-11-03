@@ -1,0 +1,26 @@
+{
+  "family": {
+    "scientific": "Galaxiidae",
+    "common": "Galaxiid Family"
+  },
+  "genera": [
+    {
+      "scientific": "Galaxias",
+      "common": "galaxiids",
+      "species": [
+        {
+          "scientific": "Galaxias argenteus",
+          "common": "Giant Kokopu"
+        },
+        {
+          "scientific": "Galaxias fasciatus",
+          "common": "Banded Kokopu"
+        },
+        {
+          "scientific": "Galaxias maculatus",
+          "common": "Common Galaxias"
+        }
+      ]
+    }
+  ]
+}

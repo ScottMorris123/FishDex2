@@ -1,0 +1,684 @@
+{
+  "family": {
+    "scientific": "Percidae",
+    "common": "Darter and Perches Family"
+  },
+  "genera": [
+    {
+      "scientific": "Gymnocephalus",
+      "common": "ruffe fishes",
+      "species": [
+        {
+          "scientific": "Gymnocephalus acerina",
+          "common": "Donets Ruffe"
+        },
+        {
+          "scientific": "Gymnocephalus baloni",
+          "common": "Balon's Ruffe"
+        },
+        {
+          "scientific": "Gymnocephalus cernua",
+          "common": "Ruffe"
+        },
+        {
+          "scientific": "Gymnocephalus schraetser",
+          "common": "Schraetzer"
+        }
+      ]
+    },
+    {
+      "scientific": "Perca",
+      "common": "perches",
+      "species": [
+        {
+          "scientific": "Perca fluviatilis",
+          "common": "European Perch"
+        },
+        {
+          "scientific": "Perca schrenkii",
+          "common": "Balkhash Perch"
+        },
+        {
+          "scientific": "Perca flavescens",
+          "common": "Yellow Perch"
+        }
+      ]
+    },
+    {
+      "scientific": "Percarina",
+      "common": "percarinas",
+      "species": [
+        {
+          "scientific": "Percarina demidoffii",
+          "common": "Common Percarina"
+        },
+        {
+          "scientific": "Percarina maeotica",
+          "common": "Azov Percarina"
+        }
+      ]
+    },
+    {
+      "scientific": "Romanichthys",
+      "common": "Sculpin-Perches",
+      "species": [
+        {
+          "scientific": "Romanichthys valsanicola",
+          "common": "Sculpin-Perch"
+        }
+      ]
+    },
+    {
+      "scientific": "Sander",
+      "common": "Pike-Perches",
+      "species": [
+        {
+          "scientific": "Sander canadensis",
+          "common": "Sauger"
+        },
+        {
+          "scientific": "Sander lucioperca",
+          "common": "Zander"
+        },
+        {
+          "scientific": "Sander marinus",
+          "common": "Estuarine Perch"
+        },
+        {
+          "scientific": "Sander vitreus",
+          "common": "Walleye"
+        },
+        {
+          "scientific": "Sander volgensis",
+          "common": "Volga Pikeperch"
+        }
+      ]
+    },
+    {
+      "scientific": "Zingel",
+      "common": "Strebers",
+      "species": [
+        {
+          "scientific": "Zingel asper",
+          "common": "Rhone Streber"
+        },
+        {
+          "scientific": "Zingel balcanicus",
+          "common": "Vardar Streber"
+        },
+        {
+          "scientific": "Zingel streber",
+          "common": "Danube Streber"
+        },
+        {
+          "scientific": "Zingel zingel",
+          "common": "Zingel"
+        }
+      ]
+    },
+    {
+      "scientific": "Ammocrypta",
+      "common": "Sand Darters",
+      "species": [
+        {
+          "scientific": "Ammocrypta beanii",
+          "common": "Naked Sand Darter"
+        },
+        {
+          "scientific": "Ammocrypta bifascia",
+          "common": "Florida Sand Darter"
+        },
+        {
+          "scientific": "Ammocrypta clara",
+          "common": "Western Sand Darter"
+        },
+        {
+          "scientific": "Ammocrypta meridiana",
+          "common": "Southern Sand Darter"
+        },
+        {
+          "scientific": "Ammocrypta pellucida",
+          "common": "Eastern Sand Darter"
+        },
+        {
+          "scientific": "Ammocrypta vivax",
+          "common": "Scaly Sand Darter"
+        }
+      ]
+    },
+    {
+      "scientific": "Etheostoma",
+      "common": "Darters",
+      "species": [
+        {
+          "scientific": "Etheostoma acuticeps",
+          "common": "Sharphead Darter"
+        },
+        {
+          "scientific": "Etheostoma akatulo",
+          "common": "Bluemask Darter"
+        },
+        {
+          "scientific": "Etheostoma artesiae",
+          "common": "Redspot Darter"
+        },
+        {
+          "scientific": "Etheostoma asprigene",
+          "common": "Mud Darter"
+        },
+        {
+          "scientific": "Etheostoma atripinne",
+          "common": "Cumberland Snubnose Darter"
+        },
+        {
+          "scientific": "Etheostoma australe",
+          "common": "Conchos Darter"
+        },
+        {
+          "scientific": "Etheostoma autumnale",
+          "common": "Autumn Darter"
+        },
+        {
+          "scientific": "Etheostoma baileyi",
+          "common": "Emerald Darter"
+        },
+        {
+          "scientific": "Etheostoma barbouri",
+          "common": "Teardrop Darter"
+        },
+        {
+          "scientific": "Etheostoma barrenense",
+          "common": "Splendid Darter"
+        },
+        {
+          "scientific": "Etheostoma basilare",
+          "common": "Corrugated Darter"
+        },
+        {
+          "scientific": "Etheostoma bellator",
+          "common": "Warrior Darter"
+        },
+        {
+          "scientific": "Etheostoma bellum",
+          "common": "Orangefin Darter"
+        },
+        {
+          "scientific": "Etheostoma bison",
+          "common": "Buffalo Darter"
+        },
+        {
+          "scientific": "Etheostoma blennioides",
+          "common": "Greenside Darter"
+        },
+        {
+          "scientific": "Etheostoma blennius",
+          "common": "Blenny Darter"
+        },
+        {
+          "scientific": "Etheostoma boschungi",
+          "common": "Slackwater Darter"
+        },
+        {
+          "scientific": "Etheostoma brevirostrum",
+          "common": "Holiday Darter"
+        },
+        {
+          "scientific": "Etheostoma brevispinum",
+          "common": "Carolina Fantail Darter"
+        },
+        {
+          "scientific": "Etheostoma burri",
+          "common": "Brook Darter"
+        },
+        {
+          "scientific": "Etheostoma caeruleum",
+          "common": "Rainbow Darter"
+        },
+        {
+          "scientific": "Etheostoma camurum",
+          "common": "Bluebreast Darter"
+        },
+        {
+          "scientific": "Etheostoma cervus",
+          "common": "Chickasaw Darter"
+        },
+        {
+          "scientific": "Etheostoma chermocki",
+          "common": "Vermilion Darter"
+        },
+        {
+          "scientific": "Etheostoma chienense",
+          "common": "Relict Darter"
+        },
+        {
+          "scientific": "Etheostoma chlorobranchium",
+          "common": "Greenfin Darter"
+        },
+        {
+          "scientific": "Etheostoma chlorosomum",
+          "common": "Bluntnose Darter"
+        },
+        {
+          "scientific": "Etheostoma chuckwachatte",
+          "common": "Lipstick Darter"
+        },
+        {
+          "scientific": "Etheostoma cinereum",
+          "common": "Ashy Darter"
+        },
+        {
+          "scientific": "Etheostoma clinton",
+          "common": "Beaded Darter"
+        },
+        {
+          "scientific": "Etheostoma collettei",
+          "common": "Creole Darter"
+        },
+        {
+          "scientific": "Etheostoma collis",
+          "common": "Carolina Darter"
+        },
+        {
+          "scientific": "Etheostoma colorosum",
+          "common": "Coastal Darter"
+        },
+        {
+          "scientific": "Etheostoma coosae",
+          "common": "Coosa Darter"
+        },
+        {
+          "scientific": "Etheostoma corona",
+          "common": "Crown Darter"
+        },
+        {
+          "scientific": "Etheostoma cragini",
+          "common": "Arkansas Darter"
+        },
+        {
+          "scientific": "Etheostoma crossopterum",
+          "common": "Fringed Darter"
+        },
+        {
+          "scientific": "Etheostoma davisoni",
+          "common": "Choctawhatchee Darter"
+        },
+        {
+          "scientific": "Etheostoma denoncourti",
+          "common": "Golden Darter"
+        },
+        {
+          "scientific": "Etheostoma derivativum",
+          "common": "Stone Darter"
+        },
+        {
+          "scientific": "Etheostoma ditrema",
+          "common": "Coldwater Darter"
+        },
+        {
+          "scientific": "Etheostoma douglasi",
+          "common": "Tuskaloosa Darter"
+        },
+        {
+          "scientific": "Etheostoma duryi",
+          "common": "Black Darter"
+        },
+        {
+          "scientific": "Etheostoma edwini",
+          "common": "Brown Darter"
+        },
+        {
+          "scientific": "Etheostoma exile",
+          "common": "Iowa Darter"
+        },
+        {
+          "scientific": "Etheostoma flabellare",
+          "common": "Fantail Darter"
+        },
+        {
+          "scientific": "Etheostoma fusiforme",
+          "common": "Swamp Darter"
+        },
+        {
+          "scientific": "Etheostoma gracile",
+          "common": "Slough Darter"
+        },
+        {
+          "scientific": "Etheostoma grahami",
+          "common": "Rio Grande Darter"
+        },
+        {
+          "scientific": "Etheostoma histrio",
+          "common": "Harlequin Darter"
+        },
+        {
+          "scientific": "Etheostoma jessiae",
+          "common": "Blueside Darter"
+        },
+        {
+          "scientific": "Etheostoma lepidum",
+          "common": "Greenthroat Darter"
+        },
+        {
+          "scientific": "Etheostoma maculatum",
+          "common": "Spotted Darter"
+        },
+        {
+          "scientific": "Etheostoma microperca",
+          "common": "Least Darter"
+        },
+        {
+          "scientific": "Etheostoma nianguae",
+          "common": "Niangua Darter"
+        },
+        {
+          "scientific": "Etheostoma nigrum",
+          "common": "Johnny Darter"
+        },
+        {
+          "scientific": "Etheostoma obama",
+          "common": "Spangled Darter"
+        },
+        {
+          "scientific": "Etheostoma osburni",
+          "common": "Candy Darter"
+        },
+        {
+          "scientific": "Etheostoma percnurum",
+          "common": "Duskytail Darter"
+        },
+        {
+          "scientific": "Etheostoma pottsii",
+          "common": "Chihuahua Darter"
+        },
+        {
+          "scientific": "Etheostoma proeliare",
+          "common": "Cypress Darter"
+        },
+        {
+          "scientific": "Etheostoma punctulatum",
+          "common": "Stippled Darter"
+        },
+        {
+          "scientific": "Etheostoma radiosum",
+          "common": "Orangebelly Darter"
+        },
+        {
+          "scientific": "Etheostoma raneyi",
+          "common": "Yazoo Darter"
+        },
+        {
+          "scientific": "Etheostoma rufilineatum",
+          "common": "Redline Darter"
+        },
+        {
+          "scientific": "Etheostoma spectabile",
+          "common": "Orangethroat Darter"
+        },
+        {
+          "scientific": "Etheostoma spilotum",
+          "common": "Kentucky Arrow Darter"
+        },
+        {
+          "scientific": "Etheostoma squamiceps",
+          "common": "Spottail Darter"
+        },
+        {
+          "scientific": "Etheostoma stigmaeum",
+          "common": "Speckled Darter"
+        },
+        {
+          "scientific": "Etheostoma susanae",
+          "common": "Cumberland Darter"
+        },
+        {
+          "scientific": "Etheostoma swaini",
+          "common": "Gulf Darter"
+        },
+        {
+          "scientific": "Etheostoma tecumsehi",
+          "common": "Shawnee Darter"
+        },
+        {
+          "scientific": "Etheostoma variatum",
+          "common": "Variegated Darter"
+        },
+        {
+          "scientific": "Etheostoma whipplei",
+          "common": "Redfin Darter"
+        },
+        {
+          "scientific": "Etheostoma zonale",
+          "common": "Banded Darter"
+        }
+      ]
+    },
+    {
+      "scientific": "Nothonotus",
+      "common": "Darters",
+      "species": [
+        {
+          "scientific": "Nothonotus aquali",
+          "common": "Coppercheek Darter"
+        },
+        {
+          "scientific": "Nothonotus microlepidus",
+          "common": "Smallscale Darter"
+        },
+        {
+          "scientific": "Nothonotus sanguifluus",
+          "common": "Bloodfin Darter"
+        },
+        {
+          "scientific": "Nothonotus starnesi",
+          "common": "Caney Fork Darter"
+        }
+      ]
+    },
+    {
+      "scientific": "Percina",
+      "common": "Darters",
+      "species": [
+        {
+          "scientific": "Percina antesella",
+          "common": "Amber Darter"
+        },
+        {
+          "scientific": "Percina apristis",
+          "common": "Guadalupe Darter"
+        },
+        {
+          "scientific": "Percina aurantiaca",
+          "common": "Tangerine Darter"
+        },
+        {
+          "scientific": "Percina aurolineata",
+          "common": "Goldline Darter"
+        },
+        {
+          "scientific": "Percina aurora",
+          "common": "Pearl Darter"
+        },
+        {
+          "scientific": "Percina austroperca",
+          "common": "Southern Logperch"
+        },
+        {
+          "scientific": "Percina bimaculata",
+          "common": "Chesapeake Logperch"
+        },
+        {
+          "scientific": "Percina brevicauda",
+          "common": "Coal Darter"
+        },
+        {
+          "scientific": "Percina brucethompsoni",
+          "common": "Ouachita Darter"
+        },
+        {
+          "scientific": "Percina burtoni",
+          "common": "Blotchside Darter"
+        },
+        {
+          "scientific": "Percina caprodes",
+          "common": "Common Logperch"
+        },
+        {
+          "scientific": "Percina carbonaria",
+          "common": "Texas Logperch"
+        },
+        {
+          "scientific": "Percina copelandi",
+          "common": "Channel Darter"
+        },
+        {
+          "scientific": "Percina crassa",
+          "common": "Piedmont Darter"
+        },
+        {
+          "scientific": "Percina crypta",
+          "common": "Halloween Darter"
+        },
+        {
+          "scientific": "Percina cymatotaenia",
+          "common": "Bluestripe Darter"
+        },
+        {
+          "scientific": "Percina evides",
+          "common": "Gilt Darter"
+        },
+        {
+          "scientific": "Percina freemanorum",
+          "common": "Etowah Bridled Darter"
+        },
+        {
+          "scientific": "Percina fulvitaenia",
+          "common": "Ozark Logperch"
+        },
+        {
+          "scientific": "Percina gymnocephala",
+          "common": "Appalachia Darter"
+        },
+        {
+          "scientific": "Percina jenkinsi",
+          "common": "Conasauga Logperch"
+        },
+        {
+          "scientific": "Percina kathae",
+          "common": "Mobile Logperch"
+        },
+        {
+          "scientific": "Percina kusha",
+          "common": "Bridled Darter"
+        },
+        {
+          "scientific": "Percina lenticula",
+          "common": "Freckled Darter"
+        },
+        {
+          "scientific": "Percina macrocephala",
+          "common": "Longhead Darter"
+        },
+        {
+          "scientific": "Percina macrolepida",
+          "common": "Bigscale Logperch"
+        },
+        {
+          "scientific": "Percina maculata",
+          "common": "Blackside Darter"
+        },
+        {
+          "scientific": "Percina nasuta",
+          "common": "Longnose Darter"
+        },
+        {
+          "scientific": "Percina nevisense",
+          "common": "Chainback Darter"
+        },
+        {
+          "scientific": "Percina nigrofasciata",
+          "common": "Blackbanded Darter"
+        },
+        {
+          "scientific": "Percina notogramma",
+          "common": "Stripeback Darter"
+        },
+        {
+          "scientific": "Percina oxyrhynchus",
+          "common": "Sharpnose Darter"
+        },
+        {
+          "scientific": "Percina palmaris",
+          "common": "Bronze Darter"
+        },
+        {
+          "scientific": "Percina pantherina",
+          "common": "Leopard Darter"
+        },
+        {
+          "scientific": "Percina peltata",
+          "common": "Shield Darter"
+        },
+        {
+          "scientific": "Percina phoxocephala",
+          "common": "Slenderhead Darter"
+        },
+        {
+          "scientific": "Percina rex",
+          "common": "Roanoke Logperch"
+        },
+        {
+          "scientific": "Percina roanoka",
+          "common": "Roanoke Darter"
+        },
+        {
+          "scientific": "Percina sciera",
+          "common": "Dusky Darter"
+        },
+        {
+          "scientific": "Percina shumardi",
+          "common": "River Darter"
+        },
+        {
+          "scientific": "Percina sipsi",
+          "common": "Bankhead Darter"
+        },
+        {
+          "scientific": "Percina smithvanizi",
+          "common": "Muscadine Darter"
+        },
+        {
+          "scientific": "Percina squamata",
+          "common": "Olive Darter"
+        },
+        {
+          "scientific": "Percina stictogaster",
+          "common": "Frecklebelly Darter"
+        },
+        {
+          "scientific": "Percina suttkusi",
+          "common": "Gulf Logperch"
+        },
+        {
+          "scientific": "Percina tanasi",
+          "common": "Snail Darter"
+        },
+        {
+          "scientific": "Percina uranidea",
+          "common": "Stargazing Darter"
+        },
+        {
+          "scientific": "Percina vigil",
+          "common": "Saddleback Darter"
+        },
+        {
+          "scientific": "Percina westfalli",
+          "common": "Sooty-banded Darter"
+        },
+        {
+          "scientific": "Percina williamsi",
+          "common": "Sickle Darter"
+        }
+      ]
+    }
+  ]
+}

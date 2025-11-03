@@ -1,0 +1,42 @@
+{
+  "family": {
+    "scientific": "Sphyraenidae",
+    "common": "Barracudas"
+  },
+  "genera": [
+    {
+      "scientific": "Sphyraena",
+      "common": "Barracudas",
+      "species": [
+        { "scientific": "Sphyraena acutipinnis", "common": "Sharpfin Barracuda" },
+        { "scientific": "Sphyraena afra", "common": "Guinean Barracuda" },
+        { "scientific": "Sphyraena arabiansis", "common": "Arabian Barracuda" },
+        { "scientific": "Sphyraena argentea", "common": "Pacific Barracuda" },
+        { "scientific": "Sphyraena barracuda", "common": "Great Barracuda" },
+        { "scientific": "Sphyraena borealis", "common": "Northern Sennet" },
+        { "scientific": "Sphyraena chrysotaenia", "common": "Yellowstripe Barracuda" },
+        { "scientific": "Sphyraena ensis", "common": "Mexican Barracuda" },
+        { "scientific": "Sphyraena flavicauda", "common": "Yellowtail Barracuda" },
+        { "scientific": "Sphyraena forsteri", "common": "Bigeye Barracuda" },
+        { "scientific": "Sphyraena guachancho", "common": "Guachanche Barracuda" },
+        { "scientific": "Sphyraena helleri", "common": "Heller's Barracuda" },
+        { "scientific": "Sphyraena iburiensis", "common": "Iburi Barracuda" },
+        { "scientific": "Sphyraena idiastes", "common": "Pelican Barracuda" },
+        { "scientific": "Sphyraena intermedia", "common": "Intermediate Barracuda" },
+        { "scientific": "Sphyraena japonica", "common": "Japanese Barracuda" },
+        { "scientific": "Sphyraena jello", "common": "Pickhandle Barracuda" },
+        { "scientific": "Sphyraena lucasana", "common": "Lucas Barracuda" },
+        { "scientific": "Sphyraena novaehollandiae", "common": "Australian Barracuda" },
+        { "scientific": "Sphyraena obtusata", "common": "Obtuse Barracuda" },
+        { "scientific": "Sphyraena picudilla", "common": "Southern Sennet" },
+        { "scientific": "Sphyraena pinguis", "common": "Red Barracuda" },
+        { "scientific": "Sphyraena putnamae", "common": "Sawtooth Barracuda" },
+        { "scientific": "Sphyraena qenie", "common": "Blackfin Barracuda" },
+        { "scientific": "Sphyraena sphyraena", "common": "European Barracuda" },
+        { "scientific": "Sphyraena tome", "common": "Tome’s Barracuda" },
+        { "scientific": "Sphyraena viridensis", "common": "Yellowmouth Barracuda" },
+        { "scientific": "Sphyraena waitii", "common": "Wait's Barracuda" }
+      ]
+    }
+  ]
+}

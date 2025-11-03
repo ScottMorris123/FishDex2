@@ -1,0 +1,228 @@
+{
+  "family": {
+    "scientific": "Carcharhinidae",
+    "common": "Requiem Shark Family"
+  },
+  "genera": [
+    {
+      "scientific": "Carcharhinus",
+      "common": "Requiem Sharks",
+      "species": [
+        {
+          "scientific": "Carcharhinus acronotus",
+          "common": "Blacknose Shark"
+        },
+        {
+          "scientific": "Carcharhinus albimarginatus",
+          "common": "Silvertip Shark"
+        },
+        {
+          "scientific": "Carcharhinus altimus",
+          "common": "Bignose Shark"
+        },
+        {
+          "scientific": "Carcharhinus amblyrhynchoides",
+          "common": "Graceful Shark"
+        },
+        {
+          "scientific": "Carcharhinus amblyrhynchos",
+          "common": "Grey Reef Shark"
+        },
+        {
+          "scientific": "Carcharhinus amboinensis",
+          "common": "Pigeye Shark"
+        },
+        {
+          "scientific": "Carcharhinus borneensis",
+          "common": "Borneo Shark"
+        },
+        {
+          "scientific": "Carcharhinus brachyurus",
+          "common": "Copper Shark"
+        },
+        {
+          "scientific": "Carcharhinus brevipinna",
+          "common": "Spinner Shark"
+        },
+        {
+          "scientific": "Carcharhinus cautus",
+          "common": "Nervous Shark"
+        },
+        {
+          "scientific": "Carcharhinus cerdale",
+          "common": "Pacific Smalltail Shark"
+        },
+        {
+          "scientific": "Carcharhinus coatesi",
+          "common": "Australian Blackspot Shark"
+        },
+        {
+          "scientific": "Carcharhinus duseeumieri",
+          "common": "Whitecheek Shark"
+        },
+        {
+          "scientific": "Carcharhinus falciformis",
+          "common": "Silky Shark"
+        },
+        {
+          "scientific": "Carcharhinus fitzroyensis",
+          "common": "Creek Whaler"
+        },
+        {
+          "scientific": "Carcharhinus galapagensis",
+          "common": "Galapagos Shark"
+        },
+        {
+          "scientific": "Carcharhinus hemiodon",
+          "common": "Humans Whaler Shark"
+        },
+        {
+          "scientific": "Carcharhinus isodon",
+          "common": "Finetooth Shark"
+        },
+        {
+          "scientific": "Carcharhinus leiodon",
+          "common": "Smoothtooth Blacktip Shark"
+        },
+        {
+          "scientific": "Carcharhinus leucas",
+          "common": "Bull Shark"
+        },
+        {
+          "scientific": "Carcharhinus limbatus",
+          "common": "Blacktip Shark"
+        },
+        {
+          "scientific": "Carcharhinus longimanus",
+          "common": "Oceanic Whitetip Shark"
+        },
+        {
+          "scientific": "Carcharhinus macloti",
+          "common": "Hardnose Shark"
+        },
+        {
+          "scientific": "Carcharhinus melanopterus",
+          "common": "Blacktip Reef Shark"
+        },
+        {
+          "scientific": "Carcharhinus obscurus",
+          "common": "Dusky Shark"
+        },
+        {
+          "scientific": "Carcharhinus oxyrhynchus",
+          "common": "Daggernose Shark"
+        },
+        {
+          "scientific": "Carcharhinus perezi",
+          "common": "Carribean Reef Shark"
+        },
+        {
+          "scientific": "Carcharhinus plumbeus",
+          "common": "Sandbar Shark"
+        },
+        {
+          "scientific": "Carcharhinus prosus",
+          "common": "Smalltail Shark"
+        },
+        {
+          "scientific": "Carcharhinus sealei",
+          "common": "Blackspot Shark"
+        },
+        {
+          "scientific": "Carcharhinus signatus",
+          "common": "Night Shark"
+        },
+        {
+          "scientific": "Carcharhinus sorrah",
+          "common": "Spot-tail Shark"
+        },
+        {
+          "scientific": "Carcharhinus tilstoni",
+          "common": "Australian Blacktip Shark"
+        },
+        {
+          "scientific": "Carcharhinus tjutjot",
+          "common": "Indonesian Whaler Shark"
+        }
+      ]
+    },
+    {
+      "scientific": "Loxodon",
+      "common": "Requiem Sharks",
+      "species": [
+        {
+          "scientific": "Loxodon macrorhinus",
+          "common": "Silteye Shark"
+        }
+      ]
+    },
+    {
+      "scientific": "Negaprion",
+      "common": "Requiem Sharks",
+      "species": [
+        {
+          "scientific": "Negaprion acutidens",
+          "common": "Sicklefin Lemon Shark"
+        },
+        {
+          "scientific": "Negaprion brevirostris",
+          "common": "Lemon Shark"
+        }
+      ]
+    },
+    {
+      "scientific": "Prionace",
+      "common": "Requiem Sharks",
+      "species": [
+        {
+          "scientific": "Prionace glauca",
+          "common": "Blue Shark"
+        }
+      ]
+    },
+    {
+      "scientific": "Rhizoprionodon",
+      "common": "Sharpnose Sharks",
+      "species": [
+        {
+          "scientific": "Rhizoprionodon acutus",
+          "common": "Milk Shark"
+        },
+        {
+          "scientific": "Rhizoprionodon lalandii",
+          "common": "Brazillian Sharpnose Shark"
+        },
+        {
+          "scientific": "Rhizoprionodon longurrio",
+          "common": "Pacific Sharpnose Shark"
+        },
+        {
+          "scientific": "Rhizoprionodon oligolinx",
+          "common": "Grey Sharpnose Shark"
+        },
+        {
+          "scientific": "Rhizoprionodon porosus",
+          "common": "Carribean Sharpnose Shark"
+        },
+        {
+          "scientific": "Rhizoprionodon taylori",
+          "common": "Australian Sharpnose Shark"
+        },
+        {
+          "scientific": "Rhizoprionodon terraenovae",
+          "common": "Atlantic Sharpnose Shark"
+        }
+      ]
+    },
+    {
+      "scientific": "Triaenodon",
+      "common": "requiem Sharks",
+      "species": [
+        {
+          "scientific": "Triaenodon obesus",
+          "common": "Whitetip Reef Shark"
+        }
+      ]
+    }
+  ]
+}

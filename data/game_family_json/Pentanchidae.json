@@ -1,0 +1,526 @@
+{
+  "family": {
+    "scientific": "Pentanchidae",
+    "common": "Deepwater Catshark Family"
+  },
+  "genera": [
+    {
+      "scientific": "Apristurus",
+      "common": "Catsharks",
+      "species": [
+        {
+          "scientific": "Apristurus albisoma",
+          "common": "White-bodied Catshark"
+        },
+        {
+          "scientific": "Apristurus ampliceps",
+          "common": "Roughskin Catshark"
+        },
+        {
+          "scientific": "Apristurus aphyodes",
+          "common": "White Ghost Catshark"
+        },
+        {
+          "scientific": "Apristurus australis",
+          "common": "Pinocchio Catshark"
+        },
+        {
+          "scientific": "Apristurus breviventralis",
+          "common": "Shortbelly Catshark"
+        },
+        {
+          "scientific": "Apristurus brunneus",
+          "common": "Brown Catshark"
+        },
+        {
+          "scientific": "Apristurus bucephalus",
+          "common": "Bighead Catshark"
+        },
+        {
+          "scientific": "Apristurus canutus",
+          "common": "Hoary Catshark"
+        },
+        {
+          "scientific": "Apristurus exsanguis",
+          "common": "Flaccid Catshark"
+        },
+        {
+          "scientific": "Apristurus fedorovi",
+          "common": "Fedorov's Catshark"
+        },
+        {
+          "scientific": "Apristurus garricki",
+          "common": "Garrick's Catshark"
+        },
+        {
+          "scientific": "Apristurus gibbosus",
+          "common": "Humpback Catshark"
+        },
+        {
+          "scientific": "Apristurus herklotsi",
+          "common": "Longfin Catshark"
+        },
+        {
+          "scientific": "Apristurus indicus",
+          "common": "Smallbelly Catshark"
+        },
+        {
+          "scientific": "Apristurus internatus",
+          "common": "Shortnose Demon Catshark"
+        },
+        {
+          "scientific": "Apristurus investigatoris",
+          "common": "Broadnose Catshark"
+        },
+        {
+          "scientific": "Apristurus japonicus",
+          "common": "Japanese Catshark"
+        },
+        {
+          "scientific": "Apristurus kampae",
+          "common": "Longnose Catshark"
+        },
+        {
+          "scientific": "Apristurus laurussonii",
+          "common": "Iceland Catshark"
+        },
+        {
+          "scientific": "Apristurus longicephalus",
+          "common": "Longhead Catshark"
+        },
+        {
+          "scientific": "Apristurus macrorhynchus",
+          "common": "Flathead Catshark"
+        },
+        {
+          "scientific": "Apristurus macrostomus",
+          "common": "Broadmouth Catshark"
+        },
+        {
+          "scientific": "Apristurus manis",
+          "common": "Ghost Catshark"
+        },
+        {
+          "scientific": "Apristurus manocheriani",
+          "common": "Manocherian's Catshark"
+        },
+        {
+          "scientific": "Apristurus melanoasper",
+          "common": "Black Roughscale Catshark"
+        },
+        {
+          "scientific": "Apristurus microps",
+          "common": "Smalleye Catshark"
+        },
+        {
+          "scientific": "Apristurus micropterygeus",
+          "common": "Smalldorsal Catshark"
+        },
+        {
+          "scientific": "Apristurus nakayai",
+          "common": "Milk-eye Catshark"
+        },
+        {
+          "scientific": "Apristurus nasutus",
+          "common": "Largenose Catshark"
+        },
+        {
+          "scientific": "Apristurus ovicorrugatus",
+          "common": "Ridged-egg Catshark"
+        },
+        {
+          "scientific": "Apristurus parvipinnis",
+          "common": "Smallfin Catshark"
+        },
+        {
+          "scientific": "Apristurus pinguis",
+          "common": "Bulldog Catshark"
+        },
+        {
+          "scientific": "Apristurus platyrhynchus",
+          "common": "Spatulasnout Catshark"
+        },
+        {
+          "scientific": "Apristurus profundorum",
+          "common": "Deepwater Catshark"
+        },
+        {
+          "scientific": "Apristurus riveri",
+          "common": "Broadgill Catshark"
+        },
+        {
+          "scientific": "Apristurus saldanha",
+          "common": "Saldanha Catshark"
+        },
+        {
+          "scientific": "Apristurus sibogae",
+          "common": "Pale Catshark"
+        },
+        {
+          "scientific": "Apristurus sinensis",
+          "common": "South China Catshark"
+        },
+        {
+          "scientific": "Apristurus spongiceps",
+          "common": "Spongehead Catshark"
+        },
+        {
+          "scientific": "Apristurus stenseni",
+          "common": "Panama Ghost Catshark"
+        },
+        {
+          "scientific": "Apristurus yangi",
+          "common": "Yang’s Longnose Catshark"
+        },
+        {
+          "scientific": "Apristurus sp. X",
+          "common": "Galbraith's Catshark"
+        },
+        {
+          "scientific": "Apristurus sp. 3",
+          "common": "Black Wonder Catshark"
+        },
+        {
+          "scientific": "Apristurus sp. nov.",
+          "common": "White-edged Catshark"
+        },
+        {
+          "scientific": "Apristurus sp.",
+          "common": "Gray Ghost Catshark"
+        }
+      ]
+    },
+    {
+      "scientific": "Asymbolus",
+      "common": "Catsharks",
+      "species": [
+        {
+          "scientific": "Asymbolus analis",
+          "common": "Australian Spotted Catshark"
+        },
+        {
+          "scientific": "Asymbolus funebris",
+          "common": "Blotched Catshark"
+        },
+        {
+          "scientific": "Asymbolus galacticus",
+          "common": "Starry Catshark"
+        },
+        {
+          "scientific": "Asymbolus occiduus",
+          "common": "Western Spotted Catshark"
+        },
+        {
+          "scientific": "Asymbolus pallidus",
+          "common": "Pale Spotted Catshark"
+        },
+        {
+          "scientific": "Asymbolus parvus",
+          "common": "Dwarf Catshark"
+        },
+        {
+          "scientific": "Asymbolus rubiginosus",
+          "common": "Orange-spotted Catshark"
+        },
+        {
+          "scientific": "Asymbolus submaculatus",
+          "common": "Variegated Catshark"
+        },
+        {
+          "scientific": "Asymbolus vincenti",
+          "common": "Gulf Catshark"
+        }
+      ]
+    },
+    {
+      "scientific": "Bythaelurus",
+      "common": "Catsharks",
+      "species": [
+        {
+          "scientific": "Bythaelurus alcockii",
+          "common": "Arabian Catshark"
+        },
+        {
+          "scientific": "Bythaelurus bachi",
+          "common": "Bach's Catshark"
+        },
+        {
+          "scientific": "Bythaelurus canescens",
+          "common": "Dusky Catshark"
+        },
+        {
+          "scientific": "Bythaelurus clevai",
+          "common": "Broadhead Catshark"
+        },
+        {
+          "scientific": "Bythaelurus dawsoni",
+          "common": "New Zealand Catshark"
+        },
+        {
+          "scientific": "Bythaelurus giddingsi",
+          "common": "Galápagos Catshark"
+        },
+        {
+          "scientific": "Bythaelurus hispidus",
+          "common": "Bristly Catshark"
+        },
+        {
+          "scientific": "Bythaelurus immaculatus",
+          "common": "Spotless Catshark"
+        },
+        {
+          "scientific": "Bythaelurus incanus",
+          "common": "Sombre Catshark"
+        },
+        {
+          "scientific": "Bythaelurus lutarius",
+          "common": "Mud Catshark"
+        },
+        {
+          "scientific": "Bythaelurus naylori",
+          "common": "Dusky Snout Catshark"
+        },
+        {
+          "scientific": "Bythaelurus stewarti",
+          "common": "Error Seamount Catshark"
+        },
+        {
+          "scientific": "Bythaelurus tenuicephalus",
+          "common": "Narrowhead Catshark"
+        },
+        {
+          "scientific": "Bythaelurus vivaldii",
+          "common": "Vivaldi's Catshark"
+        }
+      ]
+    },
+    {
+      "scientific": "Cephalurus",
+      "common": "Catsharks",
+      "species": [
+        {
+          "scientific": "Cephalurus cephalus",
+          "common": "Lollipop Catshark"
+        }
+      ]
+    },
+    {
+      "scientific": "Figaro",
+      "common": "Catsharks",
+      "species": [
+        {
+          "scientific": "Figaro boardmani",
+          "common": "Australian Sawtail Catshark"
+        },
+        {
+          "scientific": "Figaro striatus",
+          "common": "Northern Sawtail Catshark"
+        }
+      ]
+    },
+    {
+      "scientific": "Galeus",
+      "common": "Catsharks",
+      "species": [
+        {
+          "scientific": "Galeus antillensis",
+          "common": "Antilles Catshark"
+        },
+        {
+          "scientific": "Galeus arae",
+          "common": "Roughtail Catshark"
+        },
+        {
+          "scientific": "Galeus atlanticus",
+          "common": "Atlantic Sawtail Catshark"
+        },
+        {
+          "scientific": "Galeus cadenati",
+          "common": "Longfin Sawtail Catshark"
+        },
+        {
+          "scientific": "Galeus eastmani",
+          "common": "Gecko Catshark"
+        },
+        {
+          "scientific": "Galeus friedrichi",
+          "common": "Philippines Sawtail Catshark"
+        },
+        {
+          "scientific": "Galeus gracilis",
+          "common": "Slender Sawtail Catshark"
+        },
+        {
+          "scientific": "Galeus longirostris",
+          "common": "Longnose Sawtail Catshark"
+        },
+        {
+          "scientific": "Galeus melastomus",
+          "common": "Blackmouth Catshark"
+        },
+        {
+          "scientific": "Galeus mincaronei",
+          "common": "Southern Sawtail Catshark"
+        },
+        {
+          "scientific": "Galeus murinus",
+          "common": "Mouse Catshark"
+        },
+        {
+          "scientific": "Galeus nipponensis",
+          "common": "Broadfin Sawtail Catshark"
+        },
+        {
+          "scientific": "Galeus piperatus",
+          "common": "Peppered Catshark"
+        },
+        {
+          "scientific": "Galeus polli",
+          "common": "African Sawtail Catshark"
+        },
+        {
+          "scientific": "Galeus priapus",
+          "common": "Phallic Catshark"
+        },
+        {
+          "scientific": "Galeus sauteri",
+          "common": "Blacktip Sawtail Catshark"
+        },
+        {
+          "scientific": "Galeus schultzi",
+          "common": "Dwarf Sawtail Catshark"
+        },
+        {
+          "scientific": "Galeus springeri",
+          "common": "Springer's Sawtail Catshark"
+        }
+      ]
+    },
+    {
+      "scientific": "Halaelurus",
+      "common": "Catsharks",
+      "species": [
+        {
+          "scientific": "Halaelurus boesemani",
+          "common": "Speckled Catshark"
+        },
+        {
+          "scientific": "Halaelurus buergeri",
+          "common": "Blackspotted Catshark"
+        },
+        {
+          "scientific": "Halaelurus lineatus",
+          "common": "Lined Catshark"
+        },
+        {
+          "scientific": "Halaelurus maculosus",
+          "common": "Indonesian Speckled Catshark"
+        },
+        {
+          "scientific": "Halaelurus natalensis",
+          "common": "Tiger Catshark"
+        },
+        {
+          "scientific": "Halaelurus quagga",
+          "common": "Quagga Catshark"
+        },
+        {
+          "scientific": "Halaelurus sellus",
+          "common": "Rusty Catshark"
+        }
+      ]
+    },
+    {
+      "scientific": "Haploblepharus",
+      "common": "Shysharks",
+      "species": [
+        {
+          "scientific": "Haploblepharus edwardsii",
+          "common": "Puffadder Shyshark"
+        },
+        {
+          "scientific": "Haploblepharus fuscus",
+          "common": "Brown Shyshark"
+        },
+        {
+          "scientific": "Haploblepharus kistnasamyi",
+          "common": "Natal Shyshark"
+        },
+        {
+          "scientific": "Haploblepharus pictus",
+          "common": "Dark Shyshark"
+        }
+      ]
+    },
+    {
+      "scientific": "Holohalaelurus",
+      "common": "Izak Catsharks",
+      "species": [
+        {
+          "scientific": "Holohalaelurus favus",
+          "common": "Honeycomb Izak"
+        },
+        {
+          "scientific": "Holohalaelurus grennian",
+          "common": "Grinning Izak"
+        },
+        {
+          "scientific": "Holohalaelurus melanostigma",
+          "common": "Crying Izak"
+        },
+        {
+          "scientific": "Holohalaelurus punctatus",
+          "common": "White-spotted Izak"
+        },
+        {
+          "scientific": "Holohalaelurus regani",
+          "common": "Izak Catshark"
+        }
+      ]
+    },
+    {
+      "scientific": "Parmaturus",
+      "common": "Filetail Catsharks",
+      "species": [
+        {
+          "scientific": "Parmaturus albipenis",
+          "common": "White-clasper Catshark"
+        },
+        {
+          "scientific": "Parmaturus angelae",
+          "common": "Brazilian Filetail Catshark"
+        },
+        {
+          "scientific": "Parmaturus campechiensis",
+          "common": "Campeche Catshark"
+        },
+        {
+          "scientific": "Parmaturus lanatus",
+          "common": "Velvet Catshark"
+        },
+        {
+          "scientific": "Parmaturus macmillani",
+          "common": "McMillan's Catshark"
+        },
+        {
+          "scientific": "Parmaturus pilosus",
+          "common": "Salamander Shark"
+        },
+        {
+          "scientific": "Parmaturus xaniurus",
+          "common": "Filetail Catshark"
+        }
+      ]
+    },
+    {
+      "scientific": "Pentanchus",
+      "common": "Catsharks",
+      "species": [
+        {
+          "scientific": "Pentanchus profundicolus",
+          "common": "Onefin Catshark"
+        }
+      ]
+    }
+  ]
+}

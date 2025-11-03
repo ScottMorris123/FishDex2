@@ -1,0 +1,34 @@
+{
+  "family": {
+    "scientific": "Claroteidae",
+    "common": "Claroteid Catfish Family"
+  },
+  "genera": [
+    {
+      "scientific": "Chrysichthys",
+      "common": "claroteid catfishes",
+      "species": [
+        {
+          "scientific": "Chrysichthys brachynema",
+          "common": "Salmontail Catfish"
+        },
+        {
+          "scientific": "Chrysichthys cranchii",
+          "common": "Kokuni Catfish"
+        },
+        {
+          "scientific": "Chrysichthys longipinnis",
+          "common": "Aluminum Catfish"
+        },
+        {
+          "scientific": "Chrysichthys nigrodigitatus",
+          "common": "Bagrid Catfish"
+        },
+        {
+          "scientific": "Chrysichthys sharpii",
+          "common": "Shovelnose Catfish"
+        }
+      ]
+    }
+  ]
+}

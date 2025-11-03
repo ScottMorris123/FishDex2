@@ -1,0 +1,26 @@
+{
+  "family": {
+    "scientific": "Alopiidae",
+    "common": "Thresher Shark Family"
+  },
+  "genera": [
+    {
+      "scientific": "Alopias",
+      "common": "Thresher Sharks",
+      "species": [
+        {
+          "scientific": "Alopias pelagicus",
+          "common": "Pelagic Thresher"
+        },
+        {
+          "scientific": "Alopias superciliosus",
+          "common": "Bigeye Thresher"
+        },
+        {
+          "scientific": "Alopias vulpinus",
+          "common": "Common Thresher"
+        }
+      ]
+    }
+  ]
+}

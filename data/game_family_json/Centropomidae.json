@@ -1,0 +1,66 @@
+{
+  "family": {
+    "scientific": "Centropomidae",
+    "common": "Snook Family"
+  },
+  "genera": [
+    {
+      "scientific": "Centropomus",
+      "common": "Snooks",
+      "species": [
+        {
+          "scientific": "Centropomus armatus",
+          "common": "Armed Snook"
+        },
+        {
+          "scientific": "Centropomus ensiferus",
+          "common": "Swordspine Snook"
+        },
+        {
+          "scientific": "Centropomus irae",
+          "common": "Ira's Snook"
+        },
+        {
+          "scientific": "Centropomus medius",
+          "common": "Blackfin Snook"
+        },
+        {
+          "scientific": "Centropomus mexicanus",
+          "common": "Guianan Snook"
+        },
+        {
+          "scientific": "Centropomus nigrescens",
+          "common": "Black Snook"
+        },
+        {
+          "scientific": "Centropomus parallelus",
+          "common": "Fat Snook"
+        },
+        {
+          "scientific": "Centropomus pectinatus",
+          "common": "Tarpon Snook"
+        },
+        {
+          "scientific": "Centropomus poeyi",
+          "common": "Mexican Snook"
+        },
+        {
+          "scientific": "Centropomus robalito",
+          "common": "Yellowfin Snook"
+        },
+        {
+          "scientific": "Centropomus undecimalis",
+          "common": "Common Snook"
+        },
+        {
+          "scientific": "Centropomus unionensis",
+          "common": "Union Snook"
+        },
+        {
+          "scientific": "Centropomus viridis",
+          "common": "White Snook"
+        }
+      ]
+    }
+  ]
+}

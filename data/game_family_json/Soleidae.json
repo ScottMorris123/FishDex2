@@ -1,0 +1,230 @@
+{
+  "family": {
+    "scientific": "Soleidae",
+    "common": "Soles Family"
+  },
+  "genera": [
+    {
+      "scientific": "Aesopia",
+      "common": "Soles",
+      "species": [
+        { "scientific": "Aesopia cornuta", "common": "Unicorn Sole" }
+      ]
+    },
+    {
+      "scientific": "Aseraggodes",
+      "common": "Soles",
+      "species": [
+        { "scientific": "Aseraggodes bahamondei", "common": "South Pacific Sole" },
+        { "scientific": "Aseraggodes borehami", "common": "Boreham's Sole" },
+        { "scientific": "Aseraggodes crypticus", "common": "Cryptic Sole" },
+        { "scientific": "Aseraggodes haackeanus", "common": "Southern Sole" },
+        { "scientific": "Aseraggodes herrei", "common": "Herre's Sole" },
+        { "scientific": "Aseraggodes melanostictus", "common": "Mottled Sole" },
+        { "scientific": "Aseraggodes therese", "common": "Therese's Sole" },
+        { "scientific": "Aseraggodes whitakeri", "common": "Whitaker's Sole" },
+        { "scientific": "Aseraggodes winterbottomi", "common": "Negros Sole" },
+        { "scientific": "Aseraggodes xenicus", "common": "Dwarf Sole" }
+      ]
+    },
+    {
+      "scientific": "Austroglossus",
+      "common": "Soles",
+      "species": [
+        { "scientific": "Austroglossus microlepis", "common": "West Coast Sole" },
+        { "scientific": "Austroglossus pectoralis", "common": "Mud Sole" }
+      ]
+    },
+    {
+      "scientific": "Barnardichthys",
+      "common": "Soles",
+      "species": [
+        { "scientific": "Barnardichthys fulvomarginata", "common": "Lemon Sole" }
+      ]
+    },
+    {
+      "scientific": "Bathysolea",
+      "common": "Soles",
+      "species": [
+        { "scientific": "Bathysolea profundicola", "common": "Deepwater Sole" }
+      ]
+    },
+    {
+      "scientific": "Brachirus",
+      "common": "Soles",
+      "species": [
+        { "scientific": "Brachirus annularis", "common": "Annular Sole" },
+        { "scientific": "Brachirus elongatus", "common": "Mekong Blind Sole" },
+        { "scientific": "Brachirus niger", "common": "Black Sole" },
+        { "scientific": "Brachirus orientalis", "common": "Oriental Sole" },
+        { "scientific": "Brachirus pan", "common": "Pan Sole" },
+        { "scientific": "Brachirus selheimi", "common": "Selheim's Sole" },
+        { "scientific": "Brachirus sorsogonensis", "common": "One-Eyed Sole" },
+        { "scientific": "Brachirus villosus", "common": "Velvety Sole" }
+      ]
+    },
+    {
+      "scientific": "Buglossidium",
+      "common": "Soles",
+      "species": [
+        { "scientific": "Buglossidium luteum", "common": "Yellow Sole" }
+      ]
+    },
+    {
+      "scientific": "Dexillus",
+      "common": "Soles",
+      "species": [
+        { "scientific": "Dexillus muelleri", "common": "Tufted Sole" }
+      ]
+    },
+    {
+      "scientific": "Dicologlossa",
+      "common": "Soles",
+      "species": [
+        { "scientific": "Dicologlossa cuneata", "common": "Wedge Sole" },
+        { "scientific": "Dicologlossa hexophthalma", "common": "Ocellated Wedge Sole" }
+      ]
+    },
+    {
+      "scientific": "Heteromycteris",
+      "common": "Soles",
+      "species": [
+        { "scientific": "Heteromycteris capensis", "common": "Cape Sole" },
+        { "scientific": "Heteromycteris hartzfeldii", "common": "Hook-Nosed Sole" },
+        { "scientific": "Heteromycteris japonicus", "common": "Bamboo Sole" },
+        { "scientific": "Heteromycteris oculus", "common": "Eyed Sole" },
+        { "scientific": "Heteromycteris proboscideus", "common": "True Sole" }
+      ]
+    },
+    {
+      "scientific": "Leptachirus",
+      "common": "Soles",
+      "species": [
+        { "scientific": "Leptachirus alleni", "common": "Allen's Sole" },
+        { "scientific": "Leptachirus bensbach", "common": "Bensbach River Sole" },
+        { "scientific": "Leptachirus darwinensis", "common": "Darwin Sole" },
+        { "scientific": "Leptachirus kikori", "common": "Kikori River Sole" },
+        { "scientific": "Leptachirus klunzingeri", "common": "Tailed Sole" },
+        { "scientific": "Leptachirus lorentz", "common": "Lorentz River Sole" },
+        { "scientific": "Leptachirus polylepis", "common": "Manyscale Sole" },
+        { "scientific": "Leptachirus robertsi", "common": "Robert's Sole" },
+        { "scientific": "Leptachirus triramus", "common": "Three-Line Sole" }
+      ]
+    },
+    {
+      "scientific": "Microchirus",
+      "common": "Soles",
+      "species": [
+        { "scientific": "Microchirus azevia", "common": "Bastard Sole" },
+        { "scientific": "Microchirus boscanion", "common": "Lusitanian Sole" },
+        { "scientific": "Microchirus frechkopi", "common": "Frechkop's Sole" },
+        { "scientific": "Microchirus ocellatus", "common": "Foureyed Sole" },
+        { "scientific": "Microchirus variegatus", "common": "Thickback Sole" },
+        { "scientific": "Microchirus wittei", "common": "Banded Sole" }
+      ]
+    },
+    {
+      "scientific": "Monochirus",
+      "common": "Soles",
+      "species": [
+        { "scientific": "Monochirus hispidus", "common": "Whiskered Sole" }
+      ]
+    },
+    {
+      "scientific": "Pardachirus",
+      "common": "Soles",
+      "species": [
+        { "scientific": "Pardachirus balius", "common": "Piebald Sole" },
+        { "scientific": "Pardachirus hedleyi", "common": "Southern Peacock Sole" },
+        { "scientific": "Pardachirus marmoratus", "common": "Finless Sole" },
+        { "scientific": "Pardachirus morrowi", "common": "Persian Carpet Sole" },
+        { "scientific": "Pardachirus pavoninus", "common": "Peacock Sole" },
+        { "scientific": "Pardachirus poropterus", "common": "Estuary Sole" }
+      ]
+    },
+    {
+      "scientific": "Pegusa",
+      "common": "Soles",
+      "species": [
+        { "scientific": "Pegusa cadenati", "common": "Cadenat's Sole" },
+        { "scientific": "Pegusa impar", "common": "Adriatic Sole" },
+        { "scientific": "Pegusa lascaris", "common": "Sand Sole" },
+        { "scientific": "Pegusa nasuta", "common": "Blackhand Sole" },
+        { "scientific": "Pegusa triophthalma", "common": "Cyclope Sole" }
+      ]
+    },
+    {
+      "scientific": "Phyllichthys",
+      "common": "Soles",
+      "species": [
+        { "scientific": "Phyllichthys punctatus", "common": "Spotted Sole" }
+      ]
+    },
+    {
+      "scientific": "Solea",
+      "common": "Soles",
+      "species": [
+        { "scientific": "Solea aegyptiaca", "common": "Egyptian Sole" },
+        { "scientific": "Solea elongata", "common": "Elongated Sole" },
+        { "scientific": "Solea ovata", "common": "Ovate Sole" },
+        { "scientific": "Solea senegalensis", "common": "Senegalese Sole" },
+        { "scientific": "Solea solea", "common": "Common Sole" },
+        { "scientific": "Solea stanalandi", "common": "Stanaland's Sole" }
+      ]
+    },
+    {
+      "scientific": "Soleichthys",
+      "common": "Soles",
+      "species": [
+        { "scientific": "Soleichthys maculosus", "common": "Whiteblotched Sole" },
+        { "scientific": "Soleichthys microcephalus", "common": "Small-Head Sole" },
+        { "scientific": "Soleichthys oculofasciatus", "common": "Banded-Eye Sole" },
+        { "scientific": "Soleichthys serpenpellis", "common": "Snakeskin Sole" }
+      ]
+    },
+    {
+      "scientific": "Synaptura",
+      "common": "Soles",
+      "species": [
+        { "scientific": "Synaptura albomaculata", "common": "Kaup's Sole" },
+        { "scientific": "Synaptura cadenati", "common": "Guinean Sole" },
+        { "scientific": "Synaptura commersonnii", "common": "Commerson's Sole" },
+        { "scientific": "Synaptura salinarum", "common": "Saltpan Sole" }
+      ]
+    },
+    {
+      "scientific": "Synapturichthys",
+      "common": "Soles",
+      "species": [
+        { "scientific": "Synapturichthys kleinii", "common": "Klein's Sole" }
+      ]
+    },
+    {
+      "scientific": "Synclidopus",
+      "common": "Soles",
+      "species": [
+        { "scientific": "Synclidopus macleayanus", "common": "Narrowbanded Sole" }
+      ]
+    },
+    {
+      "scientific": "Vanstraelenia",
+      "common": "Soles",
+      "species": [
+        { "scientific": "Vanstraelenia chirophthalma", "common": "African Solenette" }
+      ]
+    },
+    {
+      "scientific": "Zebrias",
+      "common": "Soles",
+      "species": [
+        { "scientific": "Zebrias cancellatus", "common": "Harrowed Sole" },
+        { "scientific": "Zebrias captivus", "common": "Convict Zebra Sole" },
+        { "scientific": "Zebrias craticulus", "common": "Wickerwork Sole" },
+        { "scientific": "Zebrias penescalaris", "common": "Duskybanded Sole" },
+        { "scientific": "Zebrias quagga", "common": "Fringefin Zebra Sole" },
+        { "scientific": "Zebrias scalaris", "common": "Many-Band Sole" },
+        { "scientific": "Zebrias zebra", "common": "Zebra Sole" }
+      ]
+    }
+  ]
+}

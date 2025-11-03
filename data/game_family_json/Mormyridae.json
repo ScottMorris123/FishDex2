@@ -1,0 +1,42 @@
+{
+  "family": {
+    "scientific": "Mormyridae",
+    "common": "Elephantfish Family"
+  },
+  "genera": [
+    {
+      "scientific": "Marcusenius",
+      "common": "Elephantfishes",
+      "species": [
+        {
+          "scientific": "Marcusenius macrolepidotus",
+          "common": "Bulldog"
+        }
+      ]
+    },
+    {
+      "scientific": "Mormyrops",
+      "common": "Elephantfishes",
+      "species": [
+        {
+          "scientific": "Mormyrops anguilloides",
+          "common": "Cornish Jack"
+        }
+      ]
+    },
+    {
+      "scientific": "Mormyrus",
+      "common": "Elephantfishes",
+      "species": [
+        {
+          "scientific": "Mormyrus lacerda",
+          "common": "Bottle-nose Mormyrid"
+        },
+        {
+          "scientific": "Mormyrus longirostris",
+          "common": "Eastern Bottle-nose Mormyrid"
+        }
+      ]
+    }
+  ]
+}

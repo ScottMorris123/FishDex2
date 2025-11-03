@@ -1,0 +1,18 @@
+{
+  "family": {
+    "scientific": "Peristediidae",
+    "common": "Armored Sea Robin Family"
+  },
+  "genera": [
+    {
+      "scientific": "Scalicus",
+      "common": "Armored Sea Robins",
+      "species": [
+        {
+          "scientific": "Scalicus orientalis",
+          "common": "东方红鲂鮄"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "family": {
+    "scientific": "Sebastidae",
+    "common": "Rockfish Family"
+  },
+  "genera": [
+    {
+      "scientific": "Helicolenus",
+      "common": "Rockfishes",
+      "species": [
+        {
+          "scientific": "Helicolenus barathri",
+          "common": "Bigeye Sea Perch"
+        },
+        {
+          "scientific": "Helicolenus dactylopterus",
+          "common": "Blackbelly Rosefish"
+        },
+        {
+          "scientific": "Helicolenus hilgendorfii",
+          "common": "Hilgendorf's Saucord"
+        },
+        {
+          "scientific": "Helicolenus percoides",
+          "common": "Red Gurnard Perch"
+        }
+      ]
+    },
+    {
+      "scientific": "Sebastes",
+      "common": "Rockfishes",
+      "species": [
+        { "scientific": "Sebastes aleutianus", "common": "Rougheye Rockfish" },
+        { "scientific": "Sebastes alutus", "common": "Pacific Ocean Perch" },
+        { "scientific": "Sebastes atrovirens", "common": "Kelp Rockfish" },
+        { "scientific": "Sebastes auriculatus", "common": "Brown Rockfish" },
+        { "scientific": "Sebastes aurora", "common": "Aurora Rockfish" },
+        { "scientific": "Sebastes babcocki", "common": "Redbanded Rockfish" },
+        { "scientific": "Sebastes borealis", "common": "Shortraker Rockfish" },
+        { "scientific": "Sebastes brevispinis", "common": "Silvergray Rockfish" },
+        { "scientific": "Sebastes capensis", "common": "Cape Redfish" },
+        { "scientific": "Sebastes carnatus", "common": "Gopher Rockfish" },
+        { "scientific": "Sebastes caurinus", "common": "Copper Rockfish" },
+        { "scientific": "Sebastes cheni", "common": "Japanese White Seaperch" },
+        { "scientific": "Sebastes chlorostictus", "common": "Greenspotted Rockfish" },
+        { "scientific": "Sebastes chrysomelas", "common": "Black-And-Yellow Rockfish" },
+        { "scientific": "Sebastes ciliatus", "common": "Dusky Rockfish" },
+        { "scientific": "Sebastes constellatus", "common": "Starry Rockfish" },
+        { "scientific": "Sebastes cortezi", "common": "Cortez Rockfish" },
+        { "scientific": "Sebastes crameri", "common": "Darkblotched Rockfish" },
+        { "scientific": "Sebastes dallii", "common": "Calico Rockfish" },
+        { "scientific": "Sebastes diaconus", "common": "Deacon Rockfish" },
+        { "scientific": "Sebastes diploproa", "common": "Splitnose Rockfish" },
+        { "scientific": "Sebastes elongatus", "common": "Greenstriped Rockfish" },
+        { "scientific": "Sebastes emphaeus", "common": "Puget Sound Rockfish" },
+        { "scientific": "Sebastes ensifer", "common": "Swordspine Rockfish" },
+        { "scientific": "Sebastes entomelas", "common": "Widow Rockfish" },
+        { "scientific": "Sebastes eos", "common": "Pink Rockfish" },
+        { "scientific": "Sebastes exsul", "common": "Buccaneer Rockfish" },
+        { "scientific": "Sebastes fasciatus", "common": "Acadian Redfish" },
+        { "scientific": "Sebastes flavidus", "common": "Yellowtail Rockfish" },
+        { "scientific": "Sebastes gilli", "common": "Bronzespotted Rockfish" },
+        { "scientific": "Sebastes glaucus", "common": "Gray Rockfish" },
+        { "scientific": "Sebastes goodei", "common": "Chilipepper Rockfish" },
+        { "scientific": "Sebastes helvomaculatus", "common": "Rosethorn Rockfish" },
+        { "scientific": "Sebastes hopkinsi", "common": "Squarespot Rockfish" },
+        { "scientific": "Sebastes inermis", "common": "Japanese Red Seaperch" },
+        { "scientific": "Sebastes jordani", "common": "Shortbelly Rockfish" },
+        { "scientific": "Sebastes joyneri", "common": "Togot Seaperch" },
+        { "scientific": "Sebastes lentiginosus", "common": "Freckled Rockfish" },
+        { "scientific": "Sebastes levis", "common": "Cowcod" },
+        { "scientific": "Sebastes macdonaldi", "common": "Mexican Rockfish" },
+        { "scientific": "Sebastes maliger", "common": "Quillback Rockfish" },
+        { "scientific": "Sebastes melanops", "common": "Black Rockfish" },
+        { "scientific": "Sebastes melanosema", "common": "Semaphore Rockfish" },
+        { "scientific": "Sebastes melanostictus", "common": "Blackspotted Rockfish" },
+        { "scientific": "Sebastes melanostomus", "common": "Blackgill Rockfish" },
+        { "scientific": "Sebastes mentella", "common": "Deepwater Redfish" },
+        { "scientific": "Sebastes miniatus", "common": "Vermilion Rockfish" },
+        { "scientific": "Sebastes moseri", "common": "Whitespeckled Rockfish" },
+        { "scientific": "Sebastes mystinus", "common": "Blue Rockfish" },
+        { "scientific": "Sebastes nebulosus", "common": "China Rockfish" },
+        { "scientific": "Sebastes nigrocinctus", "common": "Tiger Rockfish" },
+        { "scientific": "Sebastes norvegicus", "common": "Golden Redfish" },
+        { "scientific": "Sebastes oculatus", "common": "Patagonian Redfish" },
+        { "scientific": "Sebastes ovalis", "common": "Speckled Rockfish" },
+        { "scientific": "Sebastes owstoni", "common": "Japanese Yellow Seaperch" },
+        { "scientific": "Sebastes paucispinis", "common": "Bocaccio Rockfish" },
+        { "scientific": "Sebastes phillipsi", "common": "Chameleon Rockfish" },
+        { "scientific": "Sebastes pinniger", "common": "Canary Rockfish" },
+        { "scientific": "Sebastes polyspinis", "common": "Northern Rockfish" },
+        { "scientific": "Sebastes proriger", "common": "Redstripe Rockfish" },
+        { "scientific": "Sebastes rastrelliger", "common": "Grass Rockfish" },
+        { "scientific": "Sebastes reedi", "common": "Yellowmouth Rockfish" },
+        { "scientific": "Sebastes rosaceus", "common": "Rosy Rockfish" },
+        { "scientific": "Sebastes rosenblatti", "common": "Greenblotched Rockfish" },
+        { "scientific": "Sebastes ruberrimus", "common": "Yelloweye Rockfish" },
+        { "scientific": "Sebastes rubrivinctus", "common": "Flag Rockfish" },
+        { "scientific": "Sebastes rufinanus", "common": "Dwarf Red Rockfish" },
+        { "scientific": "Sebastes rufus", "common": "Bank Rockfish" },
+        { "scientific": "Sebastes saxicola", "common": "Stripetail Rockfish" },
+        { "scientific": "Sebastes schlegelii", "common": "Korean Rockfish" },
+        { "scientific": "Sebastes semicinctus", "common": "Halfbanded Rockfish" },
+        { "scientific": "Sebastes serranoides", "common": "Olive Rockfish" },
+        { "scientific": "Sebastes serriceps", "common": "Treefish" },
+        { "scientific": "Sebastes simulator", "common": "Pinkrose Rockfish" },
+        { "scientific": "Sebastes sinensis", "common": "Blackmouth Rockfish" },
+        { "scientific": "Sebastes taczanowskii", "common": "White-Edged Rockfish" },
+        { "scientific": "Sebastes trivittatus", "common": "Threestripe Rockfish" },
+        { "scientific": "Sebastes umbrosus", "common": "Honeycomb Rockfish" },
+        { "scientific": "Sebastes variabilis", "common": "Light Dusky Rockfish" },
+        { "scientific": "Sebastes variegatus", "common": "Harlequin Rockfish" },
+        { "scientific": "Sebastes ventricosus", "common": "Japanese Black Seaperch" },
+        { "scientific": "Sebastes viviparus", "common": "Norway Redfish" },
+        { "scientific": "Sebastes vulpes", "common": "Fox Jacopever" },
+        { "scientific": "Sebastes wilsoni", "common": "Pygmy Rockfish" },
+        { "scientific": "Sebastes zacentrus", "common": "Sharpchin Rockfish" }
+      ]
+    },
+    {
+      "scientific": "Sebastiscus",
+      "common": "Rockfishes",
+      "species": [
+        {
+          "scientific": "Sebastiscus marmoratus",
+          "common": "False Kelpfish"
+        }
+      ]
+    }
+  ]
+}

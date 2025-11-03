@@ -1,0 +1,28 @@
+{
+  "family": {
+    "scientific": "Cottidae",
+    "common": "Freshwater Sculpin Family"
+  },
+  "genera": [
+    {
+      "scientific": "Enophrys",
+      "common": "Sculpins",
+      "species": [
+        {
+          "scientific": "Enophrys bison",
+          "common": "Buffalo Sculpin"
+        }
+      ]
+    },
+    {
+      "scientific": "Hemilepidotus",
+      "common": "Sculpins",
+      "species": [
+        {
+          "scientific": "Hemilepidotus hemilepidotus",
+          "common": "Red Irish Lord"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "family": {
+    "scientific": "Channidae",
+    "common": "Snakehead Family"
+  },
+  "genera": [
+    {
+      "scientific": "Channa",
+      "common": "Snakeheads",
+      "species": [
+        {
+          "scientific": "Channa marulius",
+          "common": "Bullseye Snakehead"
+        },
+        {
+          "scientific": "Channa micropeltes",
+          "common": "Giant Snakehead"
+        },
+        {
+          "scientific": "Channa amphibeus",
+          "common": "Borna Snakehead"
+        },
+        {
+          "scientific": "Channa argus",
+          "common": "Northern Snakehead"
+        },
+        {
+          "scientific": "Channa asiatica",
+          "common": "Small Snakehead"
+        },
+        {
+          "scientific": "Channa aurantimaculata",
+          "common": "Orange-Spotted Snakehead"
+        },
+        {
+          "scientific": "Channa barca",
+          "common": "Barca Snakehead"
+        },
+        {
+          "scientific": "Channa bleheri",
+          "common": "Rainbow Snakehead"
+        },
+        {
+          "scientific": "Channa diplogramma",
+          "common": "Malabar Snakehead"
+        },
+        {
+          "scientific": "Channa gachua",
+          "common": "Dwarf Snakehead"
+        },
+        {
+          "scientific": "Channa harcourtbutleri",
+          "common": "Burmese Snakehead"
+        },
+        {
+          "scientific": "Channa lucius",
+          "common": "Forest Snakehead"
+        },
+        {
+          "scientific": "Channa maculata",
+          "common": "Blotched Snakehead"
+        },
+        {
+          "scientific": "Channa marulioides",
+          "common": "Emperor Snakehead"
+        },
+        {
+          "scientific": "Channa melasoma",
+          "common": "Black Snakehead"
+        },
+        {
+          "scientific": "Channa nox",
+          "common": "Night Snakehead"
+        },
+        {
+          "scientific": "Channa orientalis",
+          "common": "Ceylon Snakehead"
+        },
+        {
+          "scientific": "Channa panaw",
+          "common": "Panaw Snakehead"
+        },
+        {
+          "scientific": "Channa punctata",
+          "common": "Spotted Snakehead"
+        },
+        {
+          "scientific": "Channa royi",
+          "common": "Andaman Emerald Snakehead"
+        },
+        {
+          "scientific": "Channa stewartii",
+          "common": "Assamese Snakehead"
+        },
+        {
+          "scientific": "Channa striata",
+          "common": "Striped Snakehead"
+        }
+      ]
+    }
+  ]
+}

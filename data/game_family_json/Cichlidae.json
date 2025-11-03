@@ -1,0 +1,354 @@
+{
+  "family": {
+    "scientific": "Cichlidae",
+    "common": "Cichlids and Tilapia Family"
+  },
+  "genera": [
+    {
+      "scientific": "Acaronia",
+      "common": "Cichlids",
+      "species": [
+        {
+          "scientific": "Acaronia nassa",
+          "common": "Bigeye Cichlid"
+        }
+      ]
+    },
+    {
+      "scientific": "Astronotus",
+      "common": "Cichlids",
+      "species": [
+        {
+          "scientific": "Astronotus ocellatus",
+          "common": "Oscar"
+        }
+      ]
+    },
+    {
+      "scientific": "Boulengerochromis",
+      "common": "Cichlids",
+      "species": [
+        {
+          "scientific": "Boulengerochromis microlepis",
+          "common": "Giant Cichlid"
+        }
+      ]
+    },
+    {
+      "scientific": "Chetia",
+      "common": "Cichlids",
+      "species": [
+        {
+          "scientific": "Chetia flaviventris",
+          "common": "Canary Kurper"
+        }
+      ]
+    },
+    {
+      "scientific": "Cichla",
+      "common": "Cichlids",
+      "species": [
+        {
+          "scientific": "Cichla ocellaris",
+          "common": "Butterfly Peacock Bass"
+        },
+        {
+          "scientific": "Cichla temensis",
+          "common": "Painted Pavon"
+        },
+        {
+          "scientific": "Cichla orinocensis",
+          "common": "Orinoco Peacock Bass"
+        },
+        {
+          "scientific": "Cichla pinima",
+          "common": "Spotted Peacock Bass"
+        },
+        {
+          "scientific": "Cichla piquiti",
+          "common": "Blue Peacock Bass"
+        },
+        {
+          "scientific": "Cichla kelberi",
+          "common": "Kelberi Peacock Bass"
+        },
+        {
+          "scientific": "Cichla monoculus",
+          "common": "Monoculus Peacock Bass"
+        },
+        {
+          "scientific": "Cichla nigromaculata",
+          "common": "Nigromaculata Peacock Bass"
+        },
+        {
+          "scientific": "Cichla cataractae",
+          "common": "Cataract Peacock Bass"
+        }
+      ]
+    },
+    {
+      "scientific": "Cichlasoma",
+      "common": "Cichlids",
+      "species": [
+        {
+          "scientific": "Cichlasoma bimaculatum",
+          "common": "Black Acara"
+        },
+        {
+          "scientific": "Cichlasoma taenia",
+          "common": "Brown Coscarob"
+        }
+      ]
+    },
+    {
+      "scientific": "Coptodon",
+      "common": "Tilapia",
+      "species": [
+        {
+          "scientific": "Coptodon guineensis",
+          "common": "Guinean Tilapia"
+        },
+        {
+          "scientific": "Coptodon rendalli",
+          "common": "Redbreast Tilapia"
+        },
+        {
+          "scientific": "Coptodon zillii",
+          "common": "Redbelly Tilapia"
+        }
+      ]
+    },
+    {
+      "scientific": "Mayaheros",
+      "common": "Cichlids",
+      "species": [
+        {
+          "scientific": "Mayaheros beani",
+          "common": "Green Guapote"
+        },
+        {
+          "scientific": "Mayaheros urophthalmus",
+          "common": "Mayan Cichlid"
+        }
+      ]
+    },
+    {
+      "scientific": "Oreochromis",
+      "common": "Tilapia",
+      "species": [
+        {
+          "scientific": "Oreochromis alcalica",
+          "common": "Natron Tilapia"
+        },
+        {
+          "scientific": "Oreochromis andersonii",
+          "common": "Three-Spotted Tilapia"
+        },
+        {
+          "scientific": "Oreochromis aureus",
+          "common": "Blue Tilapia"
+        },
+        {
+          "scientific": "Oreochromis esculentus",
+          "common": "Singida Tilapia"
+        },
+        {
+          "scientific": "Oreochromis grahami",
+          "common": "Magadi Tilapia"
+        },
+        {
+          "scientific": "Oreochromis hunteri",
+          "common": "Lake Chala Tilapia"
+        },
+        {
+          "scientific": "Oreochromis jipe",
+          "common": "Jipe Tilapia"
+        },
+        {
+          "scientific": "Oreochromis karomo",
+          "common": "Karomo Tilapia"
+        },
+        {
+          "scientific": "Oreochromis korogwe",
+          "common": "Korogwe Tilapia"
+        },
+        {
+          "scientific": "Oreochromis latilabris",
+          "common": "Wide-Lipped Natron Tilapia"
+        },
+        {
+          "scientific": "Oreochromis macrochir",
+          "common": "Longfin Tilapia"
+        },
+        {
+          "scientific": "Oreochromis malagarasi",
+          "common": "Malagarasi Tilapia"
+        },
+        {
+          "scientific": "Oreochromis mortimeri",
+          "common": "Kariba Tilapia"
+        },
+        {
+          "scientific": "Oreochromis mossambicus",
+          "common": "Mozambique Tilapia"
+        },
+        {
+          "scientific": "Oreochromis ndalalani",
+          "common": "Narrow-Mouthed Natron Tilapia"
+        },
+        {
+          "scientific": "Oreochromis niloticus",
+          "common": "Nile Tilapia"
+        },
+        {
+          "scientific": "Oreochromis placidus placidus",
+          "common": "Black Tilapia"
+        },
+        {
+          "scientific": "Oreochromis rukwaensis",
+          "common": "Lake Rukwa Tilapia"
+        },
+        {
+          "scientific": "Oreochromis shiranus chilwae",
+          "common": "Chilwa Tilapia"
+        },
+        {
+          "scientific": "Oreochromis spilurus niger",
+          "common": "Athi River Tilapia"
+        },
+        {
+          "scientific": "Oreochromis spilurus percivali",
+          "common": "Buffalo Springs Tilapia"
+        },
+        {
+          "scientific": "Oreochromis spilurus spilurus",
+          "common": "Sabaki Tilapia"
+        },
+        {
+          "scientific": "Oreochromis urolepis hornorum",
+          "common": "Wami Tilapia"
+        },
+        {
+          "scientific": "Oreochromis urolepis urolepis",
+          "common": "Rufigi Tilapia"
+        },
+        {
+          "scientific": "Oreochromis variabilis",
+          "common": "Victoria Tilapia"
+        }
+      ]
+    },
+    {
+      "scientific": "Parachromis",
+      "common": "Cichlids",
+      "species": [
+        {
+          "scientific": "Parachromis dovii",
+          "common": "Wolf Cichlid"
+        },
+        {
+          "scientific": "Parachromis friedrichsthalii",
+          "common": "Yellowjacket Cichlid"
+        },
+        {
+          "scientific": "Parachromis managuensis",
+          "common": "Jaguar Cichlid"
+        },
+        {
+          "scientific": "Parachromis motaguensis",
+          "common": "False Yellowjacket Cichlid"
+        }
+      ]
+    },
+    {
+      "scientific": "Sargochromis",
+      "common": "Cichlids",
+      "species": [
+        {
+          "scientific": "Sargochromis carlottae",
+          "common": "Rainbow Happy"
+        },
+        {
+          "scientific": "Sargochromis codringtonii",
+          "common": "Green Happy"
+        },
+        {
+          "scientific": "Sargochromis coulteri",
+          "common": "Cunene Happy"
+        },
+        {
+          "scientific": "Sargochromis giardi",
+          "common": "Pink Happy"
+        },
+        {
+          "scientific": "Sargochromis greenwoodi",
+          "common": "Greenwood's Happy"
+        },
+        {
+          "scientific": "Sargochromis mellandi",
+          "common": "Snaileater"
+        },
+        {
+          "scientific": "Sargochromis mortimeri",
+          "common": "Mortimer's Happy"
+        }
+      ]
+    },
+    {
+      "scientific": "Serranochromis",
+      "common": "Cichlids",
+      "species": [
+        {
+          "scientific": "Serranochromis altus",
+          "common": "Humpback Largemouth"
+        },
+        {
+          "scientific": "Serranochromis angusticeps",
+          "common": "Speckleface Bream"
+        },
+        {
+          "scientific": "Serranochromis jallae",
+          "common": "Nembwe"
+        },
+        {
+          "scientific": "Serranochromis longimanus",
+          "common": "Longfin Largemouth"
+        },
+        {
+          "scientific": "Serranochromis macrocephalus",
+          "common": "Purpleface Largemouth"
+        },
+        {
+          "scientific": "Serranochromis meridianus",
+          "common": "Lowveld Largemouth"
+        },
+        {
+          "scientific": "Serranochromis robustus",
+          "common": "Yellowbelly Bream"
+        },
+        {
+          "scientific": "Serranochromis thumbergi",
+          "common": "Brownspot Largemouth"
+        }
+      ]
+    },
+    {
+      "scientific": "Tilapia",
+      "common": "Tilapia",
+      "species": [
+        {
+          "scientific": "Tilapia guinasana",
+          "common": "Otjikoto Tilapia"
+        },
+        {
+          "scientific": "Tilapia ruweti",
+          "common": "Okavango Tilapia"
+        },
+        {
+          "scientific": "Tilapia sparrmanii",
+          "common": "Banded Tilapia"
+        }
+      ]
+    }
+  ]
+}

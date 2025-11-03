@@ -1,0 +1,46 @@
+{
+  "family": {
+    "scientific": "Ephippidae",
+    "common": "Spadefish Family"
+  },
+  "genera": [
+    {
+      "scientific": "Chaetodipterus",
+      "common": "Spadefishes",
+      "species": [
+        {
+          "scientific": "Chaetodipterus faber",
+          "common": "Atlantic Spadefish"
+        },
+        {
+          "scientific": "Chaetodipterus lippei",
+          "common": "West African Spadefish"
+        },
+        {
+          "scientific": "Chaetodipterus zonatus",
+          "common": "Pacific Spadefish"
+        }
+      ]
+    },
+    {
+      "scientific": "Platax",
+      "common": "spadefishes",
+      "species": [
+        {
+          "scientific": "Platax teira",
+          "common": "Longfin Batfish"
+        }
+      ]
+    },
+    {
+      "scientific": "Tripterodon",
+      "common": "Spadefishes",
+      "species": [
+        {
+          "scientific": "Tripterodon orbis",
+          "common": "African spadefish"
+        }
+      ]
+    }
+  ]
+}

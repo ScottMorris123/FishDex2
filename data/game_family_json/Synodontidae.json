@@ -1,0 +1,103 @@
+{
+  "family": {
+    "scientific": "Synodontidae",
+    "common": "Lizardfishes and Bombay Ducks"
+  },
+  "genera": [
+    {
+      "scientific": "Harpadon",
+      "common": "Bombay Ducks",
+      "species": [
+        { "scientific": "Harpadon nehereus", "common": "Bombay Duck" },
+        { "scientific": "Harpadon translucens", "common": "Glassy Bombay Duck" }
+      ]
+    },
+    {
+      "scientific": "Saurida",
+      "common": "Lizardfishes",
+      "species": [
+        { "scientific": "Saurida argentea", "common": "Short-fin Saury" },
+        { "scientific": "Saurida brasiliensis", "common": "Brazilian Lizardfish" },
+        { "scientific": "Saurida caribbaea", "common": "Small-scale Lizardfish" },
+        { "scientific": "Saurida elongata", "common": "Slender Lizardfish" },
+        { "scientific": "Saurida filamentosa", "common": "Thread-fin Lizardfish" },
+        { "scientific": "Saurida flamma", "common": "Orange-mouth Lizardfish" },
+        { "scientific": "Saurida golanii", "common": "Golani's Lizardfish" },
+        { "scientific": "Saurida gracilis", "common": "Gracile Lizardfish" },
+        { "scientific": "Saurida isarankurai", "common": "Short-jaw Saury" },
+        { "scientific": "Saurida lessepsianus", "common": "Lessepsian Lizardfish" },
+        { "scientific": "Saurida longimanus", "common": "Long-fin Lizardfish" },
+        { "scientific": "Saurida macrolepis", "common": "Large-scale Lizardfish" },
+        { "scientific": "Saurida microlepis", "common": "Small-scale Lizardfish" },
+        { "scientific": "Saurida micropectoralis", "common": "Short-fin Lizardfish" },
+        { "scientific": "Saurida nebulosa", "common": "Clouded Lizardfish" },
+        { "scientific": "Saurida normani", "common": "Short-jaw Lizardfish" },
+        { "scientific": "Saurida pseudotumbil", "common": "False Greater Lizardfish" },
+        { "scientific": "Saurida suspicio", "common": "Suspicious Lizardfish" },
+        { "scientific": "Saurida tumbil", "common": "Greater Lizardfish" },
+        { "scientific": "Saurida tweddlei", "common": "Tweddle's Lizardfish" },
+        { "scientific": "Saurida umeyoshii", "common": "Umeyoshi's Lizardfish" },
+        { "scientific": "Saurida undosquamis", "common": "Brush-tooth Lizardfish" },
+        { "scientific": "Saurida wanieso", "common": "Wanieso Lizardfish" }
+      ]
+    },
+    {
+      "scientific": "Synodus",
+      "common": "Lizardfishes",
+      "species": [
+        { "scientific": "Synodus binotatus", "common": "Two-spot Lizardfish" },
+        { "scientific": "Synodus bondi", "common": "Sharp-nose Lizardfish" },
+        { "scientific": "Synodus capricornis", "common": "Capricorn Lizardfish" },
+        { "scientific": "Synodus dermatogenys", "common": "Sand Lizardfish" },
+        { "scientific": "Synodus doaki", "common": "Arrow-tooth Lizardfish" },
+        { "scientific": "Synodus evermanni", "common": "Inotted Lizardfish" },
+        { "scientific": "Synodus falcatus", "common": "Falcate Lizardfish" },
+        { "scientific": "Synodus fasciapelvicus", "common": "Banded-pelvic Lizardfish" },
+        { "scientific": "Synodus foetens", "common": "Inshore Lizardfish" },
+        { "scientific": "Synodus fuscus", "common": "Dusky Lizardfish" },
+        { "scientific": "Synodus gibbsi", "common": "Gibbs' Lizardfish" },
+        { "scientific": "Synodus hoshinonis", "common": "Blackear Lizardfish" },
+        { "scientific": "Synodus indicus", "common": "Indian Lizardfish" },
+        { "scientific": "Synodus intermedius", "common": "Sand Lizardfish" },
+        { "scientific": "Synodus isolatus", "common": "Rapanui Lizardfish" },
+        { "scientific": "Synodus jaculum", "common": "Lighthouse Lizardfish" },
+        { "scientific": "Synodus kaianus", "common": "Günther's Lizardfish" },
+        { "scientific": "Synodus lacertinus", "common": "Sauro Lizardfish" },
+        { "scientific": "Synodus lobeli", "common": "Lobel's Lizardfish" },
+        { "scientific": "Synodus lucioceps", "common": "California Lizardfish" },
+        { "scientific": "Synodus macrocephalus", "common": "Bighead Lizardfish" },
+        { "scientific": "Synodus macrops", "common": "Triple-cross Lizardfish" },
+        { "scientific": "Synodus macrostigmus", "common": "Large-spot Lizardfish" },
+        { "scientific": "Synodus marchenae", "common": "Marchena Lizardfish" },
+        { "scientific": "Synodus mascarensis", "common": "Mascarene Lizardfish" },
+        { "scientific": "Synodus mundyi", "common": "Mundy’s Lizardfish" },
+        { "scientific": "Synodus oculeus", "common": "Large-eye Lizardfish" },
+        { "scientific": "Synodus orientalis", "common": "Oriental Lizardfish" },
+        { "scientific": "Synodus pacificus", "common": "Pacific Lizardfish" },
+        { "scientific": "Synodus poeyi", "common": "Offshore Lizardfish" },
+        { "scientific": "Synodus pylei", "common": "Pyle’s Lizardfish" },
+        { "scientific": "Synodus randalli", "common": "Randall’s Lizardfish" },
+        { "scientific": "Synodus rubromarmoratus", "common": "Red-marbled Lizardfish" },
+        { "scientific": "Synodus sageneus", "common": "Spear-toothed Lizardfish" },
+        { "scientific": "Synodus sanguineus", "common": "Blood-red Lizardfish" },
+        { "scientific": "Synodus saurus", "common": "Atlantic Lizardfish" },
+        { "scientific": "Synodus scituliceps", "common": "Short-head Lizardfish" },
+        { "scientific": "Synodus sechurae", "common": "Sechura Lizardfish" },
+        { "scientific": "Synodus similis", "common": "Lavender Lizardfish" },
+        { "scientific": "Synodus synodus", "common": "Diamond Lizardfish" },
+        { "scientific": "Synodus taiwanensis", "common": "Taiwan Lizardfish" },
+        { "scientific": "Synodus tectus", "common": "Tectus Lizardfish" },
+        { "scientific": "Synodus ulae", "common": "Red Lizardfish" },
+        { "scientific": "Synodus usitatus", "common": "Common Lizardfish" },
+        { "scientific": "Synodus variegatus", "common": "Variegated Lizardfish" }
+      ]
+    },
+    {
+      "scientific": "Trachinocephalus",
+      "common": "Blunt-nose Lizardfishes",
+      "species": [
+        { "scientific": "Trachinocephalus myops", "common": "Blunt-nose Lizardfish" }
+      ]
+    }
+  ]
+}

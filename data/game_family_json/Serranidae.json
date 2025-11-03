@@ -1,0 +1,142 @@
+{
+  "family": {
+    "scientific": "Serranidae",
+    "common": "Sea Bass Family"
+  },
+  "genera": [
+    {
+      "scientific": "Bullisichthys",
+      "common": "",
+      "species": [
+        { "scientific": "Bullisichthys caribbaeus", "common": "Pugnose Bass" }
+      ]
+    },
+    {
+      "scientific": "Centropristis",
+      "common": "Sea Basses",
+      "species": [
+        { "scientific": "Centropristis fuscula", "common": "Twospot Sea Bass" },
+        { "scientific": "Centropristis ocyurus", "common": "Bank Sea Bass" },
+        { "scientific": "Centropristis philadelphica", "common": "Rock Sea Bass" },
+        { "scientific": "Centropristis striata", "common": "Black Sea Bass" }
+      ]
+    },
+    {
+      "scientific": "Chelidoperca",
+      "common": "Perchlets",
+      "species": [
+        { "scientific": "Chelidoperca africana", "common": "African Perchlet" },
+        { "scientific": "Chelidoperca barazeri", "common": "Barazer's Perchlet" },
+        { "scientific": "Chelidoperca cerasina", "common": "Cherry Perchlet" },
+        { "scientific": "Chelidoperca flavimacula", "common": "Yellow-Spotted Perchlet" },
+        { "scientific": "Chelidoperca flavolineata", "common": "Yellow-Banded Perchlet" },
+        { "scientific": "Chelidoperca formosa", "common": "Taiwanese Perchlet" },
+        { "scientific": "Chelidoperca leucostigmata", "common": "White-Spotted Perchlet" },
+        { "scientific": "Chelidoperca maculicauda", "common": "Indian Perchlet" },
+        { "scientific": "Chelidoperca margaritifera", "common": "Pearly Perchlet" },
+        { "scientific": "Chelidoperca microdon", "common": "Small-Toothed Perchlet" },
+        { "scientific": "Chelidoperca myathantuni", "common": "Mya Than Tun’s Perchlet" },
+        { "scientific": "Chelidoperca occipitalis", "common": "Arabian Perchlet" },
+        { "scientific": "Chelidoperca santosi", "common": "Pogi Perchlet" },
+        { "scientific": "Chelidoperca tosaensis", "common": "Red-Spot Perchlet" }
+      ]
+    },
+    {
+      "scientific": "Cratinus",
+      "common": "",
+      "species": [
+        { "scientific": "Cratinus agassizii", "common": "Grey Threadfin Sea-Bass" }
+      ]
+    },
+    {
+      "scientific": "Diplectrum",
+      "common": "Sand Perches",
+      "species": [
+        { "scientific": "Diplectrum bivittatum", "common": "Dwarf Sand Perch" },
+        { "scientific": "Diplectrum conceptione", "common": "Yellowmouth Sand-Perch" },
+        { "scientific": "Diplectrum eumelum", "common": "Orange-Spotted Sand Perch" },
+        { "scientific": "Diplectrum euryplectrum", "common": "Bighead Sand Perch" },
+        { "scientific": "Diplectrum formosum", "common": "Sand Perch" },
+        { "scientific": "Diplectrum labarum", "common": "Highfin Sand Perch" },
+        { "scientific": "Diplectrum macropoma", "common": "Mexican Sand Perch" },
+        { "scientific": "Diplectrum maximum", "common": "Torpedo Sand Perch" },
+        { "scientific": "Diplectrum pacificum", "common": "Inshore Sand Perch" },
+        { "scientific": "Diplectrum radiale", "common": "Pond Perch" },
+        { "scientific": "Diplectrum rostrum", "common": "Bridled Sand Perch" },
+        { "scientific": "Diplectrum sciurus", "common": "Gulf Squirrelfish" }
+      ]
+    },
+    {
+      "scientific": "Hypoplectrus",
+      "common": "Hamlets",
+      "species": [
+        { "scientific": "Hypoplectrus aberrans", "common": "Yellowbelly Hamlet" },
+        { "scientific": "Hypoplectrus atlahua", "common": "Jarocho Hamlet" },
+        { "scientific": "Hypoplectrus chlorurus", "common": "Yellowtail Hamlet" },
+        { "scientific": "Hypoplectrus gemma", "common": "Blue Hamlet" },
+        { "scientific": "Hypoplectrus gummigutta", "common": "Golden Hamlet" },
+        { "scientific": "Hypoplectrus guttavarius", "common": "Shy Hamlet" },
+        { "scientific": "Hypoplectrus indigo", "common": "Indigo Hamlet" },
+        { "scientific": "Hypoplectrus liberte", "common": "Striped Hamlet" },
+        { "scientific": "Hypoplectrus maya", "common": "Maya Hamlet" },
+        { "scientific": "Hypoplectrus nigricans", "common": "Black Hamlet" },
+        { "scientific": "Hypoplectrus providencianus", "common": "Masked Hamlet" },
+        { "scientific": "Hypoplectrus puella", "common": "Barred Hamlet" },
+        { "scientific": "Hypoplectrus randallorum", "common": "Tan Hamlet" },
+        { "scientific": "Hypoplectrus unicolor", "common": "Butter Hamlet" }
+      ]
+    },
+    {
+      "scientific": "Parasphyraenops",
+      "common": "Sea Basses",
+      "species": [
+        { "scientific": "Parasphyraenops atrimanus", "common": "Bank Bass" },
+        { "scientific": "Parasphyraenops incisus", "common": "Fork-Tailed Bass" }
+      ]
+    },
+    {
+      "scientific": "Schultzea",
+      "common": "Sea Basses",
+      "species": [
+        { "scientific": "Schultzea beta", "common": "School Bass" }
+      ]
+    },
+    {
+      "scientific": "Serraniculus",
+      "common": "Sea Basses",
+      "species": [
+        { "scientific": "Serraniculus pumilio", "common": "Pygmy Sea Bass" }
+      ]
+    },
+    {
+      "scientific": "Serranus",
+      "common": "Sea Basses",
+      "species": [
+        { "scientific": "Serranus accraensis", "common": "Ghanean Comber" },
+        { "scientific": "Serranus aequidens", "common": "Deep-Water Bass" },
+        { "scientific": "Serranus annularis", "common": "Orange-Back Bass" },
+        { "scientific": "Serranus atricauda", "common": "Blacktail Comber" },
+        { "scientific": "Serranus atrobranchus", "common": "Black-Ear Bass" },
+        { "scientific": "Serranus baldwini", "common": "Lantern Bass" },
+        { "scientific": "Serranus cabrilla", "common": "Comber" },
+        { "scientific": "Serranus chionaraia", "common": "Snow Bass" },
+        { "scientific": "Serranus drewesi", "common": "Drewes' Bass" },
+        { "scientific": "Serranus flaviventris", "common": "Twin-Spot Bass" },
+        { "scientific": "Serranus hepatus", "common": "Brown Comber" },
+        { "scientific": "Serranus huascarii", "common": "Flag Bass" },
+        { "scientific": "Serranus luciopercanus", "common": "Cross-Hatch Bass" },
+        { "scientific": "Serranus notospilus", "common": "Saddle Bass" },
+        { "scientific": "Serranus novemcinctus", "common": "Barred Bass" },
+        { "scientific": "Serranus psittacinus", "common": "Barred Comber" },
+        { "scientific": "Serranus pulcher", "common": "São Tomé Comber" },
+        { "scientific": "Serranus sanctaehelenae", "common": "St. Helena Comber" },
+        { "scientific": "Serranus scriba", "common": "Painted Comber" },
+        { "scientific": "Serranus socorroensis", "common": "Socorro Bass" },
+        { "scientific": "Serranus subligarius", "common": "Belted Bass" },
+        { "scientific": "Serranus tabacarius", "common": "Tobaccofish" },
+        { "scientific": "Serranus tigrinus", "common": "Harlequin Bass" },
+        { "scientific": "Serranus tortugarum", "common": "Chalk Bass" }
+      ]
+    }
+  ]
+}

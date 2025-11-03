@@ -1,0 +1,26 @@
+{
+  "family": {
+    "scientific": "Anarhichadidae",
+    "common": "Wolffish Family"
+  },
+  "genera": [
+    {
+      "scientific": "Anarhichas",
+      "common": "Wolffishes",
+      "species": [
+        {
+          "scientific": "Anarhichas denticulatus",
+          "common": "Northern Wolffish"
+        },
+        {
+          "scientific": "Anarhichas lupus",
+          "common": "Atlantic Wolffish"
+        },
+        {
+          "scientific": "Anarhichas minor",
+          "common": "Spotted Wolffish"
+        }
+      ]
+    }
+  ]
+}

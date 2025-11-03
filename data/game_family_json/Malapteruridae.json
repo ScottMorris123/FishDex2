@@ -1,0 +1,18 @@
+{
+  "family": {
+    "scientific": "Malapteruridae",
+    "common": "Electric Catfish Family"
+  },
+  "genera": [
+    {
+      "scientific": "Malapterurus",
+      "common": "Electric Catfishes",
+      "species": [
+        {
+          "scientific": "Malapterurus electricus",
+          "common": "Electric Catfish"
+        }
+      ]
+    }
+  ]
+}

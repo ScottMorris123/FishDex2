@@ -1,0 +1,18 @@
+{
+  "family": {
+    "scientific": "Scaridae",
+    "common": "Parrotfish Family"
+  },
+  "genera": [
+    {
+      "scientific": "Calotomus",
+      "common": "Parrotfishes",
+      "species": [
+        {
+          "scientific": "Calotomus japonicus",
+          "common": "Japanese Parrotfish"
+        }
+      ]
+    }
+  ]
+}

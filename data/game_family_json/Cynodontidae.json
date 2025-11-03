@@ -1,0 +1,28 @@
+{
+  "family": {
+    "scientific": "Cynodontidae",
+    "common": "Dogtooth Characin Family"
+  },
+  "genera": [
+    {
+      "scientific": "Hydrolycus",
+      "common": "Cynodontid fishes",
+      "species": [
+        {
+          "scientific": "Hydrolycus scomberoides",
+          "common": "Payara"
+        }
+      ]
+    },
+    {
+      "scientific": "Rhaphiodon",
+      "common": "Cynodontid fishes",
+      "species": [
+        {
+          "scientific": "Rhaphiodon vulpinus",
+          "common": "Biara"
+        }
+      ]
+    }
+  ]
+}

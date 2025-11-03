@@ -1,0 +1,36 @@
+{
+  "family": {
+    "scientific": "Platycephalidae",
+    "common": "Flathead Fish Family"
+  },
+  "genera": [
+    {
+      "scientific": "Cymbacephalus",
+      "common": "Flathead Fish",
+      "species": [
+        {
+          "scientific": "Cymbacephalus bosschei",
+          "common": "Small-eyed Flathead"
+        }
+      ]
+    },
+    {
+      "scientific": "Platycephalus",
+      "common": "Flathead Fish",
+      "species": [
+        {
+          "scientific": "Platycephalus fuscus",
+          "common": "Dusky Flathead"
+        },
+        {
+          "scientific": "Platycephalus indicus",
+          "common": "Bar-tail Flathead"
+        },
+        {
+          "scientific": "Platycephalus richardsoni",
+          "common": "Tiger Flathead"
+        }
+      ]
+    }
+  ]
+}

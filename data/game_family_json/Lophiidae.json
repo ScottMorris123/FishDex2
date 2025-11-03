@@ -1,0 +1,18 @@
+{
+  "family": {
+    "scientific": "Lophiidae",
+    "common": "Goosefish Family"
+  },
+  "genera": [
+    {
+      "scientific": "Lophius",
+      "common": "Goosefishes",
+      "species": [
+        {
+          "scientific": "Lophius americanus",
+          "common": "American Anglerfish"
+        }
+      ]
+    }
+  ]
+}

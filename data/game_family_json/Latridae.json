@@ -1,0 +1,46 @@
+{
+  "family": {
+    "scientific": "Latridae",
+    "common": "Trumpeter Fish Family"
+  },
+  "genera": [
+    {
+      "scientific": "Chirodactylus",
+      "common": "Trumpeters",
+      "species": [
+        {
+          "scientific": "Chirodactylus brachydactylus",
+          "common": "Twotone Fingerfin"
+        },
+        {
+          "scientific": "Chirodactylus grandis",
+          "common": "Bank Steenbras"
+        },
+        {
+          "scientific": "Chirodactylus jessicalenorum",
+          "common": "Natal Fingerfin"
+        }
+      ]
+    },
+    {
+      "scientific": "Latridopsis",
+      "common": "Trumpeters",
+      "species": [
+        {
+          "scientific": "Latridopsis ciliaris",
+          "common": "Blue Moki"
+        }
+      ]
+    },
+    {
+      "scientific": "Nemadactylus",
+      "common": "Trumpeters",
+      "species": [
+        {
+          "scientific": "Nemadactylus macropterus",
+          "common": "Deep Sea Perch"
+        }
+      ]
+    }
+  ]
+}

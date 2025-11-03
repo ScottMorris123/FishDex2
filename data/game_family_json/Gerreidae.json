@@ -1,0 +1,168 @@
+{
+  "family": {
+    "scientific": "Gerreidae",
+    "common": "Mojarra Family"
+  },
+  "genera": [
+    {
+      "scientific": "Deckertichthys",
+      "common": "Mojarras",
+      "species": [
+        {
+          "scientific": "Deckertichthys aureolus",
+          "common": "Golden Mojarra"
+        }
+      ]
+    },
+    {
+      "scientific": "Diapterus",
+      "common": "Mojarras",
+      "species": [
+        {
+          "scientific": "Diapterus auratus",
+          "common": "Irish Mojarra"
+        },
+        {
+          "scientific": "Diapterus brevirostris",
+          "common": "Shortnose Mojarra"
+        },
+        {
+          "scientific": "Diapterus peruvianus",
+          "common": "Peruvian Mojarra"
+        },
+        {
+          "scientific": "Diapterus rhombeus",
+          "common": "Caitipa Mojarra"
+        }
+      ]
+    },
+    {
+      "scientific": "Eucinostomus",
+      "common": "Mojarras",
+      "species": [
+        {
+          "scientific": "Eucinostomus argenteus",
+          "common": "Silver Mojarra"
+        },
+        {
+          "scientific": "Eucinostomus currani",
+          "common": "Pacific Flagfin Mojarra"
+        },
+        {
+          "scientific": "Eucinostomus dowii",
+          "common": "Dow’s Mojarra"
+        },
+        {
+          "scientific": "Eucinostomus entomelas",
+          "common": "Darkspot Mojarra"
+        },
+        {
+          "scientific": "Eucinostomus gracilis",
+          "common": "Graceful Mojarra"
+        },
+        {
+          "scientific": "Eucinostomus gula",
+          "common": "Jenny Mojarra"
+        },
+        {
+          "scientific": "Eucinostomus harengulus",
+          "common": "Tidewater Mojarra"
+        },
+        {
+          "scientific": "Eucinostomus havana",
+          "common": "Bigeye Mojarra"
+        },
+        {
+          "scientific": "Eucinostomus jonesii",
+          "common": "Slender Mojarra"
+        },
+        {
+          "scientific": "Eucinostomus lefroyi",
+          "common": "Mottled Mojarra"
+        },
+        {
+          "scientific": "Eucinostomus melanopterus",
+          "common": "Flagfin Mojarra"
+        }
+      ]
+    },
+    {
+      "scientific": "Eugerres",
+      "common": "Mojarras",
+      "species": [
+        {
+          "scientific": "Eugerres axillaris",
+          "common": "Black Axillary Mojarra"
+        },
+        {
+          "scientific": "Eugerres brasilianus",
+          "common": "Brazilian Mojarra"
+        },
+        {
+          "scientific": "Eugerres brevimanus",
+          "common": "Shortfin Mojarra"
+        },
+        {
+          "scientific": "Eugerres lineatus",
+          "common": "Streaked Mojarra"
+        },
+        {
+          "scientific": "Eugerres mexicanus",
+          "common": "Mexican Mojarra"
+        },
+        {
+          "scientific": "Eugerres periche",
+          "common": "Periche Mojarra"
+        },
+        {
+          "scientific": "Eugerres plumieri",
+          "common": "Striped Mojarra"
+        }
+      ]
+    },
+    {
+      "scientific": "Gerres",
+      "common": "Silver-Biddies",
+      "species": [
+        {
+          "scientific": "Gerres cinereus",
+          "common": "Yellowfin Mojarra"
+        },
+        {
+          "scientific": "Gerres limbatus",
+          "common": "Saddleback Silver-Biddy"
+        },
+        {
+          "scientific": "Gerres longirostris",
+          "common": "Strongspine Silver-Biddy"
+        },
+        {
+          "scientific": "Gerres methueni",
+          "common": "Striped Silver-Biddy"
+        },
+        {
+          "scientific": "Gerres oyena",
+          "common": "Common Silver-Biddy"
+        },
+        {
+          "scientific": "Gerres setifer",
+          "common": "Small Bengal Silver-Biddy"
+        },
+        {
+          "scientific": "Gerres subfasciatus",
+          "common": "Common Silverbelly"
+        }
+      ]
+    },
+    {
+      "scientific": "Pentaprion",
+      "common": "Mojarras",
+      "species": [
+        {
+          "scientific": "Pentaprion longimanus",
+          "common": "Longfin Mojarra"
+        }
+      ]
+    }
+  ]
+}

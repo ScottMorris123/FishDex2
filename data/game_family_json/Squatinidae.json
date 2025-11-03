@@ -1,0 +1,40 @@
+{
+  "family": {
+    "scientific": "Squatinidae",
+    "common": "Angelsharks"
+  },
+  "genera": [
+    {
+      "scientific": "Squatina",
+      "common": "Angelsharks",
+      "species": [
+        { "scientific": "Squatina aculeata", "common": "Sawback Angelshark" },
+        { "scientific": "Squatina africana", "common": "African Angelshark" },
+        { "scientific": "Squatina albipunctata", "common": "Eastern Angelshark" },
+        { "scientific": "Squatina argentina", "common": "Argentine Angelshark" },
+        { "scientific": "Squatina armata", "common": "Chilean Angelshark" },
+        { "scientific": "Squatina australis", "common": "Australian Angelshark" },
+        { "scientific": "Squatina caillieti", "common": "Philippines Angelshark" },
+        { "scientific": "Squatina californica", "common": "Pacific Angelshark" },
+        { "scientific": "Squatina david", "common": "David's Angelshark" },
+        { "scientific": "Squatina dumeril", "common": "Sand Devil" },
+        { "scientific": "Squatina formosa", "common": "Taiwan Angelshark" },
+        { "scientific": "Squatina guggenheim", "common": "Angular Angelshark" },
+        { "scientific": "Squatina heteroptera", "common": "Disparate Angelshark" },
+        { "scientific": "Squatina japonica", "common": "Japanese Angelshark" },
+        { "scientific": "Squatina leae", "common": "Lea's Angelshark" },
+        { "scientific": "Squatina legnota", "common": "Indonesian Angelshark" },
+        { "scientific": "Squatina mapama", "common": "Small-Crested Angelshark" },
+        { "scientific": "Squatina mexicana", "common": "Mexican Angelshark" },
+        { "scientific": "Squatina nebulosa", "common": "Clouded Angelshark" },
+        { "scientific": "Squatina occulta", "common": "Hidden Angelshark" },
+        { "scientific": "Squatina oculata", "common": "Smoothback Angelshark" },
+        { "scientific": "Squatina pseudocellata", "common": "Western Angelshark" },
+        { "scientific": "Squatina squatina", "common": "Angelshark" },
+        { "scientific": "Squatina tergocellata", "common": "Ornate Angelshark" },
+        { "scientific": "Squatina tergocellatoides", "common": "Ocellated Angelshark" },
+        { "scientific": "Squatina varii", "common": "Brazilian Angelshark" }
+      ]
+    }
+  ]
+}

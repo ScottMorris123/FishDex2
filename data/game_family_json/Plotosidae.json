@@ -1,0 +1,156 @@
+{
+  "family": {
+    "scientific": "Plotosidae",
+    "common": "Eeltail Catfish Family"
+  },
+  "genera": [
+    {
+      "scientific": "Anodontiglanis",
+      "common": "Eeltail Catfish",
+      "species": [
+        {
+          "scientific": "Anodontiglanis dahli",
+          "common": "Toothless Catfish"
+        }
+      ]
+    },
+    {
+      "scientific": "Cnidoglanis",
+      "common": "Eeltail Catfish",
+      "species": [
+        {
+          "scientific": "Cnidoglanis macrocephalus",
+          "common": "Cobbler"
+        }
+      ]
+    },
+    {
+      "scientific": "Euristhmus",
+      "common": "Eeltail Catfish",
+      "species": [
+        {
+          "scientific": "Euristhmus lepturus",
+          "common": "Long-tailed Catfish"
+        },
+        {
+          "scientific": "Euristhmus microceps",
+          "common": "Smallhead Catfish"
+        },
+        {
+          "scientific": "Euristhmus nudiceps",
+          "common": "Naked-headed Catfish"
+        }
+      ]
+    },
+    {
+      "scientific": "Neosiluroides",
+      "common": "Eeltail Catfish",
+      "species": [
+        {
+          "scientific": "Neosiluroides cooperensis",
+          "common": "Cooper Creek Catfish"
+        }
+      ]
+    },
+    {
+      "scientific": "Neosilurus",
+      "common": "Eeltail Catfish",
+      "species": [
+        {
+          "scientific": "Neosilurus brevidorsalis",
+          "common": "Shortfin Tandan"
+        },
+        {
+          "scientific": "Neosilurus hyrtlii",
+          "common": "Glencoe Tandan"
+        },
+        {
+          "scientific": "Neosilurus mollespiculum",
+          "common": "Soft-spined Catfish"
+        }
+      ]
+    },
+    {
+      "scientific": "Oloplotosus",
+      "common": "Eeltail Catfish",
+      "species": [
+        {
+          "scientific": "Oloplotosus luteus",
+          "common": "Pale Yellow Tandan"
+        },
+        {
+          "scientific": "Oloplotosus mariae",
+          "common": "Maria's Tandan"
+        },
+        {
+          "scientific": "Oloplotosus torobo",
+          "common": "Kutubu Tandan"
+        }
+      ]
+    },
+    {
+      "scientific": "Paraplotosus",
+      "common": "Eeltail Catfish",
+      "species": [
+        {
+          "scientific": "Paraplotosus albilabris",
+          "common": "Whitelipped Eel-catfish"
+        },
+        {
+          "scientific": "Paraplotosus muelleri",
+          "common": "Kimberley Catfish"
+        }
+      ]
+    },
+    {
+      "scientific": "Plotosus",
+      "common": "Eeltail Catfish",
+      "species": [
+        {
+          "scientific": "Plotosus lineatus",
+          "common": "Striped Eel-catfish"
+        },
+        {
+          "scientific": "Plotosus japonicus",
+          "common": "Japanese Striped Eel-catfish"
+        },
+        {
+          "scientific": "Plotosus canius",
+          "common": "Gray Eel-catfish"
+        }
+      ]
+    },
+    {
+      "scientific": "Porochilus",
+      "common": "Eeltail Catfish",
+      "species": [
+        {
+          "scientific": "Porochilus argenteus",
+          "common": "Silver Tandan"
+        },
+        {
+          "scientific": "Porochilus rendahli",
+          "common": "Rendahl's Catfish"
+        }
+      ]
+    },
+    {
+      "scientific": "Tandanus",
+      "common": "Eeltail Catfish",
+      "species": [
+        {
+          "scientific": "Tandanus tandanus",
+          "common": "Tandan Catfish"
+        },
+        {
+          "scientific": "Tandanus bostocki",
+          "common": "Freshwater Cobbler"
+        },
+        {
+          "scientific": "Tandanus tropicanus",
+          "common": "Wet Tropics Tandan"
+        }
+      ]
+    }
+  ]
+}

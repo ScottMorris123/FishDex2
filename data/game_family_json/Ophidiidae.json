@@ -1,0 +1,32 @@
+{
+  "family": {
+    "scientific": "Ophidiidae",
+    "common": "Cusk-eel Family"
+  },
+  "genera": [
+    {
+      "scientific": "Brotula",
+      "common": "Brotulas",
+      "species": [
+        {
+          "scientific": "Brotula barbata",
+          "common": "Atlantic Bearded Brotula"
+        },
+        {
+          "scientific": "Brotula multibarbata",
+          "common": "Goatsbeard Brotula"
+        }
+      ]
+    },
+    {
+      "scientific": "Hoplobrotula",
+      "common": "Brotulas",
+      "species": [
+        {
+          "scientific": "Hoplobrotula armata",
+          "common": "Armored Cusk"
+        }
+      ]
+    }
+  ]
+}

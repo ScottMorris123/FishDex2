@@ -1,0 +1,26 @@
+{
+  "family": {
+    "scientific": "Arripidae",
+    "common": "Australian Salmon Family"
+  },
+  "genera": [
+    {
+      "scientific": "Arripis",
+      "common": "Australian salmon",
+      "species": [
+        {
+          "scientific": "Arripis georgiana",
+          "common": "Australian Herring"
+        },
+        {
+          "scientific": "Arripis trutta",
+          "common": "Australian Salmon"
+        },
+        {
+          "scientific": "Arripis truttacea",
+          "common": "Western Australian Salmon"
+        }
+      ]
+    }
+  ]
+}

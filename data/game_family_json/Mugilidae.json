@@ -1,0 +1,60 @@
+{
+  "family": {
+    "scientific": "Mugilidae",
+    "common": "Mullet Family"
+  },
+  "genera": [
+    {
+      "scientific": "Aldrichetta",
+      "common": "Mullets",
+      "species": [
+        {
+          "scientific": "Aldrichetta forsteri",
+          "common": "Yellow-eye Mullet"
+        }
+      ]
+    },
+    {
+      "scientific": "Chelon",
+      "common": "Mullets",
+      "species": [
+        {
+          "scientific": "Chelon labrosus",
+          "common": "Thicklip Grey Mullet"
+        },
+        {
+          "scientific": "Chelon ramada",
+          "common": "Thinlip Mullet"
+        },
+        {
+          "scientific": "Chelon tricuspidens",
+          "common": "Striped Mullet"
+        }
+      ]
+    },
+    {
+      "scientific": "Mugil",
+      "common": "Mullets",
+      "species": [
+        {
+          "scientific": "Mugil cephalus",
+          "common": "Flathead Grey Mullet"
+        }
+      ]
+    },
+    {
+      "scientific": "Planiliza",
+      "common": "Mullets",
+      "species": [
+        {
+          "scientific": "Planiliza alata",
+          "common": "Diamond Mullet"
+        },
+        {
+          "scientific": "Planiliza macrolepis",
+          "common": "Largescale Mullet"
+        }
+      ]
+    }
+  ]
+}

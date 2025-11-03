@@ -1,0 +1,18 @@
+{
+  "family": {
+    "scientific": "Aetobatidae",
+    "common": "Pelagic Eagle Ray Family"
+  },
+  "genera": [
+    {
+      "scientific": "Aetobatus",
+      "common": "eagle rays",
+      "species": [
+        {
+          "scientific": "Aetobatus ocellatus",
+          "common": "Ocellated eagle ray"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "family": {
+    "scientific": "Siluridae",
+    "common": "Sheatfish Family"
+  },
+  "genera": [
+    {
+      "scientific": "Kryptopterus",
+      "common": "Glass Catfishes",
+      "species": [
+        { "scientific": "Kryptopterus vitreolus", "common": "Glass Catfish" }
+      ]
+    },
+    {
+      "scientific": "Silurus",
+      "common": "Wels Catfishes",
+      "species": [
+        { "scientific": "Silurus glanis", "common": "Wels Catfish" },
+        { "scientific": "Silurus aristotelis", "common": "Aristotle's Catfish" },
+        { "scientific": "Silurus asotus", "common": "Amur Catfish" },
+        { "scientific": "Silurus biwaensis", "common": "Biwa Catfish" }
+      ]
+    },
+    {
+      "scientific": "Wallago",
+      "common": "Wallago Catfishes",
+      "species": [
+        { "scientific": "Wallago attu", "common": "Helicopter Catfish" }
+      ]
+    },
+    {
+      "scientific": "Wallagonia",
+      "common": "Tapahs",
+      "species": [
+        { "scientific": "Wallagonia leerii", "common": "Tapah" }
+      ]
+    },
+    {
+      "scientific": "Ompok",
+      "common": "Butter Catfishes",
+      "species": [
+        { "scientific": "Ompok argestes", "common": "Wetzone Butter Catfish" },
+        { "scientific": "Ompok bimaculatus", "common": "Butter Catfish" },
+        { "scientific": "Ompok ceylonensis", "common": "Dryzone Butter Catfish" },
+        { "scientific": "Ompok eugeneiatus", "common": "Malay Glass Catfish" },
+        { "scientific": "Ompok malabaricus", "common": "Goan Catfish" },
+        { "scientific": "Ompok pabda", "common": "Pabdah Catfish" },
+        { "scientific": "Ompok pabo", "common": "Pabo Catfish" },
+        { "scientific": "Ompok pinnatus", "common": "Long-Fin Glass Catfish" }
+      ]
+    }
+  ]
+}

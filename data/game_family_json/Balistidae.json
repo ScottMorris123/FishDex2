@@ -1,0 +1,32 @@
+{
+  "family": {
+    "scientific": "Balistidae",
+    "common": "Triggerfish Family"
+  },
+  "genera": [
+    {
+      "scientific": "Balistes",
+      "common": "Triggerfishes",
+      "species": [
+        {
+          "scientific": "Balistes capriscus",
+          "common": "Grey Triggerfish"
+        },
+        {
+          "scientific": "Balistes vetula",
+          "common": "Queen Triggerfish"
+        }
+      ]
+    },
+    {
+      "scientific": "Canthidermis",
+      "common": "Triggerfishes",
+      "species": [
+        {
+          "scientific": "Canthidermis sufflamen",
+          "common": "Ocean Triggerfish"
+        }
+      ]
+    }
+  ]
+}

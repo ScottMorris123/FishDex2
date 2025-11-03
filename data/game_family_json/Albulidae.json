@@ -1,0 +1,22 @@
+{
+  "family": {
+    "scientific": "Albulidae",
+    "common": "Bonefish Family"
+  },
+  "genera": [
+    {
+      "scientific": "Albula",
+      "common": "Bonefishes",
+      "species": [
+        {
+          "scientific": "Albula glossodonta",
+          "common": "Shortjaw Bonefish"
+        },
+        {
+          "scientific": "Albula vulpes",
+          "common": "Bananafish"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "family": {
+    "scientific": "Ginglymostomatidae",
+    "common": "Nurse Shark Family"
+  },
+  "genera": [
+    {
+      "scientific": "Ginglymostoma",
+      "common": "Nurse Sharks",
+      "species": [
+        {
+          "scientific": "Ginglymostoma cirratum",
+          "common": "Nurse Shark"
+        },
+        {
+          "scientific": "Ginglymostoma unami",
+          "common": "Pacific Nurse Shark"
+        }
+      ]
+    },
+    {
+      "scientific": "Nebrius",
+      "common": "Nurse Sharks",
+      "species": [
+        {
+          "scientific": "Nebrius ferrugineus",
+          "common": "Tawny Nurse Shark"
+        }
+      ]
+    },
+    {
+      "scientific": "Pseudoginglymostoma",
+      "common": "Nurse Sharks",
+      "species": [
+        {
+          "scientific": "Pseudoginglymostoma brevicaudatum",
+          "common": "Shorttail Nurse Shark"
+        }
+      ]
+    }
+  ]
+}

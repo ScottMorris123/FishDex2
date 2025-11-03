@@ -1,0 +1,65 @@
+{
+  "family": {
+    "scientific": "Scorpididae",
+    "common": "Sweep Family"
+  },
+  "genera": [
+    {
+      "scientific": "Scorpis",
+      "common": "Sweeps",
+      "species": [
+        {
+          "scientific": "Scorpis aequipinnis",
+          "common": "Sea Sweep"
+        },
+        {
+          "scientific": "Scorpis georgiana",
+          "common": "Banded Sweep"
+        },
+        {
+          "scientific": "Scorpis lineolata",
+          "common": "Silver Sweep"
+        },
+        {
+          "scientific": "Scorpis violacea",
+          "common": "Blue Maomao"
+        }
+      ]
+    },
+    {
+      "scientific": "Bathystethus",
+      "common": "Knifefishes",
+      "species": [
+        {
+          "scientific": "Bathystethus cultratus",
+          "common": "Grey Knifefish"
+        },
+        {
+          "scientific": "Bathystethus orientalis",
+          "common": "Silver Knifefish"
+        }
+      ]
+    },
+    {
+      "scientific": "Labracoglossa",
+      "common": "Knifefishes",
+      "species": [
+        {
+          "scientific": "Labracoglossa nitida",
+          "common": "Blue Knifefish"
+        }
+      ]
+    },
+    {
+      "scientific": "Medialuna",
+      "common": "Halfmoon",
+      "species": [
+        {
+          "scientific": "Medialuna californiensis",
+          "common": "Halfmoon"
+        }
+      ]
+    }
+  ]
+}
+

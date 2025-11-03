@@ -1,0 +1,32 @@
+{
+  "family": {
+    "scientific": "Pinguipedidae",
+    "common": "Sandperch Family"
+  },
+  "genera": [
+    {
+      "scientific": "Parapercis",
+      "common": "Sandperches",
+      "species": [
+        {
+          "scientific": "Parapercis colias",
+          "common": "Blue Cod"
+        }
+      ]
+    },
+    {
+      "scientific": "Pseudopercis",
+      "common": "Sandperches",
+      "species": [
+        {
+          "scientific": "Pseudopercis numida",
+          "common": "Namorado Sandperch"
+        },
+        {
+          "scientific": "Pseudopercis semifasciata",
+          "common": "Argentinian Sandperch"
+        }
+      ]
+    }
+  ]
+}

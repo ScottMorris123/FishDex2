@@ -1,0 +1,18 @@
+{
+  "family": {
+    "scientific": "Ophichthidae",
+    "common": "Snake Eel Family"
+  },
+  "genera": [
+    {
+      "scientific": "Ophisurus",
+      "common": "Snake Eels",
+      "species": [
+        {
+          "scientific": "Ophisurus serpens",
+          "common": "Serpent Eel"
+        }
+      ]
+    }
+  ]
+}

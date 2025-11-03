@@ -1,0 +1,36 @@
+{
+  "family": {
+    "scientific": "Bagridae",
+    "common": "Bagrid Catfish Family"
+  },
+  "genera": [
+    {
+      "scientific": "Bagrus",
+      "common": "Bagrid Catfishes",
+      "species": [
+        {
+          "scientific": "Bagrus bajad",
+          "common": "Bayad"
+        },
+        {
+          "scientific": "Bagrus docmak",
+          "common": "Sementundu"
+        }
+      ]
+    },
+    {
+      "scientific": "Sperata",
+      "common": "Bagrid Catfishes",
+      "species": [
+        {
+          "scientific": "Sperata aor",
+          "common": "Long Whiskered Catfish"
+        },
+        {
+          "scientific": "Sperata seenghala",
+          "common": "Giant River Catfish"
+        }
+      ]
+    }
+  ]
+}

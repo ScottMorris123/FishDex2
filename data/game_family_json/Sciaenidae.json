@@ -1,0 +1,512 @@
+{
+  "family": {
+    "scientific": "Sciaenidae",
+    "common": "Croaker Family"
+  },
+  "genera": [
+    {
+      "scientific": "Aplodinotus",
+      "common": "Freshwater Drums",
+      "species": [
+        {
+          "scientific": "Aplodinotus grunniens",
+          "common": "Freshwater Drum"
+        }
+      ]
+    },
+    {
+      "scientific": "Atractoscion",
+      "common": "Croakers",
+      "species": [
+        {
+          "scientific": "Atractoscion aequidens",
+          "common": "Geelbeck Croacker"
+        },
+        {
+          "scientific": "Atractoscion nobilis",
+          "common": "White Weakfish"
+        }
+      ]
+    },
+    {
+      "scientific": "Cynoscion",
+      "common": "Croakers",
+      "species": [
+        {
+          "scientific": "Cynoscion acoupa",
+          "common": "Acoupa Weakfish"
+        },
+        {
+          "scientific": "Cynoscion albus",
+          "common": "Whitefin Weakfish"
+        },
+        {
+          "scientific": "Cynoscion analis",
+          "common": "Peruvian Weakfish"
+        },
+        {
+          "scientific": "Cynoscion arenarius",
+          "common": "Sand Seatrout"
+        },
+        {
+          "scientific": "Cynoscion guatucupa",
+          "common": "Striped Weakfish"
+        },
+        {
+          "scientific": "Cynoscion jamaicensis",
+          "common": "Jamaica Weakfish"
+        },
+        {
+          "scientific": "Cynoscion leiarchus",
+          "common": "Smooth Weakfish"
+        },
+        {
+          "scientific": "Cynoscion microlepidotus",
+          "common": "Smallscale Weakfish"
+        },
+        {
+          "scientific": "Cynoscion nannus",
+          "common": "Dwarf Weakfish"
+        },
+        {
+          "scientific": "Cynoscion nebulosus",
+          "common": "Spotted Seatrout"
+        },
+        {
+          "scientific": "Cynoscion nortoni",
+          "common": "Hake Weakfish"
+        },
+        {
+          "scientific": "Cynoscion nothus",
+          "common": "Silver Seatrout"
+        },
+        {
+          "scientific": "Cynoscion othonopterus",
+          "common": "Gulf Weakfish"
+        },
+        {
+          "scientific": "Cynoscion parvipinnis",
+          "common": "Shortfin Corvina"
+        },
+        {
+          "scientific": "Cynoscion phoxocephalus",
+          "common": "Cachema Weakfish"
+        },
+        {
+          "scientific": "Cynoscion praedatorius",
+          "common": "Boccone Weakfish"
+        },
+        {
+          "scientific": "Cynoscion regalis",
+          "common": "Weakfish"
+        },
+        {
+          "scientific": "Cynoscion similis",
+          "common": "Tonkin Weakfish"
+        },
+        {
+          "scientific": "Cynoscion squamipinnis",
+          "common": "Scalyfin Corvina"
+        },
+        {
+          "scientific": "Cynoscion steindachneri",
+          "common": "Smalltooth Weakfish"
+        },
+        {
+          "scientific": "Cynoscion stolzmanni",
+          "common": "Yellowtail Corvina"
+        },
+        {
+          "scientific": "Cynoscion striatus",
+          "common": "Striped Weakfish"
+        },
+        {
+          "scientific": "Cynoscion virescens",
+          "common": "Green Weakfish"
+        },
+        {
+          "scientific": "Cynoscion xanthulus",
+          "common": "Orangemouth Weakfish"
+        }
+      ]
+    },
+    {
+      "scientific": "Genyonemus",
+      "common": "Croakers",
+      "species": [
+        {
+          "scientific": "Genyonemus lineatus",
+          "common": "White Croacker"
+        }
+      ]
+    },
+    {
+      "scientific": "Johnius",
+      "common": "Croakers",
+      "species": [
+        {
+          "scientific": "Johnius amblycephalus",
+          "common": "Bearded Croaker"
+        },
+        {
+          "scientific": "Johnius australis",
+          "common": "Bottlenose Jewfish"
+        },
+        {
+          "scientific": "Johnius belangerii",
+          "common": "Belanger's Croaker"
+        },
+        {
+          "scientific": "Johnius borneensis",
+          "common": "Sharpnose Hammer Croaker"
+        },
+        {
+          "scientific": "Johnius carouna",
+          "common": "Caroun Croaker"
+        },
+        {
+          "scientific": "Johnius carutta",
+          "common": "Karut Croaker"
+        },
+        {
+          "scientific": "Johnius coitor",
+          "common": "Coitor Croaker"
+        },
+        {
+          "scientific": "Johnius dorsalis",
+          "common": "Small Kob"
+        },
+        {
+          "scientific": "Johnius dussumieri",
+          "common": "Sin Croaker"
+        },
+        {
+          "scientific": "Johnius elongatus",
+          "common": "Spindle Croaker"
+        },
+        {
+          "scientific": "Johnius fuscolineatus",
+          "common": "Bellfish"
+        },
+        {
+          "scientific": "Johnius glaucus",
+          "common": "Pale Spotfin Croaker"
+        },
+        {
+          "scientific": "Johnius heterolepis",
+          "common": "Large-Scale Croaker"
+        },
+        {
+          "scientific": "Johnius hypostoma",
+          "common": "Small-Mouth Croaker"
+        },
+        {
+          "scientific": "Johnius laevis",
+          "common": "Smooth Croaker"
+        },
+        {
+          "scientific": "Johnius latifrons",
+          "common": "Broad-Head Croaker"
+        },
+        {
+          "scientific": "Johnius macropterus",
+          "common": "Largefin Croaker"
+        },
+        {
+          "scientific": "Johnius macrorhynus",
+          "common": "Big-Snout Croaker"
+        },
+        {
+          "scientific": "Johnius majan",
+          "common": "Majan Croaker"
+        },
+        {
+          "scientific": "Johnius mannarensis",
+          "common": "Mannar Croaker"
+        },
+        {
+          "scientific": "Johnius novaeguineae",
+          "common": "Paperhead Croaker"
+        },
+        {
+          "scientific": "Johnius plagiostoma",
+          "common": "Large-Eye Croaker"
+        },
+        {
+          "scientific": "Johnius pacificus",
+          "common": "Pacific Croaker"
+        },
+        {
+          "scientific": "Johnius trachycephalus",
+          "common": "Leaftail Croaker"
+        },
+        {
+          "scientific": "Johnius trewavasae",
+          "common": "Trewavas Croaker"
+        },
+        {
+          "scientific": "Johnius weberi",
+          "common": "Weber's Croaker"
+        }
+      ]
+    },
+    {
+      "scientific": "Menticirrhus",
+      "common": "Kingcroakers",
+      "species": [
+        {
+          "scientific": "Menticirrhus americanus",
+          "common": "Southern Kingcroaker"
+        },
+        {
+          "scientific": "Menticirrhus elongatus",
+          "common": "Pacific Kingcroaker"
+        },
+        {
+          "scientific": "Menticirrhus littoralis",
+          "common": "Gulf Kingcroaker"
+        },
+        {
+          "scientific": "Menticirrhus nasus",
+          "common": "Highfin King Croaker"
+        },
+        {
+          "scientific": "Menticirrhus ophicephalus",
+          "common": "Snakehead Kingcroaker"
+        },
+        {
+          "scientific": "Menticirrhus paitensis",
+          "common": "Paita Kingcroaker"
+        },
+        {
+          "scientific": "Menticirrhus panamensis",
+          "common": "Panama Kingcroaker"
+        },
+        {
+          "scientific": "Menticirrhus saxatilis",
+          "common": "Northern Kingfish"
+        },
+        {
+          "scientific": "Menticirrhus undulatus",
+          "common": "California Kingcroaker"
+        }
+      ]
+    },
+    {
+      "scientific": "Micropogonias",
+      "common": "Croakers",
+      "species": [
+        {
+          "scientific": "Micropogonias altipinnis",
+          "common": "Tailfin Croaker"
+        },
+        {
+          "scientific": "Micropogonias ectenes",
+          "common": "Slender Croaker"
+        },
+        {
+          "scientific": "Micropogonias furnieri",
+          "common": "Whitemouth Croaker"
+        },
+        {
+          "scientific": "Micropogonias undulatus",
+          "common": "Atlantic Croaker"
+        }
+      ]
+    },
+    {
+      "scientific": "Otolithes",
+      "common": "Tigertooth Croakers",
+      "species": [
+        {
+          "scientific": "Otolithes arabicus",
+          "common": "Arabian Tigertooth Croaker"
+        },
+        {
+          "scientific": "Otolithes cuvieri",
+          "common": "Lesser Tigertooth Croaker"
+        },
+        {
+          "scientific": "Otolithes ruber",
+          "common": "Tigertooth Croaker"
+        }
+      ]
+    },
+    {
+      "scientific": "Pogonias",
+      "common": "Black Drums",
+      "species": [
+        {
+          "scientific": "Pogonias courbina",
+          "common": "Southern Black Drum"
+        },
+        {
+          "scientific": "Pogonias cromis",
+          "common": "Black Drum"
+        }
+      ]
+    },
+    {
+      "scientific": "Pseudotolithus",
+      "common": "Croakers",
+      "species": [
+        {
+          "scientific": "Pseudotolithus elongatus",
+          "common": "Bobo Croaker"
+        },
+        {
+          "scientific": "Pseudotolithus epipercus",
+          "common": "Guinea Croaker"
+        },
+        {
+          "scientific": "Pseudotolithus moorii",
+          "common": "Cameroon Croaker"
+        },
+        {
+          "scientific": "Pseudotolithus senegalensis",
+          "common": "Cassava Croaker"
+        },
+        {
+          "scientific": "Pseudotolithus senegallus",
+          "common": "Law Croaker"
+        },
+        {
+          "scientific": "Pseudotolithus typus",
+          "common": "Longneck Croaker"
+        }
+      ]
+    },
+    {
+      "scientific": "Roncador",
+      "common": "Croakers",
+      "species": [
+        {
+          "scientific": "Roncador stearnsii",
+          "common": "Spotfin Croaker"
+        }
+      ]
+    },
+    {
+      "scientific": "Sciaenops",
+      "common": "Drums",
+      "species": [
+        {
+          "scientific": "Sciaenops ocellatus",
+          "common": "Red Drum"
+        }
+      ]
+    },
+    {
+      "scientific": "Totoaba",
+      "common": "Drums",
+      "species": [
+        {
+          "scientific": "Totoaba macdonaldi",
+          "common": "Totoaba"
+        }
+      ]
+    },
+    {
+      "scientific": "Umbrina",
+      "common": "Drums",
+      "species": [
+        {
+          "scientific": "Umbrina analis",
+          "common": "Longspine Drum"
+        },
+        {
+          "scientific": "Umbrina broussonnetii",
+          "common": "Striped Drum"
+        },
+        {
+          "scientific": "Umbrina bussingi",
+          "common": "Bussing's Drum"
+        },
+        {
+          "scientific": "Umbrina canariensis",
+          "common": "Canary Drum"
+        },
+        {
+          "scientific": "Umbrina canosai",
+          "common": "Argentine Croaker"
+        },
+        {
+          "scientific": "Umbrina cirrosa",
+          "common": "Shi Drum"
+        },
+        {
+          "scientific": "Umbrina coroides",
+          "common": "Sand Drum"
+        },
+        {
+          "scientific": "Umbrina dorsalis",
+          "common": "Longfin Drum"
+        },
+        {
+          "scientific": "Umbrina galapagorum",
+          "common": "Galápagos Drum"
+        },
+        {
+          "scientific": "Umbrina roncador",
+          "common": "Yellowfin Drum"
+        },
+        {
+          "scientific": "Umbrina ronchus",
+          "common": "Fusca Drum"
+        },
+        {
+          "scientific": "Umbrina steindachneri",
+          "common": "Steindachner's Drum"
+        },
+        {
+          "scientific": "Umbrina wintersteeni",
+          "common": "Wintersteen Drum"
+        },
+        {
+          "scientific": "Umbrina xanti",
+          "common": "Polla Drum"
+        }
+      ]
+    },
+    {
+      "scientific": "Argyrosomus",
+      "common": "Meagres",
+      "species": [
+        {
+          "scientific": "Argyrosomus amoyensis",
+          "common": "Amoy Croaker"
+        },
+        {
+          "scientific": "Argyrosomus coronus",
+          "common": "Dusky Kob"
+        },
+        {
+          "scientific": "Argyrosomus heinii",
+          "common": "Arabian Sea Meagre"
+        },
+        {
+          "scientific": "Argyrosomus hololepidotus",
+          "common": "Southern Meagre"
+        },
+        {
+          "scientific": "Argyrosomus inodorus",
+          "common": "Mild Meagre"
+        },
+        {
+          "scientific": "Argyrosomus japonicus",
+          "common": "Japanese Meagre"
+        },
+        {
+          "scientific": "Argyrosomus regius",
+          "common": "Meagre"
+        },
+        {
+          "scientific": "Argyrosomus thorpei",
+          "common": "Squaretail Kob"
+        }
+      ]
+    }
+
+
+  ]
+}

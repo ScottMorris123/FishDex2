@@ -1,0 +1,68 @@
+{
+  "family": {
+    "scientific": "Kyphosidae",
+    "common": "Sea Chub Family"
+  },
+  "genera": [
+        {
+      "scientific": "Kyphosus",
+      "common": "Sea Chubs",
+      "species": [
+        {
+          "scientific": "Kyphosus azureus",
+          "common": "Zebra Perch Sea Chub"
+        },
+        {
+          "scientific": "Kyphosus bigibbus",
+          "common": "Brown Chub"
+        },
+        {
+          "scientific": "Kyphosus cinerascens",
+          "common": "Blue Sea Chub"
+        },
+        {
+          "scientific": "Kyphosus cornelii",
+          "common": "Western Buffalo Bream"
+        },
+        {
+          "scientific": "Kyphosus elegans",
+          "common": "Cortez Sea Chub"
+        },
+        {
+          "scientific": "Kyphosus gladius",
+          "common": "Gladius Sea Chub"
+        },
+        {
+          "scientific": "Kyphosus hawaiiensis",
+          "common": "Hawaiian Chub"
+        },
+        {
+          "scientific": "Kyphosus ocyurus",
+          "common": "Blue-striped Chub"
+        },
+        {
+          "scientific": "Kyphosus sectatrix",
+          "common": "Bermuda Chub"
+        },
+        {
+          "scientific": "Kyphosus sydneyanus",
+          "common": "Silver Drummer"
+        },
+        {
+          "scientific": "Kyphosus vaigiensis",
+          "common": "Brassy Chub"
+        }
+      ]
+    },
+    {
+      "scientific": "Neoscorpis",
+      "common": "Sea Chubs",
+      "species": [
+        {
+          "scientific": "Neoscorpis lithophilus",
+          "common": "Stone Bream"
+        }
+      ]
+    }
+  ]
+}

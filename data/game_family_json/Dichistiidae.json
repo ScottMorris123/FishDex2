@@ -1,0 +1,22 @@
+{
+  "family": {
+    "scientific": "Dichistiidae",
+    "common": "Galjoen Family"
+  },
+  "genera": [
+    {
+      "scientific": "Dichistius",
+      "common": "Galjoen Fishes",
+      "species": [
+        {
+          "scientific": "Dichistius capensis",
+          "common": "Galjoen"
+        },
+        {
+          "scientific": "Dichistius multifasciatus",
+          "common": "Banded galjoen"
+        }
+      ]
+    }
+  ]
+}

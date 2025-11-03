@@ -1,0 +1,437 @@
+{
+  "family": {
+    "scientific": "Muraenidae",
+    "common": "Moray Eel Family"
+  },
+  "genera": [
+    {
+      "scientific": "Diaphenchelys",
+      "common": "Moray Eels",
+      "species": [
+        {
+          "scientific": "Diaphenchelys dalmatian",
+          "common": "Dalmatian Moray Eel"
+        },
+        {
+          "scientific": "Diaphenchelys laimospila",
+          "common": "Spotted-throat Moray"
+        },
+        {
+          "scientific": "Diaphenchelys pelonates",
+          "common": "Mud-dwelling Moray"
+        }
+      ]
+    },
+    {
+      "scientific": "Echidna",
+      "common": "Moray Eels",
+      "species": [
+        {
+          "scientific": "Echidna amblyodon",
+          "common": "Sulawesi Moray"
+        },
+        {
+          "scientific": "Echidna catenata",
+          "common": "Chain Moray"
+        },
+        {
+          "scientific": "Echidna delicatula",
+          "common": "Mottled Moray"
+        },
+        {
+          "scientific": "Echidna leucotaenia",
+          "common": "Whiteface Moray"
+        },
+        {
+          "scientific": "Echidna nebulosa",
+          "common": "Snowflake Moray"
+        },
+        {
+          "scientific": "Echidna nocturna",
+          "common": "Freckled Moray"
+        },
+        {
+          "scientific": "Echidna peli",
+          "common": "Pebbletooth Moray"
+        },
+        {
+          "scientific": "Echidna polyzona",
+          "common": "Barred Moray"
+        },
+        {
+          "scientific": "Echidna rhodochilus",
+          "common": "Pink-lipped Moray Eel"
+        },
+        {
+          "scientific": "Echidna unicolor",
+          "common": "Unicolor Moray"
+        },
+        {
+          "scientific": "Echidna xanthospilos",
+          "common": "New Guinea Moray"
+        }
+      ]
+    },
+    {
+      "scientific": "Enchelycore",
+      "common": "Moray Eels",
+      "species": [
+        {
+          "scientific": "Enchelycore anatina",
+          "common": "Fangtooth Moray"
+        },
+        {
+          "scientific": "Enchelycore bayeri",
+          "common": "Bayer's Moray"
+        },
+        {
+          "scientific": "Enchelycore bikiniensis",
+          "common": "Bikini Atoll Moray"
+        },
+        {
+          "scientific": "Enchelycore carychroa",
+          "common": "Caribbean Chestnut Moray"
+        },
+        {
+          "scientific": "Enchelycore kamara",
+          "common": "Dark-spotted Moray"
+        },
+        {
+          "scientific": "Enchelycore lichenosa",
+          "common": "Reticulate Hookjaw Moray"
+        },
+        {
+          "scientific": "Enchelycore nigricans",
+          "common": "Mulatto Conger"
+        },
+        {
+          "scientific": "Enchelycore octaviana",
+          "common": "Slenderjaw Moray"
+        },
+        {
+          "scientific": "Enchelycore pardalis",
+          "common": "Leopard Moray"
+        },
+        {
+          "scientific": "Enchelycore ramosa",
+          "common": "Mosaic Moray"
+        },
+        {
+          "scientific": "Enchelycore schismatorhynchus",
+          "common": "White-margined Moray"
+        }
+      ]
+    },
+    {
+      "scientific": "Enchelynassa",
+      "common": "Moray Eels",
+      "species": [
+        {
+          "scientific": "Enchelynassa canina",
+          "common": "Viper Moray"
+        }
+      ]
+    },
+    {
+      "scientific": "Gymnomuraena",
+      "common": "Moray Eels",
+      "species": [
+        {
+          "scientific": "Gymnomuraena zebra",
+          "common": "Zebra Moray"
+        }
+      ]
+    },
+    {
+      "scientific": "Gymnothorax",
+      "common": "Moray Eels",
+      "species": [
+        {
+          "scientific": "Gymnothorax afer",
+          "common": "Dark Moray"
+        },
+        {
+          "scientific": "Gymnothorax albimarginatus",
+          "common": "White-margin Moray"
+        },
+        {
+          "scientific": "Gymnothorax andamanensis",
+          "common": "Andaman Moray"
+        },
+        {
+          "scientific": "Gymnothorax angusticauda",
+          "common": "Narrow-tail Moray"
+        },
+        {
+          "scientific": "Gymnothorax annasona",
+          "common": "Lord Howe Island Moray"
+        },
+        {
+          "scientific": "Gymnothorax annulatus",
+          "common": "Ringed Moray"
+        },
+        {
+          "scientific": "Gymnothorax atolli",
+          "common": "Atoll Moray"
+        },
+        {
+          "scientific": "Gymnothorax aurocephalus",
+          "common": "Goldenhead Moray"
+        },
+        {
+          "scientific": "Gymnothorax australicola",
+          "common": "South Pacific Moray"
+        },
+        {
+          "scientific": "Gymnothorax austrinus",
+          "common": "Southern Moray"
+        },
+        {
+          "scientific": "Gymnothorax bacalladoi",
+          "common": "Canary Moray"
+        },
+        {
+          "scientific": "Gymnothorax bathyphilus",
+          "common": "Deep-dwelling Moray"
+        },
+        {
+          "scientific": "Gymnothorax berndti",
+          "common": "Y-patterned Moray"
+        },
+        {
+          "scientific": "Gymnothorax breedeni",
+          "common": "Black-cheek Moray"
+        },
+        {
+          "scientific": "Gymnothorax buroensis",
+          "common": "Vagrant Moray"
+        },
+        {
+          "scientific": "Gymnothorax castaneus",
+          "common": "Panamic Green Moray"
+        },
+        {
+          "scientific": "Gymnothorax cephalospilus",
+          "common": "Head-spot Moray"
+        },
+        {
+          "scientific": "Gymnothorax chilospilus",
+          "common": "Lip-spot Moray"
+        },
+        {
+          "scientific": "Gymnothorax cinerascens",
+          "common": "Plain Moray"
+        },
+        {
+          "scientific": "Gymnothorax conspersus",
+          "common": "Saddled Moray"
+        },
+        {
+          "scientific": "Gymnothorax davidsmithi",
+          "common": "Flores Mud Moray"
+        },
+        {
+          "scientific": "Gymnothorax dovii",
+          "common": "Fine-spotted Moray"
+        },
+        {
+          "scientific": "Gymnothorax elegans",
+          "common": "Elegant Moray"
+        },
+        {
+          "scientific": "Gymnothorax enigmaticus",
+          "common": "Enigmatic Moray"
+        },
+        {
+          "scientific": "Gymnothorax equatorialis",
+          "common": "Spot-tail Moray"
+        },
+        {
+          "scientific": "Gymnothorax eurostus",
+          "common": "Abbott's Moray"
+        },
+        {
+          "scientific": "Gymnothorax favagineus",
+          "common": "Laced Moray"
+        },
+        {
+          "scientific": "Gymnothorax fimbriatus",
+          "common": "Fimbriated Moray"
+        },
+        {
+          "scientific": "Gymnothorax flavimarginatus",
+          "common": "Yellow-edged Moray"
+        },
+        {
+          "scientific": "Gymnothorax flavoculus",
+          "common": "Pale-nose Moray"
+        },
+        {
+          "scientific": "Gymnothorax funebris",
+          "common": "Green Moray"
+        },
+        {
+          "scientific": "Gymnothorax fuscomaculatus",
+          "common": "Brown-spotted Moray"
+        },
+        {
+          "scientific": "Gymnothorax gracilicauda",
+          "common": "Slender-tail Moray"
+        },
+        {
+          "scientific": "Gymnothorax griseus",
+          "common": "Geometric Moray"
+        },
+        {
+          "scientific": "Gymnothorax hepaticus",
+          "common": "Liver-colored Moray"
+        },
+        {
+          "scientific": "Gymnothorax herrei",
+          "common": "Herre's Moray"
+        },
+        {
+          "scientific": "Gymnothorax hubbsi",
+          "common": "Lichen Moray"
+        },
+        {
+          "scientific": "Gymnothorax isingteena",
+          "common": "Indo-Pacific Spotted Moray"
+        },
+        {
+          "scientific": "Gymnothorax javanicus",
+          "common": "Giant Moray"
+        },
+        {
+          "scientific": "Gymnothorax kidako",
+          "common": "Kidako Moray"
+        },
+        {
+          "scientific": "Gymnothorax maderensis",
+          "common": "Shark-tooth Moray"
+        },
+        {
+          "scientific": "Gymnothorax margaritophorus",
+          "common": "Blotch-necked Moray"
+        },
+        {
+          "scientific": "Gymnothorax melatremus",
+          "common": "Dwarf Moray"
+        },
+        {
+          "scientific": "Gymnothorax meleagris",
+          "common": "Turkey Moray"
+        },
+        {
+          "scientific": "Gymnothorax miliaris",
+          "common": "Goldentail Moray"
+        },
+        {
+          "scientific": "Gymnothorax mordax",
+          "common": "California Moray"
+        },
+        {
+          "scientific": "Gymnothorax moringa",
+          "common": "Spotted Moray"
+        },
+        {
+          "scientific": "Gymnothorax nudivomer",
+          "common": "Yellowmouth Moray"
+        },
+        {
+          "scientific": "Gymnothorax thyrsoideus",
+          "common": "Greyface Moray"
+        },
+        {
+          "scientific": "Gymnothorax tile",
+          "common": "Indian Mud Moray"
+        },
+        {
+          "scientific": "Gymnothorax undulatus",
+          "common": "Undulated Moray"
+        },
+        {
+          "scientific": "Gymnothorax unicolor",
+          "common": "Brown Moray"
+        },
+        {
+          "scientific": "Gymnothorax vicinus",
+          "common": "Purple-mouth Moray"
+        },
+        {
+          "scientific": "Gymnothorax zonipectis",
+          "common": "Barred-fin Moray"
+        }
+      ]
+    },
+    {
+      "scientific": "Monopenchelys",
+      "common": "Moray Eels",
+      "species": [
+        {
+          "scientific": "Monopenchelys acuta",
+          "common": "Redface Moray"
+        }
+      ]
+    },
+    {
+      "scientific": "Muraena",
+      "common": "Moray Eels",
+      "species": [
+        {
+          "scientific": "Muraena argus",
+          "common": "White-spotted Moray"
+        },
+        {
+          "scientific": "Muraena clepsydra",
+          "common": "Hourglass Moray"
+        },
+        {
+          "scientific": "Muraena helena",
+          "common": "Mediterranean Moray"
+        },
+        {
+          "scientific": "Muraena lentiginosa",
+          "common": "Jewel Moray"
+        },
+        {
+          "scientific": "Muraena melanotis",
+          "common": "Honeycomb Moray"
+        },
+        {
+          "scientific": "Muraena pavonina",
+          "common": "Whitespot Moray"
+        },
+        {
+          "scientific": "Muraena retifera",
+          "common": "Reticulate Moray"
+        },
+        {
+          "scientific": "Muraena robusta",
+          "common": "Stout Moray"
+        }
+      ]
+    },
+    {
+      "scientific": "Pseudechidna",
+      "common": "Moray Eels",
+      "species": [
+        {
+          "scientific": "Pseudechidna brummeri",
+          "common": "White Ribbon Eel"
+        }
+      ]
+    },
+    {
+      "scientific": "Strophidon",
+      "common": "Moray Eels",
+      "species": [
+        {
+          "scientific": "Strophidon sathete",
+          "common": "Gangetic Moray"
+        }
+      ]
+    }
+
+  ]
+}

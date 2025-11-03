@@ -1,0 +1,26 @@
+{
+  "family": {
+    "scientific": "Mochokidae",
+    "common": "Upside-down Catfish Family"
+  },
+  "genera": [
+    {
+      "scientific": "Synodontis",
+      "common": "Upside-down Catfishes",
+      "species": [
+        {
+          "scientific": "Synodontis nigromaculatus",
+          "common": "Blackspotted Squeaker"
+        },
+        {
+          "scientific": "Synodontis schall",
+          "common": "Wahrindi"
+        },
+        {
+          "scientific": "Synodontis zambezensis",
+          "common": "Brown Squeaker"
+        }
+      ]
+    }
+  ]
+}

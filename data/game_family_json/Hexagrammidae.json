@@ -1,0 +1,48 @@
+{
+  "family": {
+    "scientific": "Hexagrammidae",
+    "common": "Greenling Family"
+  },
+  "genera": [
+    {
+      "scientific": "Hexagrammos",
+      "common": "Greenlings",
+      "species": [
+        {
+          "scientific": "Hexagrammos agrammus",
+          "common": "Spotty-bellied Greenling"
+        },
+        {
+          "scientific": "Hexagrammos decagrammus",
+          "common": "Kelp Greenling"
+        },
+        {
+          "scientific": "Hexagrammos lagocephalus",
+          "common": "Rock Greenling"
+        },
+        {
+          "scientific": "Hexagrammos octogrammus",
+          "common": "Masked Greenling"
+        },
+        {
+          "scientific": "Hexagrammos otakii",
+          "common": "Fat Greenling"
+        },
+        {
+          "scientific": "Hexagrammos stelleri",
+          "common": "Whitespotted Greenling"
+        }
+      ]
+    },
+    {
+      "scientific": "Ophiodon",
+      "common": "Lingcods",
+      "species": [
+        {
+          "scientific": "Ophiodon elongatus",
+          "common": "Lingcod"
+        }
+      ]
+    }
+  ]
+}

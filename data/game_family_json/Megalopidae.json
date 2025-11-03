@@ -1,0 +1,22 @@
+{
+  "family": {
+    "scientific": "Megalopidae",
+    "common": "Tarpon Family"
+  },
+  "genera": [
+    {
+      "scientific": "Megalops",
+      "common": "Tarpons",
+      "species": [
+        {
+          "scientific": "Megalops atlanticus",
+          "common": "Atlantic Tarpon"
+        },
+        {
+          "scientific": "Megalops cyprinoides",
+          "common": "Indo-Pacific Tarpon"
+        }
+      ]
+    }
+  ]
+}

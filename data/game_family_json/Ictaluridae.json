@@ -1,0 +1,110 @@
+{
+  "family": {
+    "scientific": "Ictaluridae",
+    "common": "North American Catfish Family"
+  },
+  "genera": [
+    {
+      "family": {
+        "scientific": "Ictaluridae",
+        "common": "North American Catfish Family"
+      },
+      "genera": [
+        {
+          "scientific": "Ameiurus",
+          "common": "Bullhead Catfishes",
+          "species": [
+            {
+              "scientific": "Ameiurus brunneus",
+              "common": "Snail Bullhead"
+            },
+            {
+              "scientific": "Ameiurus catus",
+              "common": "White Catfish"
+            },
+            {
+              "scientific": "Ameiurus melas",
+              "common": "Black Bullhead"
+            },
+            {
+              "scientific": "Ameiurus natalis",
+              "common": "Yellow Bullhead"
+            },
+            {
+              "scientific": "Ameiurus nebulosus",
+              "common": "Brown Bullhead"
+            },
+            {
+              "scientific": "Ameiurus platycephalus",
+              "common": "Flat Bullhead"
+            },
+            {
+              "scientific": "Ameiurus serracanthus",
+              "common": "Spotted Bullhead"
+            }
+          ]
+        },
+        {
+          "scientific": "Ictalurus",
+          "common": "North American Catfishes",
+          "species": [
+            {
+              "scientific": "Ictalurus australis",
+              "common": "Pánuco Catfish"
+            },
+            {
+              "scientific": "Ictalurus balsanus",
+              "common": "Balsas Catfish"
+            },
+            {
+              "scientific": "Ictalurus dugesii",
+              "common": "Lerma Catfish"
+            },
+            {
+              "scientific": "Ictalurus furcatus",
+              "common": "Blue Catfish"
+            },
+            {
+              "scientific": "Ictalurus lupus",
+              "common": "Headwater Catfish"
+            },
+            {
+              "scientific": "Ictalurus meridionalis",
+              "common": "Southern Blue Catfish"
+            },
+            {
+              "scientific": "Ictalurus mexicanus",
+              "common": "Rio Verde Catfish"
+            },
+            {
+              "scientific": "Ictalurus nazas",
+              "common": "Nazas Catfish"
+            },
+            {
+              "scientific": "Ictalurus ochoterenai",
+              "common": "Chapala Catfish"
+            },
+            {
+              "scientific": "Ictalurus pricei",
+              "common": "Yaqui Catfish"
+            },
+            {
+              "scientific": "Ictalurus punctatus",
+              "common": "Channel Catfish"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "scientific": "Pylodictis",
+      "common": "North American Catfishes",
+      "species": [
+        {
+          "scientific": "Pylodictis olivaris",
+          "common": "Flathead Catfish"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "family": {
+    "scientific": "Regalecidae",
+    "common": "Oarfish Family"
+  },
+  "genera": [
+    {
+      "scientific": "Regalecus",
+      "common": "Oarfish",
+      "species": [
+        {
+          "scientific": "Regalecus glesne",
+          "common": "Giant Oarfish"
+        },
+        {
+          "scientific": "Regalecus russelii",
+          "common": "Russell's Oarfish"
+        }
+      ]
+    },
+    {
+      "scientific": "Agrostichthys",
+      "common": "Oarfish",
+      "species": [
+        {
+          "scientific": "Agrostichthys parkeri",
+          "common": "Streamerfish"
+        }
+      ]
+    }
+  ]
+}

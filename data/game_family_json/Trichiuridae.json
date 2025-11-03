@@ -1,0 +1,104 @@
+{
+  "family": {
+    "scientific": "Trichiuridae",
+    "common": "Cutlassfish Family"
+  },
+  "genera": [
+    {
+      "scientific": "Aphanopus",
+      "common": "Scabbardfishes",
+      "species": [
+        { "scientific": "Aphanopus carbo", "common": "Black Scabbardfish" },
+        { "scientific": "Aphanopus intermedius", "common": "Intermediate Scabbardfish" },
+        { "scientific": "Aphanopus microphthalmus", "common": "Smalleye Scabbardfish" },
+        { "scientific": "Aphanopus mikhailini", "common": "Mikhailin's Scabbardfish" }
+      ]
+    },
+    {
+      "scientific": "Benthodesmus",
+      "common": "Frostfishes",
+      "species": [
+        { "scientific": "Benthodesmus elongatus", "common": "Elongate Frostfish" },
+        { "scientific": "Benthodesmus macrophthalmus", "common": "Bigeye Frostfish" },
+        { "scientific": "Benthodesmus neglectus", "common": "Neglected Frostfish" },
+        { "scientific": "Benthodesmus oligoradiatus", "common": "Sparse-rayed Frostfish" },
+        { "scientific": "Benthodesmus pacificus", "common": "North Pacific Frostfish" },
+        { "scientific": "Benthodesmus papua", "common": "Papuan Frostfish" },
+        { "scientific": "Benthodesmus simonyi", "common": "Simony's Frostfish" },
+        { "scientific": "Benthodesmus suluensis", "common": "Philippine Frostfish" },
+        { "scientific": "Benthodesmus tenuis", "common": "Slender Frostfish" },
+        { "scientific": "Benthodesmus tuckeri", "common": "Tucker's Frostfish" },
+        { "scientific": "Benthodesmus vityazi", "common": "Vityaz' Frostfish" }
+      ]
+    },
+    {
+      "scientific": "Assurger",
+      "common": "Scabbardfishes",
+      "species": [
+        { "scientific": "Assurger anzac", "common": "Razorback Scabbardfish" }
+      ]
+    },
+    {
+      "scientific": "Eupleurogrammus",
+      "common": "Hairtails",
+      "species": [
+        { "scientific": "Eupleurogrammus glossodon", "common": "Longtooth Hairtail" },
+        { "scientific": "Eupleurogrammus muticus", "common": "Smallhead Hairtail" }
+      ]
+    },
+    {
+      "scientific": "Evoxymetopon",
+      "common": "Scabbardfishes",
+      "species": [
+        { "scientific": "Evoxymetopon poeyi", "common": "Poey's Scabbardfish" },
+        { "scientific": "Evoxymetopon taeniatus", "common": "Channel Scabbardfish" }
+      ]
+    },
+    {
+      "scientific": "Lepidopus",
+      "common": "Scabbardfishes",
+      "species": [
+        { "scientific": "Lepidopus altifrons", "common": "Crested Scabbardfish" },
+        { "scientific": "Lepidopus calcar", "common": "Hawaiian Ridge Scabbardfish" },
+        { "scientific": "Lepidopus caudatus", "common": "Silver Scabbardfish" },
+        { "scientific": "Lepidopus dubius", "common": "Doubtful Scabbardfish" },
+        { "scientific": "Lepidopus fitchi", "common": "Fitch's Scabbardfish" },
+        { "scientific": "Lepidopus manis", "common": "Ghost Scabbardfish" }
+      ]
+    },
+    {
+      "scientific": "Demissolinea",
+      "common": "Hairtails",
+      "species": [
+        { "scientific": "Demissolinea novaeguineensis", "common": "New Guinean Hairtail" }
+      ]
+    },
+    {
+      "scientific": "Lepturacanthus",
+      "common": "Hairtails",
+      "species": [
+        { "scientific": "Lepturacanthus pantului", "common": "Coromandel Hairtail" },
+        { "scientific": "Lepturacanthus savala", "common": "Savalani Hairtail" }
+      ]
+    },
+    {
+      "scientific": "Tentoriceps",
+      "common": "Hairtails",
+      "species": [
+        { "scientific": "Tentoriceps cristatus", "common": "Crested Hairtail" }
+      ]
+    },
+    {
+      "scientific": "Trichiurus",
+      "common": "Hairtails",
+      "species": [
+        { "scientific": "Trichiurus auriga", "common": "Pearly Hairtail" },
+        { "scientific": "Trichiurus brevis", "common": "Chinese Short-tailed Hairtail" },
+        { "scientific": "Trichiurus gangeticus", "common": "Ganges Hairtail" },
+        { "scientific": "Trichiurus lepturus", "common": "Largehead Hairtail" },
+        { "scientific": "Trichiurus nickolensis", "common": "Australian Short-tailed Hairtail" },
+        { "scientific": "Trichiurus russelli", "common": "Short-tailed Hairtail" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "family": {
+    "scientific": "Kurtidae",
+    "common": "Nurseryfish Family"
+  },
+  "genera": [
+    {
+      "scientific": "Kurtus",
+      "common": "Nurseryfishes",
+      "species": [
+        {
+          "scientific": "Kurtus gulliveri",
+          "common": "Nurseryfish"
+        }
+      ]
+    }
+  ]
+}

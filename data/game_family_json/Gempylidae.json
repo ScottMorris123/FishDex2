@@ -1,0 +1,204 @@
+{
+  "family": {
+    "scientific": "Gempylidae",
+    "common": "Snake Mackerel Family"
+  },
+  "genera": [
+    {
+      "scientific": "Diplospinus",
+      "common": "Snake Mackerels",
+      "species": [
+        {
+          "scientific": "Diplospinus multistriatus",
+          "common": "Striped Escolar"
+        }
+      ]
+    },
+    {
+      "scientific": "Epinnula",
+      "common": "Snake Mackerels",
+      "species": [
+        {
+          "scientific": "Epinnula magistralis",
+          "common": "Domine"
+        },
+        {
+          "scientific": "Epinnula pacifica",
+          "common": "Pacific Domine"
+        }
+      ]
+    },
+    {
+      "scientific": "Gempylus",
+      "common": "Snake Mackerels",
+      "species": [
+        {
+          "scientific": "Gempylus serpens",
+          "common": "Snake Mackerel"
+        }
+      ]
+    },
+    {
+      "scientific": "Leionura",
+      "common": "Snake Mackerels",
+      "species": [
+        {
+          "scientific": "Leionura atun",
+          "common": "Snoek"
+        }
+      ]
+    },
+    {
+      "scientific": "Nealotus",
+      "common": "Snake Mackerels",
+      "species": [
+        {
+          "scientific": "Nealotus tripes",
+          "common": "Black Snake Mackerel"
+        }
+      ]
+    },
+    {
+      "scientific": "Neoepinnula",
+      "common": "Snake Mackerels",
+      "species": [
+        {
+          "scientific": "Neoepinnula americana",
+          "common": "American Sackfish"
+        },
+        {
+          "scientific": "Neoepinnula minetomai",
+          "common": "Large-Eyed Sackfish"
+        },
+        {
+          "scientific": "Neoepinnula orientalis",
+          "common": "Sackfish"
+        }
+      ]
+    },
+    {
+      "scientific": "Nesiarchus",
+      "common": "Snake Mackerels",
+      "species": [
+        {
+          "scientific": "Nesiarchus nasutus",
+          "common": "Black Gemfish"
+        }
+      ]
+    },
+    {
+      "scientific": "Paradiplospinus",
+      "common": "Snake Mackerels",
+      "species": [
+        {
+          "scientific": "Paradiplospinus antarcticus",
+          "common": "Antarctic Escolar"
+        },
+        {
+          "scientific": "Paradiplospinus gracilis",
+          "common": "Slender Escolar"
+        }
+      ]
+    },
+    {
+      "scientific": "Promethichthys",
+      "common": "Snake Mackerels",
+      "species": [
+        {
+          "scientific": "Promethichthys prometheus",
+          "common": "Roudi Escolar"
+        }
+      ]
+    },
+    {
+      "scientific": "Rexea",
+      "common": "Snake Mackerels",
+      "species": [
+        {
+          "scientific": "Rexea antefurcata",
+          "common": "Long-Finned Escolar"
+        },
+        {
+          "scientific": "Rexea bengalensis",
+          "common": "Bengal Escolar"
+        },
+        {
+          "scientific": "Rexea brevilineata",
+          "common": "Short-Lined Escolar"
+        },
+        {
+          "scientific": "Rexea nakamurai",
+          "common": "Nakamura's Escolar"
+        },
+        {
+          "scientific": "Rexea prometheoides",
+          "common": "Royal Escolar"
+        },
+        {
+          "scientific": "Rexea solandri",
+          "common": "Silver Gemfish"
+        }
+      ]
+    },
+    {
+      "scientific": "Rexichthys",
+      "common": "Snake Mackerels",
+      "species": [
+        {
+          "scientific": "Rexichthys johnpaxtoni",
+          "common": "Paxton's Escolar"
+        }
+      ]
+    },
+    {
+      "scientific": "Ruvettus",
+      "common": "Snake Mackerels",
+      "species": [
+        {
+          "scientific": "Ruvettus pretiosus",
+          "common": "Oilfish"
+        }
+      ]
+    },
+    {
+      "scientific": "Thyrsites",
+      "common": "Snake Mackerels",
+      "species": [
+        {
+          "scientific": "Thyrsites atun",
+          "common": "Barracouta"
+        }
+      ]
+    },
+    {
+      "scientific": "Thyrsitoides",
+      "common": "Snake Mackerels",
+      "species": [
+        {
+          "scientific": "Thyrsitoides marleyi",
+          "common": "Blacksail Snake Mackerel"
+        }
+      ]
+    },
+    {
+      "scientific": "Tongaichthys",
+      "common": "Snake Mackerels",
+      "species": [
+        {
+          "scientific": "Tongaichthys robustus",
+          "common": "Tonga Escolar"
+        }
+      ]
+    },
+    {
+      "scientific": "Lepidocybium",
+      "common": "Snake Mackerels",
+      "species": [
+        {
+          "scientific": "Lepidocybium flavobrunneum",
+          "common": "Escolar"
+        }
+      ]
+    }
+  ]
+}

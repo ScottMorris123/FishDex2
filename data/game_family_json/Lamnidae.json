@@ -1,0 +1,46 @@
+{
+  "family": {
+    "scientific": "Lamnidae",
+    "common": "Mackerel Shark Family"
+  },
+  "genera": [
+    {
+      "scientific": "Carcharodon",
+      "common": "Mackerel Sharks",
+      "species": [
+        {
+          "scientific": "Carcharodon carcharias",
+          "common": "Great White Shark"
+        }
+      ]
+    },
+    {
+      "scientific": "Isurus",
+      "common": "Mackerel Sharks",
+      "species": [
+        {
+          "scientific": "Isurus oxyrinchus",
+          "common": "Shortfin Mako Shark"
+        },
+        {
+          "scientific": "Isurus paucus",
+          "common": "Longfin Mako Shark"
+        }
+      ]
+    },
+    {
+      "scientific": "Lamna",
+      "common": "Mackerel Sharks",
+      "species": [
+        {
+          "scientific": "Lamna ditropis",
+          "common": "Salmon Shark"
+        },
+        {
+          "scientific": "Lamna nasus",
+          "common": "Porbeagle Shark"
+        }
+      ]
+    }
+  ]
+}

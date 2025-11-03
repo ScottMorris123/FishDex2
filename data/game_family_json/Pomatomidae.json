@@ -1,0 +1,18 @@
+{
+  "family": {
+    "scientific": "Pomatomidae",
+    "common": "Bluefish"
+  },
+  "genera": [
+    {
+      "scientific": "Pomatomus",
+      "common": "Bluefish",
+      "species": [
+        {
+          "scientific": "Pomatomus saltatrix",
+          "common": "Bluefish"
+        }
+      ]
+    }
+  ]
+}

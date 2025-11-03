@@ -1,0 +1,30 @@
+{
+  "family": {
+    "scientific": "Scorpaenidae",
+    "common": "Rockfish and Scorpionfish Family"
+  },
+  "genera": [
+    {
+      "scientific": "Scorpaena",
+      "common": "scorpionfishes",
+      "species": [
+        {
+          "scientific": "Scorpaena guttata",
+          "common": "California scorpionfish"
+        },
+        {
+          "scientific": "Scorpaena izensis",
+          "common": "Izu scorpionfish"
+        },
+        {
+          "scientific": "Scorpaena mystes",
+          "common": "Pacific spotted scorpionfish"
+        },
+        {
+          "scientific": "Scorpaena neglecta",
+          "common": "Scorpionfish"
+        }
+      ]
+    }
+  ]
+}

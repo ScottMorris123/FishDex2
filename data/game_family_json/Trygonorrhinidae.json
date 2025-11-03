@@ -1,0 +1,34 @@
+{
+  "family": {
+    "scientific": "Trygonorrhinidae",
+    "common": "Banjo Ray Family"
+  },
+  "genera": [
+    {
+      "scientific": "Aptychotrema",
+      "common": "Shovelnose Rays",
+      "species": [
+        { "scientific": "Aptychotrema rostrata", "common": "Eastern Shovelnose Ray" },
+        { "scientific": "Aptychotrema timorensis", "common": "Spotted Shovelnose Ray" },
+        { "scientific": "Aptychotrema vincentiana", "common": "Western Shovelnose Ray" }
+      ]
+    },
+    {
+      "scientific": "Trygonorrhina",
+      "common": "Fiddler Rays",
+      "species": [
+        { "scientific": "Trygonorrhina dumerilii", "common": "Southern Fiddler Ray" },
+        { "scientific": "Trygonorrhina fasciata", "common": "Eastern Fiddler Ray" }
+      ]
+    },
+    {
+      "scientific": "Zapteryx",
+      "common": "Guitarfishes",
+      "species": [
+        { "scientific": "Zapteryx brevirostris", "common": "Shortnose Guitarfish" },
+        { "scientific": "Zapteryx exasperata", "common": "Banded Guitarfish" },
+        { "scientific": "Zapteryx xyster", "common": "Southern Banded Guitarfish" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "family": {
+    "scientific": "Glaucostegidae",
+    "common": "Giant Guitarfish Family"
+  },
+  "genera": [
+    {
+      "scientific": "Glaucostegus",
+      "common": "Giant Guitarfishes",
+      "species": [
+        {
+          "scientific": "Glaucostegus cemiculus",
+          "common": "Blackchin Guitarfish"
+        },
+        {
+          "scientific": "Glaucostegus granulatus",
+          "common": "Sharpnose Guitarfish"
+        },
+        {
+          "scientific": "Glaucostegus halavi",
+          "common": "Halavi Guitarfish"
+        },
+        {
+          "scientific": "Glaucostegus microphthalmus",
+          "common": "Smalleyed Guitarfish"
+        },
+        {
+          "scientific": "Glaucostegus obtusus",
+          "common": "Widenose Guitarfish"
+        },
+        {
+          "scientific": "Glaucostegus spinosus",
+          "common": "Spiny Guitarfish"
+        },
+        {
+          "scientific": "Glaucostegus thouin",
+          "common": "Clubnose Guitarfish"
+        },
+        {
+          "scientific": "Glaucostegus typus",
+          "common": "Giant Guitarfish"
+        },
+        {
+          "scientific": "Glaucostegus younholeei",
+          "common": "Bangladeshi Guitarfish"
+        }
+      ]
+    }
+  ]
+}

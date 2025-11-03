@@ -1,0 +1,26 @@
+{
+  "family": {
+    "scientific": "Alosidae",
+    "common": "Shad Family"
+  },
+  "genera": [
+    {
+      "scientific": "Alosa",
+      "common": "River Herrings",
+      "species": [
+        {
+          "scientific": "Alosa alosa",
+          "common": "Allis Shad"
+        },
+        {
+          "scientific": "Alosa chrysochloris",
+          "common": "Skipjack Shad"
+        },
+        {
+          "scientific": "Alosa sapidissima",
+          "common": "American Shad"
+        }
+      ]
+    }
+  ]
+}

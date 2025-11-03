@@ -1,0 +1,23 @@
+{
+  "family": {
+    "scientific": "Amiidae",
+    "common": "Bowfins"
+  },
+  "genera": [
+    {
+      "scientific": "Amia",
+      "common": "Bowfin",
+      "species": [
+        {
+          "scientific": "Amia calva",
+          "common": "Common Bowfin"
+        },
+        {
+          "scientific": "Amia ocellicauda",
+          "common": "Eyetail Bowfin"
+        }
+      ]
+    }
+    
+  ]
+}

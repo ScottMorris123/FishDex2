@@ -1,0 +1,274 @@
+{
+  "family": {
+    "scientific": "Epinephelidae",
+    "common": "Grouper Family"
+  },
+  "genera": [
+    {
+      "scientific": "Aethaloperca",
+      "common": "Groupers",
+      "species": [
+        {
+          "scientific": "Aethaloperca rogaa",
+          "common": "Redmouth Grouper"
+        }
+      ]
+    },
+    {
+      "scientific": "Anyperodon",
+      "common": "Groupers",
+      "species": [
+        {
+          "scientific": "Anyperodon leucogrammicus",
+          "common": "Slender Grouper"
+        }
+      ]
+    },
+    {
+      "scientific": "Cephalopholis",
+      "common": "Groupers",
+      "species": [
+        {
+          "scientific": "Cephalopholis argus",
+          "common": "Peacock Grouper"
+        },
+        {
+          "scientific": "Cephalopholis igarashiensis",
+          "common": "Garish Hind"
+        },
+        {
+          "scientific": "Cephalopholis miniata",
+          "common": "Coral Hind"
+        },
+        {
+          "scientific": "Cephalopholis polleni",
+          "common": "Blue-Lined Grouper"
+        },
+        {
+          "scientific": "Cephalopholis sexmaculata",
+          "common": "Sixblotch Hind"
+        },
+        {
+          "scientific": "Cephalopholis spiloparaea",
+          "common": "Strawberry Hind"
+        }
+      ]
+    },
+    {
+      "scientific": "Dermatolepis",
+      "common": "Groupers",
+      "species": [
+        {
+          "scientific": "Dermatolepis dermatolepis",
+          "common": "Leather Bass"
+        }
+      ]
+    },
+    {
+      "scientific": "Epinephelus",
+      "common": "Groupers",
+      "species": [
+        {
+          "scientific": "Epinephelus adscensionis",
+          "common": "Rock Hind"
+        },
+        {
+          "scientific": "Epinephelus aeneus",
+          "common": "White Grouper"
+        },
+        {
+          "scientific": "Epinephelus analogus",
+          "common": "Spotted Grouper"
+        },
+        {
+          "scientific": "Epinephelus andersoni",
+          "common": "Catface Grouper"
+        },
+        {
+          "scientific": "Epinephelus bruneus",
+          "common": "Longtooth Grouper"
+        },
+        {
+          "scientific": "Epinephelus daemelii",
+          "common": "Saddletail Grouper"
+        },
+        {
+          "scientific": "Epinephelus drummondhayi",
+          "common": "Speckled Hind"
+        },
+        {
+          "scientific": "Epinephelus fasciatus",
+          "common": "Blacktip Grouper"
+        },
+        {
+          "scientific": "Epinephelus guttatus",
+          "common": "Red Hind"
+        },
+        {
+          "scientific": "Epinephelus hexagonatus",
+          "common": "Starspotted Grouper"
+        },
+        {
+          "scientific": "Epinephelus itajara",
+          "common": "Atlantic Goliath Grouper"
+        },
+        {
+          "scientific": "Epinephelus lanceolatus",
+          "common": "Giant Grouper"
+        },
+        {
+          "scientific": "Epinephelus malabaricus",
+          "common": "Malabar Grouper"
+        },
+        {
+          "scientific": "Epinephelus marginatus",
+          "common": "Dusky Grouper"
+        },
+        {
+          "scientific": "Epinephelus merra",
+          "common": "Honeycomb Grouper"
+        },
+        {
+          "scientific": "Epinephelus morio",
+          "common": "Red Grouper"
+        },
+        {
+          "scientific": "Epinephelus morrhua",
+          "common": "Comet Grouper"
+        },
+        {
+          "scientific": "Epinephelus posteli",
+          "common": "Stripedfin Grouper"
+        },
+        {
+          "scientific": "Epinephelus retouti",
+          "common": "Redtipped Grouper"
+        },
+        {
+          "scientific": "Epinephelus spilotoceps",
+          "common": "Foursaddle Grouper"
+        },
+        {
+          "scientific": "Epinephelus striatus",
+          "common": "Nassau Grouper"
+        },
+        {
+          "scientific": "Epinephelus tauvina",
+          "common": "Greasy Grouper"
+        },
+        {
+          "scientific": "Epinephelus tukula",
+          "common": "Potato Grouper"
+        }
+      ]
+    },
+    {
+      "scientific": "Gracila",
+      "common": "Groupers",
+      "species": [
+        {
+          "scientific": "Gracila albomarginata",
+          "common": "White-Edged Grouper"
+        }
+      ]
+    },
+    {
+      "scientific": "Hyporthodus",
+      "common": "Groupers",
+      "species": [
+        {
+          "scientific": "Hyporthodus flavolimbatus",
+          "common": "Yellowedge Grouper"
+        },
+        {
+          "scientific": "Hyporthodus mystacinus",
+          "common": "Misty Grouper"
+        },
+        {
+          "scientific": "Hyporthodus nigritus",
+          "common": "Warsaw Grouper"
+        },
+        {
+          "scientific": "Hyporthodus quernus",
+          "common": "Hawaiian Grouper"
+        }
+      ]
+    },
+    {
+      "scientific": "Mycteroperca",
+      "common": "Groupers",
+      "species": [
+        {
+          "scientific": "Mycteroperca acutirostris",
+          "common": "Comb Grouper"
+        },
+        {
+          "scientific": "Mycteroperca bonaci",
+          "common": "Black Grouper"
+        },
+        {
+          "scientific": "Mycteroperca jordani",
+          "common": "Gulf Grouper"
+        },
+        {
+          "scientific": "Mycteroperca microlepis",
+          "common": "Gag Grouper"
+        },
+        {
+          "scientific": "Mycteroperca phenax",
+          "common": "Scamp Grouper"
+        },
+        {
+          "scientific": "Mycteroperca venenosa",
+          "common": "Yellowfin Grouper"
+        },
+        {
+          "scientific": "Mycteroperca xenarcha",
+          "common": "Broomtail Grouper"
+        }
+      ]
+    },
+    {
+      "scientific": "Plectropomus",
+      "common": "Groupers",
+      "species": [
+        {
+          "scientific": "Plectropomus laevis",
+          "common": "Blacksaddle Coral Grouper"
+        },
+        {
+          "scientific": "Plectropomus leopardus",
+          "common": "Coral Trout"
+        },
+        {
+          "scientific": "Plectropomus maculatus",
+          "common": "Barcheek Coral Trout"
+        },
+        {
+          "scientific": "Plectropomus pessuliferus",
+          "common": "Roving Coral Grouper"
+        }
+      ]
+    },
+    {
+      "scientific": "Saloptia",
+      "common": "Groupers",
+      "species": [
+        {
+          "scientific": "Saloptia powelli",
+          "common": "Deepsea Bass"
+        }
+      ]
+    },
+    {
+      "scientific": "Variola",
+      "common": "Groupers",
+      "species": [
+        {
+          "scientific": "Variola louti",
+          "common": "Lyretail Grouper"
+        }
+      ]
+    }
+  ]
+}

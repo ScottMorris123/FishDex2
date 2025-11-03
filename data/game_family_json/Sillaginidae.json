@@ -1,0 +1,70 @@
+{
+  "family": {
+    "scientific": "Sillaginidae",
+    "common": "Smelt-whiting Family"
+  },
+  "genera": [
+    {
+      "scientific": "Sillaginodes",
+      "common": "Smelt-Whitings",
+      "species": [
+        { "scientific": "Sillaginodes punctatus", "common": "King George Whiting" }
+      ]
+    },
+    {
+      "scientific": "Sillaginopodys",
+      "common": "Smelt-Whitings",
+      "species": [
+        { "scientific": "Sillaginopodys chondropus", "common": "Club-Foot Whiting" }
+      ]
+    },
+    {
+      "scientific": "Sillaginops",
+      "common": "Smelt-Whitings",
+      "species": [
+        { "scientific": "Sillaginops macrolepis", "common": "Large-Scale Whiting" }
+      ]
+    },
+    {
+      "scientific": "Sillaginopsis",
+      "common": "Smelt-Whitings",
+      "species": [
+        { "scientific": "Sillaginopsis panijus", "common": "Gangetic Whiting" }
+      ]
+    },
+    {
+      "scientific": "Sillago",
+      "common": "Smelt-Whitings",
+      "species": [
+        { "scientific": "Sillago aeolus", "common": "Oriental Sillago" },
+        { "scientific": "Sillago analis", "common": "Golden-Lined Sillago" },
+        { "scientific": "Sillago arabica", "common": "Arabian Sillago" },
+        { "scientific": "Sillago argentifasciata", "common": "Silver-Banded Sillago" },
+        { "scientific": "Sillago asiatica", "common": "Asian Sillago" },
+        { "scientific": "Sillago attenuata", "common": "Slender Sillago" },
+        { "scientific": "Sillago bassensis", "common": "Western School Sillago" },
+        { "scientific": "Sillago boutani", "common": "Boutan's Sillago" },
+        { "scientific": "Sillago burrus", "common": "Western Trumpeter Sillago" },
+        { "scientific": "Sillago ciliata", "common": "Sand Sillago" },
+        { "scientific": "Sillago flindersi", "common": "Flinders' Sillago" },
+        { "scientific": "Sillago indica", "common": "Indian Sillago" },
+        { "scientific": "Sillago ingenuua", "common": "Bay Sillago" },
+        { "scientific": "Sillago intermedius", "common": "Intermediate Sillago" },
+        { "scientific": "Sillago japonica", "common": "Japanese Sillago" },
+        { "scientific": "Sillago lutea", "common": "Mud Sillago" },
+        { "scientific": "Sillago maculata", "common": "Trumpeter Sillago" },
+        { "scientific": "Sillago megacephalus", "common": "Large-Headed Sillago" },
+        { "scientific": "Sillago microps", "common": "Small-Eyed Sillago" },
+        { "scientific": "Sillago nierstraszi", "common": "Rough Sillago" },
+        { "scientific": "Sillago parvisquamis", "common": "Small-Scale Sillago" },
+        { "scientific": "Sillago robusta", "common": "Stout Sillago" },
+        { "scientific": "Sillago schomburgkii", "common": "Yellowfin Sillago" },
+        { "scientific": "Sillago sihama", "common": "Silver Sillago" },
+        { "scientific": "Sillago sinica", "common": "Chinese Sillago" },
+        { "scientific": "Sillago soringa", "common": "Soringa Sillago" },
+        { "scientific": "Sillago vincenti", "common": "Vincent's Sillago" },
+        { "scientific": "Sillago vittata", "common": "Banded Sillago" }
+      ]
+    }
+  ]
+}

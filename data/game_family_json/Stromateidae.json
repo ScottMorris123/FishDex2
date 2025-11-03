@@ -1,0 +1,41 @@
+{
+  "family": {
+    "scientific": "Stromateidae",
+    "common": "Butterfishes and Pomfrets"
+  },
+  "genera": [
+    {
+      "scientific": "Pampus",
+      "common": "Pomfrets",
+      "species": [
+        { "scientific": "Pampus argenteus", "common": "Silver Pomfret" },
+        { "scientific": "Pampus chinensis", "common": "Chinese Silver Pomfret" },
+        { "scientific": "Pampus echinogaster", "common": "Japanese Pomfret" },
+        { "scientific": "Pampus minor", "common": "Southern Lesser Pomfret" },
+        { "scientific": "Pampus punctatissimus", "common": "Spotted Pomfret" }
+      ]
+    },
+    {
+      "scientific": "Peprilus",
+      "common": "Butterfishes",
+      "species": [
+        { "scientific": "Peprilus burti", "common": "Gulf Butterfish" },
+        { "scientific": "Peprilus medius", "common": "Pacific Harvestfish" },
+        { "scientific": "Peprilus ovatus", "common": "Shining Butterfish" },
+        { "scientific": "Peprilus paru", "common": "Harvestfish" },
+        { "scientific": "Peprilus simillimus", "common": "Pacific Pompano" },
+        { "scientific": "Peprilus snyderi", "common": "Salema Butterfish" },
+        { "scientific": "Peprilus triacanthus", "common": "Atlantic Butterfish" }
+      ]
+    },
+    {
+      "scientific": "Stromateus",
+      "common": "Butterfishes",
+      "species": [
+        { "scientific": "Stromateus brasiliensis", "common": "Southwest Atlantic Butterfish" },
+        { "scientific": "Stromateus fiatola", "common": "Blue Butterfish" },
+        { "scientific": "Stromateus stellatus", "common": "Starry Butterfish" }
+      ]
+    }
+  ]
+}

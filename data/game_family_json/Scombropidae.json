@@ -1,0 +1,18 @@
+{
+  "family": {
+    "scientific": "Scombropidae",
+    "common": "Gnomefish Family"
+  },
+  "genera": [
+    {
+      "scientific": "Scombrops",
+      "common": "Gnomefishes",
+      "species": [
+        {
+          "scientific": "Scombrops oculatus",
+          "common": "Atlantic Scombrops"
+        }
+      ]
+    }
+  ]
+}

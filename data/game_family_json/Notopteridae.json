@@ -1,0 +1,68 @@
+{
+  "family": {
+    "scientific": "Notopteridae",
+    "common": "Knifefish Family"
+  },
+  "genera": [
+    {
+      "scientific": "Papyrocranus",
+      "common": "Knifefish",
+      "species": [
+        {
+          "scientific": "Papyrocranus afer",
+          "common": "Reticulated Knifefish"
+        }
+      ]
+    },
+    {
+      "scientific": "Xenomystus",
+      "common": "Knifefish",
+      "species": [
+        {
+          "scientific": "Xenomystus nigri",
+          "common": "African Brown Knifefish"
+        }
+      ]
+    },
+    {
+      "scientific": "Chitala",
+      "common": "Knifefish",
+      "species": [
+        {
+          "scientific": "Chitala blanci",
+          "common": "Royal Knifefish"
+        },
+        {
+          "scientific": "Chitala borneensis",
+          "common": "Indonesian Featherback"
+        },
+        {
+          "scientific": "Chitala chitala",
+          "common": "Indian Featherback"
+        },
+        {
+          "scientific": "Chitala lopis",
+          "common": "Giant Featherback"
+        },
+        {
+          "scientific": "Chitala ornata",
+          "common": "Clown Featherback"
+        }
+      ]
+    },
+    {
+      "scientific": "Notopterus",
+      "common": "Bronze Featherbacks",
+      "species": [
+        {
+          "scientific": "Notopterus notopterus",
+          "common": "Southeast Asian Featherback"
+        },
+        {
+          "scientific": "Notopterus synurus",
+          "common": "South Asian Featherback"
+        }
+      ]
+    }
+  ]
+}

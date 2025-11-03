@@ -1,0 +1,18 @@
+{
+  "family": {
+    "scientific": "Chiasmodontidae",
+    "common": "Swallower Family"
+  },
+  "genera": [
+    {
+      "scientific": "Pseudoscopelus",
+      "common": "Chiasmodontid Fishes",
+      "species": [
+        {
+          "scientific": "Pseudoscopelus altipinnis",
+          "common": "Gargare la lumière à pectorales courtes"
+        }
+      ]
+    }
+  ]
+}

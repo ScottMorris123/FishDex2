@@ -1,0 +1,756 @@
+{
+  "family": {
+    "scientific": "Rajidae",
+    "common": "Skate Family"
+  },
+  "genera": [
+    {
+      "scientific": "Amblyraja",
+      "common": "Skates",
+      "species": [
+        {
+          "scientific": "Amblyraja doellojuradoi",
+          "common": "Southern Thorny Skate"
+        },
+        {
+          "scientific": "Amblyraja frerichsi",
+          "common": "Thickbody Skate"
+        },
+        {
+          "scientific": "Amblyraja georgiana",
+          "common": "Antarctic Starry Skate"
+        },
+        {
+          "scientific": "Amblyraja hyperborea",
+          "common": "Arctic Skate"
+        },
+        {
+          "scientific": "Amblyraja jenseni",
+          "common": "Shorttail Skate"
+        },
+        {
+          "scientific": "Amblyraja radiata",
+          "common": "Thorny Skate"
+        },
+        {
+          "scientific": "Amblyraja reversa",
+          "common": "Reversed Skate"
+        },
+        {
+          "scientific": "Amblyraja taaf",
+          "common": "Whiteleg Skate"
+        }
+      ]
+    },
+    {
+      "scientific": "Beringraja",
+      "common": "Skates",
+      "species": [
+        {
+          "scientific": "Beringraja binoculata",
+          "common": "Big Skate"
+        },
+        {
+          "scientific": "Beringraja pulchra",
+          "common": "Mottled Skate"
+        }
+      ]
+    },
+    {
+      "scientific": "Breviraja",
+      "common": "Skates",
+      "species": [
+        {
+          "scientific": "Breviraja claramaculata",
+          "common": "Brightspot Skate"
+        },
+        {
+          "scientific": "Breviraja colesi",
+          "common": "Lightnose Skate"
+        },
+        {
+          "scientific": "Breviraja mouldi",
+          "common": "Blacknose Skate"
+        },
+        {
+          "scientific": "Breviraja nigriventralis",
+          "common": "Blackbelly Skate"
+        },
+        {
+          "scientific": "Breviraja spinosa",
+          "common": "Spinose Skate"
+        }
+      ]
+    },
+    {
+      "scientific": "Caliraja",
+      "common": "Skates",
+      "species": [
+        {
+          "scientific": "Caliraja cortezensis",
+          "common": "Cortez Skate"
+        },
+        {
+          "scientific": "Caliraja inornata",
+          "common": "California Ray"
+        },
+        {
+          "scientific": "Caliraja rhina",
+          "common": "Longnose Skate"
+        },
+        {
+          "scientific": "Caliraja stellulata",
+          "common": "Starry Skate"
+        }
+      ]
+    },
+    {
+      "scientific": "Dactylobatus",
+      "common": "Skates",
+      "species": [
+        {
+          "scientific": "Dactylobatus armatus",
+          "common": "Skillet Skate"
+        },
+        {
+          "scientific": "Dactylobatus clarkii",
+          "common": "Hook Skate"
+        }
+      ]
+    },
+    {
+      "scientific": "Dentiraja",
+      "common": "Skates",
+      "species": [
+        {
+          "scientific": "Dentiraja australis",
+          "common": "Sydney Skate"
+        },
+        {
+          "scientific": "Dentiraja cerva",
+          "common": "White-spotted Skate"
+        },
+        {
+          "scientific": "Dentiraja confusa",
+          "common": "Australian Longnose Skate"
+        },
+        {
+          "scientific": "Dentiraja endeavouri",
+          "common": "Endeavour Skate"
+        },
+        {
+          "scientific": "Dentiraja falloarga",
+          "common": "False Argus Skate"
+        },
+        {
+          "scientific": "Dentiraja flindersi",
+          "common": "Pygmy Thornback Skate"
+        },
+        {
+          "scientific": "Dentiraja healdi",
+          "common": "Heald's Skate"
+        },
+        {
+          "scientific": "Dentiraja lemprieri",
+          "common": "Thornback Skate"
+        },
+        {
+          "scientific": "Dentiraja oculus",
+          "common": "Ocellate Skate"
+        },
+        {
+          "scientific": "Dentiraja polyommata",
+          "common": "Argus Skate"
+        }
+      ]
+    },
+    {
+      "scientific": "Dipturus",
+      "common": "Skates",
+      "species": [
+        {
+          "scientific": "Dipturus acrobelus",
+          "common": "Deepwater Skate"
+        },
+        {
+          "scientific": "Dipturus amphispinus",
+          "common": "Ridgeback Skate"
+        },
+        {
+          "scientific": "Dipturus apricus",
+          "common": "Pale Tropical Skate"
+        },
+        {
+          "scientific": "Dipturus batis",
+          "common": "Common Skate"
+        },
+        {
+          "scientific": "Dipturus bullisi",
+          "common": "Bullis Skate"
+        },
+        {
+          "scientific": "Dipturus campbelli",
+          "common": "Blackspot Skate"
+        },
+        {
+          "scientific": "Dipturus canutus",
+          "common": "Grey Skate"
+        },
+        {
+          "scientific": "Dipturus chinensis",
+          "common": "Chinese Skate"
+        },
+        {
+          "scientific": "Dipturus crosnieri",
+          "common": "Madagascar Skate"
+        },
+        {
+          "scientific": "Dipturus doutrei",
+          "common": "Violet Skate"
+        },
+        {
+          "scientific": "Dipturus ecuadoriensis",
+          "common": "Ecuador Skate"
+        },
+        {
+          "scientific": "Dipturus garricki",
+          "common": "San Blas Skate"
+        },
+        {
+          "scientific": "Dipturus gigas",
+          "common": "Giant Skate"
+        },
+        {
+          "scientific": "Dipturus grahamorum",
+          "common": "Graham's Skate"
+        },
+        {
+          "scientific": "Dipturus gudgeri",
+          "common": "Greenback Skate"
+        },
+        {
+          "scientific": "Dipturus innominatus",
+          "common": "New Zealand Smooth Skate"
+        },
+        {
+          "scientific": "Dipturus intermedius",
+          "common": "Flapper Skate"
+        },
+        {
+          "scientific": "Dipturus johannisdavisi",
+          "common": "Travancore Skate"
+        },
+        {
+          "scientific": "Dipturus kwangtungensis",
+          "common": "Kwangtung Skate"
+        },
+        {
+          "scientific": "Dipturus laevis",
+          "common": "Barndoor Skate"
+        },
+        {
+          "scientific": "Dipturus lanceorostratus",
+          "common": "Rattail Skate"
+        },
+        {
+          "scientific": "Dipturus leptocauda",
+          "common": "Thintail Skate"
+        },
+        {
+          "scientific": "Dipturus macrocauda",
+          "common": "Bigtail Skate"
+        },
+        {
+          "scientific": "Dipturus melanospilus",
+          "common": "Blacktip Skate"
+        },
+        {
+          "scientific": "Dipturus mennii",
+          "common": "South Brazilian Skate"
+        },
+        {
+          "scientific": "Dipturus nidarosiensis",
+          "common": "Norwegian Skate"
+        },
+        {
+          "scientific": "Dipturus olseni",
+          "common": "Spreadfin Skate"
+        },
+        {
+          "scientific": "Dipturus oregoni",
+          "common": "Hooktail Skate"
+        },
+        {
+          "scientific": "Dipturus oxyrinchus",
+          "common": "Longnosed Skate"
+        },
+        {
+          "scientific": "Dipturus pullopunctatus",
+          "common": "Slime Skate"
+        },
+        {
+          "scientific": "Dipturus queenslandicus",
+          "common": "Queensland Deepwater Skate"
+        },
+        {
+          "scientific": "Dipturus springeri",
+          "common": "Roughbelly Skate"
+        },
+        {
+          "scientific": "Dipturus stenorhynchus",
+          "common": "Prownose Skate"
+        },
+        {
+          "scientific": "Dipturus teevani",
+          "common": "Prickly Brown Ray"
+        },
+        {
+          "scientific": "Dipturus tengu",
+          "common": "Acutenose Skate"
+        },
+        {
+          "scientific": "Dipturus trachyderma",
+          "common": "Roughskin Skate"
+        },
+        {
+          "scientific": "Dipturus wengi",
+          "common": "Weng's Skate"
+        },
+        {
+          "scientific": "Dipturus wuhanlingi",
+          "common": "Wu's Skate"
+        }
+      ]
+    },
+    {
+      "scientific": "Hongeo",
+      "common": "Skates",
+      "species": [
+        {
+          "scientific": "Hongeo koreana",
+          "common": "Korean Skate"
+        }
+      ]
+    },
+    {
+      "scientific": "Leucoraja",
+      "common": "Skates",
+      "species": [
+        {
+          "scientific": "Leucoraja caribbaea",
+          "common": "Maya Skate"
+        },
+        {
+          "scientific": "Leucoraja circularis",
+          "common": "Sandy Ray"
+        },
+        {
+          "scientific": "Leucoraja compagnoi",
+          "common": "Tigertail Skate"
+        },
+        {
+          "scientific": "Leucoraja erinacea",
+          "common": "Little Skate"
+        },
+        {
+          "scientific": "Leucoraja fullonica",
+          "common": "Shagreen Skate"
+        },
+        {
+          "scientific": "Leucoraja garmani",
+          "common": "Rosette Skate"
+        },
+        {
+          "scientific": "Leucoraja lentiginosa",
+          "common": "Freckled Skate"
+        },
+        {
+          "scientific": "Leucoraja leucosticta",
+          "common": "Whitedappled Skate"
+        },
+        {
+          "scientific": "Leucoraja longirostris",
+          "common": "Brown Longnose Skate"
+        },
+        {
+          "scientific": "Leucoraja melitensis",
+          "common": "Maltese Skate"
+        },
+        {
+          "scientific": "Leucoraja naevus",
+          "common": "Cuckoo Skate"
+        },
+        {
+          "scientific": "Leucoraja ocellata",
+          "common": "Winter Skate"
+        },
+        {
+          "scientific": "Leucoraja pristispina",
+          "common": "Sawback Skate"
+        },
+        {
+          "scientific": "Leucoraja virginica",
+          "common": "Virginia Skate"
+        },
+        {
+          "scientific": "Leucoraja wallacei",
+          "common": "Yellow-spotted Skate"
+        },
+        {
+          "scientific": "Leucoraja yucatanensis",
+          "common": "Yucatán Skate"
+        }
+      ]
+    },
+    {
+      "scientific": "Malacoraja",
+      "common": "Skates",
+      "species": [
+        {
+          "scientific": "Malacoraja kreffti",
+          "common": "Krefft's Skate"
+        },
+        {
+          "scientific": "Malacoraja obscura",
+          "common": "Brazilian Soft Skate"
+        },
+        {
+          "scientific": "Malacoraja senta",
+          "common": "Smooth Skate"
+        },
+        {
+          "scientific": "Malacoraja spinacidermis",
+          "common": "Soft Skate"
+        }
+      ]
+    },
+    {
+      "scientific": "Neoraja",
+      "common": "Pygmy Skates",
+      "species": [
+        {
+          "scientific": "Neoraja africana",
+          "common": "West African Pygmy Skate"
+        },
+        {
+          "scientific": "Neoraja caerulea",
+          "common": "Blue Ray"
+        },
+        {
+          "scientific": "Neoraja carolinensis",
+          "common": "Carolina Pygmy Skate"
+        },
+        {
+          "scientific": "Neoraja iberica",
+          "common": "Iberian Pygmy Skate"
+        },
+        {
+          "scientific": "Neoraja stehmanni",
+          "common": "African Pygmy Skate"
+        }
+      ]
+    },
+    {
+      "scientific": "Okamejei",
+      "common": "Skates",
+      "species": [
+        {
+          "scientific": "Okamejei acutispina",
+          "common": "Sharpspine Skate"
+        },
+        {
+          "scientific": "Okamejei arafurensis",
+          "common": "Arafura Skate"
+        },
+        {
+          "scientific": "Okamejei boesemani",
+          "common": "Boeseman's Skate"
+        },
+        {
+          "scientific": "Okamejei cairae",
+          "common": "Borneo Sand Skate"
+        },
+        {
+          "scientific": "Okamejei heemstrai",
+          "common": "East African Skate"
+        },
+        {
+          "scientific": "Okamejei hollandi",
+          "common": "Yellow-spotted Skate"
+        },
+        {
+          "scientific": "Okamejei kenojei",
+          "common": "Ocellate Spot Skate"
+        },
+        {
+          "scientific": "Okamejei leptoura",
+          "common": "Thin-tail Skate"
+        },
+        {
+          "scientific": "Okamejei meerdervoortii",
+          "common": "Bigeye Skate"
+        },
+        {
+          "scientific": "Okamejei mengae",
+          "common": "Menga's Skate"
+        },
+        {
+          "scientific": "Okamejei ornata",
+          "common": "Ornate Skate"
+        },
+        {
+          "scientific": "Okamejei panayensis",
+          "common": "Panay Skate"
+        },
+        {
+          "scientific": "Okamejei picta",
+          "common": "Painted Skate"
+        },
+        {
+          "scientific": "Okamejei schmidti",
+          "common": "Browneye Skate"
+        }
+      ]
+    },
+    {
+      "scientific": "Orbiraja",
+      "common": "Skates",
+      "species": [
+        {
+          "scientific": "Orbiraja jensenae",
+          "common": "Sulu Sea Skate"
+        },
+        {
+          "scientific": "Orbiraja philipi",
+          "common": "Philip's Skate"
+        },
+        {
+          "scientific": "Orbiraja powelli",
+          "common": "Indian Ringed Skate"
+        }
+      ]
+    },
+    {
+      "scientific": "Raja",
+      "common": "Rays and Skates",
+      "species": [
+        {
+          "scientific": "Raja asterias",
+          "common": "Mediterranean Starry Ray"
+        },
+        {
+          "scientific": "Raja brachyura",
+          "common": "Blonde Ray"
+        },
+        {
+          "scientific": "Raja clavata",
+          "common": "Thornback Ray"
+        },
+        {
+          "scientific": "Raja eglanteria",
+          "common": "Clearnose Skate"
+        },
+        {
+          "scientific": "Raja herwigi",
+          "common": "Cape Verde Skate"
+        },
+        {
+          "scientific": "Raja maderensis",
+          "common": "Madeiran Ray"
+        },
+        {
+          "scientific": "Raja mauritaniensis",
+          "common": "African Ray"
+        },
+        {
+          "scientific": "Raja microocellata",
+          "common": "Small-eyed Ray"
+        },
+        {
+          "scientific": "Raja miraletus",
+          "common": "Brown Ray"
+        },
+        {
+          "scientific": "Raja montagui",
+          "common": "Spotted Ray"
+        },
+        {
+          "scientific": "Raja ocellifera",
+          "common": "Ocelliferous Skate"
+        },
+        {
+          "scientific": "Raja parva",
+          "common": "African Brown Skate"
+        },
+        {
+          "scientific": "Raja pita",
+          "common": "Pita Ray"
+        },
+        {
+          "scientific": "Raja polystigma",
+          "common": "Speckled Ray"
+        },
+        {
+          "scientific": "Raja radula",
+          "common": "Rough Ray"
+        },
+        {
+          "scientific": "Raja straeleni",
+          "common": "Spotted Skate"
+        },
+        {
+          "scientific": "Raja undulata",
+          "common": "Undulate Ray"
+        }
+      ]
+    },
+    {
+      "scientific": "Rajella",
+      "common": "Skates",
+      "species": [
+        {
+          "scientific": "Rajella annandalei",
+          "common": "Annandale's Skate"
+        },
+        {
+          "scientific": "Rajella barnardi",
+          "common": "Bigthorn Skate"
+        },
+        {
+          "scientific": "Rajella bathyphila",
+          "common": "Deep-water Ray"
+        },
+        {
+          "scientific": "Rajella bigelowi",
+          "common": "Bigelow's Ray"
+        },
+        {
+          "scientific": "Rajella caudaspinosa",
+          "common": "Munchkin Skate"
+        },
+        {
+          "scientific": "Rajella challengeri",
+          "common": "Challenger Skate"
+        },
+        {
+          "scientific": "Rajella dissimilis",
+          "common": "Ghost Skate"
+        },
+        {
+          "scientific": "Rajella eisenhardti",
+          "common": "Galápagos Grey Skate"
+        },
+        {
+          "scientific": "Rajella fuliginea",
+          "common": "Sooty Skate"
+        },
+        {
+          "scientific": "Rajella fyllae",
+          "common": "Round Ray"
+        },
+        {
+          "scientific": "Rajella kukujevi",
+          "common": "Mid-Atlantic Skate"
+        },
+        {
+          "scientific": "Rajella leopardus",
+          "common": "Leopard Skate"
+        },
+        {
+          "scientific": "Rajella lintea",
+          "common": "Sailray"
+        },
+        {
+          "scientific": "Rajella nigerrima",
+          "common": "Blackish Skate"
+        },
+        {
+          "scientific": "Rajella paucispinosa",
+          "common": "Sparsely-thorned Skate"
+        },
+        {
+          "scientific": "Rajella purpuriventralis",
+          "common": "Purplebelly Skate"
+        },
+        {
+          "scientific": "Rajella ravidula",
+          "common": "Smoothback Skate"
+        },
+        {
+          "scientific": "Rajella sadowskii",
+          "common": "Brazilian Skate"
+        }
+      ]
+    },
+     {
+      "scientific": "Rostroraja",
+      "common": "Skates",
+      "species": [
+        {
+          "scientific": "Rostroraja ackleyi",
+          "common": "Ocellate Skate"
+        },
+        {
+          "scientific": "Rostroraja alba",
+          "common": "Bottlenose Skate"
+        },
+        {
+          "scientific": "Rostroraja bahamensis",
+          "common": "Bahama Skate"
+        },
+        {
+          "scientific": "Rostroraja cervigoni",
+          "common": "Finspot Ray"
+        },
+        {
+          "scientific": "Rostroraja eglanteria",
+          "common": "Clearnose Skate"
+        },
+        {
+          "scientific": "Rostroraja equatorialis",
+          "common": "Equatorial Ray"
+        },
+        {
+          "scientific": "Rostroraja texana",
+          "common": "Roundel Skate"
+        },
+        {
+          "scientific": "Rostroraja velezi",
+          "common": "Velez Ray"
+        }
+      ]
+    },
+    {
+      "scientific": "Spiniraja",
+      "common": "Skates",
+      "species": [
+        {
+          "scientific": "Spiniraja whitleyi",
+          "common": "Melbourne Skate"
+        }
+      ]
+    },
+    {
+      "scientific": "Zearaja",
+      "common": "Yellownose Skates",
+      "species": [
+        {
+          "scientific": "Zearaja brevicaudata",
+          "common": "Short Tail Yellownose Skate"
+        },
+        {
+          "scientific": "Zearaja chilensis",
+          "common": "Yellownose Skate"
+        },
+        {
+          "scientific": "Zearaja maugeana",
+          "common": "Maugean Skate"
+        },
+        {
+          "scientific": "Zearaja nasuta",
+          "common": "New Zealand Rough Skate"
+        }
+      ]
+    }
+  ]
+}

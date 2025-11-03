@@ -1,0 +1,337 @@
+{
+  "family": {
+    "scientific": "Lutjanidae",
+    "common": "Snapper Family"
+  },
+  "genera": [
+    {
+      "scientific": "Aphareus",
+      "common": "Snappers",
+      "species": [
+        {
+          "scientific": "Aphareus furca",
+          "common": "Blue Smalltooth Jobfish"
+        },
+        {
+          "scientific": "Aphareus rutilans",
+          "common": "Rusty Jobfish"
+        }
+      ]
+    },
+    {
+      "scientific": "Aprion",
+      "common": "Snappers",
+      "species": [
+        {
+          "scientific": "Aprion virescens",
+          "common": "Green Jobfish"
+        }
+      ]
+    },
+    {
+      "scientific": "Etelis",
+      "common": "Snappers",
+      "species": [
+        {
+          "scientific": "Etelis carbunculus",
+          "common": "Deepwater Red Snapper"
+        },
+        {
+          "scientific": "Etelis coruscans",
+          "common": "Deepwater Longtail Red Snapper"
+        },
+        {
+          "scientific": "Etelis radiosus",
+          "common": "Pale Snapper"
+        }
+      ]
+    },
+    {
+      "scientific": "Hoplopagrus",
+      "common": "Snappers",
+      "species": [
+        {
+          "scientific": "Hoplopagrus guentherii",
+          "common": "Mexican Barred Snapper"
+        }
+      ]
+    },
+    {
+      "scientific": "Lutjanus",
+      "common": "Snappers",
+      "species": [
+        {
+          "scientific": "Lutjanus adetii",
+          "common": "Yellow-banded Snapper"
+        },
+        {
+          "scientific": "Lutjanus agennes",
+          "common": "African Red Snapper"
+        },
+        {
+          "scientific": "Lutjanus alexandrei",
+          "common": "Brazilian Snapper"
+        },
+        {
+          "scientific": "Lutjanus analis",
+          "common": "Mutton Snapper"
+        },
+        {
+          "scientific": "Lutjanus apodus",
+          "common": "Schoolmaster Snapper"
+        },
+        {
+          "scientific": "Lutjanus argentimaculatus",
+          "common": "Mangrove Red Snapper"
+        },
+        {
+          "scientific": "Lutjanus argentiventris",
+          "common": "Yellow Snapper"
+        },
+        {
+          "scientific": "Lutjanus bengalensis",
+          "common": "Bengal Snapper"
+        },
+        {
+          "scientific": "Lutjanus biguttatus",
+          "common": "Two-spot Banded Snapper"
+        },
+        {
+          "scientific": "Lutjanus bohar",
+          "common": "Two-spot Red Snapper"
+        },
+        {
+          "scientific": "Lutjanus buccanella",
+          "common": "Blackfin Snapper"
+        },
+        {
+          "scientific": "Lutjanus campechanus",
+          "common": "Northern Red Snapper"
+        },
+        {
+          "scientific": "Lutjanus carponotatus",
+          "common": "Spanish Flag Snapper"
+        },
+        {
+          "scientific": "Lutjanus coeruleolineatus",
+          "common": "Blue-line Snapper"
+        },
+        {
+          "scientific": "Lutjanus colorado",
+          "common": "Colorado Snapper"
+        },
+        {
+          "scientific": "Lutjanus cyanopterus",
+          "common": "Cubera Snapper"
+        },
+        {
+          "scientific": "Lutjanus decussatus",
+          "common": "Checkered Snapper"
+        },
+        {
+          "scientific": "Lutjanus dentatus",
+          "common": "African Brown Snapper"
+        },
+        {
+          "scientific": "Lutjanus ehrenbergii",
+          "common": "Blackspot Snapper"
+        },
+        {
+          "scientific": "Lutjanus erythropterus",
+          "common": "Crimson Snapper"
+        },
+        {
+          "scientific": "Lutjanus fulgens",
+          "common": "Golden African Snapper"
+        },
+        {
+          "scientific": "Lutjanus fulviflamma",
+          "common": "Dory Snapper"
+        },
+        {
+          "scientific": "Lutjanus fulvus",
+          "common": "Blacktail Snapper"
+        },
+        {
+          "scientific": "Lutjanus gibbus",
+          "common": "Humpback Red Snapper"
+        },
+        {
+          "scientific": "Lutjanus goldiei",
+          "common": "Papuan Black Snapper"
+        },
+        {
+          "scientific": "Lutjanus griseus",
+          "common": "Gray Snapper"
+        },
+        {
+          "scientific": "Lutjanus guttatus",
+          "common": "Spotted Rose Snapper"
+        },
+        {
+          "scientific": "Lutjanus inermis",
+          "common": "Golden Snapper"
+        },
+        {
+          "scientific": "Lutjanus jocu",
+          "common": "Dog Snapper"
+        },
+        {
+          "scientific": "Lutjanus johnii",
+          "common": "John’s Snapper"
+        },
+        {
+          "scientific": "Lutjanus jordani",
+          "common": "Jordan’s Snapper"
+        },
+        {
+          "scientific": "Lutjanus kasmira",
+          "common": "Common Blue-striped Snapper"
+        },
+        {
+          "scientific": "Lutjanus lemniscatus",
+          "common": "Yellow-streaked Snapper"
+        },
+        {
+          "scientific": "Lutjanus lutjanus",
+          "common": "Bigeye Snapper"
+        },
+        {
+          "scientific": "Lutjanus mahogoni",
+          "common": "Mahogany Snapper"
+        },
+        {
+          "scientific": "Lutjanus malabaricus",
+          "common": "Malabar Blood Snapper"
+        },
+        {
+          "scientific": "Lutjanus monostigma",
+          "common": "One-spot Snapper"
+        },
+        {
+          "scientific": "Lutjanus novemfasciatus",
+          "common": "Pacific Dog Snapper"
+        },
+        {
+          "scientific": "Lutjanus peru",
+          "common": "Pacific Red Snapper"
+        },
+        {
+          "scientific": "Lutjanus purpureus",
+          "common": "Southern Red Snapper"
+        },
+        {
+          "scientific": "Lutjanus quinquelineatus",
+          "common": "Five-lined Snapper"
+        },
+        {
+          "scientific": "Lutjanus rivulatus",
+          "common": "Blubberlip Snapper"
+        },
+        {
+          "scientific": "Lutjanus russellii",
+          "common": "Russell’s Snapper"
+        },
+        {
+          "scientific": "Lutjanus sanguineus",
+          "common": "Scarlet Snapper"
+        },
+        {
+          "scientific": "Lutjanus sebae",
+          "common": "Emperor Red Snapper"
+        },
+        {
+          "scientific": "Lutjanus synagris",
+          "common": "Lane Snapper"
+        },
+        {
+          "scientific": "Lutjanus timorensis",
+          "common": "Timor Snapper"
+        },
+        {
+          "scientific": "Lutjanus viridis",
+          "common": "Blue and Gold Snapper"
+        },
+        {
+          "scientific": "Lutjanus vitta",
+          "common": "Brownstripe Red Snapper"
+        },
+        {
+          "scientific": "Lutjanus vivanus",
+          "common": "Silk Snapper"
+        },
+        {
+          "scientific": "Lutjanus xanthopinnis",
+          "common": "Yellowfin Snapper"
+        }
+      ]
+    },
+
+    {
+      "scientific": "Macolor",
+      "common": "Snappers",
+      "species": [
+        {
+          "scientific": "Macolor macularis",
+          "common": "Midnight Snapper"
+        },
+        {
+          "scientific": "Macolor niger",
+          "common": "Black & White Snapper"
+        }
+      ]
+    },
+    {
+      "scientific": "Ocyurus",
+      "common": "Snappers",
+      "species": [
+        {
+          "scientific": "Ocyurus chrysurus",
+          "common": "Yellowtail Snapper"
+        }
+      ]
+    },
+    {
+      "scientific": "Paracaesio",
+      "common": "Snappers",
+      "species": [
+        {
+          "scientific": "Paracaesio sordida",
+          "common": "Sordid Snapper"
+        }
+      ]
+    },
+    {
+      "scientific": "Pristipomoides",
+      "common": "Snappers",
+      "species": [
+        {
+          "scientific": "Pristipomoides auricilla",
+          "common": "Goldflag Jobfish"
+        },
+        {
+          "scientific": "Pristipomoides filamentosus",
+          "common": "Crimson Jobfish"
+        },
+        {
+          "scientific": "Pristipomoides sieboldii",
+          "common": "Lavender Jobfish"
+        },
+        {
+          "scientific": "Pristipomoides zonatus",
+          "common": "Oblique-banded Snapper"
+        }
+      ]
+    },
+    {
+      "scientific": "Symphorus",
+      "common": "Snappers",
+      "species": [
+        {
+          "scientific": "Symphorus nematophorus",
+          "common": "Chinamanfish"
+        }
+      ]
+    }
+  ]
+}

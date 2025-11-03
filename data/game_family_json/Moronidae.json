@@ -1,0 +1,44 @@
+{
+  "family": {
+    "scientific": "Moronidae",
+    "common": "Temperate Bass Family"
+  },
+  "genera": [
+    {
+      "scientific": "Dicentrarchus",
+      "common": "European Seabasses",
+      "species": [
+        {
+          "scientific": "Dicentrarchus labrax",
+          "common": "European Seabass"
+        },
+        {
+          "scientific": "Dicentrarchus punctatus",
+          "common": "Spotted Seabass"
+        }
+      ]
+    },
+    {
+      "scientific": "Morone",
+      "common": "Temperate Basses",
+      "species": [
+        {
+          "scientific": "Morone americana",
+          "common": "White Perch"
+        },
+        {
+          "scientific": "Morone chrysops",
+          "common": "White Bass"
+        },
+        {
+          "scientific": "Morone mississippiensis",
+          "common": "Yellow Bass"
+        },
+        {
+          "scientific": "Morone saxatilis",
+          "common": "Striped Bass"
+        }
+      ]
+    }
+  ]
+}

@@ -111,6 +111,15 @@
           }catch{ return null; }
         }
 
+        // sessionStorage-backed cache for small JSONs (taxonomy/family). Falls back to network on quota errors.
+        async function fetchJsonCached(url, keyPrefix='fdx'){
+          if(!url) return null; const key=`${keyPrefix}:${url}`;
+          try{ const raw=sessionStorage.getItem(key); if(raw){ try{ return JSON.parse(raw); }catch{} } }catch{}
+          const data = await fetchJsonSafe(url);
+          try{ sessionStorage.setItem(key, JSON.stringify(data)); }catch{}
+          return data;
+        }
+
         async function loadTypes(){
           const baseDir = location.pathname.replace(/[^/]+$/, '');
           const idxPath = await resolve(['data/index.json','./data/index.json',baseDir+'data/index.json',baseDir+'../data/index.json','/data/index.json']);
@@ -137,7 +146,7 @@
             }); return count;
           };
 
-          const url = new URL(location.href); const category = (url.searchParams.get('category')||'').toLowerCase(); const water=(url.searchParams.get('water')||'').toLowerCase(); const habitat=(url.searchParams.get('habitat')||'').toLowerCase();
+          const url = new URL(location.href); const category = (url.searchParams.get('category')||'').toLowerCase(); const water=(url.searchParams.get('water')||'').toLowerCase(); const habitat=(url.searchParams.get('habitat')||'').toLowerCase(); const mode=(url.searchParams.get('mode')||'').toLowerCase();
 
           // Level 1: categories
           if(!category){
@@ -165,8 +174,21 @@
             return;
           }
 
-          // Level 3: habitats
-          if(category && water && !habitat){
+          // Level 3: choose how to browse (mode chooser)
+          if(category && water && !habitat && !mode){
+            document.getElementById('title').textContent = `Browse ${category} • ${water==='fresh'?'Freshwater':water==='salt'?'Saltwater':'Brackish'}`;
+            document.getElementById('intro').textContent = 'Choose how you want to browse';
+            const byHabHref = `types.html?category=${encodeURIComponent(category)}&water=${encodeURIComponent(water)}&mode=habitat`;
+            const byTypeHref = `types.html?category=${encodeURIComponent(category)}&water=${encodeURIComponent(water)}&mode=type`;
+            grid.innerHTML = [
+              card(byHabHref, 'icons/fish.svg', 'Browse by habitat', 'Pick a habitat and then see matching species'),
+              card(byTypeHref, 'icons/fish.svg', 'Browse by type', 'See groups by genus common name')
+            ].join('');
+            return;
+          }
+
+          // Level 4: habitats (when mode=habitat)
+          if(category && water && !habitat && mode==='habitat'){
             document.getElementById('title').textContent = `Browse ${category} • ${water==='fresh'?'Freshwater':water==='salt'?'Saltwater':'Brackish'} habitats`;
             document.getElementById('intro').textContent = 'Pick a habitat';
             const habitats = WATER_HABITATS[water] || [];
@@ -174,6 +196,90 @@
               const pretty = h.replace(/_/g,' ').replace(/\b\w/g, s=>s.toUpperCase());
               const cnt = countFor({category, water, habitat:h});
               return card(`type-results.html?category=${encodeURIComponent(category)}&water=${encodeURIComponent(water)}&habitat=${encodeURIComponent(h)}`, 'icons/fish.svg', pretty, `${cnt} species`);
+            }).join('');
+            return;
+          }
+
+          // Level 4 (alternative): Types (when mode=type)
+          if(category && water && mode==='type'){
+            document.getElementById('title').textContent = `Browse ${category} • ${water==='fresh'?'Freshwater':water==='salt'?'Saltwater':'Brackish'} types`;
+            document.getElementById('intro').textContent = 'Pick a type (genus common name) to see matching species';
+
+            // We will build genus -> common map exclusively from curated family JSONs
+            const genusToCommon = new Map();
+            const genusToFamily = new Map();
+
+            // Read family from index to locate curated JSON file
+            const getFamilyName = (it)=> (it.family||it.Family||it.FAMILY||it.family_name||it.FamilyName||'');
+
+            // Build filtered species by flags (category+water)
+            const truthy = (v)=> v===true || v===1 || v==='1' || v==='true' || v==='TRUE' || v==='Y' || v==='y';
+            const catFlag = CATEGORY_FLAG[category]||'';
+            const getGenus = (it)=>{
+              const sci = (it.scientific_name||it.SciName||it.sciname||'').toString();
+              return sci.includes(' ')? sci.split(/\s+/)[0] : '';
+            };
+
+            const filtered = items.filter(it=>{
+              const code = getSpecCode(it);
+              if(!code) return false;
+              const row = flagsByCode.get(String(code));
+              if(row){
+                if(catFlag && !truthy(row[catFlag])) return false;
+                if(water && !truthy(row['water_'+water])) return false;
+                return true;
+              }
+              // Fallback to index fields when flags are missing
+              const uses = Array.isArray(it.importances)? it.importances.map(x=>String(x).toLowerCase()) : [];
+              const waters = Array.isArray(it.water_types)? it.water_types.map(x=>String(x).toLowerCase()) : [];
+              const catOk = !category || uses.includes(category);
+              const waterOk = !water || waters.includes(water);
+              return catOk && waterOk;
+            });
+
+            // Build genus commons from curated family JSONs for families present in the filtered set
+            try{
+              const famSet = new Set(filtered.map(getFamilyName).filter(Boolean));
+              for(const fam of famSet){
+                const famUrl = await resolve([`data/game_family_json/${encodeURIComponent(fam)}.json`]);
+                if(!famUrl) continue;
+                const famJson = await fetchJsonCached(famUrl,'fdx-fam');
+                const gens = Array.isArray(famJson?.genera)? famJson.genera:[];
+                for(const ge of gens){
+                  const sci = String(ge?.scientific||'').trim();
+                  const com = String(ge?.common||'').trim();
+                  if(sci){
+                    genusToFamily.set(sci, fam);
+                    if(com) genusToCommon.set(sci, com);
+                  }
+                }
+              }
+            }catch{}
+
+            // Group into types by genus common name (multiple genera may share one common)
+            const typeMap = new Map(); // typeName -> count
+            const typeMembers = new Map(); // typeName -> Set(spec_code)
+            const typeGenera = new Map(); // typeName -> Set(genus)
+            for(const it of filtered){
+              const genus = getGenus(it);
+              const typeName = genusToCommon.get(genus) || genus || 'Other';
+              typeMap.set(typeName, (typeMap.get(typeName)||0)+1);
+              if(!typeMembers.has(typeName)) typeMembers.set(typeName, new Set());
+              typeMembers.get(typeName).add(getSpecCode(it));
+              if(!typeGenera.has(typeName)) typeGenera.set(typeName, new Set());
+              if(genus) typeGenera.get(typeName).add(genus);
+            }
+
+            // Render sorted by type label
+            const typesArr = Array.from(typeMap.entries()).sort((a,b)=> a[0].localeCompare(b[0]));
+            if(typesArr.length===0){
+              grid.innerHTML = `<article class=\"card\"><div class=\"icon\"><img src=\"icons/fish.svg\"/></div><div><div class=\"group-label\">No types found</div><div class=\"group-description\">This selection may not be present in your data yet.</div></div></article>`;
+              return;
+            }
+            grid.innerHTML = typesArr.map(([name,count])=>{
+              const genera = Array.from(typeGenera.get(name) || []).sort().join(',');
+              const href = `type-results.html?category=${encodeURIComponent(category)}&water=${encodeURIComponent(water)}&type=${encodeURIComponent(name)}&genera=${encodeURIComponent(genera)}`;
+              return card(href, 'icons/fish.svg', name, `${count} species`);
             }).join('');
             return;
           }

@@ -1,0 +1,118 @@
+{
+  "family": {
+    "scientific": "Centrarchidae",
+    "common": "Sunfish Family"
+  },
+  "genera": [
+    {
+      "scientific": "Ambloplites",
+      "common": "Rock Basses",
+      "species": [
+        {
+          "scientific": "Ambloplites ariommus",
+          "common": "Shadow Bass"
+        },
+        {
+          "scientific": "Ambloplites cavifrons",
+          "common": "Roanoke Bass"
+        },
+        {
+          "scientific": "Ambloplites constellatus",
+          "common": "Ozark Bass"
+        },
+        {
+          "scientific": "Ambloplites rupestris",
+          "common": "Rock Bass"
+        }
+      ]
+    },
+    {
+      "scientific": "Centrarchus",
+      "common": "Flier",
+      "species": [
+        {
+          "scientific": "Centrarchus macropterus",
+          "common": "Flier"
+        } 
+      ]
+    },
+    {
+      "scientific": "Lepomis",
+      "common": "Common Sunfishes",
+      "species": [
+        {
+          "scientific": "Lepomis auritus",
+          "common": "Redbreast Sunfish"
+        },
+        {
+          "scientific": "Lepomis cyanellus",
+          "common": "Green Sunfish"
+        },
+        {
+          "scientific": "Lepomis gibbosus",
+          "common": "Pumpkinseed"
+        },
+        {
+          "scientific": "Lepomis gulosus",
+          "common": "Warmouth"
+        },
+        {
+          "scientific": "Lepomis macrochirus",
+          "common": "Bluegill"
+        },
+        {
+          "scientific": "Lepomis microlophus",
+          "common": "Redear Sunfish"
+        }
+      ]
+    },
+    {
+      "scientific": "Micropterus",
+      "common": "Black Basses",
+      "species": [
+        {
+          "scientific": "Micropterus cataractae",
+          "common": "Shoal Bass"
+        },
+        {
+          "scientific": "Micropterus coosae",
+          "common": "Redeye Bass"
+        },
+        {
+          "scientific": "Micropterus dolomieu",
+          "common": "Smallmouth Bass"
+        },
+        {
+          "scientific": "Micropterus notius",
+          "common": "Suwannee Bass"
+        },
+        {
+          "scientific": "Micropterus punctulatus",
+          "common": "Spotted Bass"
+        },
+        {
+          "scientific": "Micropterus salmoides",
+          "common": "Largemouth Bass"
+        },
+        {
+          "scientific": "Micropterus treculii",
+          "common": "Guadalupe Bass"
+        }
+      ]
+    },
+    {
+      "scientific": "Pomoxis",
+      "common": "Crappies",
+      "species": [
+        {
+          "scientific": "Pomoxis annularis",
+          "common": "White Crappie"
+        },
+        {
+          "scientific": "Pomoxis nigromaculatus",
+          "common": "Black Crappie"
+        }
+      ]
+    }
+  ]
+}

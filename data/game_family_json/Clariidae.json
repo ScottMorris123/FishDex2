@@ -1,0 +1,50 @@
+{
+  "family": {
+    "scientific": "Clariidae",
+    "common": "Airbreathing Catfish Family"
+  },
+  "genera": [
+    {
+      "scientific": "Clariallabes",
+      "common": "Airbreathing Catfishes",
+      "species": [
+        {
+          "scientific": "Clariallabes petricola",
+          "common": "Victoria Snake Catfish"
+        },
+        {
+          "scientific": "Clariallabes platyprosopos",
+          "common": "Broadhead Catfish"
+        }
+      ]
+    },
+    {
+      "scientific": "Clarias",
+      "common": "airbreathing catfishes",
+      "species": [
+        {
+          "scientific": "Clarias gariepinus",
+          "common": "African Sharptooth Catfish"
+        },
+        {
+          "scientific": "Clarias ngamensis",
+          "common": "Blunttooth African Catfish"
+        }
+      ]
+    },
+    {
+      "scientific": "Heterobranchus",
+      "common": "airbreathing catfishes",
+      "species": [
+        {
+          "scientific": "Heterobranchus bidorsalis",
+          "common": "African Catfish"
+        },
+        {
+          "scientific": "Heterobranchus longifilis",
+          "common": "Vundu"
+        }
+      ]
+    }
+  ]
+}

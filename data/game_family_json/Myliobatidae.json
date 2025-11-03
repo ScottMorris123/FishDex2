@@ -1,0 +1,96 @@
+{
+  "family": {
+    "scientific": "Myliobatidae",
+    "common": "Eagle Ray Family"
+  },
+  "genera": [
+    {
+      "scientific": "Aetomylaeus",
+      "common": "Eagle Rays",
+      "species": [
+        {
+          "scientific": "Aetomylaeus asperrimus",
+          "common": "Rough Eagle Ray"
+        },
+        {
+          "scientific": "Aetomylaeus bovinus",
+          "common": "Bull Ray"
+        },
+        {
+          "scientific": "Aetomylaeus caeruleofasciatus",
+          "common": "Blue-banded Eagle Ray"
+        },
+        {
+          "scientific": "Aetomylaeus maculatus",
+          "common": "Mottled Eagle Ray"
+        },
+        {
+          "scientific": "Aetomylaeus milvus",
+          "common": "Smooth Eagle Ray"
+        },
+        {
+          "scientific": "Aetomylaeus narinari",
+          "common": "Spotted Eagle Ray"
+        },
+        {
+          "scientific": "Aetomylaeus nichofii",
+          "common": "Banded Eagle Ray"
+        },
+        {
+          "scientific": "Aetomylaeus vespertilio",
+          "common": "Ornate Eagle Ray"
+        }
+      ]
+    },
+    {
+      "scientific": "Myliobatis",
+      "common": "Eagle Rays",
+      "species": [
+        {
+          "scientific": "Myliobatis aquila",
+          "common": "Common Eagle Ray"
+        },
+        {
+          "scientific": "Myliobatis californica",
+          "common": "Bat Eagle Ray"
+        },
+        {
+          "scientific": "Myliobatis chilensis",
+          "common": "Chilean Eagle Ray"
+        },
+        {
+          "scientific": "Myliobatis freminvillei",
+          "common": "Bullnose Eagle Ray"
+        },
+        {
+          "scientific": "Myliobatis goodei",
+          "common": "Southern Eagle Ray"
+        },
+        {
+          "scientific": "Myliobatis hamlyni",
+          "common": "Purple Eagle Ray"
+        },
+        {
+          "scientific": "Myliobatis longirostris",
+          "common": "Snouted Eagle Ray"
+        },
+        {
+          "scientific": "Myliobatis peruvianus",
+          "common": "Peruvian Eagle Ray"
+        },
+        {
+          "scientific": "Myliobatis ridens",
+          "common": "Shortnose Eagle Ray"
+        },
+        {
+          "scientific": "Myliobatis tenuicaudatus",
+          "common": "Australian Eagle Ray"
+        },
+        {
+          "scientific": "Myliobatis tobijei",
+          "common": "Japanese Eagle Ray"
+        }
+      ]
+    }
+  ]
+}

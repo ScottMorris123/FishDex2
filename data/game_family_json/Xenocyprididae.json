@@ -1,0 +1,171 @@
+{
+  "family": {
+    "scientific": "Cyprinidae",
+    "common": "East Asian Carp & Minnow Family"
+  },
+  "genera": [
+    {
+      "scientific": "Anabarilius",
+      "common": "Carps and Minnows",
+      "species": [
+        { "scientific": "Anabarilius grahami", "common": "Kanglang Fish" }
+      ]
+    },
+    {
+      "scientific": "Aphyocypris",
+      "common": "Carps and Minnows",
+      "species": [
+        { "scientific": "Aphyocypris arcus", "common": "Yaoshan Carp" },
+        { "scientific": "Aphyocypris chinensis", "common": "Chinese Bleak" },
+        { "scientific": "Aphyocypris lini", "common": "Garnet Minnow" },
+        { "scientific": "Aphyocypris moltrechti", "common": "Moltrecht's Minnow" }
+      ]
+    },
+    {
+      "scientific": "Atrilinea",
+      "common": "Carps and Minnows",
+      "species": [
+        { "scientific": "Atrilinea roulei", "common": "Black-stripe Minnow" }
+      ]
+    },
+    {
+      "scientific": "Chanodichthys",
+      "common": "Carps and Minnows",
+      "species": [
+        { "scientific": "Chanodichthys dabryi", "common": "Humpback" },
+        { "scientific": "Chanodichthys erythropterus", "common": "Predatory Carp" },
+        { "scientific": "Chanodichthys mongolicus", "common": "Mongolian Redfin" }
+      ]
+    },
+    {
+      "scientific": "Ctenopharyngodon",
+      "common": "Carps and Minnows",
+      "species": [
+        { "scientific": "Ctenopharyngodon idella", "common": "Grass Carp" }
+      ]
+    },
+    {
+      "scientific": "Distoechodon",
+      "common": "Carps and Minnows",
+      "species": [
+        { "scientific": "Distoechodon macrophthalmus", "common": "Red-wing Fish" }
+      ]
+    },
+    {
+      "scientific": "Elopichthys",
+      "common": "Carps and Minnows",
+      "species": [
+        { "scientific": "Elopichthys bambusa", "common": "Yellowcheek Carp" }
+      ]
+    },
+    {
+      "scientific": "Hainania",
+      "common": "Carps and Minnows",
+      "species": [
+        { "scientific": "Hainania serrata", "common": "Hainan Minnow" }
+      ]
+    },
+    {
+      "scientific": "Hemiculter",
+      "common": "Carps and Minnows",
+      "species": [
+        { "scientific": "Hemiculter leucisculus", "common": "Sharpbelly" },
+        { "scientific": "Hemiculter nikolskyi", "common": "Nikolsky's Sharpbelly" }
+      ]
+    },
+    {
+      "scientific": "Hemigrammocypris",
+      "common": "Carps and Minnows",
+      "species": [
+        { "scientific": "Hemigrammocypris neglecta", "common": "Golden Venus Chub" }
+      ]
+    },
+    {
+      "scientific": "Hypophthalmichthys",
+      "common": "Carps and Minnows",
+      "species": [
+        { "scientific": "Hypophthalmichthys harmandi", "common": "Largescale Silver Carp" },
+        { "scientific": "Hypophthalmichthys molitrix", "common": "Silver Carp" },
+        { "scientific": "Hypophthalmichthys nobilis", "common": "Bighead Carp" }
+      ]
+    },
+    {
+      "scientific": "Ischikauia",
+      "common": "Carps and Minnows",
+      "species": [
+        { "scientific": "Ischikauia steenackeri", "common": "Wataka" }
+      ]
+    },
+    {
+      "scientific": "Luciobrama",
+      "common": "Carps and Minnows",
+      "species": [
+        { "scientific": "Luciobrama macrocephala", "common": "Long Spiky-head Carp" }
+      ]
+    },
+    {
+      "scientific": "Macrochirichthys",
+      "common": "Carps and Minnows",
+      "species": [
+        { "scientific": "Macrochirichthys macrochirus", "common": "Long Pectoral-fin Minnow" }
+      ]
+    },
+    {
+      "scientific": "Megalobrama",
+      "common": "Carps and Minnows",
+      "species": [
+        { "scientific": "Megalobrama amblycephala", "common": "Wuchang Bream" },
+        { "scientific": "Megalobrama terminalis", "common": "Black Amur Bream" }
+      ]
+    },
+    {
+      "scientific": "Mylopharyngodon",
+      "common": "Carps and Minnows",
+      "species": [
+        { "scientific": "Mylopharyngodon piceus", "common": "Black Carp" }
+      ]
+    },
+    {
+      "scientific": "Parabramis",
+      "common": "Carps and Minnows",
+      "species": [
+        { "scientific": "Parabramis pekinensis", "common": "White Amur Bream" }
+      ]
+    },
+    {
+      "scientific": "Parachela",
+      "common": "Carps and Minnows",
+      "species": [
+        { "scientific": "Parachela oxygastroides", "common": "Glass Fish" }
+      ]
+    },
+    {
+      "scientific": "Parazacco",
+      "common": "Carps and Minnows",
+      "species": [
+        { "scientific": "Parazacco spilurus", "common": "Predaceous Chub" }
+      ]
+    },
+    {
+      "scientific": "Plagiognathops",
+      "common": "Carps and Minnows",
+      "species": [
+        { "scientific": "Plagiognathops microlepis", "common": "Smallscale Yellowfin" }
+      ]
+    },
+    {
+      "scientific": "Squaliobarbus",
+      "common": "Carps and Minnows",
+      "species": [
+        { "scientific": "Squaliobarbus curriculus", "common": "Barbel Chub" }
+      ]
+    },
+    {
+      "scientific": "Zacco",
+      "common": "Carps and Minnows",
+      "species": [
+        { "scientific": "Zacco platypus", "common": "Freshwater Minnow" }
+      ]
+    }
+  ]
+}

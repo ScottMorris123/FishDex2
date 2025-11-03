@@ -1,0 +1,378 @@
+{
+  "family": {
+    "scientific": "Pleuronectidae",
+    "common": "Righteye Flounder Family"
+  },
+  "genera": [
+    {
+      "scientific": "Atheresthes",
+      "common": "Righteye Flounders",
+      "species": [
+        {
+          "scientific": "Atheresthes evermanni",
+          "common": "Kamchatka Flounder"
+        },
+        {
+          "scientific": "Atheresthes stomias",
+          "common": "Arrowtooth Flounder"
+        }
+      ]
+    },
+    {
+      "scientific": "Clidoderma",
+      "common": "Righteye Flounders",
+      "species": [
+        {
+          "scientific": "Clidoderma asperrimum",
+          "common": "Roughscale Sole"
+        }
+      ]
+    },
+    {
+      "scientific": "Eopsetta",
+      "common": "Righteye Flounders",
+      "species": [
+        {
+          "scientific": "Eopsetta grigorjewi",
+          "common": "Shotted Halibut"
+        },
+        {
+          "scientific": "Eopsetta jordani",
+          "common": "Petrale Sole"
+        }
+      ]
+    },
+    {
+      "scientific": "Hippoglossus",
+      "common": "Righteye Flounders",
+      "species": [
+        {
+          "scientific": "Hippoglossus hippoglossus",
+          "common": "Atlantic Halibut"
+        },
+        {
+          "scientific": "Hippoglossus stenolepis",
+          "common": "Pacific Halibut"
+        }
+      ]
+    },
+    {
+      "scientific": "Lyopsetta",
+      "common": "Righteye Flounders",
+      "species": [
+        {
+          "scientific": "Lyopsetta exilis",
+          "common": "Slender Sole"
+        }
+      ]
+    },
+    {
+      "scientific": "Reinhardtius",
+      "common": "Righteye Flounders",
+      "species": [
+        {
+          "scientific": "Reinhardtius hippoglossoides",
+          "common": "Greenland Halibut"
+        }
+      ]
+    },
+    {
+      "scientific": "Verasper",
+      "common": "Righteye Flounders",
+      "species": [
+        {
+          "scientific": "Verasper moseri",
+          "common": "Barfin Flounder"
+        },
+        {
+          "scientific": "Verasper variegatus",
+          "common": "Spotted Halibut"
+        }
+      ]
+    },
+    {
+      "scientific": "Acanthopsetta",
+      "common": "Righteye Flounders",
+      "species": [
+        {
+          "scientific": "Acanthopsetta nadeshnyi",
+          "common": "Scale-eye Plaice"
+        }
+      ]
+    },
+    {
+      "scientific": "Dexistes",
+      "common": "Righteye Flounders",
+      "species": [
+        {
+          "scientific": "Dexistes rikuzenius",
+          "common": "Rikuzen Flounder"
+        }
+      ]
+    },
+    {
+      "scientific": "Hippoglossoides",
+      "common": "Righteye Flounders",
+      "species": [
+        {
+          "scientific": "Hippoglossoides dubius",
+          "common": "Flathead Flounder"
+        },
+        {
+          "scientific": "Hippoglossoides elassodon",
+          "common": "Flathead Sole"
+        },
+        {
+          "scientific": "Hippoglossoides platessoides",
+          "common": "American Plaice"
+        },
+        {
+          "scientific": "Hippoglossoides robustus",
+          "common": "Bering Flounder"
+        }
+      ]
+    },
+    {
+      "scientific": "Isopsetta",
+      "common": "Righteye Flounders",
+      "species": [
+        {
+          "scientific": "Isopsetta isolepis",
+          "common": "Butter Sole"
+        }
+      ]
+    },
+    {
+      "scientific": "Lepidopsetta",
+      "common": "Righteye Flounders",
+      "species": [
+        {
+          "scientific": "Lepidopsetta bilineata",
+          "common": "Rock Sole"
+        },
+        {
+          "scientific": "Lepidopsetta mochigarei",
+          "common": "Dusky Sole"
+        },
+        {
+          "scientific": "Lepidopsetta polyxystra",
+          "common": "Northern Rock Sole"
+        }
+      ]
+    },
+    {
+      "scientific": "Limanda",
+      "common": "Righteye Flounders",
+      "species": [
+        {
+          "scientific": "Limanda aspera",
+          "common": "Yellowfin Sole"
+        },
+        {
+          "scientific": "Limanda ferruginea",
+          "common": "Yellowtail Flounder"
+        },
+        {
+          "scientific": "Limanda limanda",
+          "common": "Common Dab"
+        },
+        {
+          "scientific": "Limanda proboscidea",
+          "common": "Longhead Dab"
+        },
+        {
+          "scientific": "Limanda punctatissima",
+          "common": "Speckled Flounder"
+        },
+        {
+          "scientific": "Limanda sakhalinensis",
+          "common": "Sakhalin Sole"
+        }
+      ]
+    },
+    {
+      "scientific": "Liopsetta",
+      "common": "Righteye Flounders",
+      "species": [
+        {
+          "scientific": "Liopsetta glacialis",
+          "common": "Arctic Flounder"
+        },
+        {
+          "scientific": "Liopsetta pinnifasciata",
+          "common": "Far Eastern Smooth Flounder"
+        },
+        {
+          "scientific": "Liopsetta putnami",
+          "common": "American Smooth Flounder"
+        }
+      ]
+    },
+    {
+      "scientific": "Parophrys",
+      "common": "Righteye Flounders",
+      "species": [
+        {
+          "scientific": "Parophrys vetulus",
+          "common": "English Sole"
+        }
+      ]
+    },
+    {
+      "scientific": "Platichthys",
+      "common": "Righteye Flounders",
+      "species": [
+        {
+          "scientific": "Platichthys bicoloratus",
+          "common": "Stone Flounder"
+        },
+        {
+          "scientific": "Platichthys flesus",
+          "common": "European Flounder"
+        },
+        {
+          "scientific": "Platichthys stellatus",
+          "common": "Starry Flounder"
+        },
+        {
+          "scientific": "Platichthys solemdali",
+          "common": "Baltic Flounder"
+        }
+      ]
+    },
+    {
+      "scientific": "Pleuronectes",
+      "common": "Righteye Flounders",
+      "species": [
+        {
+          "scientific": "Pleuronectes platessa",
+          "common": "European Plaice"
+        },
+        {
+          "scientific": "Pleuronectes quadrituberculatus",
+          "common": "Alaska Plaice"
+        }
+      ]
+    },
+    {
+      "scientific": "Psettichthys",
+      "common": "Righteye Flounders",
+      "species": [
+        {
+          "scientific": "Psettichthys melanostictus",
+          "common": "Pacific Sand Sole"
+        }
+      ]
+    },
+    {
+      "scientific": "Pseudopleuronectes",
+      "common": "Righteye Flounders",
+      "species": [
+        {
+          "scientific": "Pseudopleuronectes americanus",
+          "common": "Winter Flounder"
+        },
+        {
+          "scientific": "Pseudopleuronectes herzensteini",
+          "common": "Yellow-striped Flounder"
+        },
+        {
+          "scientific": "Pseudopleuronectes obscurus",
+          "common": "Dark Flounder"
+        },
+        {
+          "scientific": "Pseudopleuronectes schrenki",
+          "common": "Cresthead Flounder"
+        },
+        {
+          "scientific": "Pseudopleuronectes yokohamae",
+          "common": "Marbled Flounder"
+        }
+      ]
+    },
+    {
+      "scientific": "Glyptocephalus",
+      "common": "Righteye Flounders",
+      "species": [
+        {
+          "scientific": "Glyptocephalus cynoglossus",
+          "common": "Witch Flounder"
+        },
+        {
+          "scientific": "Glyptocephalus kitaharae",
+          "common": "Willowy Flounder"
+        },
+        {
+          "scientific": "Glyptocephalus stelleri",
+          "common": "Blackfin Flounder"
+        },
+        {
+          "scientific": "Glyptocephalus zachirus",
+          "common": "Rex Sole"
+        }
+      ]
+    },
+    {
+      "scientific": "Microstomus",
+      "common": "Righteye Flounders",
+      "species": [
+        {
+          "scientific": "Microstomus achne",
+          "common": "Slime Flounder"
+        },
+        {
+          "scientific": "Microstomus bathybius",
+          "common": "Deep-sea Sole"
+        },
+        {
+          "scientific": "Microstomus kitt",
+          "common": "Lemon Sole"
+        },
+        {
+          "scientific": "Microstomus pacificus",
+          "common": "Pacific Dover Sole"
+        }
+      ]
+    },
+    {
+      "scientific": "Hypsopsetta",
+      "common": "Righteye Flounders",
+      "species": [
+        {
+          "scientific": "Hypsopsetta guttulata",
+          "common": "Diamond Turbot"
+        }
+      ]
+    },
+    {
+      "scientific": "Pleuronichthys",
+      "common": "Righteye Flounders",
+      "species": [
+        {
+          "scientific": "Pleuronichthys coenosus",
+          "common": "C-O Sole"
+        },
+        {
+          "scientific": "Pleuronichthys cornutus",
+          "common": "Ridge-eyed Flounder"
+        },
+        {
+          "scientific": "Pleuronichthys decurrens",
+          "common": "Curlfin Sole"
+        },
+        {
+          "scientific": "Pleuronichthys ocellatus",
+          "common": "Ocellated Turbot"
+        },
+        {
+          "scientific": "Pleuronichthys ritteri",
+          "common": "Spotted Turbot"
+        },
+        {
+          "scientific": "Pleuronichthys verticalis",
+          "common": "Horny-head Turbot"
+        }
+      ]
+    }
+  ]
+}

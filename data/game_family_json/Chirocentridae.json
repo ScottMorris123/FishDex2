@@ -1,0 +1,22 @@
+{
+  "family": {
+    "scientific": "Chirocentridae",
+    "common": "Wolf Herring Family"
+  },
+  "genera": [
+    {
+      "scientific": "Chirocentrus",
+      "common": "Wolf Herrings",
+      "species": [
+        {
+          "scientific": "Chirocentrus dorab",
+          "common": "Dorab Wolf Herring"
+        },
+        {
+          "scientific": "Chirocentrus nudus",
+          "common": "Whitefin Wolf Herring"
+        }
+      ]
+    }
+  ]
+}

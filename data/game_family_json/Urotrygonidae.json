@@ -1,0 +1,40 @@
+{
+  "family": {
+    "scientific": "Urotrygonidae",
+    "common": "American Round Stingray Family"
+  },
+  "genera": [
+    {
+      "scientific": "Urobatis",
+      "common": "Round Stingrays",
+      "species": [
+        { "scientific": "Urobatis concentricus", "common": "Bullseye Round Stingray" },
+        { "scientific": "Urobatis halleri", "common": "Round Stingray" },
+        { "scientific": "Urobatis jamaicensis", "common": "Yellow Stingray" },
+        { "scientific": "Urobatis maculatus", "common": "Spotted Round Ray" },
+        { "scientific": "Urobatis marmoratus", "common": "Chilean Round Stingray" },
+        { "scientific": "Urobatis pardalis", "common": "Leopard Round Stingray" },
+        { "scientific": "Urobatis tumbesensis", "common": "Tumbes Round Stingray" }
+      ]
+    },
+    {
+      "scientific": "Urotrygon",
+      "common": "Round Rays",
+      "species": [
+        { "scientific": "Urotrygon aspidura", "common": "Spiny-tail Round Ray" },
+        { "scientific": "Urotrygon caudispinosus", "common": "Spine-tailed Round Ray" },
+        { "scientific": "Urotrygon chilensis", "common": "Chilean Round Ray" },
+        { "scientific": "Urotrygon cimar", "common": "Denticled Roundray" },
+        { "scientific": "Urotrygon microphthalmum", "common": "Smalleyed Round Stingray" },
+        { "scientific": "Urotrygon munda", "common": "Munda Round Ray" },
+        { "scientific": "Urotrygon nana", "common": "Dwarf Round Ray" },
+        { "scientific": "Urotrygon peruanus", "common": "Peruvian Stingray" },
+        { "scientific": "Urotrygon reticulata", "common": "Reticulate Round Ray" },
+        { "scientific": "Urotrygon rogersi", "common": "Roger's Round Ray" },
+        { "scientific": "Urotrygon serrula", "common": "Saw-spined Round Ray" },
+        { "scientific": "Urotrygon simulatrix", "common": "Fake Round Ray" },
+        { "scientific": "Urotrygon venezuelae", "common": "Venezuela Round Stingray" }
+      ]
+    }
+  ]
+}

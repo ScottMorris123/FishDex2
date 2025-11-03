@@ -1,0 +1,30 @@
+{
+  "family": {
+    "scientific": "Glaucosomatidae",
+    "common": "Pearl Perch Family"
+  },
+  "genera": [
+    {
+      "scientific": "Glaucosoma",
+      "common": "Pearl Perches",
+      "species": [
+        {
+          "scientific": "Glaucosoma buergeri",
+          "common": "Japanese Pearl Perch"
+        },
+        {
+          "scientific": "Glaucosoma hebraicum",
+          "common": "Westralian Dhufish"
+        },
+        {
+          "scientific": "Glaucosoma magnificum",
+          "common": "Threadfin Pearl Perch"
+        },
+        {
+          "scientific": "Glaucosoma scapulare",
+          "common": "Pearl Perch"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "family": {
+    "scientific": "Uranoscopidae",
+    "common": "Stargazer Family"
+  },
+  "genera": [
+    {
+      "scientific": "Astroscopus",
+      "common": "Stargazers",
+      "species": [
+        { "scientific": "Astroscopus guttatus", "common": "Northern Stargazer" },
+        { "scientific": "Astroscopus sexspinosus", "common": "Brazilian Stargazer" },
+        { "scientific": "Astroscopus y-graecum", "common": "Southern Stargazer" }
+      ]
+    },
+    {
+      "scientific": "Genyagnus",
+      "common": "Stargazers",
+      "species": [
+        { "scientific": "Genyagnus monopterygius", "common": "Spotted Stargazer" }
+      ]
+    },
+    {
+      "scientific": "Kathetostoma",
+      "common": "Stargazers",
+      "species": [
+        { "scientific": "Kathetostoma albigutta", "common": "Lancer Stargazer" },
+        { "scientific": "Kathetostoma averruncus", "common": "Smooth Stargazer" },
+        { "scientific": "Kathetostoma binigrasella", "common": "Banded Stargazer" },
+        { "scientific": "Kathetostoma cubana", "common": "Spiny Stargazer" },
+        { "scientific": "Kathetostoma fluviatilis", "common": "River Stargazer" },
+        { "scientific": "Kathetostoma giganteum", "common": "Giant Stargazer" },
+        { "scientific": "Kathetostoma laeve", "common": "Common Stargazer" },
+        { "scientific": "Kathetostoma nigrofasciatum", "common": "Deepwater Stargazer" }
+      ]
+    },
+    {
+      "scientific": "Pleuroscopus",
+      "common": "Stargazers",
+      "species": [
+        { "scientific": "Pleuroscopus pseudodorsalis", "common": "Scaly Stargazer" }
+      ]
+    },
+    {
+      "scientific": "Uranoscopus",
+      "common": "Stargazers",
+      "species": [
+        { "scientific": "Uranoscopus albesca", "common": "Longspine Stargazer" },
+        { "scientific": "Uranoscopus bicinctus", "common": "Marbled Stargazer" },
+        { "scientific": "Uranoscopus cadenati", "common": "West African Stargazer" },
+        { "scientific": "Uranoscopus cognatus", "common": "Two-spined Yellow-tail Stargazer" },
+        { "scientific": "Uranoscopus guttatus", "common": "Dollfus' Stargazer" },
+        { "scientific": "Uranoscopus kaianus", "common": "Kai Stargazer" },
+        { "scientific": "Uranoscopus polli", "common": "Whitespotted Stargazer" },
+        { "scientific": "Uranoscopus scaber", "common": "Atlantic Stargazer" },
+        { "scientific": "Uranoscopus sulphureus", "common": "Whitemargin Stargazer" }
+      ]
+    }
+  ]
+}

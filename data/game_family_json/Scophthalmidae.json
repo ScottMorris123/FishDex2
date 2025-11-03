@@ -1,0 +1,62 @@
+{
+  "family": {
+    "scientific": "Scophthalmidae",
+    "common": "Turbot Family"
+  },
+  "genera": [
+    {
+      "scientific": "Scophthalmus",
+      "common": "Turbots",
+      "species": [
+        {
+          "scientific": "Scophthalmus aquosus",
+          "common": "Windowpane Flounder"
+        },
+        {
+          "scientific": "Scophthalmus maeoticus",
+          "common": "Black Sea Turbot"
+        },
+        {
+          "scientific": "Scophthalmus maximus",
+          "common": "Turbot"
+        },
+        {
+          "scientific": "Scophthalmus rhombus",
+          "common": "Brill"
+        }
+      ]
+    },
+    {
+      "scientific": "Lepidorhombus",
+      "common": "Megrims",
+      "species": [
+        {
+          "scientific": "Lepidorhombus boscii",
+          "common": "Four-Spot Megrim"
+        },
+        {
+          "scientific": "Lepidorhombus whiffiagonis",
+          "common": "Megrim"
+        }
+      ]
+    },
+    {
+      "scientific": "Zeugopterus",
+      "common": "Topknots",
+      "species": [
+        {
+          "scientific": "Zeugopterus norvegicus",
+          "common": "Norwegian Topknot"
+        },
+        {
+          "scientific": "Zeugopterus punctatus",
+          "common": "Topknot"
+        },
+        {
+          "scientific": "Zeugopterus regius",
+          "common": "Eckström's Topknot"
+        }
+      ]
+    }
+  ]
+}

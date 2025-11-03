@@ -1,0 +1,30 @@
+{
+  "family": {
+    "scientific": "Sphyrnidae",
+    "common": "Hammerhead Shark Family"
+  },
+  "genera": [
+    {
+      "scientific": "Eusphyra",
+      "common": "Hammerhead Sharks",
+      "species": [
+        { "scientific": "Eusphyra blochii", "common": "Winghead Shark" }
+      ]
+    },
+    {
+      "scientific": "Sphyrna",
+      "common": "Hammerhead Sharks",
+      "species": [
+        { "scientific": "Sphyrna alleni", "common": "Shovelhead Shark" },
+        { "scientific": "Sphyrna corona", "common": "Scalloped Bonnethead Shark" },
+        { "scientific": "Sphyrna gilberti", "common": "Carolina Hammerhead Shark" },
+        { "scientific": "Sphyrna lewini", "common": "Scalloped Hammerhead Shark" },
+        { "scientific": "Sphyrna media", "common": "Scoophead Shark" },
+        { "scientific": "Sphyrna mokarran", "common": "Great Hammerhead Shark" },
+        { "scientific": "Sphyrna tiburo", "common": "Bonnethead Shark" },
+        { "scientific": "Sphyrna tudes", "common": "Smalleye Hammerhead Shark" },
+        { "scientific": "Sphyrna zygaena", "common": "Smooth Hammerhead Shark" }
+      ]
+    }
+  ]
+}

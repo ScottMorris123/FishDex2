@@ -1,0 +1,18 @@
+{
+  "family": {
+    "scientific": "Arapaimidae",
+    "common": "Arapaima Family"
+  },
+  "genera": [
+    {
+      "scientific": "Arapaima",
+      "common": "arapaima",
+      "species": [
+        {
+          "scientific": "Arapaima gigas",
+          "common": "Arapaima"
+        }
+      ]
+    }
+  ]
+}

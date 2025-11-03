@@ -1,0 +1,46 @@
+{
+  "family": {
+    "scientific": "Anguillidae",
+    "common": "Freshwater Eel Family"
+  },
+  "genera": [
+    {
+      "scientific": "Anguilla",
+      "common": "Freshwater Eels",
+      "species": [
+        {
+          "scientific": "Anguilla anguilla",
+          "common": "European Eel"
+        },
+        {
+          "scientific": "Anguilla australis",
+          "common": "Shortfin Eel"
+        },
+        {
+          "scientific": "Anguilla bengalensis",
+          "common": "Indian Mottled Eel"
+        },
+        {
+          "scientific": "Anguilla labiata",
+          "common": "African Mottled Eel"
+        },
+        {
+          "scientific": "Anguilla marmorata",
+          "common": "Giant Mottled Eel"
+        },
+        {
+          "scientific": "Anguilla mossambica",
+          "common": "African Longfin Eel"
+        },
+        {
+          "scientific": "Anguilla reinhardtii",
+          "common": "Speckled Longfin Eel"
+        },
+        {
+          "scientific": "Anguilla rostrata",
+          "common": "American Eel"
+        }
+      ]
+    }
+  ]
+}

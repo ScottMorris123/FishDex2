@@ -1,0 +1,28 @@
+{
+  "family": {
+    "scientific": "Anthiadidae",
+    "common": "Anthias Family"
+  },
+  "genera": [
+    {
+      "scientific": "Acanthistius",
+      "common": "anthias",
+      "species": [
+        {
+          "scientific": "Acanthistius sebastoides",
+          "common": "Koester"
+        }
+      ]
+    },
+    {
+      "scientific": "Anthias",
+      "common": "anthias",
+      "species": [
+        {
+          "scientific": "Anthias anthias",
+          "common": "Swallowtail Seaperch"
+        }
+      ]
+    }
+  ]
+}

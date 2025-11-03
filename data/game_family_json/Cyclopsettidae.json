@@ -1,0 +1,184 @@
+{
+  "family": {
+    "scientific": "Cyclopsettidae",
+    "common": "Flounder Family"
+  },
+    "genera": [
+        {
+      "scientific": "Citharichthys",
+      "common": "Flounders",
+      "species": [
+        {
+          "scientific": "Citharichthys abbotti",
+          "common": "Veracruz Whiff"
+        },
+        {
+          "scientific": "Citharichthys arctifrons",
+          "common": "Gulf Stream Flounder"
+        },
+        {
+          "scientific": "Citharichthys arenaceus",
+          "common": "Sand Whiff"
+        },
+        {
+          "scientific": "Citharichthys cornutus",
+          "common": "Horned Whiff"
+        },
+        {
+          "scientific": "Citharichthys darwini",
+          "common": "Darwin's Sanddab"
+        },
+        {
+          "scientific": "Citharichthys dinoceros",
+          "common": "Spined Whiff"
+        },
+        {
+          "scientific": "Citharichthys fragilis",
+          "common": "Gulf Sanddab"
+        },
+        {
+          "scientific": "Citharichthys gilberti",
+          "common": "Bigmouth Sanddab"
+        },
+        {
+          "scientific": "Citharichthys gordae",
+          "common": "Mimic Sanddab"
+        },
+        {
+          "scientific": "Citharichthys gymnorhinus",
+          "common": "Anglefin Whiff"
+        },
+        {
+          "scientific": "Citharichthys macrops",
+          "common": "Spotted Whiff"
+        },
+        {
+          "scientific": "Citharichthys mariajorisae",
+          "common": "Five-Rayed Sanddab"
+        },
+        {
+          "scientific": "Citharichthys platophrys",
+          "common": "Small Sanddab"
+        },
+        {
+          "scientific": "Citharichthys sordidus",
+          "common": "Pacific Sanddab"
+        },
+        {
+          "scientific": "Citharichthys spilopterus",
+          "common": "Bay Whiff"
+        },
+        {
+          "scientific": "Citharichthys stampflii",
+          "common": "Smooth Flounder"
+        },
+        {
+          "scientific": "Citharichthys stigmaeus",
+          "common": "Speckled Sanddab"
+        },
+        {
+          "scientific": "Citharichthys uhleri",
+          "common": "Voodoo Whiff"
+        },
+        {
+          "scientific": "Citharichthys xanthostigma",
+          "common": "Longfin Sanddab"
+        }
+      ]
+    },
+    {
+      "scientific": "Cyclopsetta",
+      "common": "Flounders",
+      "species": [
+        {
+          "scientific": "Cyclopsetta chittendeni",
+          "common": "Mexican Flounder"
+        },
+        {
+          "scientific": "Cyclopsetta fimbriata",
+          "common": "Spotfin Flounder"
+        },
+        {
+          "scientific": "Cyclopsetta panamensis",
+          "common": "God's Flounder"
+        },
+        {
+          "scientific": "Cyclopsetta querna",
+          "common": "Toothed Flounder"
+        }
+      ]
+    },
+    {
+      "scientific": "Etropus",
+      "common": "Flounders",
+      "species": [
+        {
+          "scientific": "Etropus crossotus",
+          "common": "Fringed Flounder"
+        },
+        {
+          "scientific": "Etropus cyclosquamus",
+          "common": "Shelf Flounder"
+        },
+        {
+          "scientific": "Etropus delsmani",
+          "common": "Delsman's Flounder"
+        },
+        {
+          "scientific": "Etropus ectenes",
+          "common": "Sole Flounder"
+        },
+        {
+          "scientific": "Etropus microstomus",
+          "common": "Smallmouth Flounder"
+        },
+        {
+          "scientific": "Etropus peruvianus",
+          "common": "Peruvian Flounder"
+        },
+        {
+          "scientific": "Etropus rimosus",
+          "common": "Gray Flounder"
+        }
+      ]
+    },
+    {
+      "scientific": "Syacium",
+      "common": "Flounders",
+      "species": [
+        {
+          "scientific": "Syacium guineense",
+          "common": "Papillose Flounder"
+        },
+        {
+          "scientific": "Syacium gunteri",
+          "common": "Shoal Flounder"
+        },
+        {
+          "scientific": "Syacium latifrons",
+          "common": "Beach Flounder"
+        },
+        {
+          "scientific": "Syacium longidorsale",
+          "common": "Longfin Flounder"
+        },
+        {
+          "scientific": "Syacium maculiferum",
+          "common": "Clearspot Flounder"
+        },
+        {
+          "scientific": "Syacium micrurum",
+          "common": "Channel Flounder"
+        },
+        {
+          "scientific": "Syacium ovale",
+          "common": "Oval Flounder"
+        },
+        {
+          "scientific": "Syacium papillosum",
+          "common": "Dusky Flounder"
+        }
+      ]
+    }
+  ]
+}

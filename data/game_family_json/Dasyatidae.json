@@ -1,0 +1,542 @@
+{
+  "family": {
+    "scientific": "Dasyatidae",
+    "common": "Whip-tail Stingray Family"
+  },
+  "genera": [
+    {
+      "scientific": "Bathytoshia",
+      "common": "Stingrays",
+      "species": [
+        {
+          "scientific": "Bathytoshia brevicaudata",
+          "common": "Short-tail Stingray"
+        },
+        {
+          "scientific": "Bathytoshia centroura",
+          "common": "Roughttail Stingray"
+        },
+        {
+          "scientific": "Bathytoshia lata",
+          "common": "Broad Stingray"
+        }
+      ]
+    },
+    {
+      "scientific": "Brevitrygon",
+      "common": "Stingrays",
+      "species": [
+        {
+          "scientific": "Brevitrygon heterura",
+          "common": "Dwarf Whipray"
+        },
+        {
+          "scientific": "Brevitrygon imbricata",
+          "common": "Scaly Whipray"
+        },
+        {
+          "scientific": "Brevitrygon javaensis",
+          "common": "Javan Whipray"
+        },
+        {
+          "scientific": "Brevitrygon manjajiae",
+          "common": "Sandwich-tail Whipray"
+        },
+        {
+          "scientific": "Brevitrygon walga",
+          "common": "Dwarf Whipray"
+        }
+      ]
+    },
+    {
+      "scientific": "Dasyatis",
+      "common": "Stingrays",
+      "species": [
+        {
+          "scientific": "Dasyatis brevis",
+          "common": "Diamond Stingray"
+        },
+        {
+          "scientific": "Dasyatis chrysonota",
+          "common": "Blue Stingray"
+        },
+        {
+          "scientific": "Dasyatis gigantea",
+          "common": "Giant Stumptail Stingray"
+        },
+        {
+          "scientific": "Dasyatis hastata",
+          "common": "Whip Stingray"
+        },
+        {
+          "scientific": "Dasyatis hypostigma",
+          "common": "Groovebelly Stingray"
+        },
+        {
+          "scientific": "Dasyatis marmorata",
+          "common": "Marbled Stingray"
+        },
+        {
+          "scientific": "Dasyatis multispinosa",
+          "common": "Multispine Giant Stingray"
+        },
+        {
+          "scientific": "Dasyatis pastinaca",
+          "common": "Common Stingray"
+        },
+        {
+          "scientific": "Dasyatis tortonesei",
+          "common": "Tortonese's Stingray"
+        }
+      ]
+    },
+    {
+      "scientific": "Fluvitrygon",
+      "common": "Stingrays",
+      "species": [
+        {
+          "scientific": "Fluvitrygon kittipongi",
+          "common": "Roughback Whipray"
+        },
+        {
+          "scientific": "Fluvitrygon oxyrhynchus",
+          "common": "Marbled Whipray"
+        },
+        {
+          "scientific": "Fluvitrygon signifer",
+          "common": "White-Edge Freshwater Whipray"
+        }
+      ]
+    },
+    {
+      "scientific": "Fontitrygon",
+      "common": "Stingrays",
+      "species": [
+        {
+          "scientific": "Fontitrygon colarensis",
+          "common": "Colares Stingray"
+        },
+        {
+          "scientific": "Fontitrygon garouaensis",
+          "common": "Niger Stingray"
+        },
+        {
+          "scientific": "Fontitrygon geijskesi",
+          "common": "Sharpsnout Stingray"
+        },
+        {
+          "scientific": "Fontitrygon margarita",
+          "common": "Daisy Stingray"
+        },
+        {
+          "scientific": "Fontitrygon margaritella",
+          "common": "Pearl Stingray"
+        },
+        {
+          "scientific": "Fontitrygon ukpam",
+          "common": "Pincushion Ray"
+        }
+      ]
+    },
+    {
+      "scientific": "Hemitrygon",
+      "common": "Stingrays",
+      "species": [
+        {
+          "scientific": "Hemitrygon akajei",
+          "common": "Red Stingray"
+        },
+        {
+          "scientific": "Hemitrygon bennetti",
+          "common": "Bennett's Stingray"
+        },
+        {
+          "scientific": "Hemitrygon fluviorum",
+          "common": "Estuary Stingray"
+        },
+        {
+          "scientific": "Hemitrygon izuensis",
+          "common": "Izu Stingray"
+        },
+        {
+          "scientific": "Hemitrygon laevigata",
+          "common": "Yantai Stingray"
+        },
+        {
+          "scientific": "Hemitrygon laosensis",
+          "common": "Mekong Freshwater Stingray"
+        },
+        {
+          "scientific": "Hemitrygon longicauda",
+          "common": "Merauke Stingray"
+        },
+        {
+          "scientific": "Hemitrygon navarrae",
+          "common": "Blackish Stingray"
+        },
+        {
+          "scientific": "Hemitrygon parvonigra",
+          "common": "Dwarf Black Stingray"
+        },
+        {
+          "scientific": "Hemitrygon sinensis",
+          "common": "Chinese Stingray"
+        },
+        {
+          "scientific": "Hemitrygon yemenensis",
+          "common": "Yemen Stingray"
+        }
+      ]
+    },
+    {
+      "scientific": "Himantura",
+      "common": "Stingrays",
+      "species": [
+        {
+          "scientific": "Himantura alcockii",
+          "common": "Pale-spot Whipray"
+        },
+        {
+          "scientific": "Himantura australis",
+          "common": "Australian Whipray"
+        },
+        {
+          "scientific": "Himantura fava",
+          "common": "Honeycomb Whipray"
+        },
+        {
+          "scientific": "Himantura fluviatilis",
+          "common": "Ganges Whipray"
+        },
+        {
+          "scientific": "Himantura krempfi",
+          "common": "Marbled Freshwater Whipray"
+        },
+        {
+          "scientific": "Himantura leoparda",
+          "common": "Leopard Whipray"
+        },
+        {
+          "scientific": "Himantura marginata",
+          "common": "Black-edge Whipray"
+        },
+        {
+          "scientific": "Himantura microphthalma",
+          "common": "Smalleye Whipray"
+        },
+        {
+          "scientific": "Himantura tutul",
+          "common": "Fine-spotted Leopard Whipray"
+        },
+        {
+          "scientific": "Himantura uarnak",
+          "common": "Reticulate Whipray"
+        },
+        {
+          "scientific": "Himantura undulata",
+          "common": "Honeycomb Whipray"
+        }
+      ]
+    },
+    {
+      "scientific": "Hypanus",
+      "common": "Stingrays",
+      "species": [
+        {
+          "scientific": "Hypanus americanus",
+          "common": "Southern Stingray"
+        },
+        {
+          "scientific": "Hypanus berthalutzae",
+          "common": "Lutz's Stingray"
+        },
+        {
+          "scientific": "Hypanus dipterurus",
+          "common": "Diamond Stingray"
+        },
+        {
+          "scientific": "Hypanus guttatus",
+          "common": "Longnose Stingray"
+        },
+        {
+          "scientific": "Hypanus longus",
+          "common": "Longtail Stingray"
+        },
+        {
+          "scientific": "Hypanus marianae",
+          "common": "Brazilian Large-Eyed Stingray"
+        },
+        {
+          "scientific": "Hypanus rudis",
+          "common": "Smalltooth Stingray"
+        },
+        {
+          "scientific": "Hypanus sabinus",
+          "common": "Atlantic Stingray"
+        },
+        {
+          "scientific": "Hypanus say",
+          "common": "Bluntnose Stingray"
+        }
+      ]
+    },
+    {
+      "scientific": "Maculabatis",
+      "common": "Stingrays",
+      "species": [
+        {
+          "scientific": "Maculabatis ambigua",
+          "common": "Baraka's Whipray"
+        },
+        {
+          "scientific": "Maculabatis arabica",
+          "common": "Pakistan Whipray"
+        },
+        {
+          "scientific": "Maculabatis astra",
+          "common": "Black-Spotted Whipray"
+        },
+        {
+          "scientific": "Maculabatis bineeshi",
+          "common": "Short-Tail Whipray"
+        },
+        {
+          "scientific": "Maculabatis gerrardi",
+          "common": "Whitespotted Whipray"
+        },
+        {
+          "scientific": "Maculabatis macrura",
+          "common": "Long-Tailed Whipray"
+        },
+        {
+          "scientific": "Maculabatis pastinacoides",
+          "common": "Round Whipray"
+        },
+        {
+          "scientific": "Maculabatis randalli",
+          "common": "Arabian Banded Whipray"
+        },
+        {
+          "scientific": "Maculabatis toshi",
+          "common": "Brown Whipray"
+        }
+      ]
+    },
+    {
+      "scientific": "Neotrygon",
+      "common": "Maskrays",
+      "species": [
+        {
+          "scientific": "Neotrygon annotata",
+          "common": "Plain Maskray"
+        },
+        {
+          "scientific": "Neotrygon australiae",
+          "common": "Australian Bluespotted Maskray"
+        },
+        {
+          "scientific": "Neotrygon bobwardi",
+          "common": "Bob Ward's Bluespotted Maskray"
+        },
+        {
+          "scientific": "Neotrygon caeruleopunctata",
+          "common": "Bluespotted Maskray"
+        },
+        {
+          "scientific": "Neotrygon indica",
+          "common": "Indian Ocean Maskray"
+        },
+        {
+          "scientific": "Neotrygon kuhlii",
+          "common": "Kuhl's Stingray"
+        },
+        {
+          "scientific": "Neotrygon leylandi",
+          "common": "Painted Maskray"
+        },
+        {
+          "scientific": "Neotrygon malaccensis",
+          "common": "Malacca Strait Bluespotted Maskray"
+        },
+        {
+          "scientific": "Neotrygon moluccensis",
+          "common": "Moluccan Bluespotted Maskray"
+        },
+        {
+          "scientific": "Neotrygon ningalooensis",
+          "common": "Ningaloo Maskray"
+        },
+        {
+          "scientific": "Neotrygon orientalis",
+          "common": "Oriental Bluespotted Maskray"
+        },
+        {
+          "scientific": "Neotrygon picta",
+          "common": "Speckled Maskray"
+        },
+        {
+          "scientific": "Neotrygon trigonoides",
+          "common": "New Caledonian Maskray"
+        },
+        {
+          "scientific": "Neotrygon vali",
+          "common": "Guadalcanal Maskray"
+        },
+        {
+          "scientific": "Neotrygon varidens",
+          "common": "Mahogany Maskray"
+        },
+        {
+          "scientific": "Neotrygon westpapuensis",
+          "common": "West Papuan Bluespotted Maskray"
+        },
+        {
+          "scientific": "Neotrygon yakkoei",
+          "common": "Yakko's Maskray"
+        }
+      ]
+    },
+    {
+      "scientific": "Pastinachus",
+      "common": "Stingrays",
+      "species": [
+        {
+          "scientific": "Pastinachus ater",
+          "common": "Broad Cowtail Stingray"
+        },
+        {
+          "scientific": "Pastinachus gracilicaudus",
+          "common": "Narrow Cowtail Stingray"
+        },
+        {
+          "scientific": "Pastinachus sephen",
+          "common": "Cowtail Stingray"
+        },
+        {
+          "scientific": "Pastinachus solocirostris",
+          "common": "Roughnose Cowtail Stingray"
+        },
+        {
+          "scientific": "Pastinachus stellurostris",
+          "common": "Starrynose Cowtail Stingray"
+        }
+      ]
+    },
+    {
+      "scientific": "Pateobatis",
+      "common": "Stingrays",
+      "species": [
+        {
+          "scientific": "Pateobatis bleekeri",
+          "common": "Bleeker's Whipray"
+        },
+        {
+          "scientific": "Pateobatis fai",
+          "common": "Pink Whipray"
+        },
+        {
+          "scientific": "Pateobatis hortlei",
+          "common": "Hortle's Whipray"
+        },
+        {
+          "scientific": "Pateobatis jenkinsii",
+          "common": "Jenkins' Whipray"
+        },
+        {
+          "scientific": "Pateobatis uarnacoides",
+          "common": "Whitenose Whipray"
+        }
+      ]
+    },
+    {
+      "scientific": "Pteroplatytrygon",
+      "common": "Stingrays",
+      "species": [
+        {
+          "scientific": "Pteroplatytrygon violacea",
+          "common": "Pelagic Stingray"
+        }
+      ]
+    },
+    {
+      "scientific": "Taeniura",
+      "common": "stingrays",
+      "species": [
+        {
+          "scientific": "Taeniura lessoni",
+          "common": "Oceania Fantail Ray"
+        },
+        {
+          "scientific": "Taeniura lymma",
+          "common": "Bluespotted Ribbontail Ray"
+        }
+      ]
+    },
+    {
+      "scientific": "Taeniurops",
+      "common": "stingrays",
+      "species": [
+        {
+          "scientific": "Taeniurops grabatus",
+          "common": "Round Fantail Stingray"
+        },
+        {
+          "scientific": "Taeniurops meyeni",
+          "common": "Round Ribbontail Ray"
+        }
+      ]
+    },
+    {
+      "scientific": "Telatrygon",
+      "common": "Stingrays",
+      "species": [
+        {
+          "scientific": "Telatrygon acutirostra",
+          "common": "Sharpnose Stingray"
+        },
+        {
+          "scientific": "Telatrygon biasa",
+          "common": "Indonesian Sharpnose Ray"
+        },
+        {
+          "scientific": "Telatrygon crozieri",
+          "common": "Indian Sharpnose Ray"
+        },
+        {
+          "scientific": "Telatrygon zugei",
+          "common": "Pale-edged Stingray"
+        }
+      ]
+    },
+    {
+      "scientific": "Urogymnus",
+      "common": "Stingrays",
+      "species": [
+        {
+          "scientific": "Urogymnus acanthobothrium",
+          "common": "Mumburarr Whipray"
+        },
+        {
+          "scientific": "Urogymnus asperrimus",
+          "common": "Porcupine Ray"
+        },
+        {
+          "scientific": "Urogymnus dalyensis",
+          "common": "Freshwater Whipray"
+        },
+        {
+          "scientific": "Urogymnus granulatus",
+          "common": "Mangrove Whipray"
+        },
+        {
+          "scientific": "Urogymnus lobistoma",
+          "common": "Tubemouth Whipray"
+        },
+        {
+          "scientific": "Urogymnus polylepis",
+          "common": "Giant Freshwater Whipray"
+        }
+      ]
+    }
+  ]
+}

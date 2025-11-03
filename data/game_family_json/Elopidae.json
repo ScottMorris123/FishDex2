@@ -1,0 +1,38 @@
+{
+  "family": {
+    "scientific": "Elopidae",
+    "common": "Ladyfish, Skipjacks, Jack-Rashes, Tenpounders Family"
+  },
+  "genera": [
+    {
+      "scientific": "Elops",
+      "common": "Ladyfish, Skipjacks, Jack-Rashes, Tenpounders",
+      "species": [
+        {
+          "scientific": "Elops affinis",
+          "common": "Pacific Ladyfish"
+        },
+        {
+          "scientific": "Elops hawaiensis",
+          "common": "Hawaiian Ladyfish"
+        },
+        {
+          "scientific": "Elops lacerta",
+          "common": "West African Ladyfish"
+        },
+        {
+          "scientific": "Elops machnata",
+          "common": "Tenpounder"
+        },
+        {
+          "scientific": "Elops saurus",
+          "common": "Atlantic Ladyfish"
+        },
+        {
+          "scientific": "Elops senegalensis",
+          "common": "Senegalese Ladyfish"
+        }
+      ]
+    }
+  ]
+}

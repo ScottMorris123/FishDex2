@@ -1,0 +1,22 @@
+{
+  "family": {
+    "scientific": "Phycidae",
+    "common": "Phycid Hake Family"
+  },
+  "genera": [
+    {
+      "scientific": "Urophycis",
+      "common": "Hakes",
+      "species": [
+        {
+          "scientific": "Urophycis chuss",
+          "common": "Red ake"
+        },
+        {
+          "scientific": "Urophycis tenuis",
+          "common": "White hake"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "family": {
+    "scientific": "Lethrinidae",
+    "common": "Emperor Fish Family"
+  },
+  "genera": [
+    {
+      "scientific": "Gymnocranius",
+      "common": "Emperors",
+      "species": [
+        {
+          "scientific": "Gymnocranius griseus",
+          "common": "Grey Seabream"
+        }
+      ]
+    },
+    {
+      "scientific": "Lethrinus",
+      "common": "Emperors",
+      "species": [
+        {
+          "scientific": "Lethrinus atkinsoni",
+          "common": "Pacific Yellowtail Emperor"
+        },
+        {
+          "scientific": "Lethrinus crocineus",
+          "common": "Yellowtail Emperor"
+        },
+        {
+          "scientific": "Lethrinus laticaudis",
+          "common": "Grass Emperor"
+        },
+        {
+          "scientific": "Lethrinus mahsena",
+          "common": "Sky Emperor"
+        },
+        {
+          "scientific": "Lethrinus miniatus",
+          "common": "Trumpet Emperor"
+        },
+        {
+          "scientific": "Lethrinus nebulosus",
+          "common": "Spangled Emperor"
+        },
+        {
+          "scientific": "Lethrinus xanthochilus",
+          "common": "Yellowtip Emperor"
+        }
+      ]
+    },
+    {
+      "scientific": "Monotaxis",
+      "common": "Emperors",
+      "species": [
+        {
+          "scientific": "Monotaxis grandoculis",
+          "common": "Humpnose Big-eye Bream"
+        }
+      ]
+    }
+  ]
+}

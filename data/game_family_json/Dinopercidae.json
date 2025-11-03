@@ -1,0 +1,28 @@
+{
+  "family": {
+    "scientific": "Dinopercidae",
+    "common": "Cavebass Family"
+  },
+  "genera": [
+    {
+      "scientific": "Dinoperca",
+      "common": "Cavebass",
+      "species": [
+        {
+          "scientific": "Dinoperca petersi",
+          "common": "Lampfish"
+        }
+      ]
+    },
+    {
+      "scientific": "Centrarchops",
+      "common": "Cavebass",
+      "species": [
+        {
+          "scientific": "Centrarchops chapini",
+          "common": "Barred Seabass"
+        }
+      ]
+    }
+  ]
+}

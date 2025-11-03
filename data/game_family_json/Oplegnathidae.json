@@ -1,0 +1,30 @@
+{
+  "family": {
+    "scientific": "Oplegnathidae",
+    "common": "Knifejaw Family"
+  },
+  "genera": [
+    {
+      "scientific": "Oplegnathus",
+      "common": "Knifejaws",
+      "species": [
+        {
+          "scientific": "Oplegnathus conwayi",
+          "common": "Caped Knifejaw"
+        },
+        {
+          "scientific": "Oplegnathus fasciatus",
+          "common": "Barred Knifejaw"
+        },
+        {
+          "scientific": "Oplegnathus punctatus",
+          "common": "Spotted Knifejaw"
+        },
+        {
+          "scientific": "Oplegnathus robinsoni",
+          "common": "Natal Knifejaw"
+        }
+      ]
+    }
+  ]
+}

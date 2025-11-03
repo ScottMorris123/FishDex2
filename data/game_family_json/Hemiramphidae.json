@@ -1,0 +1,228 @@
+{
+  "family": {
+    "scientific": "Hemiramphidae",
+    "common": "Halfbeak Family"
+  },
+  "genera": [
+    {
+      "scientific": "Arrhamphus",
+      "common": "Garfish",
+      "species": [
+        {
+          "scientific": "Arrhamphus krefftii",
+          "common": "Snubnose Garfish"
+        },
+        {
+          "scientific": "Arrhamphus sclerolepis",
+          "common": "Northern Snubnose Garfish"
+        }
+      ]
+    },
+    {
+      "scientific": "Chriodorus",
+      "common": "Halfbeaks",
+      "species": [
+        {
+          "scientific": "Chriodorus atherinoides",
+          "common": "Hardhead Halfbeak"
+        }
+      ]
+    },
+    {
+      "scientific": "Euleptorhamphus",
+      "common": "Flying Halfbeaks",
+      "species": [
+        {
+          "scientific": "Euleptorhamphus velox",
+          "common": "Flying Halfbeak"
+        },
+        {
+          "scientific": "Euleptorhamphus viridis",
+          "common": "Ribbon Halfbeak"
+        }
+      ]
+    },
+    {
+      "scientific": "Hemiramphus",
+      "common": "Halfbeaks",
+      "species": [
+        {
+          "scientific": "Hemiramphus archipelagicus",
+          "common": "Jumping Halfbeak"
+        },
+        {
+          "scientific": "Hemiramphus balao",
+          "common": "Balao Halfbeak"
+        },
+        {
+          "scientific": "Hemiramphus bermudensis",
+          "common": "Bermuda Halfbeak"
+        },
+        {
+          "scientific": "Hemiramphus brasiliensis",
+          "common": "Ballyhoo Halfbeak"
+        },
+        {
+          "scientific": "Hemiramphus depauperatus",
+          "common": "Tropical Halfbeak"
+        },
+        {
+          "scientific": "Hemiramphus far",
+          "common": "Blackbarred Halfbeak"
+        },
+        {
+          "scientific": "Hemiramphus lutkei",
+          "common": "Lütke's Halfbeak"
+        },
+        {
+          "scientific": "Hemiramphus marginatus",
+          "common": "Yellowtip Halfbeak"
+        },
+        {
+          "scientific": "Hemiramphus robustus",
+          "common": "Three-by-two Garfish"
+        },
+        {
+          "scientific": "Hemiramphus saltator",
+          "common": "Longfin Halfbeak"
+        }
+      ]
+    },
+    {
+      "scientific": "Hyporhamphus",
+      "common": "Halfbeaks",
+      "species": [
+        {
+          "scientific": "Hyporhamphus affinis",
+          "common": "Tropical Halfbeak"
+        },
+        {
+          "scientific": "Hyporhamphus australis",
+          "common": "Eastern Sea Garfish"
+        },
+        {
+          "scientific": "Hyporhamphus capensis",
+          "common": "Cape Halfbeak"
+        },
+        {
+          "scientific": "Hyporhamphus dussumieri",
+          "common": "Dussumier's Halfbeak"
+        },
+        {
+          "scientific": "Hyporhamphus gilli",
+          "common": "Cholo Halfbeak"
+        },
+        {
+          "scientific": "Hyporhamphus ihi",
+          "common": "New Zealand Piper"
+        },
+        {
+          "scientific": "Hyporhamphus limbatus",
+          "common": "Congaturi Halfbeak"
+        },
+        {
+          "scientific": "Hyporhamphus meeki",
+          "common": "American Halfbeak"
+        },
+        {
+          "scientific": "Hyporhamphus melanochir",
+          "common": "Southern Sea Garfish"
+        },
+        {
+          "scientific": "Hyporhamphus mexicanus",
+          "common": "Mexican Halfbeak"
+        },
+        {
+          "scientific": "Hyporhamphus naos",
+          "common": "Pacific Silverstripe Halfbeak"
+        },
+        {
+          "scientific": "Hyporhamphus neglectissimus",
+          "common": "Black-tipped Garfish"
+        },
+        {
+          "scientific": "Hyporhamphus picarti",
+          "common": "African Halfbeak"
+        },
+        {
+          "scientific": "Hyporhamphus quoyi",
+          "common": "Quoy’s Garfish"
+        },
+        {
+          "scientific": "Hyporhamphus regularis",
+          "common": "River Garfish"
+        },
+        {
+          "scientific": "Hyporhamphus roberti",
+          "common": "Slender Halfbeak"
+        },
+        {
+          "scientific": "Hyporhamphus rosae",
+          "common": "California Halfbeak"
+        },
+        {
+          "scientific": "Hyporhamphus sajori",
+          "common": "Japanese Halfbeak"
+        },
+        {
+          "scientific": "Hyporhamphus sindensis",
+          "common": "Sind Halfbeak"
+        },
+        {
+          "scientific": "Hyporhamphus snyderi",
+          "common": "Skipper Halfbeak"
+        },
+        {
+          "scientific": "Hyporhamphus unifasciatus",
+          "common": "Common Halfbeak"
+        },
+        {
+          "scientific": "Hyporhamphus xanthopterus",
+          "common": "Red-tipped Halfbeak"
+        }
+      ]
+    },
+    {
+      "scientific": "Melapedalion",
+      "common": "Halfbeaks",
+      "species": [
+        {
+          "scientific": "Melapedalion breve",
+          "common": "Philippine Snubnose Halfbeak"
+        }
+      ]
+    },
+    {
+      "scientific": "Oxyporhamphus",
+      "common": "Halfbeaks",
+      "species": [
+        {
+          "scientific": "Oxyporhamphus micropterus",
+          "common": "Bigwing Halfbeak"
+        },
+        {
+          "scientific": "Oxyporhamphus similis",
+          "common": "False Halfbeak"
+        }
+      ]
+    },
+    {
+      "scientific": "Rhynchorhamphus",
+      "common": "Flying Halfbeaks",
+      "species": [
+        {
+          "scientific": "Rhynchorhamphus arabicus",
+          "common": "Arabian Flyingfish"
+        },
+        {
+          "scientific": "Rhynchorhamphus georgii",
+          "common": "Long-billed Halfbeak"
+        },
+        {
+          "scientific": "Rhynchorhamphus malabaricus",
+          "common": "Malabar Halfbeak"
+        }
+      ]
+    }
+  ]
+}

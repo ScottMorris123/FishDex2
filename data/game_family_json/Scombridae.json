@@ -1,0 +1,318 @@
+{
+  "family": {
+    "scientific": "Scombridae",
+    "common": "Mackerel and Tuna Family"
+  },
+  "genera": [
+    {
+      "scientific": "Gasterochisma",
+      "common": "Butterfly Kingfishe",
+      "species": [
+        {
+          "scientific": "Gasterochisma melampus",
+          "common": "Butterfly Kingfish"
+        }
+      ]
+    },
+    {
+      "scientific": "Rastrelliger",
+      "common": "Mackerels",
+      "species": [
+        {
+          "scientific": "Rastrelliger brachysoma",
+          "common": "Short Mackerel"
+        },
+        {
+          "scientific": "Rastrelliger faughni",
+          "common": "Island Mackerel"
+        },
+        {
+          "scientific": "Rastrelliger kanagurta",
+          "common": "Indian Mackerel"
+        }
+      ]
+    },
+    {
+      "scientific": "Scomber",
+      "common": "Mackerels",
+      "species": [
+        {
+          "scientific": "Scomber australasicus",
+          "common": "Blue Mackerel"
+        },
+        {
+          "scientific": "Scomber colias",
+          "common": "Atlantic Chub Mackerel"
+        },
+        {
+          "scientific": "Scomber indicus",
+          "common": "Indian Chub Mackerel"
+        },
+        {
+          "scientific": "Scomber japonicus",
+          "common": "Chub Mackerel"
+        },
+        {
+          "scientific": "Scomber scombrus",
+          "common": "Atlantic Mackerel"
+        }
+      ]
+    },
+    {
+      "scientific": "Acanthocybium",
+      "common": "Spanish Mackerels",
+      "species": [
+        {
+          "scientific": "Acanthocybium solandri",
+          "common": "Wahoo"
+        }
+      ]
+    },
+    {
+      "scientific": "Grammatorcynus",
+      "common": "Spanish Mackerels",
+      "species": [
+        {
+          "scientific": "Grammatorcynus bicarinatus",
+          "common": "Shark Mackerel"
+        },
+        {
+          "scientific": "Grammatorcynus bilineatus",
+          "common": "Double-Lined Mackerel"
+        }
+      ]
+    },
+    {
+      "scientific": "Orcynopsis",
+      "common": "Bonitos",
+      "species": [
+        {
+          "scientific": "Orcynopsis unicolor",
+          "common": "Plain Bonito"
+        }
+      ]
+    },
+    {
+      "scientific": "Scomberomorus",
+      "common": "Spanish Mackerels",
+      "species": [
+        {
+          "scientific": "Scomberomorus avirostrus",
+          "common": "Arabian Sparrow Seer"
+        },
+        {
+          "scientific": "Scomberomorus brasiliensis",
+          "common": "Serra Spanish Mackerel"
+        },
+        {
+          "scientific": "Scomberomorus cavalla",
+          "common": "King Mackerel"
+        },
+        {
+          "scientific": "Scomberomorus commerson",
+          "common": "Narrow-Barred Spanish Mackerel"
+        },
+        {
+          "scientific": "Scomberomorus concolor",
+          "common": "Monterrey Spanish Mackerel"
+        },
+        {
+          "scientific": "Scomberomorus guttatus",
+          "common": "Indo-Pacific King Mackerel"
+        },
+        {
+          "scientific": "Scomberomorus koreanus",
+          "common": "Korean Seerfish"
+        },
+        {
+          "scientific": "Scomberomorus leopardus",
+          "common": "Leopard Spanish Mackerel"
+        },
+        {
+          "scientific": "Scomberomorus lineolatus",
+          "common": "Streaked Seerfish"
+        },
+        {
+          "scientific": "Scomberomorus maculatus",
+          "common": "Atlantic Spanish Mackerel"
+        },
+        {
+          "scientific": "Scomberomorus multiradiatus",
+          "common": "Papuan Seerfish"
+        },
+        {
+          "scientific": "Scomberomorus munroi",
+          "common": "Australian Spotted Mackerel"
+        },
+        {
+          "scientific": "Scomberomorus niphonius",
+          "common": "Japanese Spanish Mackerel"
+        },
+        {
+          "scientific": "Scomberomorus plurilineatus",
+          "common": "Kanadi Kingfish"
+        },
+        {
+          "scientific": "Scomberomorus queenslandicus",
+          "common": "Queensland School Mackerel"
+        },
+        {
+          "scientific": "Scomberomorus regalis",
+          "common": "Cero Mackerel"
+        },
+        {
+          "scientific": "Scomberomorus semifasciatus",
+          "common": "Broadbarred King Mackerel"
+        },
+        {
+          "scientific": "Scomberomorus sierra",
+          "common": "Pacific Sierra"
+        },
+        {
+          "scientific": "Scomberomorus sinensis",
+          "common": "Chinese Seerfish"
+        },
+        {
+          "scientific": "Scomberomorus tritor",
+          "common": "West African Spanish Mackerel"
+        }
+      ]
+    },
+    {
+      "scientific": "Sarda",
+      "common": "Bonitos",
+      "species": [
+        {
+          "scientific": "Sarda australis",
+          "common": "Australian Bonito"
+        },
+        {
+          "scientific": "Sarda chiliensis",
+          "common": "Eastern Pacific Bonito"
+        },
+        {
+          "scientific": "Sarda lineolata",
+          "common": "Pacific Bonito"
+        },
+        {
+          "scientific": "Sarda orientalis",
+          "common": "Striped Bonito"
+        },
+        {
+          "scientific": "Sarda sarda",
+          "common": "Atlantic Bonito"
+        }
+      ]
+    },
+    {
+      "scientific": "Cybiosarda",
+      "common": "Bonitos",
+      "species": [
+        {
+          "scientific": "Cybiosarda elegans",
+          "common": "Leaping Bonito"
+        }
+      ]
+    },
+    {
+      "scientific": "Gymnosarda",
+      "common": "Bonitos",
+      "species": [
+        {
+          "scientific": "Gymnosarda unicolor",
+          "common": "Dogtooth Tuna"
+        }
+      ]
+    },
+    {
+      "scientific": "Allothunnus",
+      "common": "Tunas",
+      "species": [
+        {
+          "scientific": "Allothunnus fallai",
+          "common": "Slender Tuna"
+        }
+      ]
+    },
+    {
+      "scientific": "Auxis",
+      "common": "Tunas",
+      "species": [
+        {
+          "scientific": "Auxis rochei",
+          "common": "Bullet Tuna"
+        },
+        {
+          "scientific": "Auxis thazard",
+          "common": "Frigate Tuna"
+        }
+      ]
+    },
+    {
+      "scientific": "Euthynnus",
+      "common": "Tunas",
+      "species": [
+        {
+          "scientific": "Euthynnus affinis",
+          "common": "Mackerel Tuna"
+        },
+        {
+          "scientific": "Euthynnus alletteratus",
+          "common": "Little Tunny"
+        },
+        {
+          "scientific": "Euthynnus lineatus",
+          "common": "Black Skipjack Tuna"
+        }
+      ]
+    },
+    {
+      "scientific": "Katsuwonus",
+      "common": "Tunas",
+      "species": [
+        {
+          "scientific": "Katsuwonus pelamis",
+          "common": "Skipjack Tuna"
+        }
+      ]
+    },
+    {
+      "scientific": "Thunnus",
+      "common": "Tunas",
+      "species": [
+        {
+          "scientific": "Thunnus alalunga",
+          "common": "Albacore"
+        },
+        {
+          "scientific": "Thunnus maccoyii",
+          "common": "Southern Bluefin Tuna"
+        },
+        {
+          "scientific": "Thunnus obesus",
+          "common": "Bigeye Tuna"
+        },
+        {
+          "scientific": "Thunnus orientalis",
+          "common": "Pacific Bluefin Tuna"
+        },
+        {
+          "scientific": "Thunnus thynnus",
+          "common": "Atlantic Bluefin Tuna"
+        },
+        {
+          "scientific": "Thunnus albacares",
+          "common": "Yellowfin Tuna"
+        },
+        {
+          "scientific": "Thunnus atlanticus",
+          "common": "Blackfin Tuna"
+        },
+        {
+          "scientific": "Thunnus tonggol",
+          "common": "Longtail Tuna"
+        }
+      ]
+    }
+  ]
+}

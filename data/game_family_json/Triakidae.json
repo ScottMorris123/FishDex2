@@ -1,0 +1,109 @@
+{
+  "family": {
+    "scientific": "Triakidae",
+    "common": "Houndshark Family"
+  },
+  "genera": [
+    {
+      "scientific": "Furgaleus",
+      "common": "Houndsharks",
+      "species": [
+        { "scientific": "Furgaleus macki", "common": "Whiskery Shark" }
+      ]
+    },
+    {
+      "scientific": "Galeorhinus",
+      "common": "Houndsharks",
+      "species": [
+        { "scientific": "Galeorhinus galeus", "common": "School Shark" }
+      ]
+    },
+    {
+      "scientific": "Gogolia",
+      "common": "Houndsharks",
+      "species": [
+        { "scientific": "Gogolia filewoodi", "common": "Sailback Houndshark" }
+      ]
+    },
+    {
+      "scientific": "Hemitriakis",
+      "common": "Houndsharks",
+      "species": [
+        { "scientific": "Hemitriakis abdita", "common": "Deepwater Sicklefin Houndshark" },
+        { "scientific": "Hemitriakis complicofasciata", "common": "Ocellate Topeshark" },
+        { "scientific": "Hemitriakis falcata", "common": "Sicklefin Houndshark" },
+        { "scientific": "Hemitriakis indroyonoi", "common": "Indonesian Houndshark" },
+        { "scientific": "Hemitriakis japanica", "common": "Japanese Topeshark" },
+        { "scientific": "Hemitriakis leucoperiptera", "common": "Whitefin Topeshark" }
+      ]
+    },
+    {
+      "scientific": "Hypogaleus",
+      "common": "Houndsharks",
+      "species": [
+        { "scientific": "Hypogaleus hyugaensis", "common": "Blacktip Tope" }
+      ]
+    },
+    {
+      "scientific": "Iago",
+      "common": "Houndsharks",
+      "species": [
+        { "scientific": "Iago garricki", "common": "Longnose Houndshark" },
+        { "scientific": "Iago omanensis", "common": "Bigeye Houndshark" }
+      ]
+    },
+    {
+      "scientific": "Mustelus",
+      "common": "Smooth-hounds",
+      "species": [
+        { "scientific": "Mustelus albipinnis", "common": "White-margin Fin Houndshark" },
+        { "scientific": "Mustelus andamanensis", "common": "Andaman Smooth-hound" },
+        { "scientific": "Mustelus antarcticus", "common": "Gummy Shark" },
+        { "scientific": "Mustelus asterias", "common": "Starry Smooth-hound" },
+        { "scientific": "Mustelus californicus", "common": "Gray Smooth-hound" },
+        { "scientific": "Mustelus canis canis", "common": "Dusky Smooth-hound" },
+        { "scientific": "Mustelus canis insularis", "common": "Caribbean Smooth-hound" },
+        { "scientific": "Mustelus dorsalis", "common": "Sharptooth Smooth-hound" },
+        { "scientific": "Mustelus fasciatus", "common": "Striped Smooth-hound" },
+        { "scientific": "Mustelus griseus", "common": "Spotless Smooth-hound" },
+        { "scientific": "Mustelus henlei", "common": "Brown Smooth-hound" },
+        { "scientific": "Mustelus higmani", "common": "Smalleye Smooth-hound" },
+        { "scientific": "Mustelus lenticulatus", "common": "Spotted Estuary Smooth-hound" },
+        { "scientific": "Mustelus lunulatus", "common": "Sicklefin Smooth-hound" },
+        { "scientific": "Mustelus manazo", "common": "Starspotted Smooth-hound" },
+        { "scientific": "Mustelus mangalorensis", "common": "Mangalore Houndshark" },
+        { "scientific": "Mustelus mento", "common": "Speckled Smooth-hound" },
+        { "scientific": "Mustelus minicanis", "common": "Dwarf Smooth-hound" },
+        { "scientific": "Mustelus mosis", "common": "Arabian Smooth-hound" },
+        { "scientific": "Mustelus mustelus", "common": "Common Smooth-hound" },
+        { "scientific": "Mustelus norrisi", "common": "Narrowfin Smooth-hound" },
+        { "scientific": "Mustelus palumbes", "common": "Whitespotted Smooth-hound" },
+        { "scientific": "Mustelus punctulatus", "common": "Blackspotted Smooth-hound" },
+        { "scientific": "Mustelus ravidus", "common": "Australian Grey Smooth-hound" },
+        { "scientific": "Mustelus schmitti", "common": "Narrownose Smooth-hound" },
+        { "scientific": "Mustelus sinusmexicanus", "common": "Gulf Smooth-hound" },
+        { "scientific": "Mustelus stevensi", "common": "Western Spotted Gummy Shark" },
+        { "scientific": "Mustelus whitneyi", "common": "Humpback Smooth-hound" },
+        { "scientific": "Mustelus widodoi", "common": "White-fin Smooth-hound" }
+      ]
+    },
+    {
+      "scientific": "Scylliogaleus",
+      "common": "Houndsharks",
+      "species": [
+        { "scientific": "Scylliogaleus quecketti", "common": "Flapnose Houndshark" }
+      ]
+    },
+    {
+      "scientific": "Triakis",
+      "common": "Houndsharks",
+      "species": [
+        { "scientific": "Triakis acutipinna", "common": "Sharpfin Houndshark" },
+        { "scientific": "Triakis maculata", "common": "Spotted Houndshark" },
+        { "scientific": "Triakis megalopterus", "common": "Sharptooth Houndshark" },
+        { "scientific": "Triakis scyllium", "common": "Banded Houndshark" },
+        { "scientific": "Triakis semifasciata", "common": "Leopard Shark" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "family": {
+    "scientific": "Coryphaenidae",
+    "common": "Mahi/Dolphinfish Family"
+  },
+  "genera": [
+    {
+      "scientific": "Coryphaena",
+      "common": "Mahi/Dolphinfish",
+      "species": [
+        {
+          "scientific": "Coryphaena equiselis",
+          "common": "Pompano Dolphinfish"
+        },
+        {
+          "scientific": "Coryphaena hippurus",
+          "common": "Common Dolphinfish or Mahi-mahi"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "family": {
+    "scientific": "Torpedinidae",
+    "common": "Torpedo Electric Ray Family"
+  },
+  "genera": [
+    {
+      "scientific": "Tetronarce",
+      "common": "Electric Rays",
+      "species": [
+        { "scientific": "Tetronarce californica", "common": "Pacific Electric Ray" },
+        { "scientific": "Tetronarce cowleyi", "common": "Cowley's Torpedo Ray" },
+        { "scientific": "Tetronarce fairchildi", "common": "New Zealand Torpedo" },
+        { "scientific": "Tetronarce formosa", "common": "Taiwan Torpedo" },
+        { "scientific": "Tetronarce macneilli", "common": "Shorttail Torpedo" },
+        { "scientific": "Tetronarce nobiliana", "common": "Atlantic Torpedo" },
+        { "scientific": "Tetronarce puelcha", "common": "Argentine Torpedo" },
+        { "scientific": "Tetronarce tokionis", "common": "Trapezoid Torpedo" },
+        { "scientific": "Tetronarce tremens", "common": "Chilean Torpedo" }
+      ]
+    },
+    {
+      "scientific": "Torpedo",
+      "common": "Electric Rays",
+      "species": [
+        { "scientific": "Torpedo adenensis", "common": "Aden Gulf Torpedo" },
+        { "scientific": "Torpedo alexandrinsis", "common": "Alexandrine Torpedo" },
+        { "scientific": "Torpedo andersoni", "common": "Florida Torpedo" },
+        { "scientific": "Torpedo bauchotae", "common": "Rosette Torpedo" },
+        { "scientific": "Torpedo fuscomaculata", "common": "Black-spotted Torpedo" },
+        { "scientific": "Torpedo mackayana", "common": "Ringed Torpedo" },
+        { "scientific": "Torpedo marmorata", "common": "Marbled Electric Ray" },
+        { "scientific": "Torpedo microdiscus", "common": "Smalldisk Torpedo" },
+        { "scientific": "Torpedo panthera", "common": "Leopard Torpedo" },
+        { "scientific": "Torpedo semipelagica", "common": "Semipelagic Torpedo" },
+        { "scientific": "Torpedo sinuspersici", "common": "Variable Torpedo" },
+        { "scientific": "Torpedo torpedo", "common": "Common Torpedo" }
+      ]
+    }
+  ]
+}

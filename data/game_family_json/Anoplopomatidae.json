@@ -1,0 +1,18 @@
+{
+  "family": {
+    "scientific": "Anoplopomatidae",
+    "common": "Sablefish Family"
+  },
+  "genera": [
+    {
+      "scientific": "Erilepis",
+      "common": "Sablefishes",
+      "species": [
+        {
+          "scientific": "Erilepis zonifer",
+          "common": "Skilfish"
+        }
+      ]
+    }
+  ]
+}

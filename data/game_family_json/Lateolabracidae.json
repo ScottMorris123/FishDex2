@@ -1,0 +1,22 @@
+{
+  "family": {
+    "scientific": "Lateolabracidae",
+    "common": "Asian Seabass Family"
+  },
+  "genera": [
+    {
+      "scientific": "Lateolabrax",
+      "common": "Asian Seabasses",
+      "species": [
+        {
+          "scientific": "Lateolabrax japonicus",
+          "common": "Japanese Seabass"
+        },
+        {
+          "scientific": "Lateolabrax latus",
+          "common": "Blackfin Seabass"
+        }
+      ]
+    }
+  ]
+}

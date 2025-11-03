@@ -1,0 +1,110 @@
+{
+  "family": {
+    "scientific": "Malacanthidae",
+    "common": "Tilefish Family"
+  },
+  "genera": [
+    {
+      "scientific": "Branchiostegus",
+      "common": "Tilefishes",
+      "species": [
+        {
+          "scientific": "Branchiostegus australiensis",
+          "common": "Australian Tilefish"
+        },
+        {
+          "scientific": "Branchiostegus doliatus",
+          "common": "Ribbed Tilefish"
+        },
+        {
+          "scientific": "Branchiostegus hedlandensis",
+          "common": "Port Hedland Tilefish"
+        },
+        {
+          "scientific": "Branchiostegus japonicus",
+          "common": "Horsehead Tilefish"
+        },
+        {
+          "scientific": "Branchiostegus paxtoni",
+          "common": "Paxton's Tilefish"
+        },
+        {
+          "scientific": "Branchiostegus sawakinensis",
+          "common": "Freckled Tilefish"
+        },
+        {
+          "scientific": "Branchiostegus semifasciatus",
+          "common": "Zebra Tilefish"
+        },
+        {
+          "scientific": "Branchiostegus serratus",
+          "common": "Australian Barred Tilefish"
+        },
+        {
+          "scientific": "Branchiostegus wardi",
+          "common": "Ward's Tilefish"
+        }
+      ]
+    },
+    {
+      "scientific": "Caulolatilus",
+      "common": "Deepwater Tilefishes",
+      "species": [
+        {
+          "scientific": "Caulolatilus affinis",
+          "common": "Bighead Tilefish"
+        },
+        {
+          "scientific": "Caulolatilus bermudensis",
+          "common": "Bermuda Tilefish"
+        },
+        {
+          "scientific": "Caulolatilus chrysops",
+          "common": "Atlantic Goldeneye Tilefish"
+        },
+        {
+          "scientific": "Caulolatilus cyanops",
+          "common": "Blackline Tilefish"
+        },
+        {
+          "scientific": "Caulolatilus dooleyi",
+          "common": "Bankslope Tilefish"
+        },
+        {
+          "scientific": "Caulolatilus guppyi",
+          "common": "Reticulated Tilefish"
+        },
+        {
+          "scientific": "Caulolatilus hubbsi",
+          "common": "Hubbs' Tilefish"
+        },
+        {
+          "scientific": "Caulolatilus microps",
+          "common": "Gray Tilefish"
+        },
+        {
+          "scientific": "Caulolatilus princeps",
+          "common": "Ocean Whitefish"
+        },
+        {
+          "scientific": "Caulolatilus williamsi",
+          "common": "Yellowbar Tilefish"
+        }
+      ]
+    },
+    {
+      "scientific": "Lopholatilus",
+      "common": "Tilefishes",
+      "species": [
+        {
+          "scientific": "Lopholatilus chamaeleonticeps",
+          "common": "Golden Tilefish"
+        },
+        {
+          "scientific": "Lopholatilus villarii",
+          "common": "Brazilian Tilefish"
+        }
+      ]
+    }
+  ]
+}

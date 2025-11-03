@@ -1,0 +1,28 @@
+{
+  "family": {
+    "scientific": "Trachinidae",
+    "common": "Weeverfish Family"
+  },
+  "genera": [
+    {
+      "scientific": "Echiichthys",
+      "common": "Weevers",
+      "species": [
+        { "scientific": "Echiichthys vipera", "common": "Lesser Weever" }
+      ]
+    },
+    {
+      "scientific": "Trachinus",
+      "common": "Weevers",
+      "species": [
+        { "scientific": "Trachinus araneus", "common": "Spotted Weever" },
+        { "scientific": "Trachinus armatus", "common": "Guinean Weever" },
+        { "scientific": "Trachinus collignoni", "common": "Sailfin Weever" },
+        { "scientific": "Trachinus draco", "common": "Greater Weever" },
+        { "scientific": "Trachinus lineolatus", "common": "Striped Weever" },
+        { "scientific": "Trachinus pellegrini", "common": "Cape Verde Weever" },
+        { "scientific": "Trachinus radiatus", "common": "Starry Weever" }
+      ]
+    }
+  ]
+}

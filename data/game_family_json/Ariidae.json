@@ -1,0 +1,48 @@
+{
+  "family": {
+    "scientific": "Ariidae",
+    "common": "Sea Catfish Family"
+  },
+  "genera": [
+    {
+      "scientific": "Ariopsis",
+      "common": "sea catfishes",
+      "species": [
+        {
+          "scientific": "Ariopsis felis",
+          "common": "Hardhead Catfish"
+        }
+      ]
+    },
+    {
+      "scientific": "Bagre",
+      "common": "sea catfishes",
+      "species": [
+        {
+          "scientific": "Bagre marinus",
+          "common": "Gafftopsail Catfish"
+        }
+      ]
+    },
+    {
+      "scientific": "Bleekeriella",
+      "common": "sea catfishes",
+      "species": [
+        {
+          "scientific": "Bleekeriella leptaspis",
+          "common": "Salmon Catfish"
+        }
+      ]
+    },
+    {
+      "scientific": "Netuma",
+      "common": "sea catfishes",
+      "species": [
+        {
+          "scientific": "Netuma thalassina",
+          "common": "Giant Sea Catfish"
+        }
+      ]
+    }
+  ]
+}

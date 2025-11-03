@@ -1,0 +1,22 @@
+{
+  "family": {
+    "scientific": "Polyprionidae",
+    "common": "Wreckfish Family"
+  },
+  "genera": [
+    {
+      "scientific": "Polyprion",
+      "common": "Wreckfishes",
+      "species": [
+        {
+          "scientific": "Polyprion americanus",
+          "common": "Atlantic Wreckfish"
+        },
+        {
+          "scientific": "Polyprion oxygeneios",
+          "common": "Hāpuku"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "family": {
+    "scientific": "Scyliorhinidae",
+    "common": "Cat Shark Family"
+  },
+  "genera": [
+    {
+      "scientific": "Cephaloscyllium",
+      "common": "Swellsharks",
+      "species": [
+        { "scientific": "Cephaloscyllium albipinnum",   "common": "Whitefin Swellshark" },
+        { "scientific": "Cephaloscyllium cooki",        "common": "Cook's Swellshark" },
+        { "scientific": "Cephaloscyllium fasciatum",    "common": "Reticulated Swellshark" },
+        { "scientific": "Cephaloscyllium hiscosellum",  "common": "Australian Reticulate Swellshark" },
+        { "scientific": "Cephaloscyllium isabellum",    "common": "Draughtsboard Shark" },
+        { "scientific": "Cephaloscyllium laticeps",     "common": "Australian Swellshark" },
+        { "scientific": "Cephaloscyllium pictum",       "common": "Painted Swellshark" },
+        { "scientific": "Cephaloscyllium sarawakensis", "common": "Sarawak Pygmy Swellshark" },
+        { "scientific": "Cephaloscyllium signourum",    "common": "Flagtail Swellshark" },
+        { "scientific": "Cephaloscyllium silasi",       "common": "Indian Swellshark" },
+        { "scientific": "Cephaloscyllium speccum",      "common": "Speckled Swellshark" },
+        { "scientific": "Cephaloscyllium stevensi",     "common": "Steven's Swellshark" },
+        { "scientific": "Cephaloscyllium sufflans",     "common": "Balloon Shark" },
+        { "scientific": "Cephaloscyllium umbratile",    "common": "Blotchy Swellshark" },
+        { "scientific": "Cephaloscyllium variegatum",   "common": "Saddled Swellshark" },
+        { "scientific": "Cephaloscyllium ventriosum",   "common": "Swellshark" },
+        { "scientific": "Cephaloscyllium zebrum",       "common": "Narrowbar Swellshark" }
+      ]
+    },
+    {
+      "scientific": "Poroderma",
+      "common": "Catsharks",
+      "species": [
+        { "scientific": "Poroderma africanum",    "common": "Pyjama Shark" },
+        { "scientific": "Poroderma pantherinum",  "common": "Leopard Catshark" }
+      ]
+    },
+    {
+      "scientific": "Scyliorhinus",
+      "common": "Catsharks",
+      "species": [
+        { "scientific": "Scyliorhinus boa",           "common": "Boa Catshark" },
+        { "scientific": "Scyliorhinus canicula",      "common": "Small-Spotted Catshark" },
+        { "scientific": "Scyliorhinus capensis",      "common": "Yellowspotted Catshark" },
+        { "scientific": "Scyliorhinus cervigoni",     "common": "West African Catshark" },
+        { "scientific": "Scyliorhinus comoroensis",   "common": "Comoro Catshark" },
+        { "scientific": "Scyliorhinus garmani",       "common": "Brownspotted Catshark" },
+        { "scientific": "Scyliorhinus hachijoensis",  "common": "Cinder Cloudy Catshark" },
+        { "scientific": "Scyliorhinus haeckelii",     "common": "Freckled Catshark" },
+        { "scientific": "Scyliorhinus hesperius",     "common": "Whitesaddled Catshark" },
+        { "scientific": "Scyliorhinus meadi",         "common": "Blotched Catshark" },
+        { "scientific": "Scyliorhinus retifer",       "common": "Chain Catshark" },
+        { "scientific": "Scyliorhinus stellaris",     "common": "Nursehound" },
+        { "scientific": "Scyliorhinus tokubee",       "common": "Izu Catshark" },
+        { "scientific": "Scyliorhinus torazame",      "common": "Cloudy Catshark" },
+        { "scientific": "Scyliorhinus torrei",        "common": "Dwarf Catshark" },
+        { "scientific": "Scyliorhinus ugoi",          "common": "Dark Freckled Catshark" }
+      ]
+    }
+  ]
+}

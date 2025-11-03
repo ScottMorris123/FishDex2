@@ -1,0 +1,22 @@
+{
+  "family": {
+    "scientific": "Kuhliidae",
+    "common": "Flagtail Family"
+  },
+  "genera": [
+    {
+      "scientific": "Kuhlia",
+      "common": "Flagtails",
+      "species": [
+        {
+          "scientific": "Kuhlia rupestris",
+          "common": "Rock Flagtail"
+        },
+        {
+          "scientific": "Kuhlia sandvicensis",
+          "common": "Hawaiian Flagtail"
+        }
+      ]
+    }
+  ]
+}

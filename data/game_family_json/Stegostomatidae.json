@@ -1,0 +1,18 @@
+{
+  "family": {
+    "scientific": "Stegostomatidae",
+    "common": "Zebra Shark"
+  },
+  "genera": [
+    {
+      "scientific": "Stegostoma",
+      "common": "Zebra Shark",
+      "species": [
+        {
+          "scientific": "Stegostoma tigrinum",
+          "common": "Zebra Shark"
+        }
+      ]
+    }
+  ]
+}

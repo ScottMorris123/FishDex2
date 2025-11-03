@@ -1,0 +1,46 @@
+{
+  "family": {
+    "scientific": "Rhinopteridae",
+    "common": "Cownose Ray Family"
+  },
+  "genera": [
+    {
+      "scientific": "Rhinoptera",
+      "common": "Cownose Rays",
+      "species": [
+        {
+          "scientific": "Rhinoptera adspersa",
+          "common": "Rough Cownose Ray"
+        },
+        {
+          "scientific": "Rhinoptera bonasus",
+          "common": "Cownose Ray"
+        },
+        {
+          "scientific": "Rhinoptera brasiliensis",
+          "common": "Brazilian Cownose Ray"
+        },
+        {
+          "scientific": "Rhinoptera javanica",
+          "common": "Flapnose Ray"
+        },
+        {
+          "scientific": "Rhinoptera jayakari",
+          "common": "Oman Cownose Ray"
+        },
+        {
+          "scientific": "Rhinoptera marginata",
+          "common": "Lusitanian Cownose Ray"
+        },
+        {
+          "scientific": "Rhinoptera neglecta",
+          "common": "Australian Cownose Ray"
+        },
+        {
+          "scientific": "Rhinoptera steindachneri",
+          "common": "Pacific Cownose Ray"
+        }
+      ]
+    }
+  ]
+}

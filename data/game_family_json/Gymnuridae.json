@@ -1,0 +1,70 @@
+{
+  "family": {
+    "scientific": "Gymnuridae",
+    "common": "Butterfly Ray Family"
+  },
+  "genera": [
+    {
+      "scientific": "Gymnura",
+      "common": "Butterfly Rays",
+      "species": [
+        {
+          "scientific": "Gymnura afuerae",
+          "common": "Afuera Butterfly Ray"
+        },
+        {
+          "scientific": "Gymnura altavela",
+          "common": "Spiny Butterfly Ray"
+        },
+        {
+          "scientific": "Gymnura australis",
+          "common": "Australian Butterfly Ray"
+        },
+        {
+          "scientific": "Gymnura crebripunctata",
+          "common": "Longsnout Butterfly Ray"
+        },
+        {
+          "scientific": "Gymnura hirundo",
+          "common": "Madeira Butterfly Ray"
+        },
+        {
+          "scientific": "Gymnura japonica",
+          "common": "Japanese Butterfly Ray"
+        },
+        {
+          "scientific": "Gymnura lessae",
+          "common": "Lessa’s Butterfly Ray"
+        },
+        {
+          "scientific": "Gymnura marmorata",
+          "common": "California Butterfly Ray"
+        },
+        {
+          "scientific": "Gymnura micrura",
+          "common": "Smooth Butterfly Ray"
+        },
+        {
+          "scientific": "Gymnura natalensis",
+          "common": "Backwater Butterfly Ray"
+        },
+        {
+          "scientific": "Gymnura poecilura",
+          "common": "Longtail Butterfly Ray"
+        },
+        {
+          "scientific": "Gymnura sereti",
+          "common": "Seret’s Butterfly Ray"
+        },
+        {
+          "scientific": "Gymnura tentaculata",
+          "common": "Tentacled Butterfly Ray"
+        },
+        {
+          "scientific": "Gymnura zonura",
+          "common": "Zonetail Butterfly Ray"
+        }
+      ]
+    }
+  ]
+}

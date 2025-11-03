@@ -1,0 +1,18 @@
+{
+  "family": {
+    "scientific": "Cepolidae",
+    "common": "Bandfish Family"
+  },
+  "genera": [
+    {
+      "scientific": "Owstonia",
+      "common": "Bandfishes",
+      "species": [
+        {
+          "scientific": "Owstonia sibogae",
+          "common": "Comb Bandfish"
+        }
+      ]
+    }
+  ]
+}

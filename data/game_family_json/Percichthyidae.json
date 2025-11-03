@@ -1,0 +1,132 @@
+{
+  "family": {
+    "scientific": "Percichthyidae",
+    "common": "Temperate Perch Family"
+  },
+  "genera": [
+    {
+      "scientific": "Bostockia",
+      "common": "Temperate Perch",
+      "species": [
+        {
+          "scientific": "Bostockia porosa",
+          "common": "Nightfish"
+        }
+      ]
+    },
+    {
+      "scientific": "Gadopsis",
+      "common": "Temperate Perch",
+      "species": [
+        {
+          "scientific": "Gadopsis bispinosus",
+          "common": "Two-spined Blackfish"
+        },
+        {
+          "scientific": "Gadopsis marmoratus",
+          "common": "River Blackfish"
+        }
+      ]
+    },
+    {
+      "scientific": "Guyu",
+      "common": "Temperate Perch",
+      "species": [
+        {
+          "scientific": "Guyu wujalwujalensis",
+          "common": "Bloomfield River Cod"
+        }
+      ]
+    },
+    {
+      "scientific": "Maccullochella",
+      "common": "Temperate Perch",
+      "species": [
+        {
+          "scientific": "Maccullochella ikei",
+          "common": "Eastern Freshwater Cod"
+        },
+        {
+          "scientific": "Maccullochella macquariensis",
+          "common": "Trout Cod"
+        },
+        {
+          "scientific": "Maccullochella mariensis",
+          "common": "Mary River Cod"
+        },
+        {
+          "scientific": "Maccullochella peelii",
+          "common": "Murray Cod"
+        }
+      ]
+    },
+    {
+      "scientific": "Macquaria",
+      "common": "Temperate Perch",
+      "species": [
+        {
+          "scientific": "Macquaria ambigua",
+          "common": "Golden Perch"
+        },
+        {
+          "scientific": "Macquaria australasica",
+          "common": "Macquarie Perch"
+        }
+      ]
+    },
+    {
+      "scientific": "Nannatherina",
+      "common": "Temperate Perch",
+      "species": [
+        {
+          "scientific": "Nannatherina balstoni",
+          "common": "Balston's Pygmy Perch"
+        }
+      ]
+    },
+    {
+      "scientific": "Nannoperca",
+      "common": "Temperate Perch",
+      "species": [
+        {
+          "scientific": "Nannoperca australis",
+          "common": "Southern Pygmy Perch"
+        },
+        {
+          "scientific": "Nannoperca obscura",
+          "common": "Yarra Pygmy Perch"
+        },
+        {
+          "scientific": "Nannoperca oxleyana",
+          "common": "Oxleyan Pygmy Perch"
+        },
+        {
+          "scientific": "Nannoperca pygmaea",
+          "common": "Little Pygmy Perch"
+        },
+        {
+          "scientific": "Nannoperca variegata",
+          "common": "Golden Pygmy Perch"
+        },
+        {
+          "scientific": "Nannoperca vittata",
+          "common": "Western Pygmy Perch"
+        }
+      ]
+    },
+    {
+      "scientific": "Percichthys",
+      "common": "Temperate Perch",
+      "species": [
+        {
+          "scientific": "Percichthys colhuapiensis",
+          "common": "Largemouth Perch"
+        },
+        {
+          "scientific": "Percichthys trucha",
+          "common": "Creole Perch"
+        }
+      ]
+    }
+  ]
+}

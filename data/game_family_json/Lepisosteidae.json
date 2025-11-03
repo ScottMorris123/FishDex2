@@ -1,0 +1,48 @@
+{
+  "family": {
+    "scientific": "Lepisosteidae",
+    "common": "Gar Family"
+  },
+  "genera": [
+    {
+      "scientific": "Atractosteus",
+      "common": "Gars",
+      "species": [
+        {
+          "scientific": "Atractosteus spatula",
+          "common": "Alligator Gar"
+        },
+        {
+          "scientific": "Atractosteus tristoechus",
+          "common": "Cuban Gar"
+        },
+        {
+          "scientific": "Atractosteus tropicus",
+          "common": "Tropical Gar"
+        }
+      ]
+    },
+    {
+      "scientific": "Lepisosteus",
+      "common": "Gars",
+      "species": [
+        {
+          "scientific": "Lepisosteus oculatus",
+          "common": "Spotted Gar"
+        },
+        {
+          "scientific": "Lepisosteus osseus",
+          "common": "Longnose Gar"
+        },
+        {
+          "scientific": "Lepisosteus platostomus",
+          "common": "Shortnose Gar"
+        },
+        {
+          "scientific": "Lepisosteus platyrhincus",
+          "common": "Florida Gar"
+        }
+      ]
+    }
+  ]
+}

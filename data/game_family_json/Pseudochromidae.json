@@ -1,0 +1,18 @@
+{
+  "family": {
+    "scientific": "Pseudochromidae",
+    "common": "Dottyback Family"
+  },
+  "genera": [
+    {
+      "scientific": "Pseudochromis",
+      "common": "Dottybacks",
+      "species": [
+        {
+          "scientific": "Pseudochromis colei",
+          "common": "False Bandit Dottyback"
+        }
+      ]
+    }
+  ]
+}

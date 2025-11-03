@@ -1,0 +1,18 @@
+{
+  "family": {
+    "scientific": "Monacanthidae",
+    "common": "Filefish Family"
+  },
+  "genera": [
+    {
+      "scientific": "Aluterus",
+      "common": "Filefishes",
+      "species": [
+        {
+          "scientific": "Aluterus scriptus",
+          "common": "Broom-tail Filefish"
+        }
+      ]
+    }
+  ]
+}

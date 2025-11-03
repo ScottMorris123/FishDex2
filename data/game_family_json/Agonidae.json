@@ -1,0 +1,32 @@
+{
+  "family": {
+    "scientific": "Agonidae",
+    "common": "Alligatorfish/Poacher Family"
+  },
+  "genera": [
+    {
+      "scientific": "Blepsias",
+      "common": "Poachers",
+      "species": [
+        {
+          "scientific": "Blepsias bilobus",
+          "common": "Crested Sculpin"
+        },
+        {
+          "scientific": "Blepsias cirrhosus",
+          "common": "Silverspotted Sculpin"
+        }
+      ]
+    },
+    {
+      "scientific": "Hemitripterus",
+      "common": "Poachers",
+      "species": [
+        {
+          "scientific": "Hemitripterus bolini",
+          "common": "Bigmouth Sculpin"
+        }
+      ]
+    }
+  ]
+}

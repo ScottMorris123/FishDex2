@@ -1,0 +1,70 @@
+{
+  "family": {
+    "scientific": "Rhinidae",
+    "common": "Wedgefish Family"
+  },
+  "genera": [
+    {
+      "scientific": "Rhina",
+      "common": "Wedgefishes",
+      "species": [
+        {
+          "scientific": "Rhina ancylostoma",
+          "common": "Shark Ray"
+        }
+      ]
+    },
+    {
+      "scientific": "Rhynchobatus",
+      "common": "Wedgefishes",
+      "species": [
+        {
+          "scientific": "Rhynchobatus australiae",
+          "common": "Bottlenose Wedgefish"
+        },
+        {
+          "scientific": "Rhynchobatus cooki",
+          "common": "Roughnose Wedgefish"
+        },
+        {
+          "scientific": "Rhynchobatus djiddensis",
+          "common": "Whitespotted Wedgefish"
+        },
+        {
+          "scientific": "Rhynchobatus immaculatus",
+          "common": "Taiwanese Wedgefish"
+        },
+        {
+          "scientific": "Rhynchobatus laevis",
+          "common": "Smoothnose Wedgefish"
+        },
+        {
+          "scientific": "Rhynchobatus luebberti",
+          "common": "African Wedgefish"
+        },
+        {
+          "scientific": "Rhynchobatus mononoke",
+          "common": "Japanese Wedgefish"
+        },
+        {
+          "scientific": "Rhynchobatus palpebratus",
+          "common": "Eyebrow Wedgefish"
+        },
+        {
+          "scientific": "Rhynchobatus springeri",
+          "common": "Broadnose Wedgefish"
+        }
+      ]
+    },
+    {
+      "scientific": "Rhynchorhina",
+      "common": "Wedgefishes",
+      "species": [
+        {
+          "scientific": "Rhynchorhina mauritaniensis",
+          "common": "False Shark Ray"
+        }
+      ]
+    }
+  ]
+}

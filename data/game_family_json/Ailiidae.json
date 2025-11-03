@@ -1,0 +1,18 @@
+{
+  "family": {
+    "scientific": "Ailiidae",
+    "common": "Ailia Catfish Family"
+  },
+  "genera": [
+    {
+      "scientific": "Clupisoma",
+      "common": "Ailiid Fishes",
+      "species": [
+        {
+          "scientific": "Clupisoma garua",
+          "common": "Garua bacha"
+        }
+      ]
+    }
+  ]
+}

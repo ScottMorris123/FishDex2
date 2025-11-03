@@ -1,0 +1,22 @@
+{
+  "family": {
+    "scientific": "Lobotidae",
+    "common": "Tripletail Family"
+  },
+  "genera": [
+    {
+      "scientific": "Lobotes",
+      "common": "Tripletails",
+      "species": [
+        {
+          "scientific": "Lobotes pacifica",
+          "common": "Pacific Tripletail"
+        },
+        {
+          "scientific": "Lobotes surinamensis",
+          "common": "Atlantic Tripletail"
+        }
+      ]
+    }
+  ]
+}

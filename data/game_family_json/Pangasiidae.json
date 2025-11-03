@@ -1,0 +1,78 @@
+{
+  "family": {
+    "scientific": "Pangasiidae",
+    "common": "Shark Catfish Family"
+  },
+  "genera": [
+    {
+      "scientific": "Pangasius",
+      "common": "Shark Catfishes",
+      "species": [
+        {
+          "scientific": "Pangasius bocourti",
+          "common": "Basa Fish"
+        },
+        {
+          "scientific": "Pangasius conchophilus",
+          "common": "Snail-eating Pangasius"
+        },
+        {
+          "scientific": "Pangasius elongatus",
+          "common": "Elongated Pangasius"
+        },
+        {
+          "scientific": "Pangasius kinabatanganensis",
+          "common": "Kinabatang Pangasius"
+        },
+        {
+          "scientific": "Pangasius larnaudii",
+          "common": "Spot Pangasius"
+        },
+        {
+          "scientific": "Pangasius mekongensis",
+          "common": "Mekong Pangasius"
+        },
+        {
+          "scientific": "Pangasius myanmar",
+          "common": "Myanmar Pangasius"
+        },
+        {
+          "scientific": "Pangasius nasutus",
+          "common": "Long-nosed Pangasius"
+        },
+        {
+          "scientific": "Pangasius pangasius",
+          "common": "Yellowtail Catfish"
+        },
+        {
+          "scientific": "Pangasius sanitwongsei",
+          "common": "Giant Pangasius"
+        }
+      ]
+    },
+    {
+      "scientific": "Pangasianodon",
+      "common": "Shark Catfishes",
+      "species": [
+        {
+          "scientific": "Pangasianodon gigas",
+          "common": "Mekong Giant Catfish"
+        },
+        {
+          "scientific": "Pangasianodon hypophthalmus",
+          "common": "Iridescent Shark"
+        }
+      ]
+    },
+    {
+      "scientific": "Pseudolais",
+      "common": "Shark Catfishes",
+      "species": [
+        {
+          "scientific": "Pseudolais micronemus",
+          "common": "Shortbarbel Pangasius"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "family": {
+    "scientific": "Acipenseridae",
+    "common": "Sturgeon Family"
+  },
+  "genera": [
+    {
+      "scientific": "Acipenser",
+      "common": "Greater Sturgeons",
+      "species": [
+        {
+          "scientific": "Acipenser baerii",
+          "common": "Siberian Sturgeon"
+        },
+        {
+          "scientific": "Acipenser brevirostrum",
+          "common": "Shortnose Sturgeon"
+        },
+        {
+          "scientific": "Acipenser dabryanus",
+          "common": "Dabry's Sturgeon"
+        },
+        {
+          "scientific": "Acipenser fulvescens",
+          "common": "Lake Sturgeon"
+        },
+        {
+          "scientific": "Acipenser gueldenstaedtii",
+          "common": "Russian Sturgeon"
+        },
+        {
+          "scientific": "Acipenser medirostris",
+          "common": "Green Sturgeon"
+        },
+        {
+          "scientific": "Acipenser mikadoi",
+          "common": "Sakhalin Sturgeon"
+        },
+        {
+          "scientific": "Acipenser naccarii",
+          "common": "Adriatic Sturgeon"
+        },
+        {
+          "scientific": "Acipenser nudiventris",
+          "common": "Bastard Sturgeon"
+        },
+        {
+          "scientific": "Acipenser oxyrinchus",
+          "common": "American Atlantic Sturgeon"
+        },
+        {
+          "scientific": "Acipenser persicus",
+          "common": "Persian Sturgeon"
+        },
+        {
+          "scientific": "Acipenser ruthenus",
+          "common": "Sterlet"
+        },
+        {
+          "scientific": "Acipenser schrenckii",
+          "common": "Amur Sturgeon"
+        },
+        {
+          "scientific": "Acipenser sinensis",
+          "common": "Chinese Sturgeon"
+        },
+        {
+          "scientific": "Acipenser stellatus",
+          "common": "Starry Sturgeon"
+        },
+        {
+          "scientific": "Acipenser sturio",
+          "common": "European Sea Sturgeon"
+        },
+        {
+          "scientific": "Acipenser transmontanus",
+          "common": "White Sturgeon"
+        }
+      ]
+    },
+    {
+      "scientific": "Huso",
+      "common": "Sturgeons",
+      "species": [
+        {
+          "scientific": "Huso dauricus",
+          "common": "Great Siberian Sturgeon"
+        },
+        {
+          "scientific": "Huso huso",
+          "common": "Beluga Sturgeon"
+        }
+      ]
+    },
+    {
+      "scientific": "Pseudoscaphirhynchus",
+      "common": "Sturgeons",
+      "species": [
+        {
+          "scientific": "Pseudoscaphirhynchus fedtschenkoi",
+          "common": "Syr Darya Sturgeon"
+        },
+        {
+          "scientific": "Pseudoscaphirhynchus hermanni",
+          "common": "Dwarf Sturgeon"
+        },
+        {
+          "scientific": "Pseudoscaphirhynchus kaufmanni",
+          "common": "Amu Darya Sturgeon"
+        }
+      ]
+    },
+    {
+      "scientific": "Scaphirhynchus",
+      "common": "Sturgeons",
+      "species": [
+        {
+          "scientific": "Scaphirhynchus albus",
+          "common": "Pallid Sturgeon"
+        },
+        {
+          "scientific": "Scaphirhynchus platorynchus",
+          "common": "Shovelnose Sturgeon"
+        },
+        {
+          "scientific": "Scaphirhynchus suttkusi",
+          "common": "Alabama Sturgeon"
+        }
+      ]
+    }
+  ]
+}

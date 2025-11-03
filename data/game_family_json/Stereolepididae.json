@@ -1,0 +1,22 @@
+{
+  "family": {
+    "scientific": "Stereolepididae",
+    "common": "Giant Sea Bass Family"
+  },
+  "genera": [
+    {
+      "scientific": "Stereolepis",
+      "common": "Giant Sea Bass",
+      "species": [
+        {
+          "scientific": "Stereolepis doederleini",
+          "common": "Striped Jewfish"
+        },
+        {
+          "scientific": "Stereolepis gigas",
+          "common": "Giant Sea Bass"
+        }
+      ]
+    }
+  ]
+}

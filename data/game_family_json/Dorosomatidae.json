@@ -1,0 +1,35 @@
+{
+  "family": {
+    "scientific": "Dorosomatidae",
+    "common": "Gizzard Shad Family"
+  },
+  "genera": [
+    {
+      "scientific": "Dorosoma",
+      "common": "Gizzard Shads",
+      "species": [
+        {
+          "scientific": "Dorosoma anale",
+          "common": "Mexican River Gizzard Shad"
+        },
+        {
+          "scientific": "Dorosoma cepedianum",
+          "common": "American Gizzard Shad"
+        },
+        {
+          "scientific": "Dorosoma chavesi",
+          "common": "Nicaragua Gizzard Shad"
+        },
+        {
+          "scientific": "Dorosoma petenense",
+          "common": "Threadfin Shad"
+        },
+        {
+          "scientific": "Dorosoma smithi",
+          "common": "Pacific Gizzard Shad"
+        }
+      ]
+    }
+
+  ]
+}

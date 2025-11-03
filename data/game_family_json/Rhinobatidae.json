@@ -1,0 +1,162 @@
+{
+  "family": {
+    "scientific": "Rhinobatidae",
+    "common": "Guitarfish Family"
+  },
+  "genera": [
+    {
+      "scientific": "Acroteriobatus",
+      "common": "Guitarfishes",
+      "species": [
+        {
+          "scientific": "Acroteriobatus andysabini",
+          "common": "Malagasy Blue-spotted Guitarfish"
+        },
+        {
+          "scientific": "Acroteriobatus annulatus",
+          "common": "Lesser Guitarfish"
+        },
+        {
+          "scientific": "Acroteriobatus blochii",
+          "common": "Bluntnose Guitarfish"
+        },
+        {
+          "scientific": "Acroteriobatus leucospilus",
+          "common": "Grayspotted Guitarfish"
+        },
+        {
+          "scientific": "Acroteriobatus ocellatus",
+          "common": "Speckled Guitarfish"
+        },
+        {
+          "scientific": "Acroteriobatus omanensis",
+          "common": "Oman Guitarfish"
+        },
+        {
+          "scientific": "Acroteriobatus salalah",
+          "common": "Salalah Guitarfish"
+        },
+        {
+          "scientific": "Acroteriobatus stehmanni",
+          "common": "Socotra Blue-spotted Guitarfish"
+        },
+        {
+          "scientific": "Acroteriobatus variegatus",
+          "common": "Stripenose Guitarfish"
+        },
+        {
+          "scientific": "Acroteriobatus zanzibarensis",
+          "common": "Zanzibar Guitarfish"
+        }
+      ]
+    },
+    {
+      "scientific": "Pseudobatos",
+      "common": "Guitarfishes",
+      "species": [
+        {
+          "scientific": "Pseudobatos buthi",
+          "common": "Spadenose Guitarfish"
+        },
+        {
+          "scientific": "Pseudobatos glaucostigmus",
+          "common": "Speckled Guitarfish"
+        },
+        {
+          "scientific": "Pseudobatos horkelii",
+          "common": "Brazilian Guitarfish"
+        },
+        {
+          "scientific": "Pseudobatos lentiginosus",
+          "common": "Atlantic Guitarfish"
+        },
+        {
+          "scientific": "Pseudobatos leucorhynchus",
+          "common": "Whitesnout Guitarfish"
+        },
+        {
+          "scientific": "Pseudobatos percellens",
+          "common": "Chola Guitarfish"
+        },
+        {
+          "scientific": "Pseudobatos planiceps",
+          "common": "Pacific Guitarfish"
+        },
+        {
+          "scientific": "Pseudobatos prahli",
+          "common": "Gorgona Guitarfish"
+        },
+        {
+          "scientific": "Pseudobatos productus",
+          "common": "Shovelnose Guitarfish"
+        }
+      ]
+    },
+    {
+      "scientific": "Rhinobatos",
+      "common": "Guitarfishes",
+      "species": [
+        {
+          "scientific": "Rhinobatos albomaculatus",
+          "common": "White-spotted Guitarfish"
+        },
+        {
+          "scientific": "Rhinobatos annandalei",
+          "common": "Annandale's Guitarfish"
+        },
+        {
+          "scientific": "Rhinobatos borneensis",
+          "common": "Borneo Guitarfish"
+        },
+        {
+          "scientific": "Rhinobatos holcorhynchus",
+          "common": "Slender Guitarfish"
+        },
+        {
+          "scientific": "Rhinobatos hynnicephalus",
+          "common": "Ringstreaked Guitarfish"
+        },
+        {
+          "scientific": "Rhinobatos irvinei",
+          "common": "Spineback Guitarfish"
+        },
+        {
+          "scientific": "Rhinobatos jimbaranensis",
+          "common": "Jimbaran Shovelnose Ray"
+        },
+        {
+          "scientific": "Rhinobatos lionotus",
+          "common": "Smoothback Guitarfish"
+        },
+        {
+          "scientific": "Rhinobatos nudidorsalis",
+          "common": "Bareback Shovelnose Ray"
+        },
+        {
+          "scientific": "Rhinobatos penggali",
+          "common": "Indonesian Shovelnose Ray"
+        },
+        {
+          "scientific": "Rhinobatos punctifer",
+          "common": "Spotted Guitarfish"
+        },
+        {
+          "scientific": "Rhinobatos rhinobatos",
+          "common": "Common Guitarfish"
+        },
+        {
+          "scientific": "Rhinobatos sainsburyi",
+          "common": "Goldeneye Shovelnose Ray"
+        },
+        {
+          "scientific": "Rhinobatos schlegelii",
+          "common": "Brown Guitarfish"
+        },
+        {
+          "scientific": "Rhinobatos whitei",
+          "common": "Philippine Guitarfish"
+        }
+      ]
+    }
+  ]
+}

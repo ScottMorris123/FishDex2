@@ -1,0 +1,206 @@
+{
+  "family": {
+    "scientific": "Paralichthyidae",
+    "common": "Large-tooth Flounders"
+  },
+  "genera": [
+    {
+      "scientific": "Ancylopsetta",
+      "common": "Flounders",
+      "species": [
+        {
+          "scientific": "Ancylopsetta cycloidea",
+          "common": "Cyclope Flounder"
+        },
+        {
+          "scientific": "Ancylopsetta dendritica",
+          "common": "Three-spot Flounder"
+        },
+        {
+          "scientific": "Ancylopsetta dilecta",
+          "common": "Three-eye Flounder"
+        },
+        {
+          "scientific": "Ancylopsetta kumperae",
+          "common": "Four-eyed Flounder"
+        },
+        {
+          "scientific": "Ancylopsetta ommata",
+          "common": "Gulf of Mexico Ocellated Flounder"
+        }
+      ]
+    },
+    {
+      "scientific": "Gastropsetta",
+      "common": "Flounders",
+      "species": [
+        {
+          "scientific": "Gastropsetta frontalis",
+          "common": "Shrimp Flounder"
+        }
+      ]
+    },
+    {
+      "scientific": "Hippoglossina",
+      "common": "Flounders",
+      "species": [
+        {
+          "scientific": "Hippoglossina macrops",
+          "common": "Bigeye Flounder"
+        },
+        {
+          "scientific": "Hippoglossina oblonga",
+          "common": "American Fourspot Flounder"
+        },
+        {
+          "scientific": "Hippoglossina stomata",
+          "common": "Bigmouth Flounder"
+        },
+        {
+          "scientific": "Hippoglossina tetrophthalma",
+          "common": "Fourspot Flounder"
+        }
+      ]
+    },
+    {
+      "scientific": "Paralichthys",
+      "common": "Largetooth Flounders",
+      "species": [
+        {
+          "scientific": "Paralichthys adspersus",
+          "common": "Fine Flounder"
+        },
+        {
+          "scientific": "Paralichthys albigutta",
+          "common": "Gulf Flounder"
+        },
+        {
+          "scientific": "Paralichthys brasiliensis",
+          "common": "Brazilian Flounder"
+        },
+        {
+          "scientific": "Paralichthys californicus",
+          "common": "California Flounder"
+        },
+        {
+          "scientific": "Paralichthys dentatus",
+          "common": "Summer Flounder"
+        },
+        {
+          "scientific": "Paralichthys lethostigma",
+          "common": "Southern Flounder"
+        },
+        {
+          "scientific": "Paralichthys olivaceus",
+          "common": "Bastard Halibut"
+        },
+        {
+          "scientific": "Paralichthys patagonicus",
+          "common": "Patagonian Flounder"
+        },
+        {
+          "scientific": "Paralichthys squamilentus",
+          "common": "Broad Flounder"
+        },
+        {
+          "scientific": "Paralichthys tropicus",
+          "common": "Tropical Flounder"
+        },
+        {
+          "scientific": "Paralichthys woolmani",
+          "common": "Speckled Flounder"
+        }
+      ]
+    },
+    {
+      "scientific": "Pseudorhombus",
+      "common": "Flounders",
+      "species": [
+        {
+          "scientific": "Pseudorhombus annulatus",
+          "common": "Ringed Flounder"
+        },
+        {
+          "scientific": "Pseudorhombus argus",
+          "common": "Peacock Flounder"
+        },
+        {
+          "scientific": "Pseudorhombus arsius",
+          "common": "Largetooth Flounder"
+        },
+        {
+          "scientific": "Pseudorhombus cinnamoneus",
+          "common": "Cinnamon Flounder"
+        },
+        {
+          "scientific": "Pseudorhombus diplospilus",
+          "common": "Four Twin-spot Flounder"
+        },
+        {
+          "scientific": "Pseudorhombus dupliciocellatus",
+          "common": "Ocellated Flounder"
+        },
+        {
+          "scientific": "Pseudorhombus elevatus",
+          "common": "Deep Flounder"
+        },
+        {
+          "scientific": "Pseudorhombus javanicus",
+          "common": "Javan Flounder"
+        },
+        {
+          "scientific": "Pseudorhombus jenynsii",
+          "common": "Small-toothed Flounder"
+        },
+        {
+          "scientific": "Pseudorhombus malayanus",
+          "common": "Malayan Flounder"
+        },
+        {
+          "scientific": "Pseudorhombus natalensis",
+          "common": "Natal Flounder"
+        },
+        {
+          "scientific": "Pseudorhombus oligodon",
+          "common": "Roughscale Flounder"
+        },
+        {
+          "scientific": "Pseudorhombus pentophthalmus",
+          "common": "Fivespot Flounder"
+        },
+        {
+          "scientific": "Pseudorhombus quinquocellatus",
+          "common": "Five-eyed Flounder"
+        },
+        {
+          "scientific": "Pseudorhombus spinosus",
+          "common": "Spiny Flounder"
+        },
+        {
+          "scientific": "Pseudorhombus triocellatus",
+          "common": "Three-spotted Flounder"
+        }
+      ]
+    },
+    {
+      "scientific": "Tephrinectes",
+      "common": "Flounders",
+      "species": [
+        {
+          "scientific": "Tephrinectes sinensis",
+          "common": "Chinese Brill"
+        }
+      ]
+    },
+    {
+      "scientific": "Xystreurys",
+      "common": "Flounders",
+      "species": [
+        {
+          "scientific": "Xystreurys liolepis",
+          "common": "Fantail Flounder"
+        }
+      ]
+    }
+  ]
+}

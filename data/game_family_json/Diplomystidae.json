@@ -1,0 +1,18 @@
+{
+  "family": {
+    "scientific": "Diplomystidae",
+    "common": "Velvet Catfish Family"
+  },
+  "genera": [
+    {
+      "scientific": "Diplomystes",
+      "common": "Velvet Catfish",
+      "species": [
+        {
+          "scientific": "Diplomystes chilensis",
+          "common": "Tollo"
+        }
+      ]
+    }
+  ]
+}

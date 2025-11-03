@@ -1,0 +1,78 @@
+{
+  "family": {
+    "scientific": "Esocidae",
+    "common": "Pike and Mudminnow Family"
+  },
+  "genera": [
+    {
+      "scientific": "Dallia",
+      "common": "Blackfishes",
+      "species": [
+        {
+          "scientific": "Dallia admirabilis",
+          "common": "Amguema Blackfish"
+        },
+        {
+          "scientific": "Dallia delicatissima",
+          "common": "Pilkhykay Blackfish"
+        },
+        {
+          "scientific": "Dallia pectoralis",
+          "common": "Alaska Blackfish"
+        }
+      ]
+    },
+    {
+      "scientific": "Esox",
+      "common": "Pikes",
+      "species": [
+        {
+          "scientific": "Esox aquitanicus",
+          "common": "Aquitanian Pike"
+        },
+        {
+          "scientific": "Esox cisalpinus",
+          "common": "Southern Pike"
+        },
+        {
+          "scientific": "Esox lucius",
+          "common": "Northern Pike"
+        },
+        {
+          "scientific": "Esox masquinongy",
+          "common": "Muskellunge"
+        },
+        {
+          "scientific": "Esox niger",
+          "common": "Chain Pickerel"
+        },
+        {
+          "scientific": "Esox reichertii",
+          "common": "Amur Pike"
+        },
+        {
+          "scientific": "Esox americanus americanus",
+          "common": "Redfin Pickerel"
+        },
+        {
+          "scientific": "Esox americanus vermiculatus",
+          "common": "Grass Pickerel"
+        }
+      ]
+    },
+    {
+      "scientific": "Novumbra",
+      "common": "Mudminnows",
+      "species": [
+        {
+          "scientific": "Novumbra hubbsi",
+          "common": "Olympic Mudminnow"
+        },
+        {
+          "scientific": "Novumbra oregonensis",
+          "common": "Oregon Mudminnow"
+        }
+      ]
+    }
+  ]
+}

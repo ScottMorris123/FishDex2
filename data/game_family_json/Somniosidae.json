@@ -1,0 +1,63 @@
+{
+  "family": {
+    "scientific": "Somniosidae",
+    "common": "Sleeper Sharks"
+  },
+  "genera": [
+    {
+      "scientific": "Centroscymnus",
+      "common": "Dogfishes",
+      "species": [
+        { "scientific": "Centroscymnus coelolepis", "common": "Portuguese Dogfish" },
+        { "scientific": "Centroscymnus owstonii", "common": "Roughskin Dogfish" }
+      ]
+    },
+    {
+      "scientific": "Centroselachus",
+      "common": "Dogfishes",
+      "species": [
+        { "scientific": "Centroselachus crepidater", "common": "Longnose Velvet Dogfish" }
+      ]
+    },
+    {
+      "scientific": "Scymnodalatias",
+      "common": "Dogfishes",
+      "species": [
+        { "scientific": "Scymnodalatias albicauda", "common": "Whitetail Dogfish" },
+        { "scientific": "Scymnodalatias garricki", "common": "Azores Dogfish" },
+        { "scientific": "Scymnodalatias oligodon", "common": "Sparsetooth Dogfish" },
+        { "scientific": "Scymnodalatias sherwoodi", "common": "Sherwood Dogfish" }
+      ]
+    },
+    {
+      "scientific": "Scymnodon",
+      "common": "Dogfishes",
+      "species": [
+        { "scientific": "Scymnodon ichiharai", "common": "Japanese Velvet Dogfish" },
+        { "scientific": "Scymnodon macracanthus", "common": "Largespine Velvet Dogfish" },
+        { "scientific": "Scymnodon plunketi", "common": "Plunket's Shark" },
+        { "scientific": "Scymnodon ringens", "common": "Knifetooth Dogfish" }
+      ]
+    },
+    {
+      "scientific": "Somniosus",
+      "common": "Sleeper Sharks",
+      "species": [
+        { "scientific": "Somniosus antarcticus", "common": "Southern Sleeper Shark" },
+        { "scientific": "Somniosus cheni", "common": "Taiwan Sleeper Shark" },
+        { "scientific": "Somniosus longus", "common": "Frog Shark" },
+        { "scientific": "Somniosus microcephalus", "common": "Greenland Shark" },
+        { "scientific": "Somniosus pacificus", "common": "Pacific Sleeper Shark" },
+        { "scientific": "Somniosus rostratus", "common": "Little Sleeper Shark" },
+        { "scientific": "Somniosus sp. A", "common": "Longnose Sleeper Shark" }
+      ]
+    },
+    {
+      "scientific": "Zameus",
+      "common": "Dogfishes",
+      "species": [
+        { "scientific": "Zameus squamulosus", "common": "Velvet Dogfish" }
+      ]
+    }
+  ]
+}

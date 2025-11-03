@@ -1,0 +1,44 @@
+{
+  "family": {
+    "scientific": "Osteoglossidae",
+    "common": "Bonytongue Family"
+  },
+  "genera": [
+    {
+      "scientific": "Osteoglossum",
+      "common": "Arowanas",
+      "species": [
+        {
+          "scientific": "Osteoglossum bicirrhosum",
+          "common": "Silver Arowana"
+        },
+        {
+          "scientific": "Osteoglossum ferreirai",
+          "common": "Black Arowana"
+        }
+      ]
+    },
+    {
+      "scientific": "Scleropages",
+      "common": "Arowanas",
+      "species": [
+        {
+          "scientific": "Scleropages formosus",
+          "common": "Asian Arowana"
+        },
+        {
+          "scientific": "Scleropages inscriptus",
+          "common": "Myanmar Arowana"
+        },
+        {
+          "scientific": "Scleropages jardinii",
+          "common": "Australian Arowana"
+        },
+        {
+          "scientific": "Scleropages leichardti",
+          "common": "Spotted Bonytongue"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "family": {
+    "scientific": "Schilbeidae",
+    "common": "Schilbid Catfish Family"
+  },
+  "genera": [
+    {
+      "scientific": "Parailia",
+      "common": "Schilbid Catfishes",
+      "species": [
+        {
+          "scientific": "Parailia pellucida",
+          "common": "Glass Schilbid"
+        },
+        {
+          "scientific": "Parailia somalensis",
+          "common": "Somalia Glass Catfish"
+        }
+      ]
+    },
+    {
+      "scientific": "Pareutropius",
+      "common": "Glass Catfishes",
+      "species": [
+        {
+          "scientific": "Pareutropius debauwi",
+          "common": "African Glass Catfish"
+        }
+      ]
+    },
+    {
+      "scientific": "Schilbe",
+      "common": "Butter Catfishes",
+      "species": [
+        {
+          "scientific": "Schilbe banguelensis",
+          "common": "Golden Barbel"
+        },
+        {
+          "scientific": "Schilbe intermedius",
+          "common": "Silver Butter Catfish"
+        },
+        {
+          "scientific": "Schilbe marmoratus",
+          "common": "Shoulderspot Catfish"
+        },
+        {
+          "scientific": "Schilbe mystus",
+          "common": "African Butter Catfish"
+        },
+        {
+          "scientific": "Schilbe yangambianus",
+          "common": "Yangambi Butterbarbel"
+        }
+      ]
+    }
+  ]
+}

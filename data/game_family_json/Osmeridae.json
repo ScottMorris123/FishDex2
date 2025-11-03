@@ -1,0 +1,80 @@
+{
+  "family": {
+    "scientific": "Osmeridae",
+    "common": "Smelt Family"
+  },
+  "genera": [
+    {
+      "scientific": "Allosmerus",
+      "common": "Smelts",
+      "species": [
+        {
+          "scientific": "Allosmerus elongatus",
+          "common": "Whitebait Smelt"
+        }
+      ]
+    },
+     {
+      "scientific": "Hypomesus",
+      "common": "Smelts",
+      "species": [
+        {
+          "scientific": "Hypomesus nipponensis",
+          "common": "Japanese Smelt"
+        },
+        {
+          "scientific": "Hypomesus olidus",
+          "common": "Pond Smelt"
+        },
+        {
+          "scientific": "Hypomesus pretiosus",
+          "common": "Surf Smelt"
+        },
+        {
+          "scientific": "Hypomesus transpacificus",
+          "common": "Delta Smelt"
+        }
+      ]
+    },
+    {
+      "scientific": "Osmerus",
+      "common": "Rainbow Smelts",
+      "species": [
+        {
+          "scientific": "Osmerus dentex",
+          "common": "Pacific Rainbow Smelt"
+        },
+        {
+          "scientific": "Osmerus eperlanus",
+          "common": "European Smelt"
+        },
+        {
+          "scientific": "Osmerus mordax mordax",
+          "common": "Rainbow Smelt"
+        },
+        {
+          "scientific": "Osmerus mordax dentex",
+          "common": "Arctic Rainbow Smelt"
+        }
+      ]
+    },
+    {
+      "scientific": "Spirinchus",
+      "common": "Smelts",
+      "species": [
+        {
+          "scientific": "Spirinchus lanceolatus",
+          "common": "Shishamo Smelt"
+        },
+        {
+          "scientific": "Spirinchus starksi",
+          "common": "Night Smelt"
+        },
+        {
+          "scientific": "Spirinchus thaleichthys",
+          "common": "Longfin Smelt"
+        }
+      ]
+    }
+  ]
+}

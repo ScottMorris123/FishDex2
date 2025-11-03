@@ -1,0 +1,88 @@
+{
+  "family": {
+    "scientific": "Priacanthidae",
+    "common": "Bigeye Family"
+  },
+  "genera": [
+    {
+      "scientific": "Cookeolus",
+      "common": "Bigeyes",
+      "species": [
+        {
+          "scientific": "Cookeolus japonicus",
+          "common": "Longfinned Bullseye"
+        }
+      ]
+    },
+    {
+      "scientific": "Heteropriacanthus",
+      "common": "Bigeyes",
+      "species": [
+        {
+          "scientific": "Heteropriacanthus cruentatus",
+          "common": "Glasseye"
+        }
+      ]
+    },
+    {
+      "scientific": "Priacanthus",
+      "common": "Bigeyes",
+      "species": [
+        {
+          "scientific": "Priacanthus alalaua",
+          "common": "Alalaua"
+        },
+        {
+          "scientific": "Priacanthus arenatus",
+          "common": "Atlantic Bigeye"
+        },
+        {
+          "scientific": "Priacanthus blochii",
+          "common": "Paeony Bullseye"
+        },
+        {
+          "scientific": "Priacanthus hamrur",
+          "common": "Moontail Bullseye"
+        },
+        {
+          "scientific": "Priacanthus macracanthus",
+          "common": "Red Bigeye"
+        },
+        {
+          "scientific": "Priacanthus meeki",
+          "common": "Hawaiian Bigeye"
+        },
+        {
+          "scientific": "Priacanthus prolixus",
+          "common": "Elongate Bullseye"
+        },
+        {
+          "scientific": "Priacanthus sagittarius",
+          "common": "Arrow Bullseye"
+        },
+        {
+          "scientific": "Priacanthus tayenus",
+          "common": "Purple-spotted Bigeye"
+        }
+      ]
+    },
+    {
+      "scientific": "Pristigenys",
+      "common": "Bigeyes",
+      "species": [
+        {
+          "scientific": "Pristigenys alta",
+          "common": "Short Bigeye"
+        },
+        {
+          "scientific": "Pristigenys niphonia",
+          "common": "Japanese Bigeye"
+        },
+        {
+          "scientific": "Pristigenys serrula",
+          "common": "Popeye Catalufa"
+        }
+      ]
+    }
+  ]
+}

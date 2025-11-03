@@ -1,0 +1,103 @@
+{
+  "family": {
+    "scientific": "Serrasalmidae",
+    "common": "Piranha and Pacu Family"
+  },
+  "genera": [
+    {
+      "scientific": "Colossoma",
+      "common": "Lowland Pacus",
+      "species": [
+        { "scientific": "Colossoma macropomum", "common": "Tambaqui" }
+      ]
+    },
+    {
+      "scientific": "Piaractus",
+      "common": "Lowland Pacus",
+      "species": [
+        { "scientific": "Piaractus brachypomus", "common": "Pirapatinga" },
+        { "scientific": "Piaractus mesopotamicus", "common": "Paraná River Pacu" },
+        { "scientific": "Piaractus orinoquensis", "common": "" }
+      ]
+    },
+    {
+      "scientific": "Acnodon",
+      "common": "Upland Pacus",
+      "species": [
+        { "scientific": "Acnodon normani", "common": "Sheep Pacu" },
+        { "scientific": "Acnodon oligacanthus", "common": "Slender Pacu" },
+        { "scientific": "Acnodon senai", "common": "Sena's Pacu" }
+      ]
+    },
+    {
+      "scientific": "Myloplus",
+      "common": "Upland Pacus",
+      "species": [
+        { "scientific": "Myloplus nigrolineatus", "common": "Blackline Myleus" },
+        { "scientific": "Myloplus rubripinnis", "common": "Redhook Myleus" },
+        { "scientific": "Myloplus sauron", "common": "" },
+        { "scientific": "Myloplus schomburgkii", "common": "Disk Tetra" }
+      ]
+    },
+    {
+      "scientific": "Ossubtus",
+      "common": "Upland Pacus",
+      "species": [
+        { "scientific": "Ossubtus xinguense", "common": "Parrot Pacu" }
+      ]
+    },
+    {
+      "scientific": "Paramyloplus",
+      "common": "Upland Pacus",
+      "species": [
+        { "scientific": "Paramyloplus taphorni", "common": "Taphorn's Catabac" },
+        { "scientific": "Paramyloplus ternetzi", "common": "Pakusi" }
+      ]
+    },
+    {
+      "scientific": "Catoprion",
+      "common": "Piranhas",
+      "species": [
+        { "scientific": "Catoprion mento", "common": "Wimple Piranha" },
+        { "scientific": "Catoprion absconditus", "common": "Wimple Piranha" }
+      ]
+    },
+    {
+      "scientific": "Pygocentrus",
+      "common": "Piranhas",
+      "species": [
+        { "scientific": "Pygocentrus cariba", "common": "Black Spot Piranha" },
+        { "scientific": "Pygocentrus nattereri", "common": "Red-Bellied Piranha" },
+        { "scientific": "Pygocentrus piraya", "common": "San Francisco Piranha" }
+      ]
+    },
+    {
+      "scientific": "Pygopristis",
+      "common": "Piranhas",
+      "species": [
+        { "scientific": "Pygopristis denticulata", "common": "Lobetoothed Piranha" }
+      ]
+    },
+    {
+      "scientific": "Serrasalmus",
+      "common": "Piranhas",
+      "species": [
+        { "scientific": "Serrasalmus altuvei", "common": "Caribe Pinche" },
+        { "scientific": "Serrasalmus brandtii", "common": "White Piranha" },
+        { "scientific": "Serrasalmus elongatus", "common": "Slender Piranha" },
+        { "scientific": "Serrasalmus geryi", "common": "Violet Line Piranha" },
+        { "scientific": "Serrasalmus gouldingi", "common": "Blue Tiger Piranha" },
+        { "scientific": "Serrasalmus humeralis", "common": "Pirambeba" },
+        { "scientific": "Serrasalmus irritans", "common": "Iridescent Piranha" },
+        { "scientific": "Serrasalmus maculatus", "common": "Spotted Piranha" },
+        { "scientific": "Serrasalmus manueli", "common": "Green Tiger Piranha" },
+        { "scientific": "Serrasalmus medinai", "common": "Red-Throated Piranha" },
+        { "scientific": "Serrasalmus nalseni", "common": "Caribe Pintado" },
+        { "scientific": "Serrasalmus rhombeus", "common": "Redeye Piranha" },
+        { "scientific": "Serrasalmus sanchezi", "common": "Sharp-Snouted Piranha" },
+        { "scientific": "Serrasalmus serrulatus", "common": "Caribe Cortador" },
+        { "scientific": "Serrasalmus spilopleura", "common": "Speckled Piranha" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "family": {
+    "scientific": "Clupeidae",
+    "common": "Herring Family"
+  },
+  "genera": [
+    {
+      "scientific": "Clupea",
+      "common": "herrings",
+      "species": [
+        {
+          "scientific": "Clupea harengus",
+          "common": "Atlantic Herring"
+        },
+        {
+          "scientific": "Clupea harengus harengus",
+          "common": "Atlantic Herring"
+        },
+        {
+          "scientific": "Clupea harengus membras",
+          "common": "Baltic Herring"
+        },
+        {
+          "scientific": "Clupea pallasii",
+          "common": "Pacific Herring"
+        },
+        {
+          "scientific": "Clupea pallasii pallasii",
+          "common": "Pacific Herring"
+        },
+        {
+          "scientific": "Clupea pallasii marisalbi",
+          "common": "White Sea Herring"
+        },
+        {
+          "scientific": "Clupea pallasii suworowi",
+          "common": "Chosa Herring"
+        }
+      ]
+    }
+  ]
+}

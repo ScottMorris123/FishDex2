@@ -1,0 +1,98 @@
+{
+  "family": {
+    "scientific": "Catostomidae",
+    "common": "Sucker Family"
+  },
+  "genera": [
+    {
+      "scientific": "Carpiodes",
+      "common": "Suckers",
+      "species": [
+        {
+          "scientific": "Carpiodes carpio",
+          "common": "River Carpsucker"
+        },
+        {
+          "scientific": "Carpiodes cyprinus",
+          "common": "Quillback"
+        },
+        {
+          "scientific": "Carpiodes velifer",
+          "common": "Highfin Carpsucker"
+        }
+      ]
+    },
+    {
+      "scientific": "Catostomus",
+      "common": "suckers",
+      "species": [
+        {
+          "scientific": "Catostomus catostomus",
+          "common": "Longnose Sucker"
+        },
+        {
+          "scientific": "Catostomus commersonii",
+          "common": "White Sucker"
+        },
+        {
+          "scientific": "Catostomus latipinnis",
+          "common": "Flannelmouth sucker"
+        }
+      ]
+    },
+    {
+      "scientific": "Ictiobus",
+      "common": "Buffalofishes",
+      "species": [
+        {
+          "scientific": "Ictiobus bubalus",
+          "common": "Smallmouth Buffalo"
+        },
+        {
+          "scientific": "Ictiobus cyprinellus",
+          "common": "Bigmouth Buffalo"
+        },
+        {
+          "scientific": "Ictiobus niger",
+          "common": "Black Buffalo"
+        }
+      ]
+    },
+    {
+      "scientific": "Minytrema",
+      "common": "suckers",
+      "species": [
+        {
+          "scientific": "Minytrema melanops",
+          "common": "Spotted sucker"
+        }
+      ]
+    },
+    {
+      "scientific": "Moxostoma",
+      "common": "Redhorses",
+      "species": [
+        {
+          "scientific": "Moxostoma anisurum",
+          "common": "Silver Redhorse"
+        },
+        {
+          "scientific": "Moxostoma carinatum",
+          "common": "River Redhorse"
+        },
+        {
+          "scientific": "Moxostoma erythrurum",
+          "common": "Golden Redhorse"
+        },
+        {
+          "scientific": "Moxostoma macrolepidotum",
+          "common": "Shorthead Redhorse"
+        },
+        {
+          "scientific": "Moxostoma valenciennesi",
+          "common": "Greater Redhorse"
+        }
+      ]
+    }
+  ]
+}

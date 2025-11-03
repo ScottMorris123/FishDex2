@@ -1,0 +1,78 @@
+{
+  "family": {
+    "scientific": "Latidae",
+    "common": "Lates Perch Family"
+  },
+  "genera": [
+    {
+      "scientific": "Hypopterus",
+      "common": "Latid Fishes",
+      "species": [
+        {
+          "scientific": "Hypopterus macropterus",
+          "common": "Spikey Bass"
+        }
+      ]
+    },
+    {
+      "scientific": "Lates",
+      "common": "Lates Perches",
+      "species": [
+        {
+          "scientific": "Lates angustifrons",
+          "common": "Tanganyika Lates"
+        },
+        {
+          "scientific": "Lates calcarifer",
+          "common": "Barramundi"
+        },
+        {
+          "scientific": "Lates japonicus",
+          "common": "Japanese Lates"
+        },
+        {
+          "scientific": "Lates lakdiva",
+          "common": "Sri Lankan Lates"
+        },
+        {
+          "scientific": "Lates longispinis",
+          "common": "Rudolf Lates"
+        },
+        {
+          "scientific": "Lates macrophthalmus",
+          "common": "Albert Lates"
+        },
+        {
+          "scientific": "Lates mariae",
+          "common": "Bigeye Lates"
+        },
+        {
+          "scientific": "Lates microlepis",
+          "common": "Forktail Lates"
+        },
+        {
+          "scientific": "Lates niloticus",
+          "common": "Nile Perch"
+        },
+        {
+          "scientific": "Lates stappersii",
+          "common": "Sleek Lates"
+        },
+        {
+          "scientific": "Lates uwisara",
+          "common": "Myanmar Lates"
+        }
+      ]
+    },
+    {
+      "scientific": "Psammoperca",
+      "common": "Seaperches",
+      "species": [
+        {
+          "scientific": "Psammoperca waigiensis",
+          "common": "Waigieu Seaperch"
+        }
+      ]
+    }
+  ]
+}

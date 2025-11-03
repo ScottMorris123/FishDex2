@@ -1,0 +1,18 @@
+{
+  "family": {
+    "scientific": "Batrachoididae",
+    "common": "Toadfish/Frogfish Family"
+  },
+  "genera": [
+    {
+      "scientific": "Opsanus",
+      "common": "Toadfishes",
+      "species": [
+        {
+          "scientific": "Opsanus tau",
+          "common": "Oyster Toadfish"
+        }
+      ]
+    }
+  ]
+}

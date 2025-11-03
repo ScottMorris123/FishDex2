@@ -1,0 +1,56 @@
+{
+  "family": {
+    "scientific": "Squalidae",
+    "common": "Dogfish Shark Family"
+  },
+  "genera": [
+    {
+      "scientific": "Squalus",
+      "common": "Spurdogs",
+      "species": [
+        { "scientific": "Squalus acanthias", "common": "Spiny Dogfish" },
+        { "scientific": "Squalus albicaudus", "common": "Brazilian Whitetail Dogfish" },
+        { "scientific": "Squalus albifrons", "common": "Eastern Highfin Spurdog" },
+        { "scientific": "Squalus altipinnis", "common": "Western Highfin Spurdog" },
+        { "scientific": "Squalus bahiensis", "common": "Northeastern Brazilian Dogfish" },
+        { "scientific": "Squalus blainville", "common": "Longnose Spurdog" },
+        { "scientific": "Squalus brevirostris", "common": "Japanese Shortnose Spurdog" },
+        { "scientific": "Squalus bucephalus", "common": "Bighead Spurdog" },
+        { "scientific": "Squalus chloroculus", "common": "Greeneye Spurdog" },
+        { "scientific": "Squalus clarkae", "common": "Genie’s Dogfish" },
+        { "scientific": "Squalus crassispinus", "common": "Fatspine Spurdog" },
+        { "scientific": "Squalus cubensis", "common": "Cuban Dogfish" },
+        { "scientific": "Squalus edmundsi", "common": "Edmund's Spurdog" },
+        { "scientific": "Squalus formosus", "common": "Taiwan Spurdog" },
+        { "scientific": "Squalus grahami", "common": "Eastern Longnose Spurdog" },
+        { "scientific": "Squalus griffini", "common": "Northern Spiny Dogfish" },
+        { "scientific": "Squalus hawaiiensis", "common": "Hawaiian Spurdog" },
+        { "scientific": "Squalus hemipinnis", "common": "Indonesian Shortsnout Spurdog" },
+        { "scientific": "Squalus hima", "common": "Indian Spurdog" },
+        { "scientific": "Squalus japonicus", "common": "Japanese Spurdog" },
+        { "scientific": "Squalus lalannei", "common": "Seychelles Spurdog" },
+        { "scientific": "Squalus lobularis", "common": "Atlantic Lobefin Dogfish" },
+        { "scientific": "Squalus megalops", "common": "Shortnose Spurdog" },
+        { "scientific": "Squalus melanurus", "common": "Blacktailed Spurdog" },
+        { "scientific": "Squalus mitsukurii", "common": "Shortspine Spurdog" },
+        { "scientific": "Squalus montalbani", "common": "Indonesian Greeneye Spurdog" },
+        { "scientific": "Squalus nasutus", "common": "Western Longnose Spurdog" },
+        { "scientific": "Squalus notocaudatus", "common": "Bartail Spurdog" },
+        { "scientific": "Squalus quasimodo", "common": "Humpback Western Dogfish" },
+        { "scientific": "Squalus rancureli", "common": "Cyrano Spurdog" },
+        { "scientific": "Squalus raoulensis", "common": "Kermadec Spiny Dogfish" },
+        { "scientific": "Squalus shiraii", "common": "Shirai's Spurdog" },
+        { "scientific": "Squalus suckleyi", "common": "Pacific Spiny Dogfish" }
+      ]
+    },
+    {
+      "scientific": "Cirrhigaleus",
+      "common": "Dogfish",
+      "species": [
+        { "scientific": "Cirrhigaleus asper", "common": "Roughskin Spurdog" },
+        { "scientific": "Cirrhigaleus australis", "common": "Southern Mandarin Dogfish" },
+        { "scientific": "Cirrhigaleus barbifer", "common": "Mandarin Dogfish" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "family": {
+    "scientific": "Echeneidae",
+    "common": "Remora Family"
+  },
+  "genera": [
+    {
+      "scientific": "Echeneis",
+      "common": "Remoras",
+      "species": [
+        {
+          "scientific": "Echeneis naucrates",
+          "common": "Live Sharksucker"
+        },
+        {
+          "scientific": "Echeneis neucratoides",
+          "common": "Whitefin Sharksucker"
+        }
+      ]
+    },
+    {
+      "scientific": "Remora",
+      "common": "remoras",
+      "species": [
+        {
+          "scientific": "Remora albescens",
+          "common": "White Suckerfish"
+        },
+        {
+          "scientific": "Remora australis",
+          "common": "Whalesucker"
+        },
+        {
+          "scientific": "Remora brachyptera",
+          "common": "Spearfish Remora"
+        },
+        {
+          "scientific": "Remora osteochir",
+          "common": "Marlinsucker"
+        },
+        {
+          "scientific": "Remora remora",
+          "common": "Common Remora"
+        }
+      ]
+    }
+  ]
+}

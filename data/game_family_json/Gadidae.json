@@ -1,0 +1,74 @@
+{
+  "family": {
+    "scientific": "Gadidae",
+    "common": "Cod Family"
+  },
+  "genera": [
+    {
+      "scientific": "Gadus",
+      "common": "Cods",
+      "species": [
+        {
+          "scientific": "Gadus macrocephalus",
+          "common": "Pacific Cod"
+        },
+        {
+          "scientific": "Gadus morhua",
+          "common": "Atlantic Cod"
+        },
+        {
+          "scientific": "Gadus chalcogrammus",
+          "common": "Alaska Pollock"
+        }
+      ]
+    },
+    {
+      "scientific": "Melanogrammus",
+      "common": "Cods",
+      "species": [
+        {
+          "scientific": "Melanogrammus aeglefinus",
+          "common": "Haddock"
+        }
+      ]
+    },
+    {
+      "scientific": "Merlangius",
+      "common": "Cods",
+      "species": [
+        {
+          "scientific": "Merlangius merlangus",
+          "common": "Merling"
+        }
+      ]
+    },
+    {
+      "scientific": "Microgadus",
+      "common": "Cods",
+      "species": [
+        {
+          "scientific": "Microgadus proximus",
+          "common": "Pacific Tomcod"
+        },
+        {
+          "scientific": "Microgadus tomcod",
+          "common": "Atlantic Tomcod"
+        }
+      ]
+    },
+    {
+      "scientific": "Pollachius",
+      "common": "Cods",
+      "species": [
+        {
+          "scientific": "Pollachius pollachius",
+          "common": "Pollack"
+        },
+        {
+          "scientific": "Pollachius virens",
+          "common": "Coalfish"
+        }
+      ]
+    }
+  ]
+}

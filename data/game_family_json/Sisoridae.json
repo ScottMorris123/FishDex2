@@ -1,0 +1,72 @@
+{
+  "family": {
+    "scientific": "Sisoridae",
+    "common": "Sisorid Catfish Family"
+  },
+  "genera": [
+    {
+      "scientific": "Bagarius",
+      "common": "Sisorid Catfishes",
+      "species": [
+        { "scientific": "Bagarius bagarius", "common": "Goonch" },
+        { "scientific": "Bagarius suchus", "common": "Crocodile Catfish" },
+        { "scientific": "Bagarius vegrandis", "common": "Dwarf Goonch Catfish" }
+      ]
+    },
+    {
+      "scientific": "Glyptothorax",
+      "common": "Sisorid Catfishes",
+      "species": [
+        { "scientific": "Glyptothorax armeniacus", "common": "Armenian Mountain Catfish" },
+        { "scientific": "Glyptothorax elankadensis", "common": "Travancore Rock Catfish" },
+        { "scientific": "Glyptothorax pectinopterus", "common": "River Catfish" },
+        { "scientific": "Glyptothorax steindachneri", "common": "Steindachner’s Catfish" },
+        { "scientific": "Glyptothorax trilineatus", "common": "Three-Lined Catfish" }
+      ]
+    },
+    {
+      "scientific": "Pseudolaguvia",
+      "common": "Sisorid Catfishes",
+      "species": [
+        { "scientific": "Pseudolaguvia ribeiroi", "common": "Painted Catfish" }
+      ]
+    },
+    {
+      "scientific": "Exostoma",
+      "common": "Sisorid Catfishes",
+      "species": [
+        { "scientific": "Exostoma gaoligongense", "common": "Gaoligong Mountain Catfish" },
+        { "scientific": "Exostoma labiatum", "common": "Burmese Bat Catfish" }
+      ]
+    },
+    {
+      "scientific": "Glyptosternon",
+      "common": "Sisorid Catfishes",
+      "species": [
+        { "scientific": "Glyptosternon oschanini", "common": "Oshanin Catfish" },
+        { "scientific": "Glyptosternon reticulatum", "common": "Turkestan Catfish" }
+      ]
+    },
+    {
+      "scientific": "Myersglanis",
+      "common": "Sisorid Catfishes",
+      "species": [
+        { "scientific": "Myersglanis blythii", "common": "Stone Cat" }
+      ]
+    },
+    {
+      "scientific": "Parachiloglanis",
+      "common": "Sisorid Catfishes",
+      "species": [
+        { "scientific": "Parachiloglanis bhutanensis", "common": "Khaling Torrent Catfish" }
+      ]
+    },
+    {
+      "scientific": "Pseudecheneis",
+      "common": "Sisorid Catfishes",
+      "species": [
+        { "scientific": "Pseudecheneis sulcata", "common": "Sucker Throat Catfish" }
+      ]
+    }
+  ]
+}

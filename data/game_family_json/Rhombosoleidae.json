@@ -1,0 +1,120 @@
+{
+  "family": {
+    "scientific": "Rhombosoleidae",
+    "common": "Right-eyed Flounder Family"
+  },
+  "genera": [
+    {
+      "scientific": "Ammotretis",
+      "common": "Flounders",
+      "species": [
+        {
+          "scientific": "Ammotretis brevipinnis",
+          "common": "Shortfin Flounder"
+        },
+        {
+          "scientific": "Ammotretis elongatus",
+          "common": "Elongate Flounder"
+        },
+        {
+          "scientific": "Ammotretis lituratus",
+          "common": "Tudor's Flounder"
+        },
+        {
+          "scientific": "Ammotretis rostratus",
+          "common": "Longsnout Flounder"
+        }
+      ]
+    },
+    {
+      "scientific": "Azygopus",
+      "common": "Spotted Flounders",
+      "species": [
+        {
+          "scientific": "Azygopus pinnifasciatus",
+          "common": "Banded-fin Flounder"
+        }
+      ]
+    },
+    {
+      "scientific": "Colistium",
+      "common": "New Zealand Soles",
+      "species": [
+        {
+          "scientific": "Colistium guntheri",
+          "common": "New Zealand Brill"
+        },
+        {
+          "scientific": "Colistium nudipinnis",
+          "common": "New Zealand Turbot"
+        }
+      ]
+    },
+    {
+      "scientific": "Pelotretis",
+      "common": "Lemon Soles",
+      "species": [
+        {
+          "scientific": "Pelotretis flavilatus",
+          "common": "Southern Lemon Sole"
+        }
+      ]
+    },
+    {
+      "scientific": "Peltorhamphus",
+      "common": "New Zealand Soles",
+      "species": [
+        {
+          "scientific": "Peltorhamphus latus",
+          "common": "Speckled Sole"
+        },
+        {
+          "scientific": "Peltorhamphus novaezeelandiae",
+          "common": "New Zealand Sole"
+        }
+      ]
+    },
+    {
+      "scientific": "Psammodiscus",
+      "common": "Ocellated Flounders",
+      "species": [
+        {
+          "scientific": "Psammodiscus ocellatus",
+          "common": "Indonesian Ocellated Flounder"
+        }
+      ]
+    },
+    {
+      "scientific": "Rhombosolea",
+      "common": "Sand Flounders",
+      "species": [
+        {
+          "scientific": "Rhombosolea leporina",
+          "common": "Yellowbelly Flounder"
+        },
+        {
+          "scientific": "Rhombosolea plebeia",
+          "common": "Sand Flounder"
+        },
+        {
+          "scientific": "Rhombosolea retiaria",
+          "common": "Black Flounder"
+        },
+        {
+          "scientific": "Rhombosolea tapirina",
+          "common": "Greenback Flounder"
+        }
+      ]
+    },
+    {
+      "scientific": "Taratretis",
+      "common": "Flounders",
+      "species": [
+        {
+          "scientific": "Taratretis derwentensis",
+          "common": "Derwent Flounder"
+        }
+      ]
+    }
+  ]
+}

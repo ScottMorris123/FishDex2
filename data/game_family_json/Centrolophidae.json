@@ -1,0 +1,28 @@
+{
+  "family": {
+    "scientific": "Centrolophidae",
+    "common": "Medusafish Family"
+  },
+  "genera": [
+    {
+      "scientific": "Centrolophus",
+      "common": "Medusafishes",
+      "species": [
+        {
+          "scientific": "Centrolophus niger",
+          "common": "Black ruff"
+        }
+      ]
+    },
+    {
+      "scientific": "Seriolella",
+      "common": "medusafishes",
+      "species": [
+        {
+          "scientific": "Seriolella brama",
+          "common": "Common Warehou"
+        }
+      ]
+    }
+  ]
+}

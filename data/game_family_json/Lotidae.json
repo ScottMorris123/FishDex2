@@ -1,0 +1,38 @@
+{
+  "family": {
+    "scientific": "Lotidae",
+    "common": "Hake Family"
+  },
+  "genera": [
+    {
+      "scientific": "Brosme",
+      "common": "Hakes",
+      "species": [
+        {
+          "scientific": "Brosme brosme",
+          "common": "Cusk"
+        }
+      ]
+    },
+    {
+      "scientific": "Lota",
+      "common": "Hakes",
+      "species": [
+        {
+          "scientific": "Lota lota",
+          "common": "Burbot"
+        }
+      ]
+    },
+    {
+      "scientific": "Molva",
+      "common": "Hakes",
+      "species": [
+        {
+          "scientific": "Molva molva",
+          "common": "Common Ling"
+        }
+      ]
+    }
+  ]
+}

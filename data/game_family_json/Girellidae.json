@@ -1,0 +1,80 @@
+{
+  "family": {
+    "scientific": "Girellidae",
+    "common": "Nibbler Family"
+  },
+  "genera": [
+    {
+      "scientific": "Girella",
+      "common": "Nibblers",
+      "species": [
+        {
+          "scientific": "Girella albostriata",
+          "common": "White-Striped Nibbler"
+        },
+        {
+          "scientific": "Girella cyanea",
+          "common": "Blue Drummer"
+        },
+        {
+          "scientific": "Girella elevata",
+          "common": "Black Drummer"
+        },
+        {
+          "scientific": "Girella fimbriata",
+          "common": "Caramel Drummer"
+        },
+        {
+          "scientific": "Girella laevifrons",
+          "common": "South American Nibbler"
+        },
+        {
+          "scientific": "Girella leonina",
+          "common": "Largescale Nibbler"
+        },
+        {
+          "scientific": "Girella nebulosa",
+          "common": "Rapa Nui Nibbler"
+        },
+        {
+          "scientific": "Girella nigricans",
+          "common": "Opaleye"
+        },
+        {
+          "scientific": "Girella punctata",
+          "common": "Largescale Blackfish"
+        },
+        {
+          "scientific": "Girella simplicidens",
+          "common": "Gulf Opaleye"
+        },
+        {
+          "scientific": "Girella tephraeops",
+          "common": "Rock Blackfish"
+        },
+        {
+          "scientific": "Girella tricuspidata",
+          "common": "Parore"
+        },
+        {
+          "scientific": "Girella zebra",
+          "common": "Zebra Fish"
+        },
+        {
+          "scientific": "Girella zonata",
+          "common": "Zoned Nibbler"
+        }
+      ]
+    },
+    {
+      "scientific": "Graus",
+      "common": "Nibblers",
+      "species": [
+        {
+          "scientific": "Graus nigra",
+          "common": "Mulata"
+        }
+      ]
+    }
+  ]
+}

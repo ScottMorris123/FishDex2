@@ -1,0 +1,56 @@
+{
+  "family": {
+    "scientific": "Diodontidae",
+    "common": "Porcupinefish Family"
+  },
+  "genera": [
+    {
+      "scientific": "Chilomycterus",
+      "common": "Porcupinefishes",
+      "species": [
+        {
+          "scientific": "Chilomycterus antennatus",
+          "common": "Bridled Burrfish"
+        },
+        {
+          "scientific": "Chilomycterus antillarum",
+          "common": "Web Burrfish"
+        },
+        {
+          "scientific": "Chilomycterus mauretanicus",
+          "common": "Guinean Burrfish"
+        },
+        {
+          "scientific": "Chilomycterus reticulatus",
+          "common": "Spotfin Burrfish"
+        },
+        {
+          "scientific": "Chilomycterus schoepfii",
+          "common": "Striped Burrfish"
+        },
+        {
+          "scientific": "Chilomycterus spinosus",
+          "common": "Spiny Burrfish"
+        }
+      ]
+    },
+    {
+      "scientific": "Cyclichthys",
+      "common": "Porcupinefishes",
+      "species": [
+        {
+          "scientific": "Cyclichthys hardenbergi",
+          "common": "Hardenberg's Burrfish"
+        },
+        {
+          "scientific": "Cyclichthys orbicularis",
+          "common": "Birdbeak Burrfish"
+        },
+        {
+          "scientific": "Cyclichthys spilostylus",
+          "common": "Spotbase Burrfish"
+        }
+      ]
+    }
+  ]
+}

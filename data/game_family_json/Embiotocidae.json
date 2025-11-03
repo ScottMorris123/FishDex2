@@ -1,0 +1,102 @@
+{
+  "family": {
+    "scientific": "Embiotocidae",
+    "common": "Surfperch Family"
+  },
+  "genera": [
+    {
+      "scientific": "Amphistichus",
+      "common": "Surfperches",
+      "species": [
+        {
+          "scientific": "Amphistichus argenteus",
+          "common": "Barred Surfperch"
+        },
+        {
+          "scientific": "Amphistichus koelzi",
+          "common": "Calico Surfperch"
+        },
+        {
+          "scientific": "Amphistichus rhodoterus",
+          "common": "Redtail Surfperch"
+        }
+      ]
+    },
+    {
+      "scientific": "Cymatogaster",
+      "common": "Surfperches",
+      "species": [
+        {
+          "scientific": "Cymatogaster aggregata",
+          "common": "Shiner Perch"
+        }
+      ]
+    },
+    {
+      "scientific": "Ditrema",
+      "common": "Surfperches",
+      "species": [
+        {
+          "scientific": "Ditrema temminckii",
+          "common": "Ditrema"
+        }
+      ]
+    },
+    {
+      "scientific": "Embiotoca",
+      "common": "Surfperches",
+      "species": [
+        {
+          "scientific": "Embiotoca jacksoni",
+          "common": "Black Surfperch"
+        },
+        {
+          "scientific": "Embiotoca lateralis",
+          "common": "Striped Surfperch"
+        }
+      ]
+    },
+    {
+      "scientific": "Hyperprosopon",
+      "common": "Surfperches",
+      "species": [
+        {
+          "scientific": "Hyperprosopon argenteum",
+          "common": "Walleye Surfperch"
+        },
+        {
+          "scientific": "Hyperprosopon ellipticum",
+          "common": "Silver Surfperch"
+        }
+      ]
+    },
+    {
+      "scientific": "Phanerodon",
+      "common": "Surfperches",
+      "species": [
+        {
+          "scientific": "Phanerodon atripes",
+          "common": "Sharpnose Surfperch"
+        },
+        {
+          "scientific": "Phanerodon furcatus",
+          "common": "White Surfperch"
+        },
+        {
+          "scientific": "Phanerodon vacca",
+          "common": "Pile Perch"
+        }
+      ]
+    },
+    {
+      "scientific": "Rhacochilus",
+      "common": "Surfperches",
+      "species": [
+        {
+          "scientific": "Rhacochilus toxotes",
+          "common": "Rubberlip Seaperch"
+        }
+      ]
+    }
+  ]
+}

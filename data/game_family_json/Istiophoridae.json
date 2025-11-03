@@ -1,0 +1,82 @@
+{
+  "family": {
+    "scientific": "Istiophoridae",
+    "common": "Billfish Family"
+  },
+  "genera": [
+    {
+      "scientific": "Istiompax",
+      "common": "Marlins",
+      "species": [
+        {
+          "scientific": "Istiompax indica",
+          "common": "Black Marlin"
+        }
+      ]
+    },
+    {
+      "scientific": "Istiophorus",
+      "common": "Sailfishes",
+      "species": [
+        {
+          "scientific": "Istiophorus albicans",
+          "common": "Atlantic Sailfish"
+        },
+        {
+          "scientific": "Istiophorus platypterus",
+          "common": "Indo-Pacific Sailfish"
+        }
+      ]
+    },
+    {
+      "scientific": "Kajikia",
+      "common": "Marlins",
+      "species": [
+        {
+          "scientific": "Kajikia albida",
+          "common": "White Marlin"
+        },
+        {
+          "scientific": "Kajikia audax",
+          "common": "Striped Marlin"
+        }
+      ]
+    },
+    {
+      "scientific": "Makaira",
+      "common": "Marlins",
+      "species": [
+        {
+          "scientific": "Makaira mazara",
+          "common": "Indo-Pacific Blue Marlin"
+        },
+        {
+          "scientific": "Makaira nigricans",
+          "common": "Atlantic Blue Marlin"
+        }
+      ]
+    },
+    {
+      "scientific": "Tetrapturus",
+      "common": "Spearfishes",
+      "species": [
+        {
+          "scientific": "Tetrapturus angustirostris",
+          "common": "Shortbill Spearfish"
+        },
+        {
+          "scientific": "Tetrapturus belone",
+          "common": "Mediterranean Spearfish"
+        },
+        {
+          "scientific": "Tetrapturus georgii",
+          "common": "Roundscale Spearfish"
+        },
+        {
+          "scientific": "Tetrapturus pfluegeri",
+          "common": "Longbill Spearfish"
+        }
+      ]
+    }
+  ]
+}

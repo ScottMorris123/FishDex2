@@ -1,0 +1,38 @@
+{
+  "family": {
+    "scientific": "Psychrolutidae",
+    "common": "Marine Sculpin Family"
+  },
+  "genera": [
+    {
+      "scientific": "Dasycottus",
+      "common": "Marine Sculpins",
+      "species": [
+        {
+          "scientific": "Dasycottus setiger",
+          "common": "Spinyhead Sculpin"
+        }
+      ]
+    },
+    {
+      "scientific": "Malacocottus",
+      "common": "Marine Sculpins",
+      "species": [
+        {
+          "scientific": "Malacocottus kincaidi",
+          "common": "Blackfin Sculpin"
+        }
+      ]
+    },
+    {
+      "scientific": "Psychrolutes",
+      "common": "Marine Sculpins",
+      "species": [
+        {
+          "scientific": "Psychrolutes phrictus",
+          "common": "Blob Sculpin"
+        }
+      ]
+    }
+  ]
+}

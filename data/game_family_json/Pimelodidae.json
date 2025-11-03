@@ -1,0 +1,90 @@
+{
+  "family": {
+    "scientific": "Pimelodidae",
+    "common": "Long-whiskered Catfish Family"
+  },
+  "genera": [
+    {
+      "scientific": "Brachyplatystoma",
+      "common": "Goliath Catfishes",
+      "species": [
+        {
+          "scientific": "Brachyplatystoma capapretum",
+          "common": "Blacktail Piraíba"
+        },
+        {
+          "scientific": "Brachyplatystoma filamentosum",
+          "common": "Kumakuma"
+        },
+        {
+          "scientific": "Brachyplatystoma juruense",
+          "common": "Zebra Catfish"
+        },
+        {
+          "scientific": "Brachyplatystoma platynema",
+          "common": "Slobbering Catfish"
+        },
+        {
+          "scientific": "Brachyplatystoma rousseauxii",
+          "common": "Gilded Catfish"
+        },
+        {
+          "scientific": "Brachyplatystoma tigrinum",
+          "common": "Tigerstriped Catfish"
+        },
+        {
+          "scientific": "Brachyplatystoma vaillantii",
+          "common": "Laulao Catfish"
+        }
+      ]
+    },
+    {
+      "scientific": "Phractocephalus",
+      "common": "Long-whiskered Catfishes",
+      "species": [
+        {
+          "scientific": "Phractocephalus hemioliopterus",
+          "common": "Redtail catfish"
+        }
+      ]
+    },
+    {
+      "scientific": "Pinirampus",
+      "common": "Long-whiskered Catfishes",
+      "species": [
+        {
+          "scientific": "Pinirampus pirinampu",
+          "common": "Flatwhishered Catfish"
+        }
+      ]
+    },
+    {
+      "scientific": "Pseudoplatystoma",
+      "common": "Long-whiskered Catfishes",
+      "species": [
+        {
+          "scientific": "Pseudoplatystoma corruscans",
+          "common": "Spotted Sorubim"
+        },
+        {
+          "scientific": "Pseudoplatystoma fasciatum",
+          "common": "Barred Sorubim"
+        },
+        {
+          "scientific": "Pseudoplatystoma tigrinum",
+          "common": "Tiger Sorubim"
+        }
+      ]
+    },
+    {
+      "scientific": "Zungaro",
+      "common": "Long-whiskered Catfishes",
+      "species": [
+        {
+          "scientific": "Zungaro zungaro",
+          "common": "Gilded Catfish"
+        }
+      ]
+    }
+  ]
+}
