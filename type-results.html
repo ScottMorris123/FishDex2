@@ -4,10 +4,25 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Type results</title>
+  <head>
+    <meta charset="utf-8" />
+    <title>FishDex • Type Results</title>
+    <link rel="manifest" href="./manifest.json" />
+    <meta name="theme-color" content="#0b1620" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="FishDex" />
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/icon-180.png" />
+    <link rel="mask-icon" href="icons/safari-pinned.svg" color="#0b1620" />
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("./sw.js", { scope: "./" }).catch(console.error);
+        });
+      }
+    </script>
   </head>
-  <body>
-    <main style="max-width:1100px;margin:0 auto;padding:12px">
-      <nav class="summary-row" style="gap:10px;align-items:center">
         <a id="backLink" class="chip" href="#">← Back</a>
         <input id="q" type="search" placeholder="Search species…" style="flex:1;min-width:180px" />
         <button id="sortToggle" class="chip" aria-expanded="false" aria-controls="sortPanel">Sort</button>
