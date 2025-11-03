@@ -124,10 +124,8 @@
           const baseDir = location.pathname.replace(/[^/]+$/, '');
           const idxPath = await resolve(['data/index.json','./data/index.json',baseDir+'data/index.json',baseDir+'../data/index.json','/data/index.json']);
           const flagsPath = await resolve(['data/species_habitat_flags.json','./data/species_habitat_flags.json',baseDir+'data/species_habitat_flags.json',baseDir+'../data/species_habitat_flags.json','/data/species_habitat_flags.json']);
-          if (!idxPath && !flagsPath) throw new Error('No data sources found');
-
-          const idata = await fetchJsonSafe(idxPath);
-          const fdata = await fetchJsonSafe(flagsPath);
+          const idata = idxPath ? await fetchJsonSafe(idxPath) : null;
+          const fdata = flagsPath ? await fetchJsonSafe(flagsPath) : null;
           const items = Array.isArray(idata?.items) ? idata.items : (Array.isArray(idata) ? idata : (Array.isArray(idata?.species) ? idata.species : []));
           const getSpecCode = (it)=> String(it.spec_code || it.SpecCode || it.code || it.id || '');
           const codesInIndex = new Set(items.map(getSpecCode).filter(Boolean));
@@ -204,6 +202,87 @@
           if(category && water && mode==='type'){
             document.getElementById('title').textContent = `Browse ${category} • ${water==='fresh'?'Freshwater':water==='salt'?'Saltwater':'Brackish'} types`;
             document.getElementById('intro').textContent = groupParam ? `Pick a subtype in ${groupParam}` : 'Pick a type (genus common name) to see matching species';
+
+            // Try fast pre-built type index first for instant loads
+            let fast = null; try{ fast = await fetchJsonCached(`data/fast_types.${encodeURIComponent(category)}.${encodeURIComponent(water)}.json`, 'fdx-fast'); }catch{}
+
+            if(fast && Array.isArray(fast.types)){
+              const typeMap = new Map();
+              const typeGenera = new Map();
+              for(const t of fast.types){
+                const label = String(t.label||'').trim(); if(!label) continue;
+                const count = Array.isArray(t.codes)? t.codes.length : (t.count||0);
+                if(count<=0) continue;
+                typeMap.set(label, (typeMap.get(label)||0)+count);
+                const gens = Array.isArray(t.genera)? t.genera:[];
+                if(!typeGenera.has(label)) typeGenera.set(label, new Set());
+                for(const g of gens){ if(g) typeGenera.get(label).add(g); }
+              }
+
+              // custom groups rendering using typeMap/typeGenera
+              let groupsCfg=null; try{ groupsCfg = await fetchJsonCached('data/type_groups.json','fdx-cfg'); }catch{}
+              if(groupParam && groupsCfg && Array.isArray(groupsCfg.groups)){
+                const grp = groupsCfg.groups.find(g=>String(g.name||'').toLowerCase()===groupParam.toLowerCase());
+                if(grp){
+                  // Build allowed genera from config (Family -> expand by curated JSON; Genus -> itself; Label -> from typeGenera)
+                  const allowedGenera = new Set(); const asObj=(t)=> (t && typeof t==='object'? t : { Label:String(t||'') });
+                  for(const raw of (Array.isArray(grp.types)? grp.types:[])){
+                    const t=asObj(raw); const fam=t.Family||t.family; const gen=t.Genus||t.genus; const lbl=t.Label;
+                    if(gen){ allowedGenera.add(String(gen).trim()); continue; }
+                    if(fam){ const famUrl = await resolve([`data/game_family_json/${encodeURIComponent(String(fam).trim())}.json`]); if(famUrl){ try{ const famJson=await fetchJsonCached(famUrl,'fdx-fam'); const gens=Array.isArray(famJson?.genera)? famJson.genera:[]; for(const ge of gens){ const gsci=String(ge?.scientific||'').trim(); if(gsci) allowedGenera.add(gsci); } }catch{} } continue; }
+                    if(lbl){ const gs = typeGenera.get(String(lbl)) || new Set(); gs.forEach(g=>allowedGenera.add(g)); }
+                  }
+                  // Build entries limited to allowedGenera using fast file counts
+                  const subCounts = new Map();
+                  for(const t of fast.types){ const label=String(t.label||'').trim(); if(!label) continue; const gens=Array.isArray(t.genera)? t.genera:[]; const match = gens.some(g=>allowedGenera.has(g)); if(!match) continue; const cnt=Array.isArray(t.codes)? t.codes.length : (t.count||0); subCounts.set(label, (subCounts.get(label)||0)+cnt); }
+                  const entries = Array.from(subCounts.entries()).sort((a,b)=> a[0].localeCompare(b[0]));
+                  if(entries.length===0){ grid.innerHTML = `<article class="card"><div class="icon"><img src="icons/fish.svg"/></div><div><div class="group-label">No subtypes found</div><div class="group-description">No matching subtypes for ${grp.name} in this selection.</div></div></article>`; return; }
+                  grid.innerHTML = entries.map(([name,count])=>{
+                    const genera = Array.from(typeGenera.get(name)||[]).sort().join(',');
+                    const href = `type-results.html?category=${encodeURIComponent(category)}&water=${encodeURIComponent(water)}&type=${encodeURIComponent(name)}&genera=${encodeURIComponent(genera)}&group=${encodeURIComponent(grp.name)}`;
+                    return card(href, grp.icon||'icons/fish.svg', name, `${count} species`);
+                  }).join('');
+                  return;
+                }
+              }
+
+              // Top-level with groups
+              const typesArr = Array.from(typeMap.entries());
+              const typesSet = new Set(typesArr.map(([n])=>n));
+              const groupCards=[]; const groupedTypes = new Set();
+              // reuse groupsCfg if already loaded above; otherwise attempt load
+              if(!groupsCfg){ try{ groupsCfg = await fetchJsonCached('data/type_groups.json','fdx-cfg'); }catch{} }
+              if(groupsCfg && Array.isArray(groupsCfg.groups)){
+                for(const g of groupsCfg.groups){
+                  // compute sum based on member types present
+                  // Expand membership by looking up allowedGenera and then mapping back to labels
+                  const allowedGenera=new Set(); const asObj=(t)=> (t && typeof t==='object'? t : { Label:String(t||'') });
+                  for(const raw of (Array.isArray(g.types)? g.types:[])){
+                    const t=asObj(raw); const fam=t.Family||t.family; const gen=t.Genus||t.genus; const lbl=t.Label;
+                    if(gen){ allowedGenera.add(String(gen).trim()); continue; }
+                    if(fam){ const famUrl = await resolve([`data/game_family_json/${encodeURIComponent(String(fam).trim())}.json`]); if(famUrl){ try{ const famJson=await fetchJsonCached(famUrl,'fdx-fam'); const gens=Array.isArray(famJson?.genera)? famJson.genera:[]; for(const ge of gens){ const gsci=String(ge?.scientific||'').trim(); if(gsci) allowedGenera.add(gsci); } }catch{} } continue; }
+                    if(lbl){ const gs = typeGenera.get(String(lbl)) || new Set(); gs.forEach(x=>allowedGenera.add(x)); }
+                  }
+                  const groupTypeCounts = new Map();
+                  for(const t of fast.types){ const label=String(t.label||'').trim(); if(!label) continue; const gens=Array.isArray(t.genera)? t.genera:[]; if(gens.some(g=>allowedGenera.has(g))){ const cnt=Array.isArray(t.codes)? t.codes.length : (t.count||0); groupTypeCounts.set(label, (groupTypeCounts.get(label)||0)+cnt); }
+                  }
+                  const sum = Array.from(groupTypeCounts.values()).reduce((a,b)=>a+b,0);
+                  if(sum<=0) continue;
+                  Array.from(groupTypeCounts.keys()).forEach(t=>groupedTypes.add(t));
+                  const href = `types.html?category=${encodeURIComponent(category)}&water=${encodeURIComponent(water)}&mode=type&group=${encodeURIComponent(g.name||'Group')}`;
+                  groupCards.push(card(href, g.icon||'icons/fish.svg', g.name||'Group', `${sum} species`));
+                }
+              }
+              const ungrouped = typesArr.filter(([n])=> !groupedTypes.has(n)).sort((a,b)=> a[0].localeCompare(b[0]));
+              const ungroupedCards = ungrouped.map(([name,count])=>{
+                const genera = Array.from(typeGenera.get(name) || []).sort().join(',');
+                const href = `type-results.html?category=${encodeURIComponent(category)}&water=${encodeURIComponent(water)}&type=${encodeURIComponent(name)}&genera=${encodeURIComponent(genera)}`;
+                return card(href, 'icons/fish.svg', name, `${count} species`);
+              });
+              const allCards=[...groupCards, ...ungroupedCards];
+              grid.innerHTML = allCards.length? allCards.join('') : `<article class=\"card\"><div class=\"icon\"><img src=\"icons/fish.svg\"/></div><div><div class=\"group-label\">No types found</div><div class=\"group-description\">This selection may not be present in your data yet.</div></div></article>`;
+              return;
+            }
 
             // We will build genus -> common map exclusively from curated family JSONs
             const genusToCommon = new Map();
