@@ -1,0 +1,38 @@
+{
+  "groups": [
+    {
+      "name": "Sharks",
+      "icon": "icons/fish.svg",
+      "types": [
+        { "Family": "Alopiidae" },
+        { "Family": "Brachaeluridae" },
+        { "Family": "Carcharhinidae" },
+        { "Family": "Carchariidae" },
+        { "Family": "Echinorhinidae" },
+        { "Family": "Galeocerdonidae" },
+        { "Family": "Ginglymostomatidae" },
+        { "Family": "Hexanchidae" },
+        { "Family": "Lamnidae" },
+        { "Family": "Pentanchidae" },
+        { "Family": "Pristidae" },
+        { "Family": "Pristiophoridae" },
+        { "Family": "Scyliorhinidae" },
+        { "Family": "Somniosidae" },
+        { "Family": "Sphyrnidae" },
+        { "Family": "Squalidae" },
+        { "Family": "Squatinidae" },
+        { "Family": "Stegostomatidae" },
+        { "Family": "Triakidae" }
+      ]
+    },
+    {
+      "name": "Bass",
+      "icon": "icons/fish.svg",
+      "types": [
+        { "Genus": "Micropterus" },
+        { "Family": "Moronidae" },
+        { "Family": "Lateolabracidae" }
+      ]
+    }
+  ]
+}

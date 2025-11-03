@@ -95,11 +95,12 @@
   const waterParam = (params.get('water')||'').toLowerCase();
   const habitatParam = (params.get('habitat')||'').toLowerCase();
   const typeParam = (params.get('type')||'');
+  const groupParam = (params.get('group')||'');
   const generaParam = (params.get('genera')||'');
   const generaSet = new Set(generaParam.split(',').map(s=>s.trim()).filter(Boolean));
   // Back link prioritizes new hierarchy (category -> water -> habitat)
   const backLink = document.getElementById('backLink');
-  if (typeParam) backLink.href = `types.html?category=${encodeURIComponent(category)}&water=${encodeURIComponent(waterParam)}&mode=type`;
+  if (typeParam) backLink.href = `types.html?category=${encodeURIComponent(category)}&water=${encodeURIComponent(waterParam)}&mode=type${groupParam?`&group=${encodeURIComponent(groupParam)}`:''}`;
   else if (habitatParam) backLink.href = `types.html?category=${encodeURIComponent(category)}&water=${encodeURIComponent(waterParam)}`;
   else if (waterParam) backLink.href = `types.html?category=${encodeURIComponent(category)}`;
   else backLink.href = `types.html?category=${encodeURIComponent(category)}`;
@@ -258,6 +259,37 @@
                 const famUrl = `data/game_family_json/${encodeURIComponent(fam)}.json`;
                 try{ const famJson = await fetchJsonCached(famUrl,'fdx-fam'); const gens=Array.isArray(famJson?.genera)? famJson.genera:[]; for(const ge of gens){ const sp=Array.isArray(ge?.species)? ge.species:[]; for(const spc of sp){ const spsci=String(spc?.scientific||'').trim(); const spcom=String(spc?.common||'').trim(); if(spsci && spcom) curatedSpeciesBySci.set(spsci, spcom); } } }catch{}
               }
+
+              // Fallback: if no curated found (family name mismatch), scan curated manifest but only map needed genera
+              if(curatedSpeciesBySci.size===0){
+                try{
+                  const manifestUrl = 'data/game_family_json/_index.json';
+                  const manifest = await fetchJsonCached(manifestUrl,'fdx-fam');
+                  const files = Array.isArray(manifest?.files)? manifest.files : [];
+                  if(files.length){
+                    const neededGenera = new Set(state.generaSet);
+                    for(const file of files){
+                      if(!neededGenera.size) break;
+                      const famUrl = `data/game_family_json/${file}`;
+                      try{
+                        const famJson = await fetchJsonCached(famUrl,'fdx-fam');
+                        const gens=Array.isArray(famJson?.genera)? famJson.genera:[];
+                        for(const ge of gens){
+                          const gsci=String(ge?.scientific||'').trim();
+                          if(!gsci || !neededGenera.has(gsci)) continue;
+                          const sp=Array.isArray(ge?.species)? ge.species:[];
+                          for(const spc of sp){
+                            const spsci=String(spc?.scientific||'').trim(); const spcom=String(spc?.common||'').trim();
+                            if(spsci && spcom) curatedSpeciesBySci.set(spsci, spcom);
+                          }
+                          neededGenera.delete(gsci);
+                        }
+                      }catch{}
+                    }
+                  }
+                }catch{}
+              }
+
               if(curatedSpeciesBySci.size){ state.all = state.all.map(it=>{ const sci=String(it.scientific_name||'').trim(); const preferred=curatedSpeciesBySci.get(sci); return preferred? { ...it, _commonPreferred: preferred } : it; }); }
             }catch{}
           } else try{
@@ -279,6 +311,35 @@
                 }
               }catch{}
             }
+            // Fallback: scan manifest for any genera seen in data but not yet covered by family-name mapping
+            try{
+              const manifest = await fetchJsonCached('data/game_family_json/_index.json','fdx-fam');
+              const files = Array.isArray(manifest?.files)? manifest.files : [];
+              if(files.length){
+                const presentGenera = new Set();
+                for(const it of state.all){ const s=(it.scientific_name||'').toString(); const g=s.includes(' ')? s.split(/\s+/)[0]:''; if(g) presentGenera.add(g); }
+                const stillNeeded = new Set(Array.from(presentGenera).filter(g=>!genusCommon.has(g)));
+                if(stillNeeded.size){
+                  for(const file of files){
+                    if(!stillNeeded.size) break;
+                    const famUrl = `data/game_family_json/${file}`;
+                    try{
+                      const famJson = await fetchJsonCached(famUrl,'fdx-fam');
+                      const gens = Array.isArray(famJson?.genera)? famJson.genera:[];
+                      for(const ge of gens){
+                        const gsci=String(ge?.scientific||'').trim();
+                        if(!gsci || !stillNeeded.has(gsci)) continue;
+                        const gcom=String(ge?.common||'').trim();
+                        if(gcom && !genusCommon.has(gsci)) genusCommon.set(gsci, gcom);
+                        const sp=Array.isArray(ge?.species)? ge.species:[];
+                        for(const spc of sp){ const spsci=String(spc?.scientific||'').trim(); const spcom=String(spc?.common||'').trim(); if(spsci && spcom) curatedSpeciesBySci.set(spsci, spcom); }
+                        stillNeeded.delete(gsci);
+                      }
+                    }catch{}
+                  }
+                }
+              }
+            }catch{}
             state.genusToCommon = genusCommon;
             // Override species common names with curated values
             state.all = state.all.map(it=>{ const sci=String(it.scientific_name||'').trim(); const preferred=curatedSpeciesBySci.get(sci); return preferred? { ...it, _commonPreferred: preferred } : it; });
