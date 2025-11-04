@@ -2,10 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Type results</title>
-  <head>
-    <meta charset="utf-8" />
     <title>FishDex • Type Results</title>
     <link rel="manifest" href="./manifest.json" />
     <meta name="theme-color" content="#0b1620" />
@@ -15,6 +11,34 @@
     <meta name="apple-mobile-web-app-title" content="FishDex" />
     <link rel="apple-touch-icon" sizes="180x180" href="icons/icon-180.png" />
     <link rel="mask-icon" href="icons/safari-pinned.svg" color="#0b1620" />
+    <style>
+      :root{ --bg-deep:#0a121a; --bg-glass:rgba(255,255,255,0.04); --bg-glass-strong:rgba(255,255,255,0.06); --stroke:rgba(255,255,255,0.1); --text:rgba(255,255,255,0.92); --muted:rgba(255,255,255,0.65); --icon:rgba(160,200,220,0.9); --shadow:0 10px 30px rgba(0,0,0,0.45); }
+      *{ box-sizing:border-box }
+      html,body{ height:100% }
+      body{ margin:0; color:var(--text); font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Helvetica,Arial,sans-serif;
+            background: radial-gradient(1200px 800px at 80% -10%, #143046 0%, rgba(20,48,70,0) 60%) no-repeat,
+                        radial-gradient(1000px 700px at -10% 10%, #0f2738 0%, rgba(15,39,56,0) 60%) no-repeat,
+                        linear-gradient(180deg, #0b1620 0%, #0a1118 100%) no-repeat; background-color:var(--bg-deep);
+            min-height:100svh; overflow-x:hidden; }
+      .frame{ max-width:980px; margin:0 auto; padding:clamp(14px,2.5vw,24px); border-radius:22px; background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02)); border:1px solid var(--stroke); box-shadow:var(--shadow); backdrop-filter: blur(6px); padding-top: calc(2.5vw + env(safe-area-inset-top)); }
+      .topbar{ position:sticky; top:0; z-index:30; display:flex; align-items:center; gap:12px; padding:12px 16px; border-radius:14px; background:var(--bg-glass); border:1px solid var(--stroke); justify-content: space-between; backdrop-filter: blur(8px); }
+      .brand{ font-weight:700; font-size:clamp(18px,4vw,22px); }
+      .back{ display:inline-flex; gap:8px; align-items:center; border:1px solid var(--stroke); background:rgba(255,255,255,0.05); border-radius:10px; padding:8px 12px; color:var(--icon); text-decoration:none }
+      .summary-row{ display:flex; align-items:center; gap:8px; flex-wrap:wrap }
+      .summary-bar{ margin-top:10px; border:1px solid var(--stroke); border-radius:14px; background:linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03)); box-shadow:var(--shadow); padding:10px; }
+      .group-selections{ display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); gap:6px }
+      .chip{ border:1px solid rgba(255,255,255,0.12); background:rgba(255,255,255,0.06); border-radius:999px; padding:6px 10px; font-size:13px; line-height:1; color:var(--text); cursor:pointer }
+      .chip.small{ font-size:11px; padding:5px 8px }
+      .pill{ border:1px solid rgba(255,255,255,0.2); border-radius:999px; padding:4px 8px; font-size:11px; opacity:.9 }
+      .pill button{ all:unset; cursor:pointer; margin-left:6px; opacity:.8 }
+      .card{ border:1px solid var(--stroke); background:linear-gradient(180deg, rgba(255,255,255,0.045), rgba(255,255,255,0.03)); border-radius:16px; padding:6px; display:flex; gap:10px; align-items:center; position:relative }
+      .icon{ width:48px; height:48px; border-radius:12px; display:grid; place-items:center; background:rgba(140,190,220,0.06); border:1px solid var(--stroke); flex:0 0 auto; padding:6px }
+      .icon img{ width:100%; height:100%; object-fit:contain; display:block }
+      .group-label{ font-size:14px; font-weight:600; letter-spacing:.2px }
+      .group-description{ font-size:10px; color:var(--muted) }
+      nav.summary-row{ gap:10px; align-items:center }
+      #q{ flex:1 1 auto; height:clamp(38px,6vw,44px); border-radius:12px; border:1px solid var(--stroke); background:var(--bg-glass-strong); padding:0 12px; color:var(--text); font-size:15px; min-width:180px }
+    </style>
     <script>
       if ("serviceWorker" in navigator) {
         window.addEventListener("load", () => {
@@ -23,10 +47,16 @@
       }
     </script>
   </head>
-        <a id="backLink" class="chip" href="#">← Back</a>
-        <input id="q" type="search" placeholder="Search species…" style="flex:1;min-width:180px" />
+  <body>
+    <main class="frame">
+      <header class="topbar">
+        <a class="back" id="backLink" href="#" aria-label="Back">
+          <img src="icons/home.svg" alt="" width="24" height="24" />
+        </a>
+        <div class="brand">Type results</div>
+        <input id="q" type="search" placeholder="Search species…" />
         <button id="sortToggle" class="chip" aria-expanded="false" aria-controls="sortPanel">Sort</button>
-      </nav>
+      </header>
 
       <section id="summaryBar" class="summary-bar" style="display:none;margin-top:8px">
         <div class="summary-row">
