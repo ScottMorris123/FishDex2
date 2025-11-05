@@ -1,5 +1,6 @@
 // sw.js
-const CACHE = 'fishdex-v3';
+// Bump the cache version whenever static assets or caching strategies change
+const CACHE = 'fishdex-v5';
 // App shell (only files that actually exist)
 const ASSETS = [
   './',                // index.html
@@ -17,7 +18,9 @@ const ASSETS = [
   './icons/gamefish.svg',
   './icons/commercial.svg',
   './icons/baitfish.svg',
-  './icons/pole.svg'
+  './icons/pole.svg',
+  './icons/family.svg',
+  './icons/saltwater.svg'
 ];
 
 self.addEventListener('install', (e) => {
@@ -50,53 +53,49 @@ self.addEventListener('message', (event) => {
 self.addEventListener('fetch', (e) => {
   const req = e.request;
 
-  // Navigation: network-first, then cached page (if precached), then fallback to index.html
+  // Only handle GET; let non-GET pass through
+  if (req.method !== 'GET') return;
+
+  // HTML documents: network-first to avoid serving stale pages
   if (req.mode === 'navigate' || req.destination === 'document') {
     e.respondWith((async () => {
       try {
-        const fresh = await fetch(req);
+        // Force a network fetch that bypasses HTTP caches to avoid stale HTML
+        const fresh = await fetch(new Request(req.url, { cache: 'no-store' }));
         return fresh;
       } catch (err) {
-        // try exact cached page first
         const cachedPage = await caches.match(req, { ignoreSearch: true });
         if (cachedPage) return cachedPage;
-        // final fallback to shell
         return caches.match('./index.html');
       }
     })());
     return;
   }
 
-  if (req.method !== 'GET') return; // let non-GET pass through
-
-  // Images: serve cached or fallback to fish.svg
-  if (req.destination === 'image') {
+  // Stale-while-revalidate for images, styles, and scripts
+  if (['image', 'style', 'script', 'font'].includes(req.destination)) {
     e.respondWith((async () => {
-      const cached = await caches.match(req);
-      if (cached) return cached;
-      try {
-        const res = await fetch(req);
-        const put = res.clone();
-        caches.open(CACHE).then(c => c.put(req, put));
-        return res;
-      } catch {
-        return caches.match('./icons/fish.svg');
-      }
+      const cache = await caches.open(CACHE);
+      const cached = await cache.match(req);
+      const fetchAndUpdate = fetch(req)
+        .then(res => { cache.put(req, res.clone()); return res; })
+        .catch(() => null);
+      // Return cached immediately if present; otherwise wait on network
+      return cached || (await fetchAndUpdate) || (req.destination === 'image' ? (await caches.match('./icons/fish.svg')) : fetch(req));
     })());
     return;
   }
 
-  // Default: cache-first with network fallback, and cache the response for offline reuse
+  // JSON and other GET requests: network-first (no-store) with cache fallback
   e.respondWith((async () => {
-    const cached = await caches.match(req);
-    if (cached) return cached;
+    const cache = await caches.open(CACHE);
     try {
-      const res = await fetch(req);
-      const put = res.clone();
-      caches.open(CACHE).then(c => c.put(req, put));
+      const res = await fetch(new Request(req.url, { cache: 'no-store' }));
+      cache.put(req, res.clone());
       return res;
     } catch (err) {
-      // as a last resort return whatever cached version we might have (even if mismatched by search params)
+      const cached = await cache.match(req);
+      if (cached) return cached;
       const any = await caches.match(req, { ignoreSearch: true });
       if (any) return any;
       throw err;

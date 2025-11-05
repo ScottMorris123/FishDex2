@@ -268,6 +268,49 @@
                 
             }
 
+            .datasect{
+                display: grid;
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                padding-top: 16px;
+                gap: 16px;
+            }
+
+            .dataitem{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                background: linear-gradient(180deg, rgba(255,255,255,0.045), rgba(255,255,255,0.03));
+                border-radius: 16px;
+                
+                aspect-ratio: 1 / 0.5;
+            }
+
+            .dataitem .icon {
+                width: clamp(72px, 15vw, 144px);
+                height: clamp(72px, 15vw, 144px);
+                
+                background: none;
+                border: none;
+                
+                box-sizing: border-box; /* ensures padding doesn’t enlarge the box */
+            }
+
+            .dataitem .number{
+                font-size: 8vw;
+                font-weight:700;
+                letter-spacing:.5px;
+                margin-top: -16px;
+            }
+
+            .dataitem .label{
+                font-size:4vw;
+                font-weight: 400;
+                padding-bottom: 16px;
+                color: var(--muted);
+            }
+
             /* Slightly tighten layout on small phones */
             @media (max-width: 400px) {
                 .search { max-width: 100%; }
@@ -291,8 +334,49 @@
                     </svg>
                 </button>
             </header>
+            
+            <section class="datasect">
 
-            <!-- Top stats: Species Caught + Catches Logged -->
+                <article class="dataitem">
+                    <div class="icon">
+                        <img src="icons/fish.svg" alt="Fish icon">
+                    </div>
+
+                    <div class="number">397</div>
+                    <div class="label">Catches Logged</div>
+                </article>
+
+                <article class="dataitem">
+                    <div class="icon">
+                        <img src="icons/fish.svg" alt="Fish icon">
+                    </div>
+
+                    <div class="number">58</div>
+                    <div class="label">Species Caught</div>
+                </article>
+                
+                <article class="dataitem">
+                    <div class="icon">
+                        <img src="icons/fish.svg" alt="Fish icon">
+                    </div>
+
+                    <div class="number">23</div>
+                    <div class="label">Generas Discovered</div>
+                </article>
+                
+                <article class="dataitem">
+                    <div class="icon">
+                        <img src="icons/fish.svg" alt="Fish icon">
+                    </div>
+
+                    <div class="number">14</div>
+                    <div class="label">Families Discovered</div>
+                </article>
+
+            </section>  
+
+
+            <!-- Top stats -->
             <article class="statsbar">
                 <div class="icon">
                     <img src="icons/fish.svg" alt="Fish icon">
@@ -313,46 +397,50 @@
                     <div class="value">58</div>
                 </div>
             </article>
-            
 
-            <!-- Content: cards grid -->
-            <section class="grid" style="column-gap:5px;">
+            <article class="statsbar">
+                <div>
+                    <div class="label">Total Weight</div>
+                    <div class="value">123.5 lbs</div>
+                </div>
 
-                <article class="browsecard action">
-                    <a href="./yourfishdex.html" style="display:flex;align-items:center;gap:18px;text-decoration:none;color:inherit;width:100%;">
-                        <div class="browsecard icon">
-                                <img src="icons/book.svg" alt="Book icon">
-                            </div>
-                        <div class="stat">
-                            <div class="browsecard-label">Your FishDex</div>
-                            <div class="browsecard-text">View Your Collection</div>
-                        </div>
-                    </a>
-                </article>
+                <div class="divider"></div>
 
-                <article class="browsecard action">
-                    <a href="./encyclopedia.html" style="display:flex;align-items:center;gap:18px;text-decoration:none;color:inherit;width:100%;">
-                        <!-- location pin icon -->
-                        <div class="icon">
-                            <svg viewBox="0 0 24 24" fill="none">
-                                <path d="M12 21s7-7.163 7-11a7 7 0 1 0-14 0c0 3.837 7 11 7 11Z" stroke="currentColor" stroke-width="1.6"/>
-                                <circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="1.6"/>
-                            </svg>
-                        </div>
-                        <div class="stat">
-                            <div class="browsecard-label">Browse FishDex</div>
-                            <div class="browsecard-text">Open Encyclopedia</div>
-                        </div>
-                    </a>
-                </article>
+                <div>
+                    <div class="label">Largest Catch</div>
+                    <div class="value">15.2 lbs</div>
+                </div>
+            </article>
 
-            </section>
+            <article class="statsbar">
+                <div>
+                    <div class="label">Total Length</div>
+                    <div class="value">987.2 in</div>
+                </div>
 
-        <!--
-            <footer>
-            Data sourced from FishBase (v24.07) • © 2025 FishDex
-            </footer>
-        -->
+                <div class="divider"></div>
+
+                <div>
+                    <div class="label">Longest Catch</div>
+                    <div class="value">86.5 in</div>
+                </div>
+            </article>
+
+            <article class="statsbar">
+                <div>
+                    <div class="label">Families Discovered</div>
+                    <div class="value">14</div>
+                </div>
+
+                <div class="divider"></div>
+
+                <div>
+                    <div class="label">Genera Discovered</div>
+                    <div class="value">32</div>
+                </div>
+            </article>
+
+
         </main>
     </body>
 </html>

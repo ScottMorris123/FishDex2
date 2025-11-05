@@ -11,13 +11,8 @@
     <meta name="apple-mobile-web-app-title" content="FishDex" />
     <link rel="apple-touch-icon" sizes="180x180" href="icons/icon-180.png" />
     <link rel="mask-icon" href="icons/safari-pinned.svg" color="#0b1620" />
-    <script>
-      if ("serviceWorker" in navigator) {
-        window.addEventListener("load", () => {
-          navigator.serviceWorker.register("./sw.js", { scope: "./" }).catch(console.error);
-        });
-      }
-    </script>
+    <link rel="stylesheet" href="styles/app.css" />
+    <script src="scripts/pwa.js"></script>
     <style>
       :root { --bg-deep:#0a121a; --stroke:rgba(255,255,255,0.1); --text:rgba(255,255,255,0.92); --muted:rgba(255,255,255,0.7); --shadow:0 10px 30px rgba(0,0,0,.45); }
       * { box-sizing: border-box; }

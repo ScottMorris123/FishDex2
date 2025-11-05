@@ -14,14 +14,9 @@
     <link rel="apple-touch-icon" sizes="180x180" href="icons/icon-180.png" />
     <link rel="mask-icon" href="icons/safari-pinned.svg" color="#0b1620" />
 
-    <script>
-      if ("serviceWorker" in navigator) {
-        window.addEventListener("load", () => {
-          navigator.serviceWorker.register("./sw.js", { scope: "./" }).catch(console.error);
-        });
-      }
-    </script>
-
+    
+    <link rel="stylesheet" href="styles/app.css" />
+    <script src="scripts/pwa.js"></script>
     <style>
       :root {
         --bg-deep: #0a121a;
@@ -382,17 +377,7 @@
 
         <article class="card">
           <div class="icon">
-            <img src="icons/fish.svg" alt="" />
-          </div>
-          <div>
-            <div class="group-label">By Genus</div>
-            <div class="group-description">Browse species by their genus classification</div>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="icon">
-            <img src="icons/fish.svg" alt="" />
+            <img src="icons/family.svg" alt="" />
           </div>
           <div>
             <div class="group-label">By Family</div>
@@ -402,10 +387,7 @@
 
       </section>
 
-  <!-- Recently viewed -->
-  <section id="recentRow" class="group-selections" style="margin-top:16px; display:none"></section>
-
-            <!-- Subcategory cards (visible when a category like Game is active) -->
+    <!-- Subcategory cards (visible when a category like Game is active) -->
       <section id="subcatCards" class="group-selections" style="margin-top:8px; display:none">
         <article class="card" data-sub="all" tabindex="0" role="button" aria-label="All in category">
           <div class="icon"><img src="icons/fish.svg" alt="" /></div>
@@ -452,35 +434,37 @@
 
 
       <script>
-        // ==== UI toggles (unchanged) ====
-  const toggle = document.getElementById('filterToggle');
-  const panel = document.getElementById('filtersPanel');
+        // =============================================================
+        // UI references and toggles
+        // =============================================================
+        const filterToggle = document.getElementById('filterToggle');
+        const filtersPanel = document.getElementById('filtersPanel');
         const form = document.getElementById('filterForm');
         const apply = document.getElementById('applyFilters');
         const clear = document.getElementById('clearFilters');
         const qInput = document.getElementById('q');
-  const backBtn = document.getElementById('backToGroups');
-  const sortToggle = document.getElementById('sortToggle');
-  const sortPanel = document.getElementById('sortPanel');
-  const sortForm = document.getElementById('sortForm');
-  const applySortBtn = document.getElementById('applySort');
+        const backBtn = document.getElementById('backToGroups');
+        const sortToggle = document.getElementById('sortToggle');
+        const sortPanel = document.getElementById('sortPanel');
+        const sortForm = document.getElementById('sortForm');
+        const applySortBtn = document.getElementById('applySort');
 
         function openPanel() {
-          panel.hidden = false;
-          requestAnimationFrame(() => panel.classList.add('open'));
-          toggle.setAttribute('aria-expanded', 'true');
+          filtersPanel.hidden = false;
+          requestAnimationFrame(() => filtersPanel.classList.add('open'));
+          filterToggle.setAttribute('aria-expanded', 'true');
         }
         function closePanel() {
-          panel.classList.remove('open');
-          toggle.setAttribute('aria-expanded', 'false');
-          setTimeout(() => (panel.hidden = true), 280);
+          filtersPanel.classList.remove('open');
+          filterToggle.setAttribute('aria-expanded', 'false');
+          setTimeout(() => (filtersPanel.hidden = true), 280);
         }
         function togglePanel() {
-          toggle.getAttribute('aria-expanded') === 'true' ? closePanel() : openPanel();
+          filterToggle.getAttribute('aria-expanded') === 'true' ? closePanel() : openPanel();
         }
-        toggle.addEventListener('click', togglePanel);
+        filterToggle.addEventListener('click', togglePanel);
         document.addEventListener('keydown', (e) => {
-          if (e.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') closePanel();
+          if (e.key === 'Escape' && filterToggle.getAttribute('aria-expanded') === 'true') closePanel();
         });
 
         // Sort panel toggles
@@ -502,9 +486,10 @@
           if (e.key === 'Escape' && sortToggle.getAttribute('aria-expanded') === 'true') closeSortPanel();
         });
 
-        // ==== Data + rendering ====
-        const INDEX_URL = './data/index.json';            // built by your script
-        const IMAGE_FALLBACK = 'icons/fish.svg';
+  // =============================================================
+  // Data + rendering
+  // =============================================================
+  const IMAGE_FALLBACK = 'icons/fish.svg';
 
   const resultsEl = document.getElementById('results');
   const groupsEl = document.getElementById('groups');
@@ -517,10 +502,10 @@
   const quickWaterEl = document.getElementById('quickWater');
   const subcatsEl = document.getElementById('subcats'); // legacy chips row (kept hidden)
   const subcatCardsEl = document.getElementById('subcatCards');
-  const recentRow = document.getElementById('recentRow');
   const usageFieldset = document.getElementById('usageFieldset');
 
-        const PAGE_SIZE = 48; // how many cards per “page”
+  // Paging and state
+  const PAGE_SIZE = 48; // how many cards per “page”
         const state = {
           all: [],
           filtered: [],
@@ -658,7 +643,6 @@
         }
 
         function sortFiltered() {
-          const get = (item, path) => (item && item[path]) || '';
           const collator = new Intl.Collator(undefined, { sensitivity: 'base' });
           const nameKey = (it) => (it.common_name || it.scientific_name || '').toString();
           const sciKey = (it) => (it.scientific_name || it.common_name || '').toString();
@@ -1064,30 +1048,7 @@
           updateView();
         });
 
-        // Recently viewed row
-        function loadRecent() {
-          try {
-            const raw = localStorage.getItem('recentSpecies');
-            const arr = raw ? JSON.parse(raw) : [];
-            if (!Array.isArray(arr) || arr.length === 0) { recentRow.style.display='none'; return; }
-            recentRow.style.display = '';
-            const html = arr.slice(0, 8).map(r => {
-              const href = `species.html?code=${encodeURIComponent(r.code)}`;
-              const img = r.img || 'icons/fish.svg';
-              return `
-                <article class="card" style="cursor:pointer">
-                  <div class="icon"><img src="${img}" alt="" onerror="this.src='icons/fish.svg'"/></div>
-                  <div>
-                    <div class="group-label" style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${r.common || '—'}</div>
-                    <div class="group-description"><em>${r.scientific || ''}</em></div>
-                  </div>
-                  <a href="${href}" style="position:absolute;inset:0" aria-hidden="true"></a>
-                </article>
-              `;
-            }).join('');
-            recentRow.innerHTML = html;
-          } catch { recentRow.style.display='none'; }
-        }
+        // Recently viewed removed
 
         // URL state (basic): read on load and write on changes
         function readURLState(){
@@ -1128,9 +1089,8 @@
         const origUpdate = updateView;
         updateView = function(){ origUpdate(); renderSummary(); writeStateDebounced(); };
 
-        // Initialize
-        readURLState();
-        loadRecent();
+  // Initialize
+  readURLState();
       </script>
 
     </main>

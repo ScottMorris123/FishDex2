@@ -13,14 +13,8 @@
     <meta name="apple-mobile-web-app-title" content="FishDex" />
     <link rel="apple-touch-icon" sizes="180x180" href="icons/icon-180.png" />
     <link rel="mask-icon" href="icons/safari-pinned.svg" color="#0b1620" />
-
-    <script>
-      if ("serviceWorker" in navigator) {
-        window.addEventListener("load", () => {
-          navigator.serviceWorker.register("./sw.js", { scope: "./" }).catch(console.error);
-        });
-      }
-    </script>
+    <link rel="stylesheet" href="styles/app.css" />
+    <script src="scripts/pwa.js"></script>
 
     <style>
       :root {
@@ -146,6 +140,18 @@
 
         // Helpers copied to match encyclopedia behavior
         const WATER_SYNONYM = { fresh: 'fresh', freshwater: 'fresh', salt: 'salt', saltwater: 'salt', brackish: 'brackish' };
+        // Safe JSON helpers + tiny cache for curated family lookups
+        async function fetchJsonSafe(url){
+          if(!url) return null;
+          try{ const res=await fetch(url,{cache:'no-store'}); if(!res.ok) return null; const txt=await res.text(); if(!txt||!txt.trim()) return null; try{ return JSON.parse(txt); }catch{ return null; } }catch{ return null; }
+        }
+        async function fetchJsonCached(url, keyPrefix='fdx'){
+          if(!url) return null; const key = `${keyPrefix}:${url}`;
+          try{ const raw=sessionStorage.getItem(key); if(raw){ try{ return JSON.parse(raw); }catch{} } }catch{}
+          const data = await fetchJsonSafe(url);
+          try{ sessionStorage.setItem(key, JSON.stringify(data)); }catch{}
+          return data;
+        }
         function toArrayLower(val){
           if (val == null) return [];
           if (Array.isArray(val)) return val.map(v => String(v).toLowerCase().trim()).filter(Boolean);
@@ -236,8 +242,30 @@
           box.appendChild(k); box.appendChild(v); parent.appendChild(box);
         }
 
+        // Curated species-name override using family JSONs (same source used in lists)
+        async function applyCuratedCommon(item){
+          try{
+            const sci = String(item.scientific_name || item.ScientificName || '').trim();
+            if(!sci) return item;
+            const manifestUrl = 'data/game_family_json/_index.json';
+            const manifest = await fetchJsonCached(manifestUrl,'fdx-fam');
+            const files = Array.isArray(manifest?.files) ? manifest.files : [];
+            for(const file of files){
+              const famUrl = `data/game_family_json/${file}`;
+              const famJson = await fetchJsonCached(famUrl,'fdx-fam');
+              const gens = Array.isArray(famJson?.genera) ? famJson.genera : [];
+              for(const ge of gens){
+                const sp = Array.isArray(ge?.species) ? ge.species : [];
+                const hit = sp.find(s=> String(s?.scientific||'').trim().toLowerCase() === sci.toLowerCase());
+                if(hit && hit.common){ item._commonPreferred = String(hit.common).trim(); return item; }
+              }
+            }
+          }catch{}
+          return item;
+        }
+
         function render(item){
-          const common = item.common_name || item.CommonName || '';
+          const common = item._commonPreferred || item.common_name || item.CommonName || '';
           const sci = item.scientific_name || item.ScientificName || '';
           const code = item.spec_code || item.SpecCode || '';
           const img = item.image_url || item.ImageURL || IMAGE_FALLBACK;
@@ -309,6 +337,8 @@
                 if (found) item = { ...found, ...item };
               } catch {}
             }
+            // Apply curated species-name override (ensures Milk shark etc. display correctly)
+            try { item = await applyCuratedCommon(item); } catch {}
             render(item);
           }catch(err){
             console.error(err);

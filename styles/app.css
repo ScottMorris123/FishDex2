@@ -1,0 +1,98 @@
+/* Shared FishDex styles: variables, layout frame, topbar, and common UI atoms */
+:root {
+  --bg-deep:#0a121a;
+  --bg-glass:rgba(255,255,255,0.04);
+  --bg-glass-strong:rgba(255,255,255,0.06);
+  --stroke:rgba(255,255,255,0.1);
+  --text:rgba(255,255,255,0.92);
+  --muted:rgba(255,255,255,0.7);
+  --icon:rgba(160,200,220,0.9);
+  --shadow:0 10px 30px rgba(0,0,0,0.45);
+}
+
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+
+/* Glass frame container used throughout pages */
+.frame {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: clamp(14px, 2.5vw, 24px);
+  border-radius: 22px;
+  border: 1px solid var(--stroke);
+  background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(6px);
+  padding-top: calc(2.5vw + env(safe-area-inset-top));
+}
+
+/* Standard topbar with brand + actions */
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border-radius: 14px;
+  background: var(--bg-glass);
+  border: 1px solid var(--stroke);
+  justify-content: space-between;
+  backdrop-filter: blur(8px);
+}
+
+.brand { font-weight: 700; font-size: clamp(18px, 4vw, 22px); }
+
+/* Common atoms */
+.back {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  border: 1px solid var(--stroke);
+  background: rgba(255,255,255,0.05);
+  border-radius: 10px;
+  padding: 8px 12px;
+  color: var(--icon);
+  text-decoration: none;
+}
+
+.chip {
+  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(255,255,255,0.06);
+  border-radius: 999px;
+  padding: 6px 10px;
+  font-size: 13px;
+  line-height: 1;
+  color: var(--text);
+  cursor: pointer;
+}
+.chip:hover { background: rgba(255,255,255,0.09); }
+
+/* Summary bar and pills */
+.summary-bar {
+  margin-top: 10px;
+  border: 1px solid var(--stroke);
+  border-radius: 14px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03));
+  box-shadow: var(--shadow);
+  padding: 10px;
+}
+.summary-row { display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
+.pill { border:1px solid rgba(255,255,255,0.2); border-radius:999px; padding:4px 8px; font-size:11px; opacity:.9 }
+.pill button { all:unset; cursor:pointer; margin-left:6px; opacity:.8 }
+
+/* Cards and simple grids */
+.group-selections { display:grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap:6px; }
+.card {
+  border: 1px solid var(--stroke);
+  background: linear-gradient(180deg, rgba(255,255,255,0.045), rgba(255,255,255,0.03));
+  border-radius: 16px;
+  padding: 6px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  position: relative;
+}
+.group-label { font-size: 14px; font-weight: 600; letter-spacing: .2px; }
+.group-description { font-size: 10px; color: var(--muted); }

@@ -33,6 +33,29 @@
         { "Family": "Moronidae" },
         { "Family": "Lateolabracidae" }
       ]
+    },
+    {
+        "name": "Catfish",
+        "icon": "icons/fish.svg",
+        "types": [
+          { "Family": "Ictaluridae" },
+          { "Family": "Ailiidae" },
+          { "Family": "Ariidae" },
+          { "Family": "Auchenipteridae" },
+          { "Family": "Bagridae" },
+          { "Family": "Clariidae" },
+          { "Family": "Claroteidae" },
+          { "Family": "Diplomystidae" },
+          { "Family": "Ictaluridae" },
+          { "Family": "Malapteruridae" },
+          { "Family": "Mochokidae" },
+          { "Family": "Pangasiidae" },
+          { "Family": "Pimelodidae" },
+          { "Family": "Plotosidae" },
+          { "Family": "Schilbeidae" },
+          { "Family": "Siluridae" },
+          { "Family": "Sisoridae" }
+        ]
     }
   ]
 }
