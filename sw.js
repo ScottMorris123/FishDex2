@@ -1,6 +1,6 @@
 // sw.js
 // Bump the cache version whenever static assets or caching strategies change
-const CACHE = 'fishdex-v5';
+const CACHE = 'fishdex-v6';
 // App shell (only files that actually exist)
 const ASSETS = [
   './',                // index.html
@@ -38,15 +38,27 @@ self.addEventListener('install', (e) => {
 
 self.addEventListener('activate', (e) => {
   e.waitUntil(
-    caches.keys()
-      .then(keys => Promise.all(keys.filter(k => k !== CACHE).map(k => caches.delete(k))))
-      .then(() => self.clients.claim())
+    (async () => {
+      // Enable Navigation Preload for faster startup
+      try { await self.registration.navigationPreload?.enable(); } catch {}
+
+      // Clear out any old caches not matching our current name
+      const keys = await caches.keys();
+      await Promise.all(keys.filter(k => k !== CACHE).map(k => caches.delete(k)));
+      await self.clients.claim();
+    })()
   );
 });
 
 // Allow manual immediate activation after update
 self.addEventListener('message', (event) => {
   if (event.data === 'skipWaiting') self.skipWaiting();
+  if (event.data === 'purgeCaches') {
+    event.waitUntil((async () => {
+      const keys = await caches.keys();
+      await Promise.all(keys.map(k => caches.delete(k)));
+    })());
+  }
 });
 
 // Network-first for navigation; cache-first for static assets
@@ -60,6 +72,9 @@ self.addEventListener('fetch', (e) => {
   if (req.mode === 'navigate' || req.destination === 'document') {
     e.respondWith((async () => {
       try {
+        // Prefer navigation preload response if available, otherwise fetch fresh
+        const preload = await e.preloadResponse;
+        if (preload) return preload;
         // Force a network fetch that bypasses HTTP caches to avoid stale HTML
         const fresh = await fetch(new Request(req.url, { cache: 'no-store' }));
         return fresh;
@@ -67,6 +82,24 @@ self.addEventListener('fetch', (e) => {
         const cachedPage = await caches.match(req, { ignoreSearch: true });
         if (cachedPage) return cachedPage;
         return caches.match('./index.html');
+      }
+    })());
+    return;
+  }
+
+  // Data API/JSON: always try network without caching to avoid stale data
+  // Apply to anything under /data/ path
+  if (req.url.includes('/data/')) {
+    e.respondWith((async () => {
+      try {
+        return await fetch(new Request(req.url, { cache: 'no-store' }));
+      } catch (err) {
+        // If offline, fall back to any previously cached copy if present
+        const cached = await caches.match(req);
+        if (cached) return cached;
+        const any = await caches.match(req, { ignoreSearch: true });
+        if (any) return any;
+        throw err;
       }
     })());
     return;
@@ -86,7 +119,7 @@ self.addEventListener('fetch', (e) => {
     return;
   }
 
-  // JSON and other GET requests: network-first (no-store) with cache fallback
+  // Other GET requests: network-first (no-store) with cache fallback
   e.respondWith((async () => {
     const cache = await caches.open(CACHE);
     try {
