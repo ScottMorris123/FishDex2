@@ -53,6 +53,9 @@
   <section id="grid" class="group-selections"></section>
 
       <script>
+        // Version for cache-busting JSON requests and storage keys
+        const DATA_VERSION = '2025-11-06';
+        const withVer = (u)=>{ try{ const url=new URL(u, location.href); url.searchParams.set('v', DATA_VERSION); return url.toString(); }catch{ return u; } };
         const params = new URL(location.href).searchParams;
         const cat = (params.get('category') || '').toLowerCase();
         const label = cat ? cat.charAt(0).toUpperCase()+cat.slice(1) : 'Category';
@@ -87,7 +90,7 @@
         async function resolve(pathCandidates){
           for(const p of pathCandidates){
             try{
-              const res = await fetch(p,{method:'GET', cache:'no-store'});
+              const res = await fetch(withVer(p),{method:'GET', cache:'no-store'});
               if(res.ok) return p;
             }catch{}
           }
@@ -98,7 +101,7 @@
         async function fetchJsonSafe(url){
           if(!url) return null;
           try{
-            const res = await fetch(url, { cache:'no-store' });
+            const res = await fetch(withVer(url), { cache:'no-store' });
             if(!res.ok) return null;
             const text = await res.text();
             if(!text || !text.trim()) return null;
@@ -108,7 +111,7 @@
 
         // sessionStorage-backed cache for small JSONs (taxonomy/family). Falls back to network on quota errors.
         async function fetchJsonCached(url, keyPrefix='fdx'){
-          if(!url) return null; const key=`${keyPrefix}:${url}`;
+          if(!url) return null; const key=`${keyPrefix}:${DATA_VERSION}:${url}`;
           try{ const raw=sessionStorage.getItem(key); if(raw){ try{ return JSON.parse(raw); }catch{} } }catch{}
           const data = await fetchJsonSafe(url);
           try{ sessionStorage.setItem(key, JSON.stringify(data)); }catch{}

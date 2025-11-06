@@ -45,7 +45,19 @@
 
         // Optional: allow manual cache purge by visiting with #purge in URL
         if (location.hash === '#purge') {
-          try { reg.active?.postMessage('purgeCaches'); } catch {}
+          try {
+            // Clear web storages that might hold stale JSON
+            try { sessionStorage.clear(); } catch {}
+            try { localStorage.clear(); } catch {}
+            // Ask SW to delete all caches
+            reg.active?.postMessage('purgeCaches');
+            // Also unregister any other service workers bound to this scope
+            try { const regs = await navigator.serviceWorker.getRegistrations(); regs.forEach(r => r.unregister()); } catch {}
+          } finally {
+            // Remove the hash and hard-reload once
+            try { history.replaceState(null, '', location.pathname + location.search); } catch {}
+            setTimeout(() => location.reload(), 80);
+          }
         }
       } catch (e) {
         console.warn('[PWA] service worker registration failed', e);
