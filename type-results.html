@@ -274,8 +274,13 @@
               const curatedSpeciesBySci = new Map();
               try{
                 const manifestUrl = 'data/game_family_json/_index.json';
-                const manifest = await fetchJsonCached(manifestUrl,'fdx-fam');
-                const files = Array.isArray(manifest?.files)? manifest.files : [];
+                  let manifest = await fetchJsonCached(manifestUrl,'fdx-fam');
+                  let files = Array.isArray(manifest?.files)? manifest.files : [];
+                  // Fallback: some hosts (GitHub Pages with Jekyll) hide underscore files; try index.json
+                  if(!files.length){
+                    const alt = await fetchJsonCached('data/game_family_json/index.json','fdx-fam');
+                    if(Array.isArray(alt?.files)) files = alt.files;
+                  }
                 if(files.length){
                   const neededGenera = new Set(state.generaSet);
                   for(const file of files){
@@ -340,8 +345,12 @@
               }catch{}
             }
             try{
-              const manifest = await fetchJsonCached('data/game_family_json/_index.json','fdx-fam');
-              const files = Array.isArray(manifest?.files)? manifest.files : [];
+                let manifest = await fetchJsonCached('data/game_family_json/_index.json','fdx-fam');
+                let files = Array.isArray(manifest?.files)? manifest.files : [];
+                if(!files.length){
+                  const alt = await fetchJsonCached('data/game_family_json/index.json','fdx-fam');
+                  if(Array.isArray(alt?.files)) files = alt.files;
+                }
               if(files.length){
                 const presentGenera = new Set();
                 for(const it of state.all){ const s=(it.scientific_name||'').toString(); const g=s.includes(' ')? s.split(/\s+/)[0]:''; if(g) presentGenera.add(g); }

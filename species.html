@@ -250,8 +250,12 @@
             // Try manifest-driven scan first
             try{
               const manifestUrl = 'data/game_family_json/_index.json';
-              const manifest = await fetchJsonCached(manifestUrl,'fdx-fam');
-              const files = Array.isArray(manifest?.files) ? manifest.files : [];
+              let manifest = await fetchJsonCached(manifestUrl,'fdx-fam');
+              let files = Array.isArray(manifest?.files) ? manifest.files : [];
+              if(!files.length){
+                const alt = await fetchJsonCached('data/game_family_json/index.json','fdx-fam');
+                if(Array.isArray(alt?.files)) files = alt.files;
+              }
               for(const file of files){
                 const famUrl = `data/game_family_json/${file}`;
                 const famJson = await fetchJsonCached(famUrl,'fdx-fam');
