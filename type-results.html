@@ -80,6 +80,15 @@
       </section>
 
       <script>
+    // Bump to force clients to fetch fresh JSON (in addition to SW rules)
+    const DATA_VERSION = '2025-11-06';
+    const withVer = (u)=>{
+      try{
+        const url = new URL(u, location.href);
+        url.searchParams.set('v', DATA_VERSION);
+        return url.toString();
+      }catch{ return u; }
+    };
     const params = new URL(location.href).searchParams;
   const category = (params.get('category')||'').toLowerCase();
   const waterParam = (params.get('water')||'').toLowerCase();
@@ -196,21 +205,21 @@
   async function resolveIndexPath(){
           const baseDir = location.pathname.replace(/[^/]+$/, '');
           const candidates = ['data/index.json','./data/index.json',baseDir+'data/index.json',baseDir+'../data/index.json',baseDir+'../../data/index.json','/data/index.json'];
-          for (const c of candidates){ try{ const res=await fetch(c,{method:'GET',cache:'no-store'}); if(res.ok) return c; }catch{} }
+          for (const c of candidates){ try{ const res=await fetch(withVer(c),{method:'GET',cache:'no-store'}); if(res.ok) return c; }catch{} }
           throw new Error('Could not resolve /data/index.json');
         }
 
         async function resolveFlagsPath(){
           const baseDir = location.pathname.replace(/[^/]+$/, '');
           const candidates = ['data/species_habitat_flags.json','./data/species_habitat_flags.json',baseDir+'data/species_habitat_flags.json',baseDir+'../data/species_habitat_flags.json','/data/species_habitat_flags.json'];
-          for (const c of candidates){ try{ const res=await fetch(c,{method:'GET',cache:'no-store'}); if(res.ok) return c; }catch{} }
+          for (const c of candidates){ try{ const res=await fetch(withVer(c),{method:'GET',cache:'no-store'}); if(res.ok) return c; }catch{} }
           return null;
         }
 
         // Safe JSON loader that never throws; returns null on empty/malformed content
         async function fetchJsonSafe(url){
           if(!url) return null;
-          try{ const res=await fetch(url,{cache:'no-store'}); if(!res.ok) return null; const txt=await res.text(); if(!txt||!txt.trim()) return null; try{ return JSON.parse(txt); }catch{ return null; } }catch{ return null; }
+          try{ const res=await fetch(withVer(url),{cache:'no-store'}); if(!res.ok) return null; const txt=await res.text(); if(!txt||!txt.trim()) return null; try{ return JSON.parse(txt); }catch{ return null; } }catch{ return null; }
         }
         async function fetchJsonCached(url, keyPrefix='fdx'){
           if(!url) return null; const key=`${keyPrefix}:${url}`;
