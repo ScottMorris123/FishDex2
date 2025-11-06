@@ -40,6 +40,25 @@
       .group-description{ font-size:10px; color:var(--muted) }
       nav.summary-row{ gap:10px; align-items:center }
       #q{ flex:1 1 auto; height:clamp(38px,6vw,44px); border-radius:12px; border:1px solid var(--stroke); background:var(--bg-glass-strong); padding:0 12px; color:var(--text); font-size:15px; min-width:180px }
+      /* Visually hidden accessible label */
+      .sr-only{ position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; border:0; }
+      /* Progressive rendering hint for large lists */
+      .card{ content-visibility:auto; contain-intrinsic-size:80px; }
+      @media (max-width:640px){
+        .topbar{ flex-wrap:wrap; gap:10px; padding:10px 12px; }
+        .topbar .brand{ flex:1 0 60%; order:1; }
+        .topbar .back{ order:0; }
+        #q{ flex:1 0 100%; order:3; min-width:0; width:100%; }
+        #sortToggle{ order:4; }
+        .group-selections{ grid-template-columns:1fr; }
+        .card{ display:grid; grid-template-columns:40px 1fr; padding:10px 12px; }
+        .card .icon{ width:40px; height:40px; padding:4px; }
+  .group-label{ white-space:normal; display:-webkit-box; -webkit-line-clamp:2; line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+        #loadMore{ width:100%; padding:12px 0; font-size:15px; }
+        .summary-bar{ padding:8px 10px; overflow-x:auto; }
+        .summary-bar .summary-row{ flex-wrap:nowrap; gap:8px; }
+        .pill{ flex:0 0 auto; }
+      }
     </style>
   </head>
   <body>
@@ -49,13 +68,14 @@
           <img src="icons/home.svg" alt="" width="24" height="24" />
         </a>
         <div class="brand">Type results</div>
-        <input id="q" type="search" placeholder="Search species…" />
+  <label for="q" class="sr-only">Search species</label>
+  <input id="q" type="search" placeholder="Search species…" />
         <button id="sortToggle" class="chip" aria-expanded="false" aria-controls="sortPanel">Sort</button>
       </header>
 
       <section id="summaryBar" class="summary-bar" style="display:none;margin-top:8px">
         <div class="summary-row">
-          <div id="resultCount" class="pill">0 results</div>
+          <div id="resultCount" class="pill" aria-live="polite">0 results</div>
           <div id="activeChips" class="summary-row"></div>
           <div class="summary-spacer"></div>
           <button type="button" id="clearAll" class="chip small" style="display:none">Clear all</button>
