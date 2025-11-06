@@ -144,12 +144,12 @@
         function getUsageList(item){ const c=[item.importances,item.importance,item.usages,item.usage,item.interests,item.interest]; const raw=c.find(v=>v!=null); const arr=toArrayLower(raw); return Array.from(new Set(arr.map(x=>CANON.get(x)||x))); }
         function tokenString(item){ const waters=getWaterList(item).join(' '); return [item.scientific_name||'', item.common_name||'', getFamilyName(item)||'', getGenusName(item)||'', waters].join(' ').toLowerCase(); }
 
-        function cardTemplate(item){ const code=getSpecCode(item); const href=`species.html?code=${encodeURIComponent(code)}`; const img=item.image_url||'icons/fish.svg'; const waters=getWaterList(item); const badges=waters.map(w=>`<span class=\"chip\" style=\"font-size:11px\">${w}</span>`).join(''); const sci=(item.scientific_name||''); const displayCommon = item._commonPreferred || sci || '—'; const showSci = sci && sci!==displayCommon; return `
+        function cardTemplate(item){ const code=getSpecCode(item); const href=`species.html?code=${encodeURIComponent(code)}`; const img=item.image_url||'icons/fish.svg'; const waters=getWaterList(item); const badges=waters.map(w=>`<span class=\"chip\" style=\"font-size:11px\">${w}</span>`).join(''); const displayCommon = item._commonPreferred || item.common_name || '—'; return `
           <article class="card" style="cursor:pointer" data-code="${code}" tabindex="0" role="link" aria-label="${item.common_name||item.scientific_name}">
             <div class="icon"><img src="${img}" alt="" loading="lazy" onerror="this.src='icons/fish.svg'"/></div>
             <div style="min-width:0;">
               <div class="group-label" style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${displayCommon}</div>
-              <div class="group-description">${showSci?`<em>${sci}</em>`:''}</div>
+              <div class="group-description"><em>${item.scientific_name||''}</em></div>
               <div style="display:flex;gap:6px;margin-top:6px;flex-wrap:wrap">${badges}</div>
             </div>
             <a href="${href}" style="position:absolute;inset:0" aria-hidden="true"></a>
