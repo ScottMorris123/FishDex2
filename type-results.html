@@ -295,6 +295,29 @@
                   }
                 }
               }catch{}
+              // Fallback when manifest is missing on host: load curated family files directly from families present in results
+              if(curatedSpeciesBySci.size===0){
+                try{
+                  const famSet = new Set(state.all.map(getFamilyName).filter(Boolean));
+                  for(const fam of famSet){
+                    const famUrl = `data/game_family_json/${encodeURIComponent(fam)}.json`;
+                    try{
+                      const famJson = await fetchJsonCached(famUrl,'fdx-fam');
+                      const gens = Array.isArray(famJson?.genera)? famJson.genera:[];
+                      for(const ge of gens){
+                        const gsci = String(ge?.scientific||'').trim();
+                        if(!gsci || !state.generaSet.has(gsci)) continue;
+                        const sp = Array.isArray(ge?.species)? ge.species:[];
+                        for(const spc of sp){
+                          const spsci=String(spc?.scientific||'').trim();
+                          const spcom=String(spc?.common||'').trim();
+                          if(spsci && spcom) curatedSpeciesBySci.set(spsci, spcom);
+                        }
+                      }
+                    }catch{}
+                  }
+                }catch{}
+              }
               if(curatedSpeciesBySci.size){ state.all = state.all.map(it=>{ const sci=String(it.scientific_name||'').trim(); const preferred=curatedSpeciesBySci.get(sci); return preferred? { ...it, _commonPreferred: preferred } : it; }); }
             }catch{}
           } else try{

@@ -247,19 +247,36 @@
           try{
             const sci = String(item.scientific_name || item.ScientificName || '').trim();
             if(!sci) return item;
-            const manifestUrl = 'data/game_family_json/_index.json';
-            const manifest = await fetchJsonCached(manifestUrl,'fdx-fam');
-            const files = Array.isArray(manifest?.files) ? manifest.files : [];
-            for(const file of files){
-              const famUrl = `data/game_family_json/${file}`;
-              const famJson = await fetchJsonCached(famUrl,'fdx-fam');
-              const gens = Array.isArray(famJson?.genera) ? famJson.genera : [];
-              for(const ge of gens){
-                const sp = Array.isArray(ge?.species) ? ge.species : [];
-                const hit = sp.find(s=> String(s?.scientific||'').trim().toLowerCase() === sci.toLowerCase());
-                if(hit && hit.common){ item._commonPreferred = String(hit.common).trim(); return item; }
+            // Try manifest-driven scan first
+            try{
+              const manifestUrl = 'data/game_family_json/_index.json';
+              const manifest = await fetchJsonCached(manifestUrl,'fdx-fam');
+              const files = Array.isArray(manifest?.files) ? manifest.files : [];
+              for(const file of files){
+                const famUrl = `data/game_family_json/${file}`;
+                const famJson = await fetchJsonCached(famUrl,'fdx-fam');
+                const gens = Array.isArray(famJson?.genera) ? famJson.genera : [];
+                for(const ge of gens){
+                  const sp = Array.isArray(ge?.species) ? ge.species : [];
+                  const hit = sp.find(s=> String(s?.scientific||'').trim().toLowerCase() === sci.toLowerCase());
+                  if(hit && hit.common){ item._commonPreferred = String(hit.common).trim(); return item; }
+                }
               }
-            }
+            }catch{}
+            // Fallback when manifest is missing: load curated family JSON by the item's family name
+            try{
+              const famName = String(item.family || item.Family || '').trim();
+              if(famName){
+                const famUrl = `data/game_family_json/${encodeURIComponent(famName)}.json`;
+                const famJson = await fetchJsonCached(famUrl,'fdx-fam');
+                const gens = Array.isArray(famJson?.genera) ? famJson.genera : [];
+                for(const ge of gens){
+                  const sp = Array.isArray(ge?.species) ? ge.species : [];
+                  const hit = sp.find(s=> String(s?.scientific||'').trim().toLowerCase() === sci.toLowerCase());
+                  if(hit && hit.common){ item._commonPreferred = String(hit.common).trim(); return item; }
+                }
+              }
+            }catch{}
           }catch{}
           return item;
         }
